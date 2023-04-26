@@ -17,17 +17,15 @@ class CollegeFootballSchedule:
         self.schools_df = pd.DataFrame(columns=['school_id', 'logo_url', 'name', 'mascot', 'record', 'wins', 'losses', 'ties'])
         self.conferences_df = pd.DataFrame(columns=['school_id', 'division_id', 'conference_id', 'division_name', 'conference_name'])
     
-    def get_school_id(self, td_html_str):
+    def get_school_id(self, school_span):
         """Method to extract TeamID from the URL in the underlying href attribute."""
         try:
-            school_span = td_html_str.find('span') #, class_='Table__Team')
             href_str = school_span.find('a', href=True)['href']
-
             begin_idx = href_str.index('/id/') + 4
             end_idx = href_str.rfind('/')
             school_id = href_str[begin_idx:end_idx]
         except:
-            school_id = 0
+            school_id = '0'
         return school_id
     
     def get_game_id(self, td_html_str):
@@ -82,9 +80,12 @@ class CollegeFootballSchedule:
                 for game_row in games_table:
                     game = game_row.find_all('td')
 
+                    away_school_span = game[0].find('span', class_='Table__Team')
+                    home_school_span = game[1].find('span', class_='Table__Team')
+
                     # Instantiate game data elements
-                    away_school = self.get_school_id(game[0])
-                    home_school = self.get_school_id(game[1])
+                    away_school = self.get_school_id(away_school_span)
+                    home_school = self.get_school_id(home_school_span)
                     game_id = self.get_game_id(game[2])
                     location = self.get_cell_text(game[5])
                     if game_date >= date.today():
@@ -110,7 +111,7 @@ class CollegeFootballSchedule:
         
         # Iterate through distinct schools in list of away schools
         for school in schools_list:
-            espn_url = 'https://www.espn.com/college-football/team/_/id/' + str(school)
+            espn_url = 'https://www.espn.com/college-football/team/_/id/' + str(school) + '/'
             print(f'  ~ Scraping data for School ID: {school}...')
 
             # Scrape HTML from HTTP request to the URL above and store in variable `soup`
@@ -201,17 +202,16 @@ class CollegeFootballSchedule:
     def scrape_all(self):
         """Main method of CollegeFootballSchedule module which calls all other scraping methods."""
         self.scrape_games()
-        unique_schools = self.games_df['home_school'].unique()
+        non_0_schools = self.games_df[self.games_df['home_school'] != '0']
+        unique_schools = non_0_schools.nunique()
         self.scrape_schools(unique_schools)
         self.scrape_conferences()
                     
 
 cfb_sched = CollegeFootballSchedule(2023)
-cfb_sched.scrape_conferences()
+cfb_sched.scrape_all()
+print(cfb_sched.games_df)
+print('\n\n')
+print(cfb_sched.schools_df)
+print('\n\n')
 print(cfb_sched.conferences_df)
-#cfb_sched.scrape_all()
-#print(cfb_sched.games_df)
-#print('\n\n')
-#print(cfb_sched.schools_df)
-#print('\n\n')
-#print(cfb_sched.conferences_df)
