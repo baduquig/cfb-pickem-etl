@@ -14,14 +14,13 @@ class CollegeFootballSchedule:
         self.weeks = 14
         self.year = year
         self.games_df = pd.DataFrame(columns=['game_date', 'away_school', 'home_school', 'game_id', 'time', 'location'])
-        self.schools_df = pd.DataFrame(columns=['school_id', 'logo_url', 'name', 'mascot'])
-        self.school_confs = pd.DataFrame(columns=['school_id', 'division_id'])
-        self.conferences = pd.DataFrame(columns=['division_id', 'conference_name', 'division_name'])
+        self.schools_df = pd.DataFrame(columns=['school_id', 'logo_url', 'name', 'mascot', 'record', 'wins', 'losses', 'ties'])
+        self.conferences_df = pd.DataFrame(columns=['school_id', 'division_id', 'conference_id', 'division_name', 'conference_name'])
     
     def get_school_id(self, td_html_str):
         """Method to extract TeamID from the URL in the underlying href attribute."""
         try:
-            school_span = td_html_str.find('span', class_='Table__Team')
+            school_span = td_html_str.find('span') #, class_='Table__Team')
             href_str = school_span.find('a', href=True)['href']
 
             begin_idx = href_str.index('/id/') + 4
@@ -99,14 +98,14 @@ class CollegeFootballSchedule:
                     new_game = pd.DataFrame({
                         'game_date': [game_date], 'away_school': [away_school],
                         'home_school': [home_school], 'game_id': [game_id],
-                        'time': [time], final_score: [final_score], 'location': [location]
+                        'time': [time], 'final_score': [final_score], 'location': [location]
                     })                    
                     self.games_df = pd.concat([self.games_df, new_game], ignore_index=True)        
         print('Completed scraping games data.\n')
     
     
     def scrape_schools(self, schools_list):
-        """ Method to scrape school data from https://www.espn.com/college-football/team/_/id/000/ for a given school."""
+        """ Method to scrape school data from https://www.espn.com/college-football/team/_/id/000/ for a given list of schools."""
         print('\nBeginning scraping schools data.')
         
         # Iterate through distinct schools in list of away schools
@@ -128,27 +127,91 @@ class CollegeFootballSchedule:
             logo = self.get_href_attr(school)
             name = self.get_cell_text(name_span)
             mascot = self.get_cell_text(mascot_span)
+            #record = self.get_cell_text(record_li)
+            record = '0-0'
+            try:
+                wins, losses, ties = record.split('-')
+            except:
+                wins, losses = record.split('-')
+                ties = '0'
+            wins = wins.strip()
+            losses = losses.strip()
 
             # Assign new DataFrame row
             new_school = pd.DataFrame({
-                'school_id': school, 'logo_url': [logo], 'name': [name], 'mascot': [mascot]
+                'school_id': [school], 'logo_url': [logo], 'name': [name], 'mascot': [mascot], 
+                'record': [record], 'wins': [wins], 'losses': [losses], 'ties': [ties]
             })
             self.schools_df = pd.concat([self.schools_df, new_school], ignore_index=True)
         print('Completed scraping schools data.\n')
     
 
+    def scrape_conferences(self):
+        """Method to scrape conference/division data from https://www.espn.com/college-football/standings for a given list of schools."""
+        print('\nBeginning scraping conference data.')
+
+        espn_url = 'https://www.espn.com/college-football/standings'
+
+        # Scrape HTML from HTTP request to the URL above and store in variable `soup`
+        response = requests.get(espn_url)
+        soup = BeautifulSoup(response.content, 'html.parser')
+
+        # Instantiate parent element variables
+        conf_container = soup.find('div', class_='tabs__content').find('section')
+        conference_divs = conf_container.find_all('div', class_='standings__table InnerLayout__child--dividers')
+
+        conference_id = 1
+        division_id = 10
+
+        # Iterate through each overarching conference DIV
+        for conf_div in conference_divs:
+            title_div = conf_div.find('div', class_='Table__Title')
+            table_div = conf_div.find('div', class_='flex').find('table')
+
+            # Instantiate conference field for all teams in this div
+            conference_name = self.get_cell_text(title_div)
+            division_name = ''
+            conf_tbody = table_div.find('tbody', class_='Table__TBODY')
+            conf_trows = conf_tbody.find_all('tr')
+
+            # Iterate through divisions/teams in Table Body
+            for row in conf_trows:
+                subgroup_header_class = 'subgroup-headers'
+                tr_class = row.get('class')
+
+                if subgroup_header_class in tr_class:
+                    division_span = row.find('td', class_='Table__TD').find('span')
+                    division_name = self.get_cell_text(division_span)
+                    division_id += 1
+                else:
+                    school_span = row.find('td').find('div').find_all('span')[3]
+                    school_id = self.get_school_id(school_span)
+
+                # Assign new DataFrame rows
+                new_school_conf = pd.DataFrame({
+                    'school_id': [school_id], 'division_id': [division_id], 'conference_id': [conference_id],
+                    'division_name': [division_name], 'conference_name': [conference_name]
+                })
+                self.conferences_df = pd.concat([self.conferences_df, new_school_conf], ignore_index=True)
+
+            conference_id += 1
+        print('Completed scraping conference data.\n')
+    
+
     def scrape_all(self):
         """Main method of CollegeFootballSchedule module which calls all other scraping methods."""
         self.scrape_games()
-        schools_array = self.games_df.loc[self.games_df['home_school']!=0, 'home_school']
-        unique_schools_array = schools_array.unique()
-        unique_schools_list = unique_schools_array.tolist()
-
-        self.scrape_schools(unique_schools_list)
+        unique_schools = self.games_df['home_school'].unique()
+        self.scrape_schools(unique_schools)
+        self.scrape_conferences()
                     
 
 cfb_sched = CollegeFootballSchedule(2023)
-cfb_sched.scrape_all()
-print(cfb_sched.games_df)
-print()
-print(cfb_sched.schools_df)
+cfb_sched.scrape_conferences()
+print(cfb_sched.conferences_df)
+#cfb_sched.scrape_all()
+#print(cfb_sched.games_df)
+#print('\n\n')
+#print(cfb_sched.schools_df)
+#print('\n\n')
+#print(cfb_sched.conferences_df)
