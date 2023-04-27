@@ -5,7 +5,12 @@ from bs4 import BeautifulSoup
 from datetime import datetime, date
 
 # TODO:
-# - Create method to scrape school conferences/divisions and assigns `school_confs` and `conferences` DataFrames
+# - Create method to normalize SCHOOLS_DF and CONFERENCES_DF dataframes
+# - Create CFB_APPS database
+# - Create methods for incremental etl runs
+# - Create method to load schedule data into the CFB_APPS database
+#   - full_etl: `INSERT`, incremental_etl: `UPDATE`
+# - Create log file for ETL job runs
 
 
 class CollegeFootballSchedule:
@@ -201,14 +206,22 @@ class CollegeFootballSchedule:
         print('Completed scraping conference data.\n')
     
 
-    def scrape_all(self):
-        """Main method of CollegeFootballSchedule module which calls all other scraping methods."""
+    def extract_full(self):
+        """Primary data extraction method of CollegeFootballSchedule module which calls 
+        all other web scraping methods when initially loading the CFB_SCHEDULE database."""
         self.scrape_games()
         non_0_schools = self.games_df[self.games_df['home_school'] != '0']
         unique_schools = non_0_schools['home_school'].unique()
         self.scrape_schools(unique_schools)
         self.scrape_conferences()
+    
+    def transact_full(self):
+        """Main data transformation method of CollegeFootballSchedule module which performs
+        necessary data maninpulations when initially loading the CFB_SCHEDULE database."""
+    
+    def full_etl(self):
+        self.extract_full()
                     
 
 cfb_sched = CollegeFootballSchedule(2023)
-cfb_sched.scrape_all()
+cfb_sched.full_etl()
