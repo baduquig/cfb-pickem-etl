@@ -166,6 +166,8 @@ class CollegeFootballSchedule:
 
         # Iterate through each overarching conference DIV
         for conf_div in conference_divs:
+            print(f'  ~ Scraping data for Conference ID: {conference_id}...')
+
             title_div = conf_div.find('div', class_='Table__Title')
             table_div = conf_div.find('div', class_='flex').find('table')
 
@@ -185,7 +187,7 @@ class CollegeFootballSchedule:
                     division_name = self.get_cell_text(division_span)
                     division_id += 1
                 else:
-                    school_span = row.find('td').find('div').find_all('span')[3]
+                    school_span = row.find('td').find('div').find_all('span')[2]
                     school_id = self.get_school_id(school_span)
 
                 # Assign new DataFrame rows
@@ -203,15 +205,10 @@ class CollegeFootballSchedule:
         """Main method of CollegeFootballSchedule module which calls all other scraping methods."""
         self.scrape_games()
         non_0_schools = self.games_df[self.games_df['home_school'] != '0']
-        unique_schools = non_0_schools.nunique()
+        unique_schools = non_0_schools['home_school'].unique()
         self.scrape_schools(unique_schools)
         self.scrape_conferences()
                     
 
 cfb_sched = CollegeFootballSchedule(2023)
 cfb_sched.scrape_all()
-print(cfb_sched.games_df)
-print('\n\n')
-print(cfb_sched.schools_df)
-print('\n\n')
-print(cfb_sched.conferences_df)
