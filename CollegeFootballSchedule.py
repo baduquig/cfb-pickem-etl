@@ -246,10 +246,8 @@ class CollegeFootballSchedule:
     def full_load(self):
         """Primary method of CollegeFootballSchedule module which performs 
         SQL INSERTs for initial load of CFB_APPS database data."""
-        # Instantiate database connection
         db_connection = self.connect_to_db()
         
-        # Load the contents of each dataframe into their corresponding database table
         self.games_df.to_sql('CFB_GAMES', db_connection, if_exists='replace', index=False)
         self.schools_df.to_sql('CFB_GAMES', db_connection, if_exists='replace', index=False)
         self.school_confs_df.to_sql('CFB_GAMES', db_connection, if_exists='replace', index=False)
