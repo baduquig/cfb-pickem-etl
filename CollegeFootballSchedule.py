@@ -1,26 +1,43 @@
-import numpy as np
 import pandas as pd
+import pyodbc
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, date
 
 # TODO:
-# - Create method to normalize SCHOOLS_DF and CONFERENCES_DF dataframes
 # - Create CFB_APPS database
 # - Create methods for incremental etl runs
-# - Create method to load schedule data into the CFB_APPS database
-#   - full_etl: `INSERT`, incremental_etl: `UPDATE`
+# - Create method to update schedule data into the CFB_APPS database for incremental runs
 # - Create log file for ETL job runs
 
 
 class CollegeFootballSchedule:
-    """ This class contains all the methods needed to scrape and load college schedule data from ESPN into CFB_SCHEDULE_GB dataabase. """
-    def __init__(self, year=2023):
+    """This class contains all the methods needed to scrape, transform and 
+    load college schedule data from ESPN into CFB_SCHEDULE_GB dataabase."""
+    def __init__(self, year=2023, db_driver='{ODBC Driver 17 for SQL Server}', db_server='GABE_PC\SQLEXPRESS', db_name='cfb_schedule'):
+        self.db_driver = db_driver
+        self.db_server = db_server
+        self.db_name = db_name
+
         self.weeks = 14
         self.year = year
+        
         self.games_df = pd.DataFrame(columns=['game_date', 'away_school', 'home_school', 'game_id', 'time', 'location'])
         self.schools_df = pd.DataFrame(columns=['school_id', 'logo_url', 'name', 'mascot', 'record', 'wins', 'losses', 'ties'])
-        self.conferences_df = pd.DataFrame(columns=['school_id', 'division_id', 'conference_id', 'division_name', 'conference_name'])
+        self.school_confs_df = pd.DataFrame(columns=['school_id', 'division_id'])
+        self.conferences_df = pd.DataFrame(columns=['division_id', 'conference_id', 'division_name', 'conference_name'])
+
+    
+    def connect_to_db(self):
+        """Method to initialize connection to the SQL Server database with PYODBC and return the cursor object."""
+        driver = self.db_driver
+        server = self.db_server
+        database = self.db_name
+
+        connection_string = f'Driver={driver};Server={server};Database={database};Trusted_Connection=yes'
+        conn = pyodbc.connect(connection_string)
+        # cursor = conn.cursor()
+        return conn
     
     def get_school_id(self, school_span):
         """Method to extract TeamID from the URL in the underlying href attribute."""
@@ -77,7 +94,7 @@ class CollegeFootballSchedule:
             
             # Iterate through each distinct day with games on this particular week
             for day in sched_container.children:
-                date_str = day.find('div', class_='Table__Title').text
+                date_str = day.find('div', class_='Table__Title').text.strip()
                 game_date = datetime.strptime(date_str, "%A, %B %d, %Y").date()
                 games_table = day.find('div', class_='Table__Scroller').find('table', class_='Table').find('tbody', class_='Table__TBODY').find_all('tr')
 
@@ -204,23 +221,45 @@ class CollegeFootballSchedule:
 
             conference_id += 1
         print('Completed scraping conference data.\n')
-    
+        
 
-    def extract_full(self):
+    def full_extract(self):
         """Primary data extraction method of CollegeFootballSchedule module which calls 
-        all other web scraping methods when initially loading the CFB_SCHEDULE database."""
+        all other web scraping methods when initially loading the CFB_APPS database."""
         self.scrape_games()
         non_0_schools = self.games_df[self.games_df['home_school'] != '0']
         unique_schools = non_0_schools['home_school'].unique()
         self.scrape_schools(unique_schools)
         self.scrape_conferences()
     
-    def transact_full(self):
-        """Main data transformation method of CollegeFootballSchedule module which performs
-        necessary data maninpulations when initially loading the CFB_SCHEDULE database."""
+    def full_transform(self):
+        """Primary method of CollegeFootballSchedule module which performs necessary 
+        data transformations when initially loading the CFB_APPS database."""
+        # Create intersection dataframe/database table between schools and conference divisions
+        self.school_confs_df = self.conferences_df
+        self.school_confs_df = self.school_confs_df.drop(['conference_id', 'division_name', 'conference_name'], axis=1)
+        
+        # Normalize conference divisions dataframe 
+        self.conferences_df = self.conferences_df.drop(['school_id'], axis=1)
+        self.conferences_df = self.conferences_df.drop_duplicates()
+    
+    def full_load(self):
+        """Primary method of CollegeFootballSchedule module which performs 
+        SQL INSERTs for initial load of CFB_APPS database data."""
+        # Instantiate database connection
+        db_connection = self.connect_to_db()
+        
+        # Load the contents of each dataframe into their corresponding database table
+        self.games_df.to_sql('CFB_GAMES', db_connection, if_exists='replace', index=False)
+        self.schools_df.to_sql('CFB_GAMES', db_connection, if_exists='replace', index=False)
+        self.school_confs_df.to_sql('CFB_GAMES', db_connection, if_exists='replace', index=False)
+        self.conferences_df.to_sql('CFB_GAMES', db_connection, if_exists='replace', index=False)
+
     
     def full_etl(self):
-        self.extract_full()
+        self.full_extract()
+        self.full_transform()
+        self.full_load()
                     
 
 cfb_sched = CollegeFootballSchedule(2023)
