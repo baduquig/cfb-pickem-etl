@@ -1,2 +1,2 @@
-# scrape-2023-schedule
-Project to Scrape 2023 College Football Schedule Data for dependent projects
+# espn-college-football-schedule-data-wrangling
+Project to scrape, transform and load College Football Schedule Data from ESPN's college football web pages for dependent projects
