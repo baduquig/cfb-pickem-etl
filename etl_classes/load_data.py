@@ -11,22 +11,46 @@ class LoadData:
     
     def load_csv(self):
         """This method to load schedule data stored in Pandas DataFrames into CSV files."""
+        print('\nBeginning loading data in CSV files.')
+        self.logfile.write('\nBeginning loading data in CSV files.\n')
+
         if not self.games_df.empty:
+            print(f'  ~ Loading games data into CSV file...')
+            self.logfile.write(f'  ~ Loading games data into CSV file...\n')
             self.games_df.to_csv('./data/games.csv', index=False)
 
         if not self.schools_df.empty:
+            print(f'  ~ Loading schools data into CSV file...')
+            self.logfile.write(f'  ~ Loading schools data into CSV file...\n')
             self.schools_df.to_csv('./data/schools.csv', index=False)
 
         if not self.conferences_df.empty:
+            print(f'  ~ Loading conferences data into CSV file...')
+            self.logfile.write(f'  ~ Loading conferences data into CSV file...\n')
             self.conferences_df.to_csv('./data/conferences.csv', index=False)
+        
+        self.logfile.write('Completed loading data into CSV files.\n\n')
+        print('Completed loading data into CSV files.\n')
     
     def load_json(self):
         """This method to load schedule data stored in Pandas DataFrames into JSON files."""
+        print('\nBeginning loading data in JSON files.')
+        self.logfile.write('\nBeginning loading data in JSON files.\n')
+
         if not self.games_df.empty:
+            print(f'  ~ Loading games data into JSON file...')
+            self.logfile.write(f'  ~ Loading games data into JSON file...\n')
             self.games_df.to_json('./data/games.json', orient='records')
 
         if not self.schools_df.empty:
+            print(f'  ~ Loading schools data into JSON file...')
+            self.logfile.write(f'  ~ Loading schools data into JSON file...\n')
             self.schools_df.to_json('./data/schools.json', orient='records')
 
         if not self.conferences_df.empty:
+            print(f'  ~ Loading conferences data into JSON file...')
+            self.logfile.write(f'  ~ Loading conferences data into JSON file...\n')
             self.conferences_df.to_json('./data/conferences.json', orient='records')
+        
+        self.logfile.write('Completed loading data into JSON files.\n\n')
+        print('Completed loading data into JSON files.\n')

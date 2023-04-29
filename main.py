@@ -1,4 +1,5 @@
 import pandas as pd
+from etl_classes.scrape_all import ScrapeAll
 from etl_classes.scrape_games import ScrapeGames
 from etl_classes.scrape_schools import ScrapeSchools
 from etl_classes.scrape_conferences import ScrapeConferences
@@ -6,6 +7,7 @@ from etl_classes.load_data import LoadData
 
 
 def full_extract(year):
+    scrape = ScrapeAll()
     games = ScrapeGames()
     schools = ScrapeSchools()
     conferences = ScrapeConferences()
@@ -15,6 +17,7 @@ def full_extract(year):
     schools_df = schools.scrape_schools(unique_schools)
     conferences_df = conferences.scrape_conferences()
 
+    scrape.logfile.close()
     return games_df, schools_df, conferences_df
 
 def full_transform(schools_df, old_conf_df):
@@ -27,6 +30,7 @@ def full_load(games_df, schools_df, conferences_df):
     load_obj = LoadData(games_df, schools_df, conferences_df)
     load_obj.load_csv()
     load_obj.load_json()
+    load_obj.logfile.close()
 
 def full_etl(year):
     games_df, schools_df, conferences_df = full_extract(year)
