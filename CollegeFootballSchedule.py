@@ -8,7 +8,6 @@ from datetime import datetime, date
 # - Create CFB_APPS database
 # - Create methods for incremental etl runs
 # - Create method to update schedule data into the CFB_APPS database for incremental runs
-# - Create log file for ETL job runs
 
 
 class CollegeFootballSchedule:
