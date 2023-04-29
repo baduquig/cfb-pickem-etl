@@ -1,7 +1,7 @@
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-from scrape_all import ScrapeAll
+from web_scraping_classes.scrape_all import ScrapeAll
 
 
 class ScrapeConferences:

@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, date
-from scrape_all import ScrapeAll
+from web_scraping_classes.scrape_all import ScrapeAll
 
 class ScrapeGames:
     """This class contains the methods needed to scrape college football game 

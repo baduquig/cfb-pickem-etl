@@ -1,8 +1,8 @@
 import pandas as pd
 from datetime import datetime
-from scrape_games import ScrapeGames
-from scrape_schools import ScrapeSchools
-from scrape_conferences import ScrapeConferences
+from web_scraping_classes.scrape_games import ScrapeGames
+from web_scraping_classes.scrape_schools import ScrapeSchools
+from web_scraping_classes.scrape_conferences import ScrapeConferences
 
 class ScrapeAll:
     """This class contains methods needed to scrape data from more than one source/webpage."""
