@@ -7,8 +7,9 @@ from scrape_all import ScrapeAll
 class ScrapeGames:
     """This class contains the methods needed to scrape college football game 
     schedule data from ESPN at (https://www.espn.com/college-football/schedule)."""
-    def __init__(self):
-        self.weeks = 14        
+    def __init__(self, logfile):
+        self.logfile = logfile
+        self.weeks = 14    
         self.games_df = pd.DataFrame(columns=['game_date', 'away_school', 'home_school', 'game_id', 'time', 'location'])
     
     def get_game_id(self, td_tag_str):
@@ -20,6 +21,7 @@ class ScrapeGames:
 
     def scrape_games(self, year=2023):
         """ Method to scrape college football schedule data from https://www.espn.com/college-football/schedule for a given year (default: 2023). """
+        self.logfile.write('\nBeginning scraping games data.')
         print('\nBeginning scraping games data.')
 
         # Iterate through each week of 15 week schedule
@@ -27,6 +29,7 @@ class ScrapeGames:
             week_num = week + 1
             espn_url = 'https://www.espn.com/college-football/schedule/_/week/' + str(week_num) + '/year/' + str(year)
             
+            self.logfile.write(f'  ~ Scraping data for Week {week_num}...')
             print(f'  ~ Scraping data for Week {week_num}...')
 
             # Scrape HTML from HTTP request to the URL above and store in variable `soup`
@@ -70,5 +73,6 @@ class ScrapeGames:
                         'time': [time], 'score': [score], 'location': [location]
                     })                    
                     self.games_df = pd.concat([self.games_df, new_game], ignore_index=True)
+        self.logfile.write('Completed scraping games data.\n')
         print('Completed scraping games data.\n')
         return self.games_df

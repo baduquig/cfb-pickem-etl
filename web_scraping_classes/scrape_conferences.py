@@ -7,13 +7,15 @@ from scrape_all import ScrapeAll
 class ScrapeConferences:
     """This class contains the methods needed to scrape college football conferences and
     division data from ESPN at (https://www.espn.com/college-football/team/_/id/WXYZ/)."""
-    def __init__(self):
+    def __init__(self, logfile):
+        self.logfile = logfile
         self.school_conferences_df = pd.DataFrame(columns=['school_id', 'conference_id', 'division_id', 'conference_name', 'division_name'])
         self.standings_url = 'https://www.espn.com/college-football/standings'
 
     def scrape_conferences(self):
         """Method to scrape conference/division data from https://www.espn.com/college-football/standings for a given list of schools."""
         print('\nBeginning scraping conference data.')
+        self.logfile.write('\nBeginning scraping conference data.')
 
         # Scrape HTML from HTTP request to the URL above and store in variable `soup`
         response = requests.get(self.standings_url)
@@ -31,6 +33,7 @@ class ScrapeConferences:
         # Iterate through each overarching conference DIV
         for conf_div in conference_divs:
             print(f'  ~ Scraping data for Conference ID: {conference_id}...')
+            self.logfile.write(f'  ~ Scraping data for Conference ID: {conference_id}...')
 
             conference_title_div = conf_div.find('div', class_='Table__Title')
             conference_table = conf_div.find('div', class_='flex').find('table')
@@ -69,4 +72,5 @@ class ScrapeConferences:
                 
             conference_id += 1
         print('Completed scraping conference data.\n')
+        self.logfile.write('Completed scraping conference data.\n')
         return self.school_conferences_df

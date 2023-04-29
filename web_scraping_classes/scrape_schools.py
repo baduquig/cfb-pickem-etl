@@ -7,7 +7,8 @@ from scrape_all import ScrapeAll
 class ScrapeSchools:
     """This class contains the methods needed to scrape college football schools
     data from ESPN at (https://www.espn.com/college-football/team/_/id/WXYZ/)."""
-    def __init__(self):
+    def __init__(self, logfile):
+        self.logfile = logfile
         self.schools_df = pd.DataFrame(columns=['school_id', 'logo_url', 'name', 'mascot', 'record', 'wins', 'losses', 'ties'])
     
     def get_logo_url(self, school_id):
@@ -21,11 +22,13 @@ class ScrapeSchools:
     def scrape_schools(self, schools_list):
         """ Method to scrape school data from https://www.espn.com/college-football/team/_/id/WXYZ/ for a given list of schools."""
         print('\nBeginning scraping schools data.')
+        self.logfile.write('\nBeginning scraping schools data.')
         
         # Iterate through distinct schools in list of away schools
         for school_id in schools_list:
             espn_url = 'https://www.espn.com/college-football/team/_/id/' + str(school_id) + '/'
             print(f'  ~ Scraping data for School ID: {school_id}...')
+            self.logfile.write(f'  ~ Scraping data for School ID: {school_id}...')
 
             # Scrape HTML from HTTP request to the URL above and store in variable `soup`
             response = requests.get(espn_url)
@@ -58,4 +61,5 @@ class ScrapeSchools:
             })
             self.schools_df = pd.concat([self.schools_df, new_school], ignore_index=True)
         print('Completed scraping schools data.\n')
+        self.logfile.write('Completed scraping schools data.\n')
         return self.schools_df

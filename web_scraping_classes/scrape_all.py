@@ -1,4 +1,5 @@
 import pandas as pd
+from datetime import datetime
 from scrape_games import ScrapeGames
 from scrape_schools import ScrapeSchools
 from scrape_conferences import ScrapeConferences
@@ -31,9 +32,11 @@ class ScrapeAll:
         return school_id
     
     def scrape_all(self):
-        games = ScrapeGames()
-        schools = ScrapeSchools()
-        conferences = ScrapeConferences()
+        logfile = open('../logs/scrape_all_' + str(datetime.now()), 'a')
+
+        games = ScrapeGames(logfile)
+        schools = ScrapeSchools(logfile)
+        conferences = ScrapeConferences(logfile)
 
         games_df = games.scrape_games(self.year)
         #non_0_schools = self.games_df[self.games_df['home_school'] != '0']
@@ -46,3 +49,4 @@ class ScrapeAll:
         self.games_df = games_df
         self.schools_df = schools_df
         self.school_conferences_df = school_conferences_df
+        logfile.close()
