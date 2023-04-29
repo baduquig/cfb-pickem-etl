@@ -1,16 +1,16 @@
 import pandas as pd
 from datetime import datetime
-from web_scraping_classes.scrape_games import ScrapeGames
-from web_scraping_classes.scrape_schools import ScrapeSchools
-from web_scraping_classes.scrape_conferences import ScrapeConferences
+#from web_scraping_classes.scrape_games import ScrapeGames
+#from web_scraping_classes.scrape_schools import ScrapeSchools
+#from web_scraping_classes.scrape_conferences import ScrapeConferences
 
 class ScrapeAll:
     """This class contains methods needed to scrape data from more than one source/webpage."""
-    def __init__(self, year=2023):
-        self.year = year
-        self.games_df = pd.DataFrame(columns=['game_date', 'away_school', 'home_school', 'game_id', 'time', 'location'])
-        self.schools_df = pd.DataFrame(columns=['school_id', 'logo_url', 'name', 'mascot', 'record', 'wins', 'losses', 'ties'])
-        self.school_conferences_df = pd.DataFrame(columns=['school_id', 'conference_id', 'division_id', 'conference_name', 'division_name'])
+    def __init__(self):
+        self.logfile = open('./logs/scrape_all_' + datetime.now().strftime('%Y.%m.%d.%H.%M.%S') + '.log', 'a')
+        #self.games_df = pd.DataFrame(columns=['game_date', 'away_school', 'home_school', 'game_id', 'time', 'location'])
+        #self.schools_df = pd.DataFrame(columns=['school_id', 'logo_url', 'name', 'mascot', 'record', 'wins', 'losses', 'ties'])
+        #self.school_conferences_df = pd.DataFrame(columns=['school_id', 'conference_id', 'division_id', 'conference_name', 'division_name'])
         
     def get_cell_text(self, td_html_str):
         """Method to extract the innerHTML text of the child tag of a given table cell."""
@@ -31,22 +31,19 @@ class ScrapeAll:
             school_id = '0'
         return school_id
     
-    def scrape_all(self):
-        logfile = open('../logs/scrape_all_' + str(datetime.now()), 'a')
+    def get_game_id(self, td_tag_str):
+        """Method to extract GameID from the URL in the underlying href attribute."""
+        href_str = td_tag_str.find('a', href=True)['href']        
+        game_id_index = href_str.index('gameId=') + 7
+        game_id = href_str[game_id_index:]
+        return game_id
 
-        games = ScrapeGames(logfile)
-        schools = ScrapeSchools(logfile)
-        conferences = ScrapeConferences(logfile)
+    def get_logo_url(self, school_id):
+        """Method to extract string value of HREF attribute of a given school (ID)"""
+        try:
+            logo_url = f'https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/{school_id}.png&h=2000&w=2000'
+        except:
+            logo_url = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/4.png&h=2000&w=2000'
+        return logo_url
+    
 
-        games_df = games.scrape_games(self.year)
-        #non_0_schools = self.games_df[self.games_df['home_school'] != '0']
-        #unique_schools = non_0_schools['home_school'].unique()
-        unique_schools = self.games_df[games_df['home_school'] != '0']['home_school'].unique()
-
-        schools_df = schools.scrape_schools(unique_schools)
-        school_conferences_df = conferences.scrape_conferences()
-
-        self.games_df = games_df
-        self.schools_df = schools_df
-        self.school_conferences_df = school_conferences_df
-        logfile.close()

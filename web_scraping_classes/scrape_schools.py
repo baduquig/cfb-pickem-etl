@@ -4,31 +4,23 @@ from bs4 import BeautifulSoup
 from web_scraping_classes.scrape_all import ScrapeAll
 
 
-class ScrapeSchools:
+class ScrapeSchools(ScrapeAll):
     """This class contains the methods needed to scrape college football schools
     data from ESPN at (https://www.espn.com/college-football/team/_/id/WXYZ/)."""
-    def __init__(self, logfile):
-        self.logfile = logfile
+    def __init__(self):
+        super().__init__()
         self.schools_df = pd.DataFrame(columns=['school_id', 'logo_url', 'name', 'mascot', 'record', 'wins', 'losses', 'ties'])
-    
-    def get_logo_url(self, school_id):
-        """Method to extract string value of HREF attribute of a given school (ID)"""
-        try:
-            logo_url = f'https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/{school_id}.png&h=2000&w=2000'
-        except:
-            logo_url = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/4.png&h=2000&w=2000'
-        return logo_url    
     
     def scrape_schools(self, schools_list):
         """ Method to scrape school data from https://www.espn.com/college-football/team/_/id/WXYZ/ for a given list of schools."""
         print('\nBeginning scraping schools data.')
-        self.logfile.write('\nBeginning scraping schools data.')
+        self.logfile.write('\nBeginning scraping schools data.\n')
         
         # Iterate through distinct schools in list of away schools
         for school_id in schools_list:
             espn_url = 'https://www.espn.com/college-football/team/_/id/' + str(school_id) + '/'
             print(f'  ~ Scraping data for School ID: {school_id}...')
-            self.logfile.write(f'  ~ Scraping data for School ID: {school_id}...')
+            self.logfile.write(f'  ~ Scraping data for School ID: {school_id}...\n')
 
             # Scrape HTML from HTTP request to the URL above and store in variable `soup`
             response = requests.get(espn_url)
@@ -42,9 +34,9 @@ class ScrapeSchools:
 
             # Instantiate school data elements
             logo = self.get_logo_url(school_id)
-            name = ScrapeAll.get_cell_text(name_span)
-            mascot = ScrapeAll.get_cell_text(mascot_span)
-            #record = ScrapeAll.get_cell_text(record_li)
+            name = self.get_cell_text(name_span)
+            mascot = self.get_cell_text(mascot_span)
+            #record = self.get_cell_text(record_li)
             record = '0-0'
             try:
                 wins, losses, ties = record.split('-')
@@ -61,5 +53,5 @@ class ScrapeSchools:
             })
             self.schools_df = pd.concat([self.schools_df, new_school], ignore_index=True)
         print('Completed scraping schools data.\n')
-        self.logfile.write('Completed scraping schools data.\n')
+        self.logfile.write('Completed scraping schools data.\n\n')
         return self.schools_df

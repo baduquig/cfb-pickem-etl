@@ -4,24 +4,17 @@ from bs4 import BeautifulSoup
 from datetime import datetime, date
 from web_scraping_classes.scrape_all import ScrapeAll
 
-class ScrapeGames:
+class ScrapeGames(ScrapeAll):
     """This class contains the methods needed to scrape college football game 
     schedule data from ESPN at (https://www.espn.com/college-football/schedule)."""
-    def __init__(self, logfile):
-        self.logfile = logfile
+    def __init__(self):
+        super().__init__()
         self.weeks = 14    
         self.games_df = pd.DataFrame(columns=['game_date', 'away_school', 'home_school', 'game_id', 'time', 'location'])
-    
-    def get_game_id(self, td_tag_str):
-        """Method to extract GameID from the URL in the underlying href attribute."""
-        href_str = td_tag_str.find('a', href=True)['href']        
-        game_id_index = href_str.index('gameId=') + 7
-        game_id = href_str[game_id_index:]
-        return game_id
 
     def scrape_games(self, year=2023):
         """ Method to scrape college football schedule data from https://www.espn.com/college-football/schedule for a given year (default: 2023). """
-        self.logfile.write('\nBeginning scraping games data.')
+        self.logfile.write('\nBeginning scraping games data.\n')
         print('\nBeginning scraping games data.')
 
         # Iterate through each week of 15 week schedule
@@ -29,7 +22,7 @@ class ScrapeGames:
             week_num = week + 1
             espn_url = 'https://www.espn.com/college-football/schedule/_/week/' + str(week_num) + '/year/' + str(year)
             
-            self.logfile.write(f'  ~ Scraping data for Week {week_num}...')
+            self.logfile.write(f'  ~ Scraping data for Week {week_num}... \n')
             print(f'  ~ Scraping data for Week {week_num}...')
 
             # Scrape HTML from HTTP request to the URL above and store in variable `soup`
@@ -53,18 +46,18 @@ class ScrapeGames:
                     home_school_span = game_columns[1].find('span', class_='Table__Team')
 
                     # Instantiate game data elements
-                    away_school = ScrapeAll.get_school_id(away_school_span)
-                    home_school = ScrapeAll.get_school_id(home_school_span)
+                    away_school = self.get_school_id(away_school_span)
+                    home_school = self.get_school_id(home_school_span)
                     game_id = self.get_game_id(game_columns[2])
                     
                     if game_date >= date.today():
-                        time = ScrapeAll.get_cell_text(game_columns[2])
+                        time = self.get_cell_text(game_columns[2])
                         score = '0-0'
                     else:
                         time = 'TBD'
-                        score = ScrapeAll.get_cell_text(game_columns[2])
+                        score = self.get_cell_text(game_columns[2])
 
-                    location = ScrapeAll.get_cell_text(game_columns[5])
+                    location = self.get_cell_text(game_columns[5])
 
                     # Assign new DataFrame row
                     new_game = pd.DataFrame({
@@ -73,6 +66,6 @@ class ScrapeGames:
                         'time': [time], 'score': [score], 'location': [location]
                     })                    
                     self.games_df = pd.concat([self.games_df, new_game], ignore_index=True)
-        self.logfile.write('Completed scraping games data.\n')
+        self.logfile.write('Completed scraping games data.\n\n')
         print('Completed scraping games data.\n')
         return self.games_df
