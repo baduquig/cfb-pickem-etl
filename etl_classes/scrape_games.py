@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, date
-from web_scraping_classes.scrape_all import ScrapeAll
+from etl_classes.scrape_all import ScrapeAll
 
 class ScrapeGames(ScrapeAll):
     """This class contains the methods needed to scrape college football game 
@@ -13,7 +13,7 @@ class ScrapeGames(ScrapeAll):
         self.games_df = pd.DataFrame(columns=['game_date', 'away_school', 'home_school', 'game_id', 'time', 'location'])
 
     def scrape_games(self, year=2023):
-        """ Method to scrape college football schedule data from https://www.espn.com/college-football/schedule for a given year (default: 2023). """
+        """Method to scrape college football schedule data from https://www.espn.com/college-football/schedule for a given year (default: 2023)."""
         self.logfile.write('\nBeginning scraping games data.\n')
         print('\nBeginning scraping games data.')
 

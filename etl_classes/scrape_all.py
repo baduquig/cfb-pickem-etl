@@ -1,17 +1,11 @@
 import pandas as pd
 from datetime import datetime
-#from web_scraping_classes.scrape_games import ScrapeGames
-#from web_scraping_classes.scrape_schools import ScrapeSchools
-#from web_scraping_classes.scrape_conferences import ScrapeConferences
 
 class ScrapeAll:
     """This class contains methods needed to scrape data from more than one source/webpage."""
     def __init__(self):
         self.logfile = open('./logs/scrape_all_' + datetime.now().strftime('%Y.%m.%d.%H.%M.%S') + '.log', 'a')
-        #self.games_df = pd.DataFrame(columns=['game_date', 'away_school', 'home_school', 'game_id', 'time', 'location'])
-        #self.schools_df = pd.DataFrame(columns=['school_id', 'logo_url', 'name', 'mascot', 'record', 'wins', 'losses', 'ties'])
-        #self.school_conferences_df = pd.DataFrame(columns=['school_id', 'conference_id', 'division_id', 'conference_name', 'division_name'])
-        
+                
     def get_cell_text(self, td_html_str):
         """Method to extract the innerHTML text of the child tag of a given table cell."""
         try:
