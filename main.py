@@ -24,7 +24,6 @@ def full_transform(schools_df, old_conf_df):
     schools_df = pd.merge(schools_df, old_conf_df, on='school_id', how='left')
     schools_df = schools_df.drop(['conference_name', 'division_name'], axis=1)    
     conferences_df = old_conf_df.drop(['school_id'], axis=1).drop_duplicates()
-    #conferences_df = conferences_df.drop_duplicates()
     return schools_df, conferences_df
 
 def full_load(games_df, schools_df, conferences_df):

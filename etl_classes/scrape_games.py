@@ -10,7 +10,7 @@ class ScrapeGames(ScrapeAll):
     def __init__(self):
         super().__init__()
         self.weeks = 14    
-        self.games_df = pd.DataFrame(columns=['game_date', 'away_school', 'home_school', 'game_id', 'time', 'location'])
+        self.games_df = pd.DataFrame(columns=['week', 'game_date', 'away_school', 'home_school', 'game_id', 'time', 'location'])
 
     def scrape_games(self, year=2023):
         """Method to scrape college football schedule data from https://www.espn.com/college-football/schedule for a given year (default: 2023)."""
@@ -19,7 +19,7 @@ class ScrapeGames(ScrapeAll):
 
         # Iterate through each week of 15 week schedule
         for week in range(self.weeks):
-            week_num = week + 1
+            week_num = int(week + 1)
             espn_url = 'https://www.espn.com/college-football/schedule/_/week/' + str(week_num) + '/year/' + str(year)
             
             self.logfile.write(f'  ~ Scraping data for Week {week_num}... \n')
@@ -61,9 +61,10 @@ class ScrapeGames(ScrapeAll):
 
                     # Assign new DataFrame row
                     new_game = pd.DataFrame({
-                        'game_date': [game_date], 'away_school': [away_school],
-                        'home_school': [home_school], 'game_id': [game_id],
-                        'time': [time], 'score': [score], 'location': [location]
+                        'week': [week_num],  'game_date': [date_str], 
+                        'away_school': [away_school], 'home_school': [home_school], 
+                        'game_id': [game_id], 'time': [time], 
+                        'score': [score], 'location': [location]
                     })                    
                     self.games_df = pd.concat([self.games_df, new_game], ignore_index=True)
         self.logfile.write('Completed scraping games data.\n\n')
