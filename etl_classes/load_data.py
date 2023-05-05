@@ -3,11 +3,12 @@ from datetime import datetime
 
 class LoadData:
     """This class contains methods needed to load data into all 'potential' consumable forms."""
-    def __init__(self, games_df=pd.DataFrame(), schools_df=pd.DataFrame(), conferences_df=pd.DataFrame()):
+    def __init__(self, games_df=pd.DataFrame(), schools_df=pd.DataFrame(), conferences_df=pd.DataFrame(), locations_df=pd.DataFrame()):
         self.logfile = open('./logs/load_all_' + datetime.now().strftime('%Y.%m.%d.%H.%M.%S') + '.log', 'a')
         self.games_df = games_df
         self.schools_df = schools_df
         self.conferences_df = conferences_df
+        self.locations_df = locations_df
     
     def load_csv(self):
         """This method to load schedule data stored in Pandas DataFrames into CSV files."""
@@ -28,6 +29,11 @@ class LoadData:
             print(f'  ~ Loading conferences data into CSV file...')
             self.logfile.write(f'  ~ Loading conferences data into CSV file...\n')
             self.conferences_df.to_csv('./data/conferences.csv', index=False)
+        
+        if not self.locations_df.empty:
+            print(f'  ~ Loading locations data into CSV file...')
+            self.logfile.write(f'  ~ Loading locations data into CSV file...\n')
+            self.conferences_df.to_csv('./data/locations.csv', index=False)
         
         self.logfile.write('Completed loading data into CSV files.\n\n')
         print('Completed loading data into CSV files.\n')
@@ -51,6 +57,11 @@ class LoadData:
             print(f'  ~ Loading conferences data into JSON file...')
             self.logfile.write(f'  ~ Loading conferences data into JSON file...\n')
             self.conferences_df.to_json('./data/conferences.json', orient='records')
+
+        if not self.locations_df.empty:
+            print(f'  ~ Loading locations data into JSON file...')
+            self.logfile.write(f'  ~ Loading locations data into JSON file...\n')
+            self.conferences_df.to_json('./data/locations.json', orient='records')
         
         self.logfile.write('Completed loading data into JSON files.\n\n')
         print('Completed loading data into JSON files.\n')
