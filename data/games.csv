@@ -1,866 +1,859 @@
-week,game_date,away_school,home_school,game_id,time,location,score
-1,"Saturday, August 26, 2023",62,238,401520147,TBD,"FirstBank Stadium, Nashville, TN",0-0
-1,"Saturday, August 26, 2023",23,30,401523986,TBD,"Los Angeles Memorial Coliseum, Los Angeles, CA",0-0
-1,"Saturday, August 26, 2023",2426,87,401525434,TBD,"Aviva Stadium, Dublin",0-0
-1,"Saturday, August 26, 2023",113,166,401525450,TBD,"Aggie Memorial Stadium, Las Cruces, NM",0-0
-1,"Saturday, August 26, 2023",195,21,401532392,TBD,"Snapdragon Stadium, San Diego, CA",0-0
-1,"Saturday, August 26, 2023",2638,55,401520145,TBD,"Burgess-Snow Field, Jacksonville, AL",0-0
-1,"Saturday, August 26, 2023",2229,2348,401520146,TBD,"Joe Aillet Stadium, Ruston, LA",0-0
-1,"Thursday, August 31, 2023",158,135,401520148,TBD,"Huntington Bank Stadium, Minneapolis, MN",0-0
-1,"Thursday, August 31, 2023",57,254,401520176,TBD,"Rice-Eccles Stadium, Salt Lake City, UT",0-0
-1,"Thursday, August 31, 2023",253,9,401523987,TBD,"Sun Devil Stadium, Tempe, AZ",0-0
-1,"Thursday, August 31, 2023",2210,154,401525461,TBD,"Truist Field, Winston-Salem, NC",0-0
-1,"Thursday, August 31, 2023",2623,2305,401525815,TBD,"David Booth Kansas Memorial Stadium, Lawrence, KS",0-0
-1,"Thursday, August 31, 2023",2309,2116,401525816,TBD,"FBC Mortgage Stadium, Orlando, FL",0-0
-1,"Thursday, August 31, 2023",2448,5,401531377,TBD,"Protective Stadium, Birmingham, AL",0-0
-1,"Thursday, August 31, 2023",227,2247,401531834,TBD,"Center Parc Stadium, Atlanta, GA",0-0
-1,"Thursday, August 31, 2023",2598,2711,401532393,TBD,"Waldo Stadium, Kalamazoo, MI",0-0
-1,"Friday, September 1, 2023",24,62,401523988,TBD,"Clarence T.C. Ching Athletics Complex, Honolulu, HI",0-0
-1,"Friday, September 1, 2023",97,59,401525462,TBD,"Mercedes-Benz Stadium, Atlanta, GA",0-0
-1,"Friday, September 1, 2023",193,2390,401525463,TBD,"Hard Rock Stadium, Miami Gardens, FL",0-0
-1,"Friday, September 1, 2023",47,2199,401532394,TBD,"Rynearson Stadium, Ypsilanti, MI",0-0
-1,"Saturday, September 2, 2023",113,2,401520151,TBD,"Jordan-Hare Stadium, Auburn, AL",0-0
-1,"Saturday, September 2, 2023",2534,252,401520152,TBD,"LaVell Edwards Stadium, Provo, UT",0-0
-1,"Saturday, September 2, 2023",311,2229,401520153,TBD,"Riccardo Silva Stadium, Miami, FL",0-0
-1,"Saturday, September 2, 2023",2630,61,401520154,TBD,"Sanford Stadium, Athens, GA",0-0
-1,"Saturday, September 2, 2023",119,120,401520161,TBD,"SECU Stadium, College Park, MD",0-0
-1,"Saturday, September 2, 2023",233,142,401520165,TBD,"Memorial Stadium/Faurot Field, Columbia, MO",0-0
-1,"Saturday, September 2, 2023",2579,153,401520167,TBD,"Bank of America Stadium, Charlotte, NC",0-0
-1,"Saturday, September 2, 2023",278,2509,401520170,TBD,"Ross-Ade Stadium, West Lafayette, IN",0-0
-1,"Saturday, September 2, 2023",77,164,401520171,TBD,"SHI Stadium, Piscataway, NJ",0-0
-1,"Saturday, September 2, 2023",2348,2567,401520172,TBD,"Gerald J. Ford Stadium, Dallas, TX",0-0
-1,"Saturday, September 2, 2023",152,41,401520174,TBD,"Pratt & Whitney Stadium, East Hartford, CT",0-0
-1,"Saturday, September 2, 2023",2916,2638,401520177,TBD,"Sun Bowl, El Paso, TX",0-0
-1,"Saturday, September 2, 2023",2010,238,401520178,TBD,"FirstBank Stadium, Nashville, TN",0-0
-1,"Saturday, September 2, 2023",258,2633,401520179,TBD,"Nissan Stadium, Nashville, TN",0-0
-1,"Saturday, September 2, 2023",2084,275,401520180,TBD,"Camp Randall Stadium, Madison, WI",0-0
-1,"Saturday, September 2, 2023",58,98,401520181,TBD,"Houchens Industries-L.T. Smith Stadium, Bowling Green, KY",0-0
-1,"Saturday, September 2, 2023",2464,12,401523989,TBD,"Arizona Stadium, Tucson, AZ",0-0
-1,"Saturday, September 2, 2023",265,36,401523990,TBD,"Canvas Stadium, Fort Collins, CO",0-0
-1,"Saturday, September 2, 2023",25,249,401523991,TBD,"Apogee Stadium, Denton, TX",0-0
-1,"Saturday, September 2, 2023",2502,2483,401523992,TBD,"Autzen Stadium, Eugene, OR",0-0
-1,"Saturday, September 2, 2023",38,2628,401523994,TBD,"Amon G. Carter Stadium, Fort Worth, TX",0-0
-1,"Saturday, September 2, 2023",324,26,401523995,TBD,"Rose Bowl, Pasadena, CA",0-0
-1,"Saturday, September 2, 2023",2440,30,401523996,TBD,"Los Angeles Memorial Coliseum, Los Angeles, CA",0-0
-1,"Saturday, September 2, 2023",68,264,401523997,TBD,"Husky Stadium, Seattle, WA",0-0
-1,"Saturday, September 2, 2023",2634,87,401525435,TBD,"Notre Dame Stadium, Notre Dame, IN",0-0
-1,"Saturday, September 2, 2023",2459,103,401525464,TBD,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA",0-0
-1,"Saturday, September 2, 2023",2747,221,401525465,TBD,"Acrisure Stadium, Pittsburgh, PA",0-0
-1,"Saturday, September 2, 2023",2142,183,401525466,TBD,"JMA Wireless Dome, Syracuse, NY",0-0
-1,"Saturday, September 2, 2023",295,259,401525467,TBD,"Lane Stadium, Blacksburg, VA",0-0
-1,"Saturday, September 2, 2023",326,239,401525817,TBD,"McLane Stadium, Waco, TX",0-0
-1,"Saturday, September 2, 2023",2198,2132,401525818,TBD,"Nippert Stadium, Cincinnati, OH",0-0
-1,"Saturday, September 2, 2023",2636,248,401525819,TBD,"TDECU Stadium, Houston, TX",0-0
-1,"Saturday, September 2, 2023",2460,66,401525820,TBD,"Jack Trice Stadium, Ames, IA",0-0
-1,"Saturday, September 2, 2023",2546,2306,401525821,TBD,"Bill Snyder Family Stadium, Manhattan, KS",0-0
-1,"Saturday, September 2, 2023",2032,201,401525822,TBD,"Memorial Stadium (Norman, OK), Norman, OK",0-0
-1,"Saturday, September 2, 2023",2110,197,401525823,TBD,"Boone Pickens Stadium, Stillwater, OK",0-0
-1,"Saturday, September 2, 2023",242,251,401525824,TBD,"DKR-Texas Memorial Stadium, Austin, TX",0-0
-1,"Saturday, September 2, 2023",2641,2751,401525825,TBD,"Jonah Field at War Memorial Stadium, Laramie, WY",0-0
-1,"Saturday, September 2, 2023",2029,202,401531337,TBD,"Chapman Stadium, Tulsa, OK",0-0
-1,"Saturday, September 2, 2023",6,2655,401531347,TBD,"Yulman Stadium, New Orleans, LA",0-0
-1,"Saturday, September 2, 2023",2006,218,401531387,TBD,"Lincoln Financial Field, Philadelphia, PA",0-0
-1,"Saturday, September 2, 2023",2569,2429,401531402,TBD,"Jerry Richardson Stadium, Charlotte, NC",0-0
-1,"Saturday, September 2, 2023",2405,2226,401531418,TBD,"FAU Stadium, Boca Raton, FL",0-0
-1,"Saturday, September 2, 2023",2065,235,401531426,TBD,"Simmons Bank Liberty Stadium, Memphis, TN",0-0
-1,"Saturday, September 2, 2023",2241,2026,401531835,TBD,"Kidd Brewer Stadium, Boone, NC",0-0
-1,"Saturday, September 2, 2023",2643,290,401531836,TBD,"Allen E. Paulson Stadium, Statesboro, GA",0-0
-1,"Saturday, September 2, 2023",2083,256,401531837,TBD,"Bridgeforth Stadium/Zane Showker Field, Harrisonburg, VA",0-0
-1,"Saturday, September 2, 2023",399,276,401531838,TBD,"Joan C. Edwards Stadium, Huntington, WV",0-0
-1,"Saturday, September 2, 2023",2466,309,401531839,TBD,"Cajun Field, Lafayette, LA",0-0
-1,"Saturday, September 2, 2023",2016,2572,401531840,TBD,"M. M. Roberts Stadium, Hattiesburg, MS",0-0
-1,"Saturday, September 2, 2023",2617,2653,401531841,TBD,"Veterans Memorial Stadium (AL), Troy, AL",0-0
-1,"Saturday, September 2, 2023",112358,195,401532395,TBD,"Peden Stadium, Athens, OH",0-0
-1,"Saturday, September 2, 2023",2523,2005,401532570,TBD,"Falcon Stadium, USAF Academy, CO",0-0
-1,"Saturday, September 2, 2023",304,21,401532571,TBD,"Snapdragon Stadium, San Diego, CA",0-0
-1,"Saturday, September 2, 2023",2803,2439,401532572,TBD,"Allegiant Stadium, Las Vegas, NV",0-0
-1,"Saturday, September 2, 2023",2393,333,401520149,TBD,"Bryant-Denny Stadium, Tuscaloosa, AL",0-0
-1,"Saturday, September 2, 2023",2717,8,401520150,TBD,"War Memorial Stadium (AR), Little Rock, AR",0-0
-1,"Saturday, September 2, 2023",2649,356,401520155,TBD,"Memorial Stadium (Champaign, IL), Champaign, IL",0-0
-1,"Saturday, September 2, 2023",194,84,401520156,TBD,"Memorial Stadium (Bloomington, IN), Bloomington, IN",0-0
-1,"Saturday, September 2, 2023",328,2294,401520157,TBD,"Kinnick Stadium, Iowa City, IA",0-0
-1,"Saturday, September 2, 2023",2050,96,401520159,TBD,"Kroger Field, Lexington, KY",0-0
-1,"Saturday, September 2, 2023",189,2335,401520160,TBD,"Williams Stadium (VA), Lynchburg, VA",0-0
-1,"Saturday, September 2, 2023",151,130,401520162,TBD,"Michigan Stadium, Ann Arbor, MI",0-0
-1,"Saturday, September 2, 2023",2117,127,401520163,TBD,"Spartan Stadium, East Lansing, MI",0-0
-1,"Saturday, September 2, 2023",2545,344,401520164,TBD,"Davis Wade Stadium, Starkville, MS",0-0
-1,"Saturday, September 2, 2023",2710,166,401520166,TBD,"Aggie Memorial Stadium, Las Cruces, NM",0-0
-1,"Saturday, September 2, 2023",2382,145,401520168,TBD,"Vaught-Hemingway Stadium, Oxford, MS",0-0
-1,"Saturday, September 2, 2023",277,213,401520169,TBD,"Beaver Stadium, University Park, PA",0-0
-1,"Saturday, September 2, 2023",167,245,401520173,TBD,"Kyle Field, College Station, TX",0-0
-1,"Saturday, September 2, 2023",349,2433,401520175,TBD,"Malone Stadium, Monroe, LA",0-0
-1,"Sunday, September 3, 2023",99,52,401520182,TBD,"Camping World Stadium, Orlando, FL",0-0
-1,"Sunday, September 3, 2023",204,23,401532573,TBD,"CEFCU Stadium, San Jose, CA",0-0
-1,"Monday, September 4, 2023",228,150,401525468,TBD,"Wallace Wade Stadium, Durham, NC",0-0
-2,"Thursday, September 7, 2023",93,97,401525469,TBD,"Cardinal Stadium, Louisville, KY",0-0
-2,"Saturday, September 9, 2023",251,333,401520183,TBD,"Bryant-Denny Stadium, Tuscaloosa, AL",0-0
-2,"Saturday, September 9, 2023",2309,8,401520184,TBD,"Razorback Stadium, Fayetteville, AR",0-0
-2,"Saturday, September 9, 2023",2169,349,401520185,TBD,"Michie Stadium, West Point, NY",0-0
-2,"Saturday, September 9, 2023",158,38,401520188,TBD,"Folsom Field, Boulder, CO",0-0
-2,"Saturday, September 9, 2023",2377,57,401520190,TBD,"Ben Hill Griffin Stadium, Gainesville, FL",0-0
-2,"Saturday, September 9, 2023",2050,61,401520191,TBD,"Sanford Stadium, Athens, GA",0-0
-2,"Saturday, September 9, 2023",2198,96,401520196,TBD,"Kroger Field, Lexington, KY",0-0
-2,"Saturday, September 9, 2023",166,2335,401520198,TBD,"Williams Stadium (VA), Lynchburg, VA",0-0
-2,"Saturday, September 9, 2023",245,2390,401520201,TBD,"Hard Rock Stadium, Miami Gardens, FL",0-0
-2,"Saturday, September 9, 2023",257,127,401520203,TBD,"Spartan Stadium, East Lansing, MI",0-0
-2,"Saturday, September 9, 2023",218,164,401520210,TBD,"SHI Stadium, Piscataway, NJ",0-0
-2,"Saturday, September 9, 2023",2005,2534,401520211,TBD,"NRG Stadium, Houston, TX",0-0
-2,"Saturday, September 9, 2023",145,2655,401520214,TBD,"Yulman Stadium, New Orleans, LA",0-0
-2,"Saturday, September 9, 2023",275,265,401520217,TBD,"Martin Stadium, Pullman, WA",0-0
-2,"Saturday, September 9, 2023",197,9,401523998,TBD,"Sun Devil Stadium, Tempe, AZ",0-0
-2,"Saturday, September 9, 2023",254,239,401523999,TBD,"McLane Stadium, Waco, TX",0-0
-2,"Saturday, September 9, 2023",302,204,401524000,TBD,"Reser Stadium, Corvallis, OR",0-0
-2,"Saturday, September 9, 2023",26,21,401524001,TBD,"Snapdragon Stadium, San Diego, CA",0-0
-2,"Saturday, September 9, 2023",2483,2641,401524002,TBD,"Jones AT&T Stadium, Lubbock, TX",0-0
-2,"Saturday, September 9, 2023",24,30,401524003,TBD,"Los Angeles Memorial Coliseum, Los Angeles, CA",0-0
-2,"Saturday, September 9, 2023",202,264,401524004,TBD,"Husky Stadium, Seattle, WA",0-0
-2,"Saturday, September 9, 2023",87,152,401525436,TBD,"Carter-Finley Stadium, Raleigh, NC",0-0
-2,"Saturday, September 9, 2023",107,103,401525490,TBD,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA",0-0
-2,"Saturday, September 9, 2023",2127,228,401525491,TBD,"Memorial Stadium (Clemson, SC), Clemson, SC",0-0
-2,"Saturday, September 9, 2023",322,150,401525492,TBD,"Wallace Wade Stadium, Durham, NC",0-0
-2,"Saturday, September 9, 2023",2572,52,401525493,TBD,"Doak Campbell Stadium, Tallahassee, FL",0-0
-2,"Saturday, September 9, 2023",2569,59,401525494,TBD,"Bobby Dodd Stadium, Atlanta, GA",0-0
-2,"Saturday, September 9, 2023",2026,153,401525495,TBD,"Kenan Stadium, Chapel Hill, NC",0-0
-2,"Saturday, September 9, 2023",2132,221,401525496,TBD,"Acrisure Stadium, Pittsburgh, PA",0-0
-2,"Saturday, September 9, 2023",2711,183,401525497,TBD,"JMA Wireless Dome, Syracuse, NY",0-0
-2,"Saturday, September 9, 2023",256,258,401525498,TBD,"Scott Stadium, Charlottesville, VA",0-0
-2,"Saturday, September 9, 2023",2116,68,401525827,TBD,"Albertsons Stadium, Boise, ID",0-0
-2,"Saturday, September 9, 2023",253,252,401525828,TBD,"LaVell Edwards Stadium, Provo, UT",0-0
-2,"Saturday, September 9, 2023",2653,2306,401525829,TBD,"Bill Snyder Family Stadium, Manhattan, KS",0-0
-2,"Saturday, September 9, 2023",2567,201,401525830,TBD,"Memorial Stadium (Norman, OK), Norman, OK",0-0
-2,"Saturday, September 9, 2023",248,242,401525831,TBD,"Rice Stadium, Houston, TX",0-0
-2,"Saturday, September 9, 2023",2447,2628,401525832,TBD,"Amon G. Carter Stadium, Fort Worth, TX",0-0
-2,"Saturday, September 9, 2023",2184,277,401525833,TBD,"Milan Puskar Stadium, Morgantown, WV",0-0
-2,"Saturday, September 9, 2023",193,113,401526833,TBD,"Warren McGuirk Alumni Stadium, Amherst, MA",0-0
-2,"Saturday, September 9, 2023",5,290,401531378,TBD,"Allen E. Paulson Stadium, Statesboro, GA",0-0
-2,"Saturday, September 9, 2023",326,2636,401531395,TBD,"Alamodome, San Antonio, TX",0-0
-2,"Saturday, September 9, 2023",276,151,401531411,TBD,"Dowdy-Ficklen Stadium, Greenville, NC",0-0
-2,"Saturday, September 9, 2023",195,2226,401531419,TBD,"FAU Stadium, Boca Raton, FL",0-0
-2,"Saturday, September 9, 2023",50,58,401531422,TBD,"Raymond James Stadium, Tampa, FL",0-0
-2,"Saturday, September 9, 2023",235,2032,401531427,TBD,"Centennial Bank Stadium, Jonesboro, AR",0-0
-2,"Saturday, September 9, 2023",2681,2426,401531432,TBD,"Navy-Marine Corps Memorial Stadium, Annapolis, MD",0-0
-2,"Saturday, September 9, 2023",309,295,401531842,TBD,"S.B. Ballard Stadium, Norfolk, VA",0-0
-2,"Saturday, September 9, 2023",2320,2433,401531843,TBD,"Malone Stadium, Monroe, LA",0-0
-2,"Saturday, September 9, 2023",2545,6,401531844,TBD,"Hancock Whitney Stadium, Mobile, AL",0-0
-2,"Saturday, September 9, 2023",160,2117,401532396,TBD,"Kelly/Shorts Stadium, Mount Pleasant, MI",0-0
-2,"Saturday, September 9, 2023",79,2459,401532397,TBD,"Huskie Stadium, DeKalb, IL",0-0
-2,"Saturday, September 9, 2023",2640,2649,401532398,TBD,"Glass Bowl, Toledo, OH",0-0
-2,"Saturday, September 9, 2023",2415,2006,401532399,TBD,"InfoCision Stadium, Akron, OH",0-0
-2,"Saturday, September 9, 2023",2197,189,401532400,TBD,"Doyt L. Perry Stadium, Bowling Green, OH",0-0
-2,"Saturday, September 9, 2023",2230,2084,401532401,TBD,"UB Stadium, Buffalo, NY",0-0
-2,"Saturday, September 9, 2023",331,278,401532574,TBD,"Bulldog Stadium (CA), Fresno, CA",0-0
-2,"Saturday, September 9, 2023",399,62,401532575,TBD,"Clarence T.C. Ching Athletics Complex, Honolulu, HI",0-0
-2,"Saturday, September 9, 2023",70,2440,401532576,TBD,"Mackay Stadium, Reno, NV",0-0
-2,"Saturday, September 9, 2023",2635,167,401532577,TBD,"University Stadium (NM), Albuquerque, NM",0-0
-2,"Saturday, September 9, 2023",13,23,401532578,TBD,"CEFCU Stadium, San Jose, CA",0-0
-2,"Saturday, September 9, 2023",304,328,401532579,TBD,"Maverik Stadium, Logan, UT",0-0
-2,"Saturday, September 9, 2023",2502,2751,401532580,TBD,"Jonah Field at War Memorial Stadium, Laramie, WY",0-0
-2,"Saturday, September 9, 2023",2,25,401520186,TBD,"California Memorial Stadium, Berkeley, CA",0-0
-2,"Saturday, September 9, 2023",55,324,401520187,TBD,"Brooks Stadium (SC), Conway, SC",0-0
-2,"Saturday, September 9, 2023",249,2229,401520189,TBD,"Riccardo Silva Stadium, Miami, FL",0-0
-2,"Saturday, September 9, 2023",41,2247,401520192,TBD,"Center Parc Stadium, Atlanta, GA",0-0
-2,"Saturday, September 9, 2023",282,84,401520193,TBD,"Memorial Stadium (Bloomington, IN), Bloomington, IN",0-0
-2,"Saturday, September 9, 2023",2294,66,401520194,TBD,"Jack Trice Stadium, Ames, IA",0-0
-2,"Saturday, September 9, 2023",356,2305,401520195,TBD,"David Booth Kansas Memorial Stadium, Lawrence, KS",0-0
-2,"Saturday, September 9, 2023",2466,2348,401520197,TBD,"Joe Aillet Stadium, Ruston, LA",0-0
-2,"Saturday, September 9, 2023",2755,99,401520199,TBD,"Tiger Stadium (LA), Baton Rouge, LA",0-0
-2,"Saturday, September 9, 2023",2429,120,401520200,TBD,"SECU Stadium, College Park, MD",0-0
-2,"Saturday, September 9, 2023",2439,130,401520202,TBD,"Michigan Stadium, Ann Arbor, MI",0-0
-2,"Saturday, September 9, 2023",2199,135,401520204,TBD,"Huntington Bank Stadium, Minneapolis, MN",0-0
-2,"Saturday, September 9, 2023",12,344,401520205,TBD,"Davis Wade Stadium, Starkville, MS",0-0
-2,"Saturday, September 9, 2023",2393,142,401520206,TBD,"Memorial Stadium/Faurot Field, Columbia, MO",0-0
-2,"Saturday, September 9, 2023",2638,77,401520207,TBD,"Ryan Field, Evanston, IL",0-0
-2,"Saturday, September 9, 2023",2754,194,401520208,TBD,"Ohio Stadium, Columbus, OH",0-0
-2,"Saturday, September 9, 2023",48,213,401520209,TBD,"Beaver Stadium, University Park, PA",0-0
-2,"Saturday, September 9, 2023",231,2579,401520212,TBD,"Williams-Brice Stadium, Columbia, SC",0-0
-2,"Saturday, September 9, 2023",2046,2633,401520213,TBD,"Neyland Stadium, Knoxville, TN",0-0
-2,"Saturday, September 9, 2023",2509,259,401520215,TBD,"Lane Stadium, Blacksburg, VA",0-0
-2,"Saturday, September 9, 2023",238,154,401520216,TBD,"Truist Field, Winston-Salem, NC",0-0
-2,"Saturday, September 9, 2023",2277,98,401520218,TBD,"Houchens Industries-L.T. Smith Stadium, Bowling Green, KY",0-0
-3,"Thursday, September 14, 2023",2065,2390,401525499,TBD,"Hard Rock Stadium, Miami Gardens, FL",0-0
-3,"Thursday, September 14, 2023",2426,235,401531428,TBD,"Simmons Bank Liberty Stadium, Memphis, TN",0-0
-3,"Friday, September 15, 2023",349,2636,401531396,TBD,"Alamodome, San Antonio, TX",0-0
-3,"Saturday, September 16, 2023",252,8,401520220,TBD,"Razorback Stadium, Fayetteville, AR",0-0
-3,"Saturday, September 16, 2023",77,150,401520223,TBD,"Wallace Wade Stadium, Durham, NC",0-0
-3,"Saturday, September 16, 2023",2633,57,401520224,TBD,"Ben Hill Griffin Stadium, Gainesville, FL",0-0
-3,"Saturday, September 16, 2023",213,356,401520226,TBD,"Memorial Stadium (Champaign, IL), Champaign, IL",0-0
-3,"Saturday, September 16, 2023",97,84,401520230,TBD,"Lucas Oil Stadium, Indianapolis, IN",0-0
-3,"Saturday, September 16, 2023",93,2393,401520234,TBD,"Johnny ""Red"" Floyd Stadium, Murfreesboro, TN",0-0
-3,"Saturday, September 16, 2023",99,344,401520235,TBD,"Davis Wade Stadium, Starkville, MS",0-0
-3,"Saturday, September 16, 2023",166,167,401520238,TBD,"University Stadium (NM), Albuquerque, NM",0-0
-3,"Saturday, September 16, 2023",183,2509,401520242,TBD,"Ross-Ade Stadium, West Lafayette, IN",0-0
-3,"Saturday, September 16, 2023",333,58,401520244,TBD,"Raymond James Stadium, Tampa, FL",0-0
-3,"Saturday, September 16, 2023",2433,245,401520245,TBD,"Kyle Field, College Station, TX",0-0
-3,"Saturday, September 16, 2023",2229,41,401520246,TBD,"Pratt & Whitney Stadium, East Hartford, CT",0-0
-3,"Saturday, September 16, 2023",278,9,401524005,TBD,"Sun Devil Stadium, Tempe, AZ",0-0
-3,"Saturday, September 16, 2023",70,25,401524006,TBD,"California Memorial Stadium, Berkeley, CA",0-0
-3,"Saturday, September 16, 2023",36,38,401524007,TBD,"Folsom Field, Boulder, CO",0-0
-3,"Saturday, September 16, 2023",62,2483,401524008,TBD,"Autzen Stadium, Eugene, OR",0-0
-3,"Saturday, September 16, 2023",21,204,401524009,TBD,"Reser Stadium, Corvallis, OR",0-0
-3,"Saturday, September 16, 2023",16,24,401524010,TBD,"Stanford Stadium, Stanford, CA",0-0
-3,"Saturday, September 16, 2023",2428,26,401524011,TBD,"Rose Bowl, Pasadena, CA",0-0
-3,"Saturday, September 16, 2023",2692,254,401524012,TBD,"Rice-Eccles Stadium, Salt Lake City, UT",0-0
-3,"Saturday, September 16, 2023",2458,265,401524013,TBD,"Martin Stadium, Pullman, WA",0-0
-3,"Saturday, September 16, 2023",2117,87,401525437,TBD,"Notre Dame Stadium, Notre Dame, IN",0-0
-3,"Saturday, September 16, 2023",52,103,401525500,TBD,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA",0-0
-3,"Saturday, September 16, 2023",2226,228,401525501,TBD,"Memorial Stadium (Clemson, SC), Clemson, SC",0-0
-3,"Saturday, September 16, 2023",2678,152,401525502,TBD,"Carter-Finley Stadium, Raleigh, NC",0-0
-3,"Saturday, September 16, 2023",221,277,401525503,TBD,"Milan Puskar Stadium, Morgantown, WV",0-0
-3,"Saturday, September 16, 2023",154,295,401525504,TBD,"S.B. Ballard Stadium, Norfolk, VA",0-0
-3,"Saturday, September 16, 2023",112358,239,401525834,TBD,"McLane Stadium, Waco, TX",0-0
-3,"Saturday, September 16, 2023",193,2132,401525835,TBD,"Nippert Stadium, Cincinnati, OH",0-0
-3,"Saturday, September 16, 2023",2628,248,401525836,TBD,"TDECU Stadium, Houston, TX",0-0
-3,"Saturday, September 16, 2023",2305,2440,401525837,TBD,"Mackay Stadium, Reno, NV",0-0
-3,"Saturday, September 16, 2023",66,195,401525838,TBD,"Peden Stadium, Athens, OH",0-0
-3,"Saturday, September 16, 2023",6,197,401525839,TBD,"Boone Pickens Stadium, Stillwater, OK",0-0
-3,"Saturday, September 16, 2023",2751,251,401525840,TBD,"DKR-Texas Memorial Stadium, Austin, TX",0-0
-3,"Saturday, September 16, 2023",2627,2641,401525841,TBD,"Jones AT&T Stadium, Lubbock, TX",0-0
-3,"Saturday, September 16, 2023",201,202,401525842,TBD,"Chapman Stadium, Tulsa, OK",0-0
-3,"Saturday, September 16, 2023",222,2116,401525843,TBD,"FBC Mortgage Stadium, Orlando, FL",0-0
-3,"Saturday, September 16, 2023",113,2199,401526834,TBD,"Rynearson Stadium, Ypsilanti, MI",0-0
-3,"Saturday, September 16, 2023",2655,2572,401531348,TBD,"M. M. Roberts Stadium, Hattiesburg, MS",0-0
-3,"Saturday, September 16, 2023",309,5,401531379,TBD,"Protective Stadium, Birmingham, AL",0-0
-3,"Saturday, September 16, 2023",2450,218,401531388,TBD,"Lincoln Financial Field, Philadelphia, PA",0-0
-3,"Saturday, September 16, 2023",2247,2429,401531403,TBD,"Jerry Richardson Stadium, Charlotte, NC",0-0
-3,"Saturday, September 16, 2023",151,2026,401531412,TBD,"Kidd Brewer Stadium, Boone, NC",0-0
-3,"Saturday, September 16, 2023",2504,2567,401531438,TBD,"Gerald J. Ford Stadium, Dallas, TX",0-0
-3,"Saturday, September 16, 2023",2640,242,401531441,TBD,"Rice Stadium, Houston, TX",0-0
-3,"Saturday, September 16, 2023",2184,324,401531845,TBD,"Brooks Stadium (SC), Conway, SC",0-0
-3,"Saturday, September 16, 2023",2619,2032,401531846,TBD,"Centennial Bank Stadium, Jonesboro, AR",0-0
-3,"Saturday, September 16, 2023",2296,326,401531847,TBD,"Bobcat Stadium (TX), San Marcos, TX",0-0
-3,"Saturday, September 16, 2023",256,2653,401531848,TBD,"Veterans Memorial Stadium (AL), Troy, AL",0-0
-3,"Saturday, September 16, 2023",282,2050,401532402,TBD,"Scheumann Stadium, Muncie, IN",0-0
-3,"Saturday, September 16, 2023",23,2649,401532403,TBD,"Glass Bowl, Toledo, OH",0-0
-3,"Saturday, September 16, 2023",2115,2309,401532404,TBD,"Dix Stadium, Kent, OH",0-0
-3,"Saturday, September 16, 2023",328,2005,401532581,TBD,"Falcon Stadium, USAF Academy, CO",0-0
-3,"Saturday, September 16, 2023",155,68,401532582,TBD,"Albertsons Stadium, Boise, ID",0-0
-3,"Saturday, September 16, 2023",2638,12,401520219,TBD,"Arizona Stadium, Tucson, AZ",0-0
-3,"Saturday, September 16, 2023",2535,2,401520221,TBD,"Jordan-Hare Stadium, Auburn, AL",0-0
-3,"Saturday, September 16, 2023",2335,2084,401520222,TBD,"UB Stadium, Buffalo, NY",0-0
-3,"Saturday, September 16, 2023",2579,61,401520225,TBD,"Sanford Stadium, Athens, GA",0-0
-3,"Saturday, September 16, 2023",2711,2294,401520227,TBD,"Kinnick Stadium, Iowa City, IA",0-0
-3,"Saturday, September 16, 2023",2006,96,401520228,TBD,"Kroger Field, Lexington, KY",0-0
-3,"Saturday, September 16, 2023",249,2348,401520229,TBD,"Joe Aillet Stadium, Ruston, LA",0-0
-3,"Saturday, September 16, 2023",258,120,401520231,TBD,"SECU Stadium, College Park, MD",0-0
-3,"Saturday, September 16, 2023",189,130,401520232,TBD,"Michigan Stadium, Ann Arbor, MI",0-0
-3,"Saturday, September 16, 2023",264,127,401520233,TBD,"Spartan Stadium, East Lansing, MI",0-0
-3,"Saturday, September 16, 2023",2306,142,401520236,TBD,"Memorial Stadium/Faurot Field, Columbia, MO",0-0
-3,"Saturday, September 16, 2023",2459,158,401520237,TBD,"Memorial Stadium (Lincoln, NE), Lincoln, NE",0-0
-3,"Saturday, September 16, 2023",135,153,401520239,TBD,"Kenan Stadium, Chapel Hill, NC",0-0
-3,"Saturday, September 16, 2023",98,194,401520240,TBD,"Ohio Stadium, Columbus, OH",0-0
-3,"Saturday, September 16, 2023",59,145,401520241,TBD,"Vaught-Hemingway Stadium, Oxford, MS",0-0
-3,"Saturday, September 16, 2023",259,164,401520243,TBD,"SHI Stadium, Piscataway, NJ",0-0
-3,"Saturday, September 16, 2023",238,2439,401520247,TBD,"Allegiant Stadium, Las Vegas, NV",0-0
-3,"Saturday, September 16, 2023",290,275,401520249,TBD,"Camp Randall Stadium, Madison, WI",0-0
-4,"Thursday, September 21, 2023",2247,324,401531849,TBD,"Brooks Stadium (SC), Conway, SC",0-0
-4,"Friday, September 22, 2023",152,258,401525505,TBD,"Scott Stadium, Charlottesville, VA",0-0
-4,"Friday, September 22, 2023",68,21,401532583,TBD,"Snapdragon Stadium, San Diego, CA",0-0
-4,"Saturday, September 23, 2023",2199,55,401520257,TBD,"Burgess-Snow Field, Jacksonville, AL",0-0
-4,"Saturday, September 23, 2023",235,142,401520259,TBD,"The Dome at America's Center, Saint Louis, MO",0-0
-4,"Saturday, September 23, 2023",164,130,401520260,TBD,"Michigan Stadium, Ann Arbor, MI",0-0
-4,"Saturday, September 23, 2023",2348,158,401520263,TBD,"Memorial Stadium (Lincoln, NE), Lincoln, NE",0-0
-4,"Saturday, September 23, 2023",2294,213,401520265,TBD,"Beaver Stadium, University Park, PA",0-0
-4,"Saturday, September 23, 2023",349,183,401520268,TBD,"JMA Wireless Dome, Syracuse, NY",0-0
-4,"Saturday, September 23, 2023",2636,2633,401520269,TBD,"Neyland Stadium, Knoxville, TN",0-0
-4,"Saturday, September 23, 2023",2,245,401520270,TBD,"Kyle Field, College Station, TX",0-0
-4,"Saturday, September 23, 2023",150,41,401520272,TBD,"Pratt & Whitney Stadium, East Hartford, CT",0-0
-4,"Saturday, September 23, 2023",2335,2229,401520275,TBD,"Riccardo Silva Stadium, Miami, FL",0-0
-4,"Saturday, September 23, 2023",194,87,401521330,TBD,"Notre Dame Stadium, Notre Dame, IN",0-0
-4,"Saturday, September 23, 2023",30,9,401524014,TBD,"Sun Devil Stadium, Tempe, AZ",0-0
-4,"Saturday, September 23, 2023",38,2483,401524015,TBD,"Autzen Stadium, Eugene, OR",0-0
-4,"Saturday, September 23, 2023",12,24,401524016,TBD,"Stanford Stadium, Stanford, CA",0-0
-4,"Saturday, September 23, 2023",26,254,401524017,TBD,"Rice-Eccles Stadium, Salt Lake City, UT",0-0
-4,"Saturday, September 23, 2023",25,264,401524018,TBD,"Husky Stadium, Seattle, WA",0-0
-4,"Saturday, September 23, 2023",204,265,401524019,TBD,"Martin Stadium, Pullman, WA",0-0
-4,"Saturday, September 23, 2023",103,97,401525506,TBD,"Cardinal Stadium, Louisville, KY",0-0
-4,"Saturday, September 23, 2023",52,228,401525507,TBD,"Memorial Stadium (Clemson, SC), Clemson, SC",0-0
-4,"Saturday, September 23, 2023",59,154,401525508,TBD,"Truist Field, Winston-Salem, NC",0-0
-4,"Saturday, September 23, 2023",2390,218,401525509,TBD,"Lincoln Financial Field, Philadelphia, PA",0-0
-4,"Saturday, September 23, 2023",153,221,401525510,TBD,"Acrisure Stadium, Pittsburgh, PA",0-0
-4,"Saturday, September 23, 2023",259,276,401525511,TBD,"Joan C. Edwards Stadium, Huntington, WV",0-0
-4,"Saturday, September 23, 2023",251,239,401525844,TBD,"McLane Stadium, Waco, TX",0-0
-4,"Saturday, September 23, 2023",201,2132,401525845,TBD,"Nippert Stadium, Cincinnati, OH",0-0
-4,"Saturday, September 23, 2023",197,66,401525846,TBD,"Jack Trice Stadium, Ames, IA",0-0
-4,"Saturday, September 23, 2023",252,2305,401525847,TBD,"David Booth Kansas Memorial Stadium, Lawrence, KS",0-0
-4,"Saturday, September 23, 2023",2116,2306,401525848,TBD,"Bill Snyder Family Stadium, Manhattan, KS",0-0
-4,"Saturday, September 23, 2023",2567,2628,401525849,TBD,"Amon G. Carter Stadium, Fort Worth, TX",0-0
-4,"Saturday, September 23, 2023",2641,277,401525850,TBD,"Milan Puskar Stadium, Morgantown, WV",0-0
-4,"Saturday, September 23, 2023",167,113,401526835,TBD,"Warren McGuirk Alumni Stadium, Amherst, MA",0-0
-4,"Saturday, September 23, 2023",202,2459,401531338,TBD,"Huskie Stadium, DeKalb, IL",0-0
-4,"Saturday, September 23, 2023",2447,2655,401531349,TBD,"Yulman Stadium, New Orleans, LA",0-0
-4,"Saturday, September 23, 2023",2241,151,401531413,TBD,"Dowdy-Ficklen Stadium, Greenville, NC",0-0
-4,"Saturday, September 23, 2023",242,58,401531423,TBD,"Raymond James Stadium, Tampa, FL",0-0
-4,"Saturday, September 23, 2023",2026,2751,401531870,TBD,"Jonah Field at War Memorial Stadium, Laramie, WY",0-0
-4,"Saturday, September 23, 2023",290,2050,401531871,TBD,"Scheumann Stadium, Muncie, IN",0-0
-4,"Saturday, September 23, 2023",256,328,401531872,TBD,"Maverik Stadium, Logan, UT",0-0
-4,"Saturday, September 23, 2023",2837,295,401531873,TBD,"S.B. Ballard Stadium, Norfolk, VA",0-0
-4,"Saturday, September 23, 2023",2572,2032,401531874,TBD,"Centennial Bank Stadium, Jonesboro, AR",0-0
-4,"Saturday, September 23, 2023",2084,309,401531875,TBD,"Cajun Field, Lafayette, LA",0-0
-4,"Saturday, September 23, 2023",2117,6,401531876,TBD,"Hancock Whitney Stadium, Mobile, AL",0-0
-4,"Saturday, September 23, 2023",2440,326,401531877,TBD,"Bobcat Stadium (TX), San Marcos, TX",0-0
-4,"Saturday, September 23, 2023",195,189,401532405,TBD,"Doyt L. Perry Stadium, Bowling Green, OH",0-0
-4,"Saturday, September 23, 2023",2711,2649,401532406,TBD,"Glass Bowl, Toledo, OH",0-0
-4,"Saturday, September 23, 2023",2309,278,401532407,TBD,"Bulldog Stadium (CA), Fresno, CA",0-0
-4,"Saturday, September 23, 2023",2169,193,401532408,TBD,"Yager Stadium, Oxford, OH",0-0
-4,"Saturday, September 23, 2023",2005,23,401532584,TBD,"CEFCU Stadium, San Jose, CA",0-0
-4,"Saturday, September 23, 2023",145,333,401520250,TBD,"Bryant-Denny Stadium, Tuscaloosa, AL",0-0
-4,"Saturday, September 23, 2023",2429,57,401520251,TBD,"Ben Hill Griffin Stadium, Gainesville, FL",0-0
-4,"Saturday, September 23, 2023",5,61,401520252,TBD,"Sanford Stadium, Athens, GA",0-0
-4,"Saturday, September 23, 2023",166,62,401520253,TBD,"Clarence T.C. Ching Athletics Complex, Honolulu, HI",0-0
-4,"Saturday, September 23, 2023",2534,248,401520254,TBD,"TDECU Stadium, Houston, TX",0-0
-4,"Saturday, September 23, 2023",2226,356,401520255,TBD,"Memorial Stadium (Champaign, IL), Champaign, IL",0-0
-4,"Saturday, September 23, 2023",2006,84,401520256,TBD,"Memorial Stadium (Bloomington, IN), Bloomington, IN",0-0
-4,"Saturday, September 23, 2023",8,99,401520258,TBD,"Tiger Stadium (LA), Baton Rouge, LA",0-0
-4,"Saturday, September 23, 2023",120,127,401520261,TBD,"Spartan Stadium, East Lansing, MI",0-0
-4,"Saturday, September 23, 2023",36,2393,401520262,TBD,"Johnny ""Red"" Floyd Stadium, Murfreesboro, TN",0-0
-4,"Saturday, September 23, 2023",135,77,401520264,TBD,"Ryan Field, Evanston, IL",0-0
-4,"Saturday, September 23, 2023",275,2509,401520266,TBD,"Ross-Ade Stadium, West Lafayette, IN",0-0
-4,"Saturday, September 23, 2023",344,2579,401520267,TBD,"Williams-Brice Stadium, Columbia, SC",0-0
-4,"Saturday, September 23, 2023",98,2653,401520271,TBD,"Veterans Memorial Stadium (AL), Troy, AL",0-0
-4,"Saturday, September 23, 2023",2439,2638,401520273,TBD,"Sun Bowl, El Paso, TX",0-0
-4,"Saturday, September 23, 2023",96,238,401520274,TBD,"FirstBank Stadium, Nashville, TN",0-0
-5,"Thursday, September 28, 2023",218,202,401531339,TBD,"Chapman Stadium, Tulsa, OK",0-0
-5,"Thursday, September 28, 2023",2393,98,401520277,TBD,"Houchens Industries-L.T. Smith Stadium, Bowling Green, KY",0-0
-5,"Friday, September 29, 2023",254,204,401524020,TBD,"Reser Stadium, Corvallis, OR",0-0
-5,"Friday, September 29, 2023",97,152,401525512,TBD,"Carter-Finley Stadium, Raleigh, NC",0-0
-5,"Friday, September 29, 2023",2132,252,401525851,TBD,"LaVell Edwards Stadium, Provo, UT",0-0
-5,"Friday, September 29, 2023",2348,2638,401520278,TBD,"Sun Bowl, El Paso, TX",0-0
-5,"Saturday, September 30, 2023",245,8,401520279,TBD,"AT&T Stadium, Arlington, TX",0-0
-5,"Saturday, September 30, 2023",84,120,401520283,TBD,"SECU Stadium, College Park, MD",0-0
-5,"Saturday, September 30, 2023",309,135,401520284,TBD,"Huntington Bank Stadium, Minneapolis, MN",0-0
-5,"Saturday, September 30, 2023",130,158,401520286,TBD,"Memorial Stadium (Lincoln, NE), Lincoln, NE",0-0
-5,"Saturday, September 30, 2023",213,77,401520287,TBD,"Ryan Field, Evanston, IL",0-0
-5,"Saturday, September 30, 2023",142,238,401520293,TBD,"FirstBank Stadium, Nashville, TN",0-0
-5,"Saturday, September 30, 2023",264,12,401524021,TBD,"Arizona Stadium, Tucson, AZ",0-0
-5,"Saturday, September 30, 2023",9,25,401524022,TBD,"California Memorial Stadium, Berkeley, CA",0-0
-5,"Saturday, September 30, 2023",30,38,401524023,TBD,"Folsom Field, Boulder, CO",0-0
-5,"Saturday, September 30, 2023",2483,24,401524024,TBD,"Stanford Stadium, Stanford, CA",0-0
-5,"Saturday, September 30, 2023",87,150,401525438,TBD,"Wallace Wade Stadium, Durham, NC",0-0
-5,"Saturday, September 30, 2023",258,103,401525513,TBD,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA",0-0
-5,"Saturday, September 30, 2023",228,183,401525514,TBD,"JMA Wireless Dome, Syracuse, NY",0-0
-5,"Saturday, September 30, 2023",189,59,401525515,TBD,"Bobby Dodd Stadium, Atlanta, GA",0-0
-5,"Saturday, September 30, 2023",221,259,401525516,TBD,"Lane Stadium, Blacksburg, VA",0-0
-5,"Saturday, September 30, 2023",66,201,401525852,TBD,"Memorial Stadium (Norman, OK), Norman, OK",0-0
-5,"Saturday, September 30, 2023",277,2628,401525853,TBD,"Amon G. Carter Stadium, Fort Worth, TX",0-0
-5,"Saturday, September 30, 2023",2305,251,401525854,TBD,"DKR-Texas Memorial Stadium, Austin, TX",0-0
-5,"Saturday, September 30, 2023",248,2641,401525855,TBD,"Jones AT&T Stadium, Lubbock, TX",0-0
-5,"Saturday, September 30, 2023",239,2116,401525856,TBD,"FBC Mortgage Stadium, Orlando, FL",0-0
-5,"Saturday, September 30, 2023",2032,113,401526836,TBD,"Warren McGuirk Alumni Stadium, Amherst, MA",0-0
-5,"Saturday, September 30, 2023",5,2655,401531370,TBD,"Yulman Stadium, New Orleans, LA",0-0
-5,"Saturday, September 30, 2023",2429,2567,401531404,TBD,"Gerald J. Ford Stadium, Dallas, TX",0-0
-5,"Saturday, September 30, 2023",151,242,401531414,TBD,"Rice Stadium, Houston, TX",0-0
-5,"Saturday, September 30, 2023",58,2426,401531424,TBD,"Navy-Marine Corps Memorial Stadium, Annapolis, MD",0-0
-5,"Saturday, September 30, 2023",68,235,401531429,TBD,"Simmons Bank Liberty Stadium, Memphis, TN",0-0
-5,"Saturday, September 30, 2023",2000,249,401531436,TBD,"Apogee Stadium, Denton, TX",0-0
-5,"Saturday, September 30, 2023",324,290,401531878,TBD,"Allen E. Paulson Stadium, Statesboro, GA",0-0
-5,"Saturday, September 30, 2023",2653,2247,401531879,TBD,"Center Parc Stadium, Atlanta, GA",0-0
-5,"Saturday, September 30, 2023",6,256,401531880,TBD,"Bridgeforth Stadium/Zane Showker Field, Harrisonburg, VA",0-0
-5,"Saturday, September 30, 2023",295,276,401531881,TBD,"Joan C. Edwards Stadium, Huntington, WV",0-0
-5,"Saturday, September 30, 2023",2026,2433,401531882,TBD,"Malone Stadium, Monroe, LA",0-0
-5,"Saturday, September 30, 2023",326,2572,401531883,TBD,"M. M. Roberts Stadium, Hattiesburg, MS",0-0
-5,"Saturday, September 30, 2023",2050,2711,401532409,TBD,"Waldo Stadium, Kalamazoo, MI",0-0
-5,"Saturday, September 30, 2023",2199,2117,401532410,TBD,"Kelly/Shorts Stadium, Mount Pleasant, MI",0-0
-5,"Saturday, September 30, 2023",2459,2649,401532411,TBD,"Glass Bowl, Toledo, OH",0-0
-5,"Saturday, September 30, 2023",2084,2006,401532412,TBD,"InfoCision Stadium, Akron, OH",0-0
-5,"Saturday, September 30, 2023",193,2309,401532413,TBD,"Dix Stadium, Kent, OH",0-0
-5,"Saturday, September 30, 2023",3101,36,401532585,TBD,"Canvas Stadium, Fort Collins, CO",0-0
-5,"Saturday, September 30, 2023",62,2439,401532586,TBD,"Allegiant Stadium, Las Vegas, NV",0-0
-5,"Saturday, September 30, 2023",2440,278,401532587,TBD,"Bulldog Stadium (CA), Fresno, CA",0-0
-5,"Saturday, September 30, 2023",167,2751,401532588,TBD,"Jonah Field at War Memorial Stadium, Laramie, WY",0-0
-5,"Saturday, September 30, 2023",21,2005,401532589,TBD,"Falcon Stadium, USAF Academy, CO",0-0
-5,"Saturday, September 30, 2023",61,2,401520280,TBD,"Jordan-Hare Stadium, Auburn, AL",0-0
-5,"Saturday, September 30, 2023",127,2294,401520281,TBD,"Kinnick Stadium, Iowa City, IA",0-0
-5,"Saturday, September 30, 2023",57,96,401520282,TBD,"Kroger Field, Lexington, KY",0-0
-5,"Saturday, September 30, 2023",333,344,401520285,TBD,"Davis Wade Stadium, Starkville, MS",0-0
-5,"Saturday, September 30, 2023",99,145,401520288,TBD,"Vaught-Hemingway Stadium, Oxford, MS",0-0
-5,"Saturday, September 30, 2023",356,2509,401520289,TBD,"Ross-Ade Stadium, West Lafayette, IN",0-0
-5,"Saturday, September 30, 2023",2681,164,401520290,TBD,"SHI Stadium, Piscataway, NJ",0-0
-5,"Saturday, September 30, 2023",2579,2633,401520291,TBD,"Neyland Stadium, Knoxville, TN",0-0
-5,"Saturday, September 30, 2023",328,41,401520292,TBD,"Pratt & Whitney Stadium, East Hartford, CT",0-0
-6,"Wednesday, October 4, 2023",55,2393,401520294,TBD,"Johnny ""Red"" Floyd Stadium, Murfreesboro, TN",0-0
-6,"Wednesday, October 4, 2023",2229,166,401520297,TBD,"Aggie Memorial Stadium, Las Cruces, NM",0-0
-6,"Thursday, October 5, 2023",98,2348,401520295,TBD,"Joe Aillet Stadium, Ruston, LA",0-0
-6,"Thursday, October 5, 2023",2534,2335,401520296,TBD,"Williams Stadium (VA), Lynchburg, VA",0-0
-6,"Friday, October 6, 2023",2306,197,401525857,TBD,"Boone Pickens Stadium, Stillwater, OK",0-0
-6,"Saturday, October 7, 2023",103,349,401520298,TBD,"Michie Stadium, West Point, NY",0-0
-6,"Saturday, October 7, 2023",96,61,401520300,TBD,"Sanford Stadium, Athens, GA",0-0
-6,"Saturday, October 7, 2023",2509,2294,401520302,TBD,"Kinnick Stadium, Iowa City, IA",0-0
-6,"Saturday, October 7, 2023",99,142,401520305,TBD,"Memorial Stadium/Faurot Field, Columbia, MO",0-0
-6,"Saturday, October 7, 2023",47,77,401520306,TBD,"Ryan Field, Evanston, IL",0-0
-6,"Saturday, October 7, 2023",8,145,401520308,TBD,"Vaught-Hemingway Stadium, Oxford, MS",0-0
-6,"Saturday, October 7, 2023",41,242,401520309,TBD,"Rice Stadium, Houston, TX",0-0
-6,"Saturday, October 7, 2023",164,275,401520311,TBD,"Camp Randall Stadium, Madison, WI",0-0
-6,"Saturday, October 7, 2023",12,30,401524025,TBD,"Los Angeles Memorial Coliseum, Los Angeles, CA",0-0
-6,"Saturday, October 7, 2023",38,9,401524026,TBD,"Sun Devil Stadium, Tempe, AZ",0-0
-6,"Saturday, October 7, 2023",204,25,401524027,TBD,"California Memorial Stadium, Berkeley, CA",0-0
-6,"Saturday, October 7, 2023",265,26,401524028,TBD,"Rose Bowl, Pasadena, CA",0-0
-6,"Saturday, October 7, 2023",87,97,401525439,TBD,"Cardinal Stadium, Louisville, KY",0-0
-6,"Saturday, October 7, 2023",154,228,401525517,TBD,"Memorial Stadium (Clemson, SC), Clemson, SC",0-0
-6,"Saturday, October 7, 2023",259,52,401525518,TBD,"Doak Campbell Stadium, Tallahassee, FL",0-0
-6,"Saturday, October 7, 2023",59,2390,401525519,TBD,"Hard Rock Stadium, Miami Gardens, FL",0-0
-6,"Saturday, October 7, 2023",183,153,401525520,TBD,"Kenan Stadium, Chapel Hill, NC",0-0
-6,"Saturday, October 7, 2023",276,152,401525521,TBD,"Carter-Finley Stadium, Raleigh, NC",0-0
-6,"Saturday, October 7, 2023",2729,258,401525522,TBD,"Scott Stadium, Charlottesville, VA",0-0
-6,"Saturday, October 7, 2023",2641,239,401525858,TBD,"McLane Stadium, Waco, TX",0-0
-6,"Saturday, October 7, 2023",2628,66,401525859,TBD,"Jack Trice Stadium, Ames, IA",0-0
-6,"Saturday, October 7, 2023",2116,2305,401525860,TBD,"David Booth Kansas Memorial Stadium, Lawrence, KS",0-0
-6,"Saturday, October 7, 2023",251,201,401525861,TBD,"Cotton Bowl, Dallas, TX",0-0
-6,"Saturday, October 7, 2023",2649,113,401526837,TBD,"Warren McGuirk Alumni Stadium, Amherst, MA",0-0
-6,"Saturday, October 7, 2023",202,2226,401531340,TBD,"FAU Stadium, Boca Raton, FL",0-0
-6,"Saturday, October 7, 2023",58,5,401531380,TBD,"Protective Stadium, Birmingham, AL",0-0
-6,"Saturday, October 7, 2023",2636,218,401531389,TBD,"Lincoln Financial Field, Philadelphia, PA",0-0
-6,"Saturday, October 7, 2023",249,2426,401531433,TBD,"Navy-Marine Corps Memorial Stadium, Annapolis, MD",0-0
-6,"Saturday, October 7, 2023",326,309,401531884,TBD,"Cajun Field, Lafayette, LA",0-0
-6,"Saturday, October 7, 2023",6,2433,401531885,TBD,"Malone Stadium, Monroe, LA",0-0
-6,"Saturday, October 7, 2023",295,2572,401531886,TBD,"M. M. Roberts Stadium, Hattiesburg, MS",0-0
-6,"Saturday, October 7, 2023",2032,2653,401531887,TBD,"Veterans Memorial Stadium (AL), Troy, AL",0-0
-6,"Saturday, October 7, 2023",2050,2199,401532414,TBD,"Rynearson Stadium, Ypsilanti, MI",0-0
-6,"Saturday, October 7, 2023",2117,2084,401532415,TBD,"UB Stadium, Buffalo, NY",0-0
-6,"Saturday, October 7, 2023",189,193,401532416,TBD,"Yager Stadium, Oxford, OH",0-0
-6,"Saturday, October 7, 2023",2309,195,401532417,TBD,"Peden Stadium, Athens, OH",0-0
-6,"Saturday, October 7, 2023",2459,2006,401532418,TBD,"InfoCision Stadium, Akron, OH",0-0
-6,"Saturday, October 7, 2023",36,328,401532590,TBD,"Maverik Stadium, Logan, UT",0-0
-6,"Saturday, October 7, 2023",278,2751,401532591,TBD,"Jonah Field at War Memorial Stadium, Laramie, WY",0-0
-6,"Saturday, October 7, 2023",23,68,401532592,TBD,"Albertsons Stadium, Boise, ID",0-0
-6,"Saturday, October 7, 2023",238,57,401520299,TBD,"Ben Hill Griffin Stadium, Gainesville, FL",0-0
-6,"Saturday, October 7, 2023",158,356,401520301,TBD,"Memorial Stadium (Champaign, IL), Champaign, IL",0-0
-6,"Saturday, October 7, 2023",130,135,401520303,TBD,"Huntington Bank Stadium, Minneapolis, MN",0-0
-6,"Saturday, October 7, 2023",2711,344,401520304,TBD,"Davis Wade Stadium, Starkville, MS",0-0
-6,"Saturday, October 7, 2023",120,194,401520307,TBD,"Ohio Stadium, Columbus, OH",0-0
-6,"Saturday, October 7, 2023",333,245,401520310,TBD,"Kyle Field, College Station, TX",0-0
-7,"Tuesday, October 10, 2023",324,2026,401531888,TBD,"Kidd Brewer Stadium, Boone, NC",0-0
-7,"Tuesday, October 10, 2023",2335,55,401520312,TBD,"Burgess-Snow Field, Jacksonville, AL",0-0
-7,"Tuesday, October 10, 2023",2348,2393,401520313,TBD,"Johnny ""Red"" Floyd Stadium, Murfreesboro, TN",0-0
-7,"Wednesday, October 11, 2023",2638,2229,401520314,TBD,"Riccardo Silva Stadium, Miami, FL",0-0
-7,"Wednesday, October 11, 2023",2534,166,401520315,TBD,"Aggie Memorial Stadium, Las Cruces, NM",0-0
-7,"Thursday, October 12, 2023",277,248,401525862,TBD,"TDECU Stadium, Houston, TX",0-0
-7,"Thursday, October 12, 2023",2567,151,401531415,TBD,"Dowdy-Ficklen Stadium, Greenville, NC",0-0
-7,"Friday, October 13, 2023",24,38,401524029,TBD,"Folsom Field, Boulder, CO",0-0
-7,"Friday, October 13, 2023",2655,235,401531371,TBD,"Simmons Bank Liberty Stadium, Memphis, TN",0-0
-7,"Saturday, October 14, 2023",245,2633,401520326,TBD,"Neyland Stadium, Knoxville, TN",0-0
-7,"Saturday, October 14, 2023",12,265,401524030,TBD,"Martin Stadium, Pullman, WA",0-0
-7,"Saturday, October 14, 2023",30,87,401524031,TBD,"Notre Dame Stadium, Notre Dame, IN",0-0
-7,"Saturday, October 14, 2023",26,204,401524032,TBD,"Reser Stadium, Corvallis, OR",0-0
-7,"Saturday, October 14, 2023",25,254,401524033,TBD,"Rice-Eccles Stadium, Salt Lake City, UT",0-0
-7,"Saturday, October 14, 2023",2483,264,401524034,TBD,"Husky Stadium, Seattle, WA",0-0
-7,"Saturday, October 14, 2023",152,150,401525523,TBD,"Wallace Wade Stadium, Durham, NC",0-0
-7,"Saturday, October 14, 2023",183,52,401525524,TBD,"Doak Campbell Stadium, Tallahassee, FL",0-0
-7,"Saturday, October 14, 2023",97,221,401525525,TBD,"Acrisure Stadium, Pittsburgh, PA",0-0
-7,"Saturday, October 14, 2023",2390,153,401525526,TBD,"Kenan Stadium, Chapel Hill, NC",0-0
-7,"Saturday, October 14, 2023",154,259,401525527,TBD,"Lane Stadium, Blacksburg, VA",0-0
-7,"Saturday, October 14, 2023",66,2132,401525863,TBD,"Nippert Stadium, Cincinnati, OH",0-0
-7,"Saturday, October 14, 2023",2305,197,401525864,TBD,"Boone Pickens Stadium, Stillwater, OK",0-0
-7,"Saturday, October 14, 2023",252,2628,401525865,TBD,"Amon G. Carter Stadium, Fort Worth, TX",0-0
-7,"Saturday, October 14, 2023",2306,2641,401525866,TBD,"Jones AT&T Stadium, Lubbock, TX",0-0
-7,"Saturday, October 14, 2023",5,2636,401531381,TBD,"Alamodome, San Antonio, TX",0-0
-7,"Saturday, October 14, 2023",218,249,401531390,TBD,"Apogee Stadium, Denton, TX",0-0
-7,"Saturday, October 14, 2023",2426,2429,401531405,TBD,"Jerry Richardson Stadium, Charlotte, NC",0-0
-7,"Saturday, October 14, 2023",2226,58,401531420,TBD,"Raymond James Stadium, Tampa, FL",0-0
-7,"Saturday, October 14, 2023",276,2247,401531889,TBD,"Center Parc Stadium, Atlanta, GA",0-0
-7,"Saturday, October 14, 2023",290,256,401531890,TBD,"Bridgeforth Stadium/Zane Showker Field, Harrisonburg, VA",0-0
-7,"Saturday, October 14, 2023",2433,326,401531891,TBD,"Bobcat Stadium (TX), San Marcos, TX",0-0
-7,"Saturday, October 14, 2023",2649,2050,401532419,TBD,"Scheumann Stadium, Muncie, IN",0-0
-7,"Saturday, October 14, 2023",2006,2117,401532420,TBD,"Kelly/Shorts Stadium, Mount Pleasant, MI",0-0
-7,"Saturday, October 14, 2023",189,2084,401532421,TBD,"UB Stadium, Buffalo, NY",0-0
-7,"Saturday, October 14, 2023",2309,2199,401532422,TBD,"Rynearson Stadium, Ypsilanti, MI",0-0
-7,"Saturday, October 14, 2023",193,2711,401532423,TBD,"Waldo Stadium, Kalamazoo, MI",0-0
-7,"Saturday, October 14, 2023",195,2459,401532424,TBD,"Huskie Stadium, DeKalb, IL",0-0
-7,"Saturday, October 14, 2023",68,36,401532593,TBD,"Canvas Stadium, Fort Collins, CO",0-0
-7,"Saturday, October 14, 2023",278,328,401532594,TBD,"Maverik Stadium, Logan, UT",0-0
-7,"Saturday, October 14, 2023",21,62,401532595,TBD,"Clarence T.C. Ching Athletics Complex, Honolulu, HI",0-0
-7,"Saturday, October 14, 2023",23,167,401532596,TBD,"University Stadium (NM), Albuquerque, NM",0-0
-7,"Saturday, October 14, 2023",2439,2440,401532597,TBD,"Mackay Stadium, Reno, NV",0-0
-7,"Saturday, October 14, 2023",2751,2005,401532598,TBD,"Falcon Stadium, USAF Academy, CO",0-0
-7,"Saturday, October 14, 2023",8,333,401520316,TBD,"Bryant-Denny Stadium, Tuscaloosa, AL",0-0
-7,"Saturday, October 14, 2023",2653,349,401520317,TBD,"Michie Stadium, West Point, NY",0-0
-7,"Saturday, October 14, 2023",142,96,401520318,TBD,"Kroger Field, Lexington, KY",0-0
-7,"Saturday, October 14, 2023",2,99,401520319,TBD,"Tiger Stadium (LA), Baton Rouge, LA",0-0
-7,"Saturday, October 14, 2023",356,120,401520320,TBD,"SECU Stadium, College Park, MD",0-0
-7,"Saturday, October 14, 2023",84,130,401520321,TBD,"Michigan Stadium, Ann Arbor, MI",0-0
-7,"Saturday, October 14, 2023",113,213,401520322,TBD,"Beaver Stadium, University Park, PA",0-0
-7,"Saturday, October 14, 2023",194,2509,401520323,TBD,"Ross-Ade Stadium, West Lafayette, IN",0-0
-7,"Saturday, October 14, 2023",127,164,401520324,TBD,"SHI Stadium, Piscataway, NJ",0-0
-7,"Saturday, October 14, 2023",57,2579,401520325,TBD,"Williams-Brice Stadium, Columbia, SC",0-0
-7,"Saturday, October 14, 2023",61,238,401520327,TBD,"FirstBank Stadium, Nashville, TN",0-0
-7,"Saturday, October 14, 2023",2294,275,401520328,TBD,"Camp Randall Stadium, Madison, WI",0-0
-8,"Tuesday, October 17, 2023",2572,6,401531892,TBD,"Hancock Whitney Stadium, Mobile, AL",0-0
-8,"Tuesday, October 17, 2023",98,55,401520329,TBD,"Burgess-Snow Field, Jacksonville, AL",0-0
-8,"Tuesday, October 17, 2023",2393,2335,401520330,TBD,"Williams Stadium (VA), Lynchburg, VA",0-0
-8,"Wednesday, October 18, 2023",2229,2534,401520331,TBD,"Elliot T. Bowers Stadium, Huntsville, TX",0-0
-8,"Wednesday, October 18, 2023",166,2638,401520332,TBD,"Sun Bowl, El Paso, TX",0-0
-8,"Thursday, October 19, 2023",242,202,401531341,TBD,"Chapman Stadium, Tulsa, OK",0-0
-8,"Thursday, October 19, 2023",256,276,401531893,TBD,"Joan C. Edwards Stadium, Huntington, WV",0-0
-8,"Friday, October 20, 2023",2567,218,401531391,TBD,"Lincoln Financial Field, Philadelphia, PA",0-0
-8,"Saturday, October 21, 2023",145,2,401520335,TBD,"Jordan-Hare Stadium, Auburn, AL",0-0
-8,"Saturday, October 21, 2023",2579,142,401520341,TBD,"Memorial Stadium/Faurot Field, Columbia, MO",0-0
-8,"Saturday, October 21, 2023",77,158,401520342,TBD,"Memorial Stadium (Lincoln, NE), Lincoln, NE",0-0
-8,"Saturday, October 21, 2023",58,41,401520344,TBD,"Pratt & Whitney Stadium, East Hartford, CT",0-0
-8,"Saturday, October 21, 2023",265,2483,401524035,TBD,"Autzen Stadium, Eugene, OR",0-0
-8,"Saturday, October 21, 2023",26,24,401524036,TBD,"Stanford Stadium, Stanford, CA",0-0
-8,"Saturday, October 21, 2023",254,30,401524037,TBD,"Los Angeles Memorial Coliseum, Los Angeles, CA",0-0
-8,"Saturday, October 21, 2023",9,264,401524038,TBD,"Husky Stadium, Seattle, WA",0-0
-8,"Saturday, October 21, 2023",103,59,401525528,TBD,"Bobby Dodd Stadium, Atlanta, GA",0-0
-8,"Saturday, October 21, 2023",228,2390,401525529,TBD,"Hard Rock Stadium, Miami Gardens, FL",0-0
-8,"Saturday, October 21, 2023",150,52,401525530,TBD,"Doak Campbell Stadium, Tallahassee, FL",0-0
-8,"Saturday, October 21, 2023",258,153,401525531,TBD,"Kenan Stadium, Chapel Hill, NC",0-0
-8,"Saturday, October 21, 2023",221,154,401525532,TBD,"Truist Field, Winston-Salem, NC",0-0
-8,"Saturday, October 21, 2023",2641,252,401525867,TBD,"LaVell Edwards Stadium, Provo, UT",0-0
-8,"Saturday, October 21, 2023",239,2132,401525868,TBD,"Nippert Stadium, Cincinnati, OH",0-0
-8,"Saturday, October 21, 2023",251,248,401525869,TBD,"TDECU Stadium, Houston, TX",0-0
-8,"Saturday, October 21, 2023",2628,2306,401525870,TBD,"Bill Snyder Family Stadium, Manhattan, KS",0-0
-8,"Saturday, October 21, 2023",2116,201,401525871,TBD,"Memorial Stadium (Norman, OK), Norman, OK",0-0
-8,"Saturday, October 21, 2023",197,277,401525872,TBD,"Milan Puskar Stadium, Morgantown, WV",0-0
-8,"Saturday, October 21, 2023",249,2655,401531372,TBD,"Yulman Stadium, New Orleans, LA",0-0
-8,"Saturday, October 21, 2023",235,5,401531382,TBD,"Protective Stadium, Birmingham, AL",0-0
-8,"Saturday, October 21, 2023",2636,2226,401531397,TBD,"FAU Stadium, Boca Raton, FL",0-0
-8,"Saturday, October 21, 2023",2429,151,401531406,TBD,"Dowdy-Ficklen Stadium, Greenville, NC",0-0
-8,"Saturday, October 21, 2023",2005,2426,401531434,TBD,"Navy-Marine Corps Memorial Stadium, Annapolis, MD",0-0
-8,"Saturday, October 21, 2023",2433,290,401531894,TBD,"Allen E. Paulson Stadium, Statesboro, GA",0-0
-8,"Saturday, October 21, 2023",2026,295,401531895,TBD,"S.B. Ballard Stadium, Norfolk, VA",0-0
-8,"Saturday, October 21, 2023",324,2032,401531896,TBD,"Centennial Bank Stadium, Jonesboro, AR",0-0
-8,"Saturday, October 21, 2023",2247,309,401531897,TBD,"Cajun Field, Lafayette, LA",0-0
-8,"Saturday, October 21, 2023",2117,2050,401532425,TBD,"Scheumann Stadium, Muncie, IN",0-0
-8,"Saturday, October 21, 2023",2199,2459,401532426,TBD,"Huskie Stadium, DeKalb, IL",0-0
-8,"Saturday, October 21, 2023",2649,193,401532427,TBD,"Yager Stadium, Oxford, OH",0-0
-8,"Saturday, October 21, 2023",2711,195,401532428,TBD,"Peden Stadium, Athens, OH",0-0
-8,"Saturday, October 21, 2023",2006,189,401532429,TBD,"Doyt L. Perry Stadium, Bowling Green, OH",0-0
-8,"Saturday, October 21, 2023",2084,2309,401532430,TBD,"Dix Stadium, Kent, OH",0-0
-8,"Saturday, October 21, 2023",36,2439,401532599,TBD,"Allegiant Stadium, Las Vegas, NV",0-0
-8,"Saturday, October 21, 2023",62,167,401532600,TBD,"University Stadium (NM), Albuquerque, NM",0-0
-8,"Saturday, October 21, 2023",2440,21,401532601,TBD,"Snapdragon Stadium, San Diego, CA",0-0
-8,"Saturday, October 21, 2023",328,23,401532602,TBD,"CEFCU Stadium, San Jose, CA",0-0
-8,"Saturday, October 21, 2023",2633,333,401520333,TBD,"Bryant-Denny Stadium, Tuscaloosa, AL",0-0
-8,"Saturday, October 21, 2023",344,8,401520334,TBD,"Razorback Stadium, Fayetteville, AR",0-0
-8,"Saturday, October 21, 2023",275,356,401520336,TBD,"Memorial Stadium (Champaign, IL), Champaign, IL",0-0
-8,"Saturday, October 21, 2023",164,84,401520337,TBD,"Memorial Stadium (Bloomington, IN), Bloomington, IN",0-0
-8,"Saturday, October 21, 2023",135,2294,401520338,TBD,"Kinnick Stadium, Iowa City, IA",0-0
-8,"Saturday, October 21, 2023",349,99,401520339,TBD,"Tiger Stadium (LA), Baton Rouge, LA",0-0
-8,"Saturday, October 21, 2023",130,127,401520340,TBD,"Spartan Stadium, East Lansing, MI",0-0
-8,"Saturday, October 21, 2023",213,194,401520343,TBD,"Ohio Stadium, Columbus, OH",0-0
-9,"Tuesday, October 24, 2023",166,2348,401520345,TBD,"Joe Aillet Stadium, Ruston, LA",0-0
-9,"Tuesday, October 24, 2023",2335,98,401520346,TBD,"Houchens Industries-L.T. Smith Stadium, Bowling Green, KY",0-0
-9,"Wednesday, October 25, 2023",2638,2534,401520348,TBD,"Elliot T. Bowers Stadium, Huntsville, TX",0-0
-9,"Wednesday, October 25, 2023",55,2229,401520347,TBD,"Riccardo Silva Stadium, Miami, FL",0-0
-9,"Thursday, October 26, 2023",183,259,401525533,TBD,"Lane Stadium, Blacksburg, VA",0-0
-9,"Thursday, October 26, 2023",2247,290,401531929,TBD,"Allen E. Paulson Stadium, Statesboro, GA",0-0
-9,"Friday, October 27, 2023",2226,2429,401531407,TBD,"Jerry Richardson Stadium, Charlotte, NC",0-0
-9,"Saturday, October 28, 2023",41,103,401520351,TBD,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA",0-0
-9,"Saturday, October 28, 2023",61,57,401520352,TBD,"TIAA Bank Field, Jacksonville, FL",0-0
-9,"Saturday, October 28, 2023",2509,158,401520355,TBD,"Memorial Stadium (Lincoln, NE), Lincoln, NE",0-0
-9,"Saturday, October 28, 2023",238,145,401520357,TBD,"Vaught-Hemingway Stadium, Oxford, MS",0-0
-9,"Saturday, October 28, 2023",204,12,401524039,TBD,"Arizona Stadium, Tucson, AZ",0-0
-9,"Saturday, October 28, 2023",265,9,401524040,TBD,"Sun Devil Stadium, Tempe, AZ",0-0
-9,"Saturday, October 28, 2023",30,25,401524041,TBD,"California Memorial Stadium, Berkeley, CA",0-0
-9,"Saturday, October 28, 2023",264,24,401524042,TBD,"Stanford Stadium, Stanford, CA",0-0
-9,"Saturday, October 28, 2023",38,26,401524043,TBD,"Rose Bowl, Pasadena, CA",0-0
-9,"Saturday, October 28, 2023",2483,254,401524044,TBD,"Rice-Eccles Stadium, Salt Lake City, UT",0-0
-9,"Saturday, October 28, 2023",221,87,401525440,TBD,"Notre Dame Stadium, Notre Dame, IN",0-0
-9,"Saturday, October 28, 2023",228,152,401525534,TBD,"Carter-Finley Stadium, Raleigh, NC",0-0
-9,"Saturday, October 28, 2023",150,97,401525535,TBD,"Cardinal Stadium, Louisville, KY",0-0
-9,"Saturday, October 28, 2023",52,154,401525536,TBD,"Truist Field, Winston-Salem, NC",0-0
-9,"Saturday, October 28, 2023",153,59,401525537,TBD,"Bobby Dodd Stadium, Atlanta, GA",0-0
-9,"Saturday, October 28, 2023",258,2390,401525538,TBD,"Hard Rock Stadium, Miami Gardens, FL",0-0
-9,"Saturday, October 28, 2023",66,239,401525873,TBD,"McLane Stadium, Waco, TX",0-0
-9,"Saturday, October 28, 2023",201,2305,401525874,TBD,"David Booth Kansas Memorial Stadium, Lawrence, KS",0-0
-9,"Saturday, October 28, 2023",248,2306,401525875,TBD,"Bill Snyder Family Stadium, Manhattan, KS",0-0
-9,"Saturday, October 28, 2023",2132,197,401525876,TBD,"Boone Pickens Stadium, Stillwater, OK",0-0
-9,"Saturday, October 28, 2023",252,251,401525877,TBD,"DKR-Texas Memorial Stadium, Austin, TX",0-0
-9,"Saturday, October 28, 2023",277,2116,401525878,TBD,"FBC Mortgage Stadium, Orlando, FL",0-0
-9,"Saturday, October 28, 2023",202,2567,401531342,TBD,"Gerald J. Ford Stadium, Dallas, TX",0-0
-9,"Saturday, October 28, 2023",2655,242,401531373,TBD,"Rice Stadium, Houston, TX",0-0
-9,"Saturday, October 28, 2023",151,2636,401531398,TBD,"Alamodome, San Antonio, TX",0-0
-9,"Saturday, October 28, 2023",235,249,401531430,TBD,"Apogee Stadium, Denton, TX",0-0
-9,"Saturday, October 28, 2023",2572,2026,401531898,TBD,"Kidd Brewer Stadium, Boone, NC",0-0
-9,"Saturday, October 28, 2023",276,324,401531899,TBD,"Brooks Stadium (SC), Conway, SC",0-0
-9,"Saturday, October 28, 2023",295,256,401531900,TBD,"Bridgeforth Stadium/Zane Showker Field, Harrisonburg, VA",0-0
-9,"Saturday, October 28, 2023",2032,2433,401531901,TBD,"Malone Stadium, Monroe, LA",0-0
-9,"Saturday, October 28, 2023",309,6,401531902,TBD,"Hancock Whitney Stadium, Mobile, AL",0-0
-9,"Saturday, October 28, 2023",2653,326,401531903,TBD,"Bobcat Stadium (TX), San Marcos, TX",0-0
-9,"Saturday, October 28, 2023",2711,2199,401532431,TBD,"Rynearson Stadium, Ypsilanti, MI",0-0
-9,"Saturday, October 28, 2023",193,195,401532432,TBD,"Peden Stadium, Athens, OH",0-0
-9,"Saturday, October 28, 2023",2005,36,401532603,TBD,"Canvas Stadium, Fort Collins, CO",0-0
-9,"Saturday, October 28, 2023",167,2440,401532604,TBD,"Mackay Stadium, Reno, NV",0-0
-9,"Saturday, October 28, 2023",23,62,401532605,TBD,"Clarence T.C. Ching Athletics Complex, Honolulu, HI",0-0
-9,"Saturday, October 28, 2023",2439,278,401532606,TBD,"Bulldog Stadium (CA), Fresno, CA",0-0
-9,"Saturday, October 28, 2023",2751,68,401532607,TBD,"Albertsons Stadium, Boise, ID",0-0
-9,"Saturday, October 28, 2023",113,349,401520349,TBD,"Michie Stadium, West Point, NY",0-0
-9,"Saturday, October 28, 2023",344,2,401520350,TBD,"Jordan-Hare Stadium, Auburn, AL",0-0
-9,"Saturday, October 28, 2023",2633,96,401520353,TBD,"Kroger Field, Lexington, KY",0-0
-9,"Saturday, October 28, 2023",127,135,401520354,TBD,"Huntington Bank Stadium, Minneapolis, MN",0-0
-9,"Saturday, October 28, 2023",120,77,401520356,TBD,"Ryan Field, Evanston, IL",0-0
-9,"Saturday, October 28, 2023",84,213,401520358,TBD,"Beaver Stadium, University Park, PA",0-0
-9,"Saturday, October 28, 2023",2579,245,401520359,TBD,"Kyle Field, College Station, TX",0-0
-9,"Saturday, October 28, 2023",194,275,401520360,TBD,"Camp Randall Stadium, Madison, WI",0-0
-10,"Tuesday, October 31, 2023",2459,2117,401532433,TBD,"Kelly/Shorts Stadium, Mount Pleasant, MI",0-0
-10,"Tuesday, October 31, 2023",2084,2649,401532434,TBD,"Glass Bowl, Toledo, OH",0-0
-10,"Wednesday, November 1, 2023",2050,189,401532435,TBD,"Doyt L. Perry Stadium, Bowling Green, OH",0-0
-10,"Wednesday, November 1, 2023",2309,2006,401532436,TBD,"InfoCision Stadium, Akron, OH",0-0
-10,"Thursday, November 2, 2023",154,150,401525539,TBD,"Wallace Wade Stadium, Durham, NC",0-0
-10,"Thursday, November 2, 2023",2628,2641,401525879,TBD,"Jones AT&T Stadium, Lubbock, TX",0-0
-10,"Thursday, November 2, 2023",6,2653,401531904,TBD,"Veterans Memorial Stadium (AL), Troy, AL",0-0
-10,"Friday, November 3, 2023",103,183,401525540,TBD,"JMA Wireless Dome, Syracuse, NY",0-0
-10,"Saturday, November 4, 2023",349,2005,401520361,TBD,"Empower Field at Mile High, Denver, CO",0-0
-10,"Saturday, November 4, 2023",142,61,401520364,TBD,"Sanford Stadium, Athens, GA",0-0
-10,"Saturday, November 4, 2023",275,84,401520365,TBD,"Memorial Stadium (Bloomington, IN), Bloomington, IN",0-0
-10,"Saturday, November 4, 2023",2348,2335,401520366,TBD,"Williams Stadium (VA), Lynchburg, VA",0-0
-10,"Saturday, November 4, 2023",2294,77,401520373,TBD,"Wrigley Field, Chicago, IL",0-0
-10,"Saturday, November 4, 2023",245,145,401520374,TBD,"Vaught-Hemingway Stadium, Oxford, MS",0-0
-10,"Saturday, November 4, 2023",194,164,401520375,TBD,"SHI Stadium, Piscataway, NJ",0-0
-10,"Saturday, November 4, 2023",98,2638,401520378,TBD,"Sun Bowl, El Paso, TX",0-0
-10,"Saturday, November 4, 2023",2,238,401520379,TBD,"FirstBank Stadium, Nashville, TN",0-0
-10,"Saturday, November 4, 2023",2771,113,401520400,TBD,"Warren McGuirk Alumni Stadium, Amherst, MA",0-0
-10,"Saturday, November 4, 2023",26,12,401524045,TBD,"Arizona Stadium, Tucson, AZ",0-0
-10,"Saturday, November 4, 2023",204,38,401524046,TBD,"Folsom Field, Boulder, CO",0-0
-10,"Saturday, November 4, 2023",25,2483,401524047,TBD,"Autzen Stadium, Eugene, OR",0-0
-10,"Saturday, November 4, 2023",264,30,401524048,TBD,"Los Angeles Memorial Coliseum, Los Angeles, CA",0-0
-10,"Saturday, November 4, 2023",9,254,401524049,TBD,"Rice-Eccles Stadium, Salt Lake City, UT",0-0
-10,"Saturday, November 4, 2023",24,265,401524050,TBD,"Martin Stadium, Pullman, WA",0-0
-10,"Saturday, November 4, 2023",87,228,401525441,TBD,"Memorial Stadium (Clemson, SC), Clemson, SC",0-0
-10,"Saturday, November 4, 2023",52,221,401525541,TBD,"Acrisure Stadium, Pittsburgh, PA",0-0
-10,"Saturday, November 4, 2023",59,258,401525542,TBD,"Scott Stadium, Charlottesville, VA",0-0
-10,"Saturday, November 4, 2023",259,97,401525543,TBD,"Cardinal Stadium, Louisville, KY",0-0
-10,"Saturday, November 4, 2023",2390,152,401525544,TBD,"Carter-Finley Stadium, Raleigh, NC",0-0
-10,"Saturday, November 4, 2023",2097,153,401525545,TBD,"Kenan Stadium, Chapel Hill, NC",0-0
-10,"Saturday, November 4, 2023",248,239,401525880,TBD,"McLane Stadium, Waco, TX",0-0
-10,"Saturday, November 4, 2023",2116,2132,401525881,TBD,"Nippert Stadium, Cincinnati, OH",0-0
-10,"Saturday, November 4, 2023",2305,66,401525882,TBD,"Jack Trice Stadium, Ames, IA",0-0
-10,"Saturday, November 4, 2023",201,197,401525883,TBD,"Boone Pickens Stadium, Stillwater, OK",0-0
-10,"Saturday, November 4, 2023",2306,251,401525884,TBD,"DKR-Texas Memorial Stadium, Austin, TX",0-0
-10,"Saturday, November 4, 2023",252,277,401525885,TBD,"Milan Puskar Stadium, Morgantown, WV",0-0
-10,"Saturday, November 4, 2023",2429,202,401531343,TBD,"Chapman Stadium, Tulsa, OK",0-0
-10,"Saturday, November 4, 2023",2655,151,401531374,TBD,"Dowdy-Ficklen Stadium, Greenville, NC",0-0
-10,"Saturday, November 4, 2023",2226,5,401531383,TBD,"Protective Stadium, Birmingham, AL",0-0
-10,"Saturday, November 4, 2023",2426,218,401531392,TBD,"Lincoln Financial Field, Philadelphia, PA",0-0
-10,"Saturday, November 4, 2023",2636,249,401531399,TBD,"Apogee Stadium, Denton, TX",0-0
-10,"Saturday, November 4, 2023",58,235,401531425,TBD,"Simmons Bank Liberty Stadium, Memphis, TN",0-0
-10,"Saturday, November 4, 2023",2567,242,401531440,TBD,"Rice Stadium, Houston, TX",0-0
-10,"Saturday, November 4, 2023",276,2026,401531905,TBD,"Kidd Brewer Stadium, Boone, NC",0-0
-10,"Saturday, November 4, 2023",256,2247,401531906,TBD,"Center Parc Stadium, Atlanta, GA",0-0
-10,"Saturday, November 4, 2023",324,295,401531907,TBD,"S.B. Ballard Stadium, Norfolk, VA",0-0
-10,"Saturday, November 4, 2023",309,2032,401531908,TBD,"Centennial Bank Stadium, Jonesboro, AR",0-0
-10,"Saturday, November 4, 2023",2433,2572,401531909,TBD,"M. M. Roberts Stadium, Hattiesburg, MS",0-0
-10,"Saturday, November 4, 2023",290,326,401531910,TBD,"Bobcat Stadium (TX), San Marcos, TX",0-0
-10,"Saturday, November 4, 2023",68,278,401532608,TBD,"Bulldog Stadium (CA), Fresno, CA",0-0
-10,"Saturday, November 4, 2023",36,2751,401532609,TBD,"Jonah Field at War Memorial Stadium, Laramie, WY",0-0
-10,"Saturday, November 4, 2023",62,2440,401532610,TBD,"Mackay Stadium, Reno, NV",0-0
-10,"Saturday, November 4, 2023",2439,167,401532611,TBD,"University Stadium (NM), Albuquerque, NM",0-0
-10,"Saturday, November 4, 2023",328,21,401532612,TBD,"Snapdragon Stadium, San Diego, CA",0-0
-10,"Saturday, November 4, 2023",99,333,401520362,TBD,"Bryant-Denny Stadium, Tuscaloosa, AL",0-0
-10,"Saturday, November 4, 2023",8,57,401520363,TBD,"Ben Hill Griffin Stadium, Gainesville, FL",0-0
-10,"Saturday, November 4, 2023",213,120,401520367,TBD,"SECU Stadium, College Park, MD",0-0
-10,"Saturday, November 4, 2023",2509,130,401520368,TBD,"Michigan Stadium, Ann Arbor, MI",0-0
-10,"Saturday, November 4, 2023",158,127,401520369,TBD,"Spartan Stadium, East Lansing, MI",0-0
-10,"Saturday, November 4, 2023",356,135,401520370,TBD,"Huntington Bank Stadium, Minneapolis, MN",0-0
-10,"Saturday, November 4, 2023",96,344,401520371,TBD,"Davis Wade Stadium, Starkville, MS",0-0
-10,"Saturday, November 4, 2023",2393,166,401520372,TBD,"Aggie Memorial Stadium, Las Cruces, NM",0-0
-10,"Saturday, November 4, 2023",55,2579,401520376,TBD,"Williams-Brice Stadium, Columbia, SC",0-0
-10,"Saturday, November 4, 2023",41,2633,401520377,TBD,"Neyland Stadium, Knoxville, TN",0-0
-11,"Tuesday, November 7, 2023",2050,2459,401532437,TBD,"Huskie Stadium, DeKalb, IL",0-0
-11,"Tuesday, November 7, 2023",2117,2711,401532438,TBD,"Waldo Stadium, Kalamazoo, MI",0-0
-11,"Tuesday, November 7, 2023",195,2084,401532439,TBD,"UB Stadium, Buffalo, NY",0-0
-11,"Wednesday, November 8, 2023",2199,2649,401532440,TBD,"Glass Bowl, Toledo, OH",0-0
-11,"Wednesday, November 8, 2023",2006,193,401532441,TBD,"Yager Stadium, Oxford, OH",0-0
-11,"Wednesday, November 8, 2023",189,2309,401532442,TBD,"Dix Stadium, Kent, OH",0-0
-11,"Thursday, November 9, 2023",258,97,401525546,TBD,"Cardinal Stadium, Louisville, KY",0-0
-11,"Thursday, November 9, 2023",2572,309,401531911,TBD,"Cajun Field, Lafayette, LA",0-0
-11,"Friday, November 10, 2023",249,2567,401531437,TBD,"Gerald J. Ford Stadium, Dallas, TX",0-0
-11,"Saturday, November 11, 2023",41,256,401520385,TBD,"Bridgeforth Stadium/Zane Showker Field, Harrisonburg, VA",0-0
-11,"Saturday, November 11, 2023",2633,142,401520391,TBD,"Memorial Stadium/Faurot Field, Columbia, MO",0-0
-11,"Saturday, November 11, 2023",120,158,401520392,TBD,"Memorial Stadium (Lincoln, NE), Lincoln, NE",0-0
-11,"Saturday, November 11, 2023",127,194,401520393,TBD,"Ohio Stadium, Columbus, OH",0-0
-11,"Saturday, November 11, 2023",166,98,401520399,TBD,"Houchens Industries-L.T. Smith Stadium, Bowling Green, KY",0-0
-11,"Saturday, November 11, 2023",265,25,401524051,TBD,"California Memorial Stadium, Berkeley, CA",0-0
-11,"Saturday, November 11, 2023",12,38,401524052,TBD,"Folsom Field, Boulder, CO",0-0
-11,"Saturday, November 11, 2023",30,2483,401524053,TBD,"Autzen Stadium, Eugene, OR",0-0
-11,"Saturday, November 11, 2023",24,204,401524054,TBD,"Reser Stadium, Corvallis, OR",0-0
-11,"Saturday, November 11, 2023",9,26,401524055,TBD,"Rose Bowl, Pasadena, CA",0-0
-11,"Saturday, November 11, 2023",254,264,401524056,TBD,"Husky Stadium, Seattle, WA",0-0
-11,"Saturday, November 11, 2023",259,103,401525547,TBD,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA",0-0
-11,"Saturday, November 11, 2023",59,228,401525548,TBD,"Memorial Stadium (Clemson, SC), Clemson, SC",0-0
-11,"Saturday, November 11, 2023",150,153,401525549,TBD,"Kenan Stadium, Chapel Hill, NC",0-0
-11,"Saturday, November 11, 2023",2390,52,401525550,TBD,"Doak Campbell Stadium, Tallahassee, FL",0-0
-11,"Saturday, November 11, 2023",152,154,401525551,TBD,"Truist Field, Winston-Salem, NC",0-0
-11,"Saturday, November 11, 2023",221,183,401525552,TBD,"Yankee Stadium, Bronx, NY",0-0
-11,"Saturday, November 11, 2023",66,252,401525886,TBD,"LaVell Edwards Stadium, Provo, UT",0-0
-11,"Saturday, November 11, 2023",2132,248,401525887,TBD,"TDECU Stadium, Houston, TX",0-0
-11,"Saturday, November 11, 2023",2641,2305,401525888,TBD,"David Booth Kansas Memorial Stadium, Lawrence, KS",0-0
-11,"Saturday, November 11, 2023",239,2306,401525889,TBD,"Bill Snyder Family Stadium, Manhattan, KS",0-0
-11,"Saturday, November 11, 2023",277,201,401525890,TBD,"Memorial Stadium (Norman, OK), Norman, OK",0-0
-11,"Saturday, November 11, 2023",251,2628,401525891,TBD,"Amon G. Carter Stadium, Fort Worth, TX",0-0
-11,"Saturday, November 11, 2023",197,2116,401525892,TBD,"FBC Mortgage Stadium, Orlando, FL",0-0
-11,"Saturday, November 11, 2023",202,2655,401531344,TBD,"Yulman Stadium, New Orleans, LA",0-0
-11,"Saturday, November 11, 2023",5,2426,401531384,TBD,"Navy-Marine Corps Memorial Stadium, Annapolis, MD",0-0
-11,"Saturday, November 11, 2023",218,58,401531393,TBD,"Raymond James Stadium, Tampa, FL",0-0
-11,"Saturday, November 11, 2023",242,2636,401531400,TBD,"Alamodome, San Antonio, TX",0-0
-11,"Saturday, November 11, 2023",235,2429,401531408,TBD,"Jerry Richardson Stadium, Charlotte, NC",0-0
-11,"Saturday, November 11, 2023",151,2226,401531416,TBD,"FAU Stadium, Boca Raton, FL",0-0
-11,"Saturday, November 11, 2023",326,324,401531912,TBD,"Brooks Stadium (SC), Conway, SC",0-0
-11,"Saturday, November 11, 2023",2026,2247,401531913,TBD,"Center Parc Stadium, Atlanta, GA",0-0
-11,"Saturday, November 11, 2023",290,276,401531914,TBD,"Joan C. Edwards Stadium, Huntington, WV",0-0
-11,"Saturday, November 11, 2023",2653,2433,401531915,TBD,"Malone Stadium, Monroe, LA",0-0
-11,"Saturday, November 11, 2023",2032,6,401531916,TBD,"Hancock Whitney Stadium, Mobile, AL",0-0
-11,"Saturday, November 11, 2023",2005,62,401532613,TBD,"Clarence T.C. Ching Athletics Complex, Honolulu, HI",0-0
-11,"Saturday, November 11, 2023",278,23,401532614,TBD,"CEFCU Stadium, San Jose, CA",0-0
-11,"Saturday, November 11, 2023",2440,328,401532615,TBD,"Maverik Stadium, Logan, UT",0-0
-11,"Saturday, November 11, 2023",167,68,401532616,TBD,"Albertsons Stadium, Boise, ID",0-0
-11,"Saturday, November 11, 2023",21,36,401532617,TBD,"Canvas Stadium, Fort Collins, CO",0-0
-11,"Saturday, November 11, 2023",2751,2439,401532618,TBD,"Allegiant Stadium, Las Vegas, NV",0-0
-11,"Saturday, November 11, 2023",2,8,401520380,TBD,"Razorback Stadium, Fayetteville, AR",0-0
-11,"Saturday, November 11, 2023",107,349,401520381,TBD,"Michie Stadium, West Point, NY",0-0
-11,"Saturday, November 11, 2023",145,61,401520382,TBD,"Sanford Stadium, Athens, GA",0-0
-11,"Saturday, November 11, 2023",84,356,401520383,TBD,"Memorial Stadium (Champaign, IL), Champaign, IL",0-0
-11,"Saturday, November 11, 2023",164,2294,401520384,TBD,"Kinnick Stadium, Iowa City, IA",0-0
-11,"Saturday, November 11, 2023",333,96,401520386,TBD,"Kroger Field, Lexington, KY",0-0
-11,"Saturday, November 11, 2023",2534,2348,401520387,TBD,"Joe Aillet Stadium, Ruston, LA",0-0
-11,"Saturday, November 11, 2023",295,2335,401520388,TBD,"Williams Stadium (VA), Lynchburg, VA",0-0
-11,"Saturday, November 11, 2023",57,99,401520389,TBD,"Tiger Stadium (LA), Baton Rouge, LA",0-0
-11,"Saturday, November 11, 2023",2229,2393,401520390,TBD,"Johnny ""Red"" Floyd Stadium, Murfreesboro, TN",0-0
-11,"Saturday, November 11, 2023",130,213,401520394,TBD,"Beaver Stadium, University Park, PA",0-0
-11,"Saturday, November 11, 2023",135,2509,401520395,TBD,"Ross-Ade Stadium, West Lafayette, IN",0-0
-11,"Saturday, November 11, 2023",238,2579,401520396,TBD,"Williams-Brice Stadium, Columbia, SC",0-0
-11,"Saturday, November 11, 2023",344,245,401520397,TBD,"Kyle Field, College Station, TX",0-0
-11,"Saturday, November 11, 2023",77,275,401520398,TBD,"Camp Randall Stadium, Madison, WI",0-0
-12,"Tuesday, November 14, 2023",2649,189,401532443,TBD,"Doyt L. Perry Stadium, Bowling Green, OH",0-0
-12,"Tuesday, November 14, 2023",2711,2459,401532444,TBD,"Huskie Stadium, DeKalb, IL",0-0
-12,"Tuesday, November 14, 2023",2006,2199,401532445,TBD,"Rynearson Stadium, Ypsilanti, MI",0-0
-12,"Wednesday, November 15, 2023",2117,195,401532446,TBD,"Peden Stadium, Athens, OH",0-0
-12,"Wednesday, November 15, 2023",2084,193,401532447,TBD,"Yager Stadium, Oxford, OH",0-0
-12,"Thursday, November 16, 2023",103,221,401525553,TBD,"Acrisure Stadium, Pittsburgh, PA",0-0
-12,"Friday, November 17, 2023",38,265,401524057,TBD,"Martin Stadium, Pullman, WA",0-0
-12,"Friday, November 17, 2023",58,2636,401531401,TBD,"Alamodome, San Antonio, TX",0-0
-12,"Saturday, November 18, 2023",236,333,401520401,TBD,"Bryant-Denny Stadium, Tuscaloosa, AL",0-0
-12,"Saturday, November 18, 2023",2229,8,401520402,TBD,"Razorback Stadium, Fayetteville, AR",0-0
-12,"Saturday, November 18, 2023",57,142,401520413,TBD,"Memorial Stadium/Faurot Field, Columbia, MO",0-0
-12,"Saturday, November 18, 2023",164,213,401520417,TBD,"Beaver Stadium, University Park, PA",0-0
-12,"Saturday, November 18, 2023",2000,245,401520420,TBD,"Kyle Field, College Station, TX",0-0
-12,"Saturday, November 18, 2023",2529,41,401520421,TBD,"Pratt & Whitney Stadium, East Hartford, CT",0-0
-12,"Saturday, November 18, 2023",158,275,401520422,TBD,"Camp Randall Stadium, Madison, WI",0-0
-12,"Saturday, November 18, 2023",254,12,401524058,TBD,"Arizona Stadium, Tucson, AZ",0-0
-12,"Saturday, November 18, 2023",2483,9,401524059,TBD,"Sun Devil Stadium, Tempe, AZ",0-0
-12,"Saturday, November 18, 2023",264,204,401524060,TBD,"Reser Stadium, Corvallis, OR",0-0
-12,"Saturday, November 18, 2023",25,24,401524061,TBD,"Stanford Stadium, Stanford, CA",0-0
-12,"Saturday, November 18, 2023",26,30,401524062,TBD,"Los Angeles Memorial Coliseum, Los Angeles, CA",0-0
-12,"Saturday, November 18, 2023",154,87,401525442,TBD,"Notre Dame Stadium, Notre Dame, IN",0-0
-12,"Saturday, November 18, 2023",153,228,401525554,TBD,"Memorial Stadium (Clemson, SC), Clemson, SC",0-0
-12,"Saturday, November 18, 2023",150,258,401525555,TBD,"Scott Stadium, Charlottesville, VA",0-0
-12,"Saturday, November 18, 2023",2453,52,401525556,TBD,"Doak Campbell Stadium, Tallahassee, FL",0-0
-12,"Saturday, November 18, 2023",183,59,401525557,TBD,"Bobby Dodd Stadium, Atlanta, GA",0-0
-12,"Saturday, November 18, 2023",97,2390,401525558,TBD,"Hard Rock Stadium, Miami Gardens, FL",0-0
-12,"Saturday, November 18, 2023",152,259,401525559,TBD,"Lane Stadium, Blacksburg, VA",0-0
-12,"Saturday, November 18, 2023",201,252,401525893,TBD,"LaVell Edwards Stadium, Provo, UT",0-0
-12,"Saturday, November 18, 2023",197,248,401525894,TBD,"TDECU Stadium, Houston, TX",0-0
-12,"Saturday, November 18, 2023",251,66,401525895,TBD,"Jack Trice Stadium, Ames, IA",0-0
-12,"Saturday, November 18, 2023",2306,2305,401525896,TBD,"David Booth Kansas Memorial Stadium, Lawrence, KS",0-0
-12,"Saturday, November 18, 2023",239,2628,401525897,TBD,"Amon G. Carter Stadium, Fort Worth, TX",0-0
-12,"Saturday, November 18, 2023",2116,2641,401525898,TBD,"Jones AT&T Stadium, Lubbock, TX",0-0
-12,"Saturday, November 18, 2023",2132,277,401525899,TBD,"Milan Puskar Stadium, Morgantown, WV",0-0
-12,"Saturday, November 18, 2023",249,202,401531345,TBD,"Chapman Stadium, Tulsa, OK",0-0
-12,"Saturday, November 18, 2023",2655,2226,401531375,TBD,"FAU Stadium, Boca Raton, FL",0-0
-12,"Saturday, November 18, 2023",218,5,401531385,TBD,"Protective Stadium, Birmingham, AL",0-0
-12,"Saturday, November 18, 2023",242,2429,401531409,TBD,"Jerry Richardson Stadium, Charlotte, NC",0-0
-12,"Saturday, November 18, 2023",151,2426,401531417,TBD,"Navy-Marine Corps Memorial Stadium, Annapolis, MD",0-0
-12,"Saturday, November 18, 2023",2567,235,401531431,TBD,"Simmons Bank Liberty Stadium, Memphis, TN",0-0
-12,"Saturday, November 18, 2023",295,290,401531917,TBD,"Allen E. Paulson Stadium, Statesboro, GA",0-0
-12,"Saturday, November 18, 2023",2026,256,401531918,TBD,"Bridgeforth Stadium/Zane Showker Field, Harrisonburg, VA",0-0
-12,"Saturday, November 18, 2023",326,2032,401531919,TBD,"Centennial Bank Stadium, Jonesboro, AR",0-0
-12,"Saturday, November 18, 2023",276,6,401531920,TBD,"Hancock Whitney Stadium, Mobile, AL",0-0
-12,"Saturday, November 18, 2023",309,2653,401531921,TBD,"Veterans Memorial Stadium (AL), Troy, AL",0-0
-12,"Saturday, November 18, 2023",2309,2050,401532448,TBD,"Scheumann Stadium, Muncie, IN",0-0
-12,"Saturday, November 18, 2023",68,328,401532619,TBD,"Maverik Stadium, Logan, UT",0-0
-12,"Saturday, November 18, 2023",62,2751,401532620,TBD,"Jonah Field at War Memorial Stadium, Laramie, WY",0-0
-12,"Saturday, November 18, 2023",2440,36,401532621,TBD,"Canvas Stadium, Fort Collins, CO",0-0
-12,"Saturday, November 18, 2023",167,278,401532622,TBD,"Bulldog Stadium (CA), Fresno, CA",0-0
-12,"Saturday, November 18, 2023",21,23,401532623,TBD,"CEFCU Stadium, San Jose, CA",0-0
-12,"Saturday, November 18, 2023",2439,2005,401532624,TBD,"Falcon Stadium, USAF Academy, CO",0-0
-12,"Saturday, November 18, 2023",324,349,401520403,TBD,"Michie Stadium, West Point, NY",0-0
-12,"Saturday, November 18, 2023",166,2,401520404,TBD,"Jordan-Hare Stadium, Auburn, AL",0-0
-12,"Saturday, November 18, 2023",127,84,401520405,TBD,"Memorial Stadium (Bloomington, IN), Bloomington, IN",0-0
-12,"Saturday, November 18, 2023",356,2294,401520406,TBD,"Kinnick Stadium, Iowa City, IA",0-0
-12,"Saturday, November 18, 2023",2348,55,401520407,TBD,"Burgess-Snow Field, Jacksonville, AL",0-0
-12,"Saturday, November 18, 2023",113,2335,401520408,TBD,"Williams Stadium (VA), Lynchburg, VA",0-0
-12,"Saturday, November 18, 2023",2247,99,401520409,TBD,"Tiger Stadium (LA), Baton Rouge, LA",0-0
-12,"Saturday, November 18, 2023",130,120,401520410,TBD,"SECU Stadium, College Park, MD",0-0
-12,"Saturday, November 18, 2023",2638,2393,401520411,TBD,"Johnny ""Red"" Floyd Stadium, Murfreesboro, TN",0-0
-12,"Saturday, November 18, 2023",2572,344,401520412,TBD,"Davis Wade Stadium, Starkville, MS",0-0
-12,"Saturday, November 18, 2023",2509,77,401520414,TBD,"Ryan Field, Evanston, IL",0-0
-12,"Saturday, November 18, 2023",135,194,401520415,TBD,"Ohio Stadium, Columbus, OH",0-0
-12,"Saturday, November 18, 2023",2433,145,401520416,TBD,"Vaught-Hemingway Stadium, Oxford, MS",0-0
-12,"Saturday, November 18, 2023",96,2579,401520418,TBD,"Williams-Brice Stadium, Columbia, SC",0-0
-12,"Saturday, November 18, 2023",61,2633,401520419,TBD,"Neyland Stadium, Knoxville, TN",0-0
-12,"Saturday, November 18, 2023",2534,98,401520423,TBD,"Houchens Industries-L.T. Smith Stadium, Bowling Green, KY",0-0
-13,"Tuesday, November 21, 2023",2199,2084,401532449,TBD,"UB Stadium, Buffalo, NY",0-0
-13,"Tuesday, November 21, 2023",189,2711,401532450,TBD,"Waldo Stadium, Kalamazoo, MI",0-0
-13,"Thursday, November 23, 2023",145,344,401520424,TBD,"Davis Wade Stadium, Starkville, MS",0-0
-13,"Friday, November 24, 2023",2294,158,401520425,TBD,"Memorial Stadium (Lincoln, NE), Lincoln, NE",0-0
-13,"Friday, November 24, 2023",204,2483,401524063,TBD,"Autzen Stadium, Eugene, OR",0-0
-13,"Friday, November 24, 2023",2390,103,401525560,TBD,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA",0-0
-13,"Friday, November 24, 2023",2628,201,401525900,TBD,"Memorial Stadium (Norman, OK), Norman, OK",0-0
-13,"Friday, November 24, 2023",2641,251,401525901,TBD,"DKR-Texas Memorial Stadium, Austin, TX",0-0
-13,"Friday, November 24, 2023",2649,2117,401532451,TBD,"Kelly/Shorts Stadium, Mount Pleasant, MI",0-0
-13,"Friday, November 24, 2023",195,2006,401532452,TBD,"InfoCision Stadium, Akron, OH",0-0
-13,"Saturday, November 25, 2023",61,59,401520430,TBD,"Bobby Dodd Stadium, Atlanta, GA",0-0
-13,"Saturday, November 25, 2023",77,356,401520431,TBD,"Memorial Stadium (Champaign, IL), Champaign, IL",0-0
-13,"Saturday, November 25, 2023",96,97,401520432,TBD,"Cardinal Stadium, Louisville, KY",0-0
-13,"Saturday, November 25, 2023",213,127,401520435,TBD,"Spartan Stadium, East Lansing, MI",0-0
-13,"Saturday, November 25, 2023",275,135,401520436,TBD,"Huntington Bank Stadium, Minneapolis, MN",0-0
-13,"Saturday, November 25, 2023",55,166,401520437,TBD,"Aggie Memorial Stadium, Las Cruces, NM",0-0
-13,"Saturday, November 25, 2023",120,164,401520439,TBD,"SHI Stadium, Piscataway, NJ",0-0
-13,"Saturday, November 25, 2023",238,2633,401520442,TBD,"Neyland Stadium, Knoxville, TN",0-0
-13,"Saturday, November 25, 2023",41,113,401520443,TBD,,0-0
-13,"Saturday, November 25, 2023",12,9,401524064,TBD,"Sun Devil Stadium, Tempe, AZ",0-0
-13,"Saturday, November 25, 2023",87,24,401524065,TBD,"Stanford Stadium, Stanford, CA",0-0
-13,"Saturday, November 25, 2023",25,26,401524066,TBD,"Rose Bowl, Pasadena, CA",0-0
-13,"Saturday, November 25, 2023",38,254,401524067,TBD,"Rice-Eccles Stadium, Salt Lake City, UT",0-0
-13,"Saturday, November 25, 2023",265,264,401524068,TBD,"Husky Stadium, Seattle, WA",0-0
-13,"Saturday, November 25, 2023",221,150,401525561,TBD,"Wallace Wade Stadium, Durham, NC",0-0
-13,"Saturday, November 25, 2023",153,152,401525562,TBD,"Carter-Finley Stadium, Raleigh, NC",0-0
-13,"Saturday, November 25, 2023",154,183,401525563,TBD,"JMA Wireless Dome, Syracuse, NY",0-0
-13,"Saturday, November 25, 2023",259,258,401525564,TBD,"Scott Stadium, Charlottesville, VA",0-0
-13,"Saturday, November 25, 2023",277,239,401525902,TBD,"McLane Stadium, Waco, TX",0-0
-13,"Saturday, November 25, 2023",2305,2132,401525903,TBD,"Nippert Stadium, Cincinnati, OH",0-0
-13,"Saturday, November 25, 2023",66,2306,401525904,TBD,"Bill Snyder Family Stadium, Manhattan, KS",0-0
-13,"Saturday, November 25, 2023",252,197,401525905,TBD,"Boone Pickens Stadium, Stillwater, OK",0-0
-13,"Saturday, November 25, 2023",248,2116,401525906,TBD,"FBC Mortgage Stadium, Orlando, FL",0-0
-13,"Saturday, November 25, 2023",202,151,401531346,TBD,"Dowdy-Ficklen Stadium, Greenville, NC",0-0
-13,"Saturday, November 25, 2023",2636,2655,401531376,TBD,"Yulman Stadium, New Orleans, LA",0-0
-13,"Saturday, November 25, 2023",5,249,401531386,TBD,"Apogee Stadium, Denton, TX",0-0
-13,"Saturday, November 25, 2023",235,218,401531394,TBD,"Lincoln Financial Field, Philadelphia, PA",0-0
-13,"Saturday, November 25, 2023",2429,58,401531410,TBD,"Raymond James Stadium, Tampa, FL",0-0
-13,"Saturday, November 25, 2023",2226,242,401531421,TBD,"Rice Stadium, Houston, TX",0-0
-13,"Saturday, November 25, 2023",2426,2567,401531435,TBD,"Gerald J. Ford Stadium, Dallas, TX",0-0
-13,"Saturday, November 25, 2023",290,2026,401531922,TBD,"Kidd Brewer Stadium, Boone, NC",0-0
-13,"Saturday, November 25, 2023",256,324,401531923,TBD,"Brooks Stadium (SC), Conway, SC",0-0
-13,"Saturday, November 25, 2023",2032,276,401531924,TBD,"Joan C. Edwards Stadium, Huntington, WV",0-0
-13,"Saturday, November 25, 2023",2247,295,401531925,TBD,"S.B. Ballard Stadium, Norfolk, VA",0-0
-13,"Saturday, November 25, 2023",2433,309,401531926,TBD,"Cajun Field, Lafayette, LA",0-0
-13,"Saturday, November 25, 2023",2653,2572,401531927,TBD,"M. M. Roberts Stadium, Hattiesburg, MS",0-0
-13,"Saturday, November 25, 2023",6,326,401531928,TBD,"Bobcat Stadium (TX), San Marcos, TX",0-0
-13,"Saturday, November 25, 2023",2459,2309,401532453,TBD,"Dix Stadium, Kent, OH",0-0
-13,"Saturday, November 25, 2023",193,2050,401532454,TBD,"Scheumann Stadium, Muncie, IN",0-0
-13,"Saturday, November 25, 2023",2005,68,401532625,TBD,"Albertsons Stadium, Boise, ID",0-0
-13,"Saturday, November 25, 2023",36,62,401532626,TBD,"Clarence T.C. Ching Athletics Complex, Honolulu, HI",0-0
-13,"Saturday, November 25, 2023",278,21,401532627,TBD,"Snapdragon Stadium, San Diego, CA",0-0
-13,"Saturday, November 25, 2023",23,2439,401532628,TBD,"Allegiant Stadium, Las Vegas, NV",0-0
-13,"Saturday, November 25, 2023",328,167,401532629,TBD,"University Stadium (NM), Albuquerque, NM",0-0
-13,"Saturday, November 25, 2023",2751,2440,401532630,TBD,"Mackay Stadium, Reno, NV",0-0
-13,"Saturday, November 25, 2023",142,8,401520426,TBD,"Razorback Stadium, Fayetteville, AR",0-0
-13,"Saturday, November 25, 2023",333,2,401520427,TBD,"Jordan-Hare Stadium, Auburn, AL",0-0
-13,"Saturday, November 25, 2023",98,2229,401520428,TBD,"Riccardo Silva Stadium, Miami, FL",0-0
-13,"Saturday, November 25, 2023",52,57,401520429,TBD,"Ben Hill Griffin Stadium, Gainesville, FL",0-0
-13,"Saturday, November 25, 2023",245,99,401520433,TBD,"Tiger Stadium (LA), Baton Rouge, LA",0-0
-13,"Saturday, November 25, 2023",194,130,401520434,TBD,"Michigan Stadium, Ann Arbor, MI",0-0
-13,"Saturday, November 25, 2023",84,2509,401520438,TBD,"Ross-Ade Stadium, West Lafayette, IN",0-0
-13,"Saturday, November 25, 2023",2393,2534,401520440,TBD,"Elliot T. Bowers Stadium, Huntsville, TX",0-0
-13,"Saturday, November 25, 2023",228,2579,401520441,TBD,"Williams-Brice Stadium, Columbia, SC",0-0
-13,"Saturday, November 25, 2023",2335,2638,401520444,TBD,"Sun Bowl, El Paso, TX",0-0
-14,"Friday, December 1, 2023",0,0,401539475,TBD,"Allegiant Stadium, Las Vegas, NV",0-0
-14,"Friday, December 1, 2023",0,0,401539476,TBD,,0-0
-14,"Saturday, December 2, 2023",0,0,401539477,TBD,,0-0
-14,"Saturday, December 2, 2023",0,0,401539478,TBD,"Bank of America Stadium, Charlotte, NC",0-0
-14,"Saturday, December 2, 2023",0,0,401539479,TBD,"AT&T Stadium, Arlington, TX",0-0
-14,"Saturday, December 2, 2023",0,0,401539480,TBD,"Lucas Oil Stadium, Indianapolis, IN",0-0
-14,"Saturday, December 2, 2023",0,0,401539481,TBD,"Ford Field, Detroit, MI",0-0
-14,"Saturday, December 2, 2023",0,0,401539482,TBD,,0-0
-14,"Saturday, December 2, 2023",0,0,401539483,TBD,"Mercedes-Benz Stadium, Atlanta, GA",0-0
-14,"Saturday, December 2, 2023",0,0,401539484,TBD,,0-0
-14,"Saturday, December 2, 2023",0,0,401539485,TBD,,0-0
+week,game_date,away_school,home_school,game_id,time,score,location_id,location_name
+1,"Saturday, August 26, 2023",62,238,401520147,TBD,0-0,1,"FirstBank Stadium, Nashville, TN"
+1,"Saturday, September 2, 2023",2010,238,401520178,TBD,0-0,1,"FirstBank Stadium, Nashville, TN"
+4,"Saturday, September 23, 2023",96,238,401520274,TBD,0-0,1,"FirstBank Stadium, Nashville, TN"
+5,"Saturday, September 30, 2023",142,238,401520293,TBD,0-0,1,"FirstBank Stadium, Nashville, TN"
+7,"Saturday, October 14, 2023",61,238,401520327,TBD,0-0,1,"FirstBank Stadium, Nashville, TN"
+10,"Saturday, November 4, 2023",2,238,401520379,TBD,0-0,1,"FirstBank Stadium, Nashville, TN"
+1,"Saturday, August 26, 2023",23,30,401523986,TBD,0-0,2,"Los Angeles Memorial Coliseum, Los Angeles, CA"
+1,"Saturday, September 2, 2023",2440,30,401523996,TBD,0-0,2,"Los Angeles Memorial Coliseum, Los Angeles, CA"
+2,"Saturday, September 9, 2023",24,30,401524003,TBD,0-0,2,"Los Angeles Memorial Coliseum, Los Angeles, CA"
+6,"Saturday, October 7, 2023",12,30,401524025,TBD,0-0,2,"Los Angeles Memorial Coliseum, Los Angeles, CA"
+8,"Saturday, October 21, 2023",254,30,401524037,TBD,0-0,2,"Los Angeles Memorial Coliseum, Los Angeles, CA"
+10,"Saturday, November 4, 2023",264,30,401524048,TBD,0-0,2,"Los Angeles Memorial Coliseum, Los Angeles, CA"
+12,"Saturday, November 18, 2023",26,30,401524062,TBD,0-0,2,"Los Angeles Memorial Coliseum, Los Angeles, CA"
+1,"Saturday, August 26, 2023",113,166,401525450,TBD,0-0,3,"Aggie Memorial Stadium, Las Cruces, NM"
+1,"Saturday, September 2, 2023",2710,166,401520166,TBD,0-0,3,"Aggie Memorial Stadium, Las Cruces, NM"
+6,"Wednesday, October 4, 2023",2229,166,401520297,TBD,0-0,3,"Aggie Memorial Stadium, Las Cruces, NM"
+7,"Wednesday, October 11, 2023",2534,166,401520315,TBD,0-0,3,"Aggie Memorial Stadium, Las Cruces, NM"
+10,"Saturday, November 4, 2023",2393,166,401520372,TBD,0-0,3,"Aggie Memorial Stadium, Las Cruces, NM"
+13,"Saturday, November 25, 2023",55,166,401520437,TBD,0-0,3,"Aggie Memorial Stadium, Las Cruces, NM"
+1,"Saturday, August 26, 2023",195,21,401532392,TBD,0-0,4,"Snapdragon Stadium, San Diego, CA"
+1,"Saturday, September 2, 2023",304,21,401532571,TBD,0-0,4,"Snapdragon Stadium, San Diego, CA"
+2,"Saturday, September 9, 2023",26,21,401524001,TBD,0-0,4,"Snapdragon Stadium, San Diego, CA"
+4,"Friday, September 22, 2023",68,21,401532583,TBD,0-0,4,"Snapdragon Stadium, San Diego, CA"
+8,"Saturday, October 21, 2023",2440,21,401532601,TBD,0-0,4,"Snapdragon Stadium, San Diego, CA"
+10,"Saturday, November 4, 2023",328,21,401532612,TBD,0-0,4,"Snapdragon Stadium, San Diego, CA"
+13,"Saturday, November 25, 2023",278,21,401532627,TBD,0-0,4,"Snapdragon Stadium, San Diego, CA"
+1,"Saturday, August 26, 2023",2638,55,401520145,TBD,0-0,5,"Burgess-Snow Field, Jacksonville, AL"
+4,"Saturday, September 23, 2023",2199,55,401520257,TBD,0-0,5,"Burgess-Snow Field, Jacksonville, AL"
+7,"Tuesday, October 10, 2023",2335,55,401520312,TBD,0-0,5,"Burgess-Snow Field, Jacksonville, AL"
+8,"Tuesday, October 17, 2023",98,55,401520329,TBD,0-0,5,"Burgess-Snow Field, Jacksonville, AL"
+12,"Saturday, November 18, 2023",2348,55,401520407,TBD,0-0,5,"Burgess-Snow Field, Jacksonville, AL"
+1,"Saturday, August 26, 2023",2229,2348,401520146,TBD,0-0,6,"Joe Aillet Stadium, Ruston, LA"
+2,"Saturday, September 9, 2023",2466,2348,401520197,TBD,0-0,6,"Joe Aillet Stadium, Ruston, LA"
+3,"Saturday, September 16, 2023",249,2348,401520229,TBD,0-0,6,"Joe Aillet Stadium, Ruston, LA"
+6,"Thursday, October 5, 2023",98,2348,401520295,TBD,0-0,6,"Joe Aillet Stadium, Ruston, LA"
+9,"Tuesday, October 24, 2023",166,2348,401520345,TBD,0-0,6,"Joe Aillet Stadium, Ruston, LA"
+11,"Saturday, November 11, 2023",2534,2348,401520387,TBD,0-0,6,"Joe Aillet Stadium, Ruston, LA"
+1,"Thursday, August 31, 2023",158,135,401520148,TBD,0-0,7,"Huntington Bank Stadium, Minneapolis, MN"
+2,"Saturday, September 9, 2023",2199,135,401520204,TBD,0-0,7,"Huntington Bank Stadium, Minneapolis, MN"
+5,"Saturday, September 30, 2023",309,135,401520284,TBD,0-0,7,"Huntington Bank Stadium, Minneapolis, MN"
+6,"Saturday, October 7, 2023",130,135,401520303,TBD,0-0,7,"Huntington Bank Stadium, Minneapolis, MN"
+9,"Saturday, October 28, 2023",127,135,401520354,TBD,0-0,7,"Huntington Bank Stadium, Minneapolis, MN"
+10,"Saturday, November 4, 2023",356,135,401520370,TBD,0-0,7,"Huntington Bank Stadium, Minneapolis, MN"
+13,"Saturday, November 25, 2023",275,135,401520436,TBD,0-0,7,"Huntington Bank Stadium, Minneapolis, MN"
+1,"Thursday, August 31, 2023",57,254,401520176,TBD,0-0,8,"Rice-Eccles Stadium, Salt Lake City, UT"
+3,"Saturday, September 16, 2023",2692,254,401524012,TBD,0-0,8,"Rice-Eccles Stadium, Salt Lake City, UT"
+4,"Saturday, September 23, 2023",26,254,401524017,TBD,0-0,8,"Rice-Eccles Stadium, Salt Lake City, UT"
+7,"Saturday, October 14, 2023",25,254,401524033,TBD,0-0,8,"Rice-Eccles Stadium, Salt Lake City, UT"
+9,"Saturday, October 28, 2023",2483,254,401524044,TBD,0-0,8,"Rice-Eccles Stadium, Salt Lake City, UT"
+10,"Saturday, November 4, 2023",9,254,401524049,TBD,0-0,8,"Rice-Eccles Stadium, Salt Lake City, UT"
+13,"Saturday, November 25, 2023",38,254,401524067,TBD,0-0,8,"Rice-Eccles Stadium, Salt Lake City, UT"
+1,"Thursday, August 31, 2023",253,9,401523987,TBD,0-0,9,"Sun Devil Stadium, Tempe, AZ"
+2,"Saturday, September 9, 2023",197,9,401523998,TBD,0-0,9,"Sun Devil Stadium, Tempe, AZ"
+3,"Saturday, September 16, 2023",278,9,401524005,TBD,0-0,9,"Sun Devil Stadium, Tempe, AZ"
+4,"Saturday, September 23, 2023",30,9,401524014,TBD,0-0,9,"Sun Devil Stadium, Tempe, AZ"
+6,"Saturday, October 7, 2023",38,9,401524026,TBD,0-0,9,"Sun Devil Stadium, Tempe, AZ"
+9,"Saturday, October 28, 2023",265,9,401524040,TBD,0-0,9,"Sun Devil Stadium, Tempe, AZ"
+12,"Saturday, November 18, 2023",2483,9,401524059,TBD,0-0,9,"Sun Devil Stadium, Tempe, AZ"
+13,"Saturday, November 25, 2023",12,9,401524064,TBD,0-0,9,"Sun Devil Stadium, Tempe, AZ"
+1,"Thursday, August 31, 2023",2210,154,401525461,TBD,0-0,10,"Truist Field, Winston-Salem, NC"
+2,"Saturday, September 9, 2023",238,154,401520216,TBD,0-0,10,"Truist Field, Winston-Salem, NC"
+4,"Saturday, September 23, 2023",59,154,401525508,TBD,0-0,10,"Truist Field, Winston-Salem, NC"
+8,"Saturday, October 21, 2023",221,154,401525532,TBD,0-0,10,"Truist Field, Winston-Salem, NC"
+9,"Saturday, October 28, 2023",52,154,401525536,TBD,0-0,10,"Truist Field, Winston-Salem, NC"
+11,"Saturday, November 11, 2023",152,154,401525551,TBD,0-0,10,"Truist Field, Winston-Salem, NC"
+1,"Thursday, August 31, 2023",2623,2305,401525815,TBD,0-0,11,"David Booth Kansas Memorial Stadium, Lawrence, KS"
+2,"Saturday, September 9, 2023",356,2305,401520195,TBD,0-0,11,"David Booth Kansas Memorial Stadium, Lawrence, KS"
+4,"Saturday, September 23, 2023",252,2305,401525847,TBD,0-0,11,"David Booth Kansas Memorial Stadium, Lawrence, KS"
+6,"Saturday, October 7, 2023",2116,2305,401525860,TBD,0-0,11,"David Booth Kansas Memorial Stadium, Lawrence, KS"
+9,"Saturday, October 28, 2023",201,2305,401525874,TBD,0-0,11,"David Booth Kansas Memorial Stadium, Lawrence, KS"
+11,"Saturday, November 11, 2023",2641,2305,401525888,TBD,0-0,11,"David Booth Kansas Memorial Stadium, Lawrence, KS"
+12,"Saturday, November 18, 2023",2306,2305,401525896,TBD,0-0,11,"David Booth Kansas Memorial Stadium, Lawrence, KS"
+1,"Thursday, August 31, 2023",2309,2116,401525816,TBD,0-0,12,"FBC Mortgage Stadium, Orlando, FL"
+3,"Saturday, September 16, 2023",222,2116,401525843,TBD,0-0,12,"FBC Mortgage Stadium, Orlando, FL"
+5,"Saturday, September 30, 2023",239,2116,401525856,TBD,0-0,12,"FBC Mortgage Stadium, Orlando, FL"
+9,"Saturday, October 28, 2023",277,2116,401525878,TBD,0-0,12,"FBC Mortgage Stadium, Orlando, FL"
+11,"Saturday, November 11, 2023",197,2116,401525892,TBD,0-0,12,"FBC Mortgage Stadium, Orlando, FL"
+13,"Saturday, November 25, 2023",248,2116,401525906,TBD,0-0,12,"FBC Mortgage Stadium, Orlando, FL"
+1,"Thursday, August 31, 2023",2448,5,401531377,TBD,0-0,13,"Protective Stadium, Birmingham, AL"
+3,"Saturday, September 16, 2023",309,5,401531379,TBD,0-0,13,"Protective Stadium, Birmingham, AL"
+6,"Saturday, October 7, 2023",58,5,401531380,TBD,0-0,13,"Protective Stadium, Birmingham, AL"
+8,"Saturday, October 21, 2023",235,5,401531382,TBD,0-0,13,"Protective Stadium, Birmingham, AL"
+10,"Saturday, November 4, 2023",2226,5,401531383,TBD,0-0,13,"Protective Stadium, Birmingham, AL"
+12,"Saturday, November 18, 2023",218,5,401531385,TBD,0-0,13,"Protective Stadium, Birmingham, AL"
+1,"Thursday, August 31, 2023",227,2247,401531834,TBD,0-0,14,"Center Parc Stadium, Atlanta, GA"
+2,"Saturday, September 9, 2023",41,2247,401520192,TBD,0-0,14,"Center Parc Stadium, Atlanta, GA"
+5,"Saturday, September 30, 2023",2653,2247,401531879,TBD,0-0,14,"Center Parc Stadium, Atlanta, GA"
+7,"Saturday, October 14, 2023",276,2247,401531889,TBD,0-0,14,"Center Parc Stadium, Atlanta, GA"
+10,"Saturday, November 4, 2023",256,2247,401531906,TBD,0-0,14,"Center Parc Stadium, Atlanta, GA"
+11,"Saturday, November 11, 2023",2026,2247,401531913,TBD,0-0,14,"Center Parc Stadium, Atlanta, GA"
+1,"Thursday, August 31, 2023",2598,2711,401532393,TBD,0-0,15,"Waldo Stadium, Kalamazoo, MI"
+5,"Saturday, September 30, 2023",2050,2711,401532409,TBD,0-0,15,"Waldo Stadium, Kalamazoo, MI"
+7,"Saturday, October 14, 2023",193,2711,401532423,TBD,0-0,15,"Waldo Stadium, Kalamazoo, MI"
+11,"Tuesday, November 7, 2023",2117,2711,401532438,TBD,0-0,15,"Waldo Stadium, Kalamazoo, MI"
+13,"Tuesday, November 21, 2023",189,2711,401532450,TBD,0-0,15,"Waldo Stadium, Kalamazoo, MI"
+1,"Friday, September 1, 2023",24,62,401523988,TBD,0-0,16,"Clarence T.C. Ching Athletics Complex, Honolulu, HI"
+2,"Saturday, September 9, 2023",399,62,401532575,TBD,0-0,16,"Clarence T.C. Ching Athletics Complex, Honolulu, HI"
+4,"Saturday, September 23, 2023",166,62,401520253,TBD,0-0,16,"Clarence T.C. Ching Athletics Complex, Honolulu, HI"
+7,"Saturday, October 14, 2023",21,62,401532595,TBD,0-0,16,"Clarence T.C. Ching Athletics Complex, Honolulu, HI"
+9,"Saturday, October 28, 2023",23,62,401532605,TBD,0-0,16,"Clarence T.C. Ching Athletics Complex, Honolulu, HI"
+11,"Saturday, November 11, 2023",2005,62,401532613,TBD,0-0,16,"Clarence T.C. Ching Athletics Complex, Honolulu, HI"
+13,"Saturday, November 25, 2023",36,62,401532626,TBD,0-0,16,"Clarence T.C. Ching Athletics Complex, Honolulu, HI"
+1,"Friday, September 1, 2023",97,59,401525462,TBD,0-0,17,"Mercedes-Benz Stadium, Atlanta, GA"
+14,"Saturday, December 2, 2023",0,0,401539483,TBD,0-0,17,"Mercedes-Benz Stadium, Atlanta, GA"
+1,"Friday, September 1, 2023",193,2390,401525463,TBD,0-0,18,"Hard Rock Stadium, Miami Gardens, FL"
+2,"Saturday, September 9, 2023",245,2390,401520201,TBD,0-0,18,"Hard Rock Stadium, Miami Gardens, FL"
+3,"Thursday, September 14, 2023",2065,2390,401525499,TBD,0-0,18,"Hard Rock Stadium, Miami Gardens, FL"
+6,"Saturday, October 7, 2023",59,2390,401525519,TBD,0-0,18,"Hard Rock Stadium, Miami Gardens, FL"
+8,"Saturday, October 21, 2023",228,2390,401525529,TBD,0-0,18,"Hard Rock Stadium, Miami Gardens, FL"
+9,"Saturday, October 28, 2023",258,2390,401525538,TBD,0-0,18,"Hard Rock Stadium, Miami Gardens, FL"
+12,"Saturday, November 18, 2023",97,2390,401525558,TBD,0-0,18,"Hard Rock Stadium, Miami Gardens, FL"
+1,"Friday, September 1, 2023",47,2199,401532394,TBD,0-0,19,"Rynearson Stadium, Ypsilanti, MI"
+3,"Saturday, September 16, 2023",113,2199,401526834,TBD,0-0,19,"Rynearson Stadium, Ypsilanti, MI"
+6,"Saturday, October 7, 2023",2050,2199,401532414,TBD,0-0,19,"Rynearson Stadium, Ypsilanti, MI"
+7,"Saturday, October 14, 2023",2309,2199,401532422,TBD,0-0,19,"Rynearson Stadium, Ypsilanti, MI"
+9,"Saturday, October 28, 2023",2711,2199,401532431,TBD,0-0,19,"Rynearson Stadium, Ypsilanti, MI"
+12,"Tuesday, November 14, 2023",2006,2199,401532445,TBD,0-0,19,"Rynearson Stadium, Ypsilanti, MI"
+1,"Saturday, September 2, 2023",113,2,401520151,TBD,0-0,20,"Jordan-Hare Stadium, Auburn, AL"
+3,"Saturday, September 16, 2023",2535,2,401520221,TBD,0-0,20,"Jordan-Hare Stadium, Auburn, AL"
+5,"Saturday, September 30, 2023",61,2,401520280,TBD,0-0,20,"Jordan-Hare Stadium, Auburn, AL"
+8,"Saturday, October 21, 2023",145,2,401520335,TBD,0-0,20,"Jordan-Hare Stadium, Auburn, AL"
+9,"Saturday, October 28, 2023",344,2,401520350,TBD,0-0,20,"Jordan-Hare Stadium, Auburn, AL"
+12,"Saturday, November 18, 2023",166,2,401520404,TBD,0-0,20,"Jordan-Hare Stadium, Auburn, AL"
+13,"Saturday, November 25, 2023",333,2,401520427,TBD,0-0,20,"Jordan-Hare Stadium, Auburn, AL"
+1,"Saturday, September 2, 2023",2534,252,401520152,TBD,0-0,21,"LaVell Edwards Stadium, Provo, UT"
+2,"Saturday, September 9, 2023",253,252,401525828,TBD,0-0,21,"LaVell Edwards Stadium, Provo, UT"
+5,"Friday, September 29, 2023",2132,252,401525851,TBD,0-0,21,"LaVell Edwards Stadium, Provo, UT"
+8,"Saturday, October 21, 2023",2641,252,401525867,TBD,0-0,21,"LaVell Edwards Stadium, Provo, UT"
+11,"Saturday, November 11, 2023",66,252,401525886,TBD,0-0,21,"LaVell Edwards Stadium, Provo, UT"
+12,"Saturday, November 18, 2023",201,252,401525893,TBD,0-0,21,"LaVell Edwards Stadium, Provo, UT"
+1,"Saturday, September 2, 2023",311,2229,401520153,TBD,0-0,22,"Riccardo Silva Stadium, Miami, FL"
+2,"Saturday, September 9, 2023",249,2229,401520189,TBD,0-0,22,"Riccardo Silva Stadium, Miami, FL"
+4,"Saturday, September 23, 2023",2335,2229,401520275,TBD,0-0,22,"Riccardo Silva Stadium, Miami, FL"
+7,"Wednesday, October 11, 2023",2638,2229,401520314,TBD,0-0,22,"Riccardo Silva Stadium, Miami, FL"
+9,"Wednesday, October 25, 2023",55,2229,401520347,TBD,0-0,22,"Riccardo Silva Stadium, Miami, FL"
+13,"Saturday, November 25, 2023",98,2229,401520428,TBD,0-0,22,"Riccardo Silva Stadium, Miami, FL"
+1,"Saturday, September 2, 2023",2630,61,401520154,TBD,0-0,23,"Sanford Stadium, Athens, GA"
+2,"Saturday, September 9, 2023",2050,61,401520191,TBD,0-0,23,"Sanford Stadium, Athens, GA"
+3,"Saturday, September 16, 2023",2579,61,401520225,TBD,0-0,23,"Sanford Stadium, Athens, GA"
+4,"Saturday, September 23, 2023",5,61,401520252,TBD,0-0,23,"Sanford Stadium, Athens, GA"
+6,"Saturday, October 7, 2023",96,61,401520300,TBD,0-0,23,"Sanford Stadium, Athens, GA"
+10,"Saturday, November 4, 2023",142,61,401520364,TBD,0-0,23,"Sanford Stadium, Athens, GA"
+11,"Saturday, November 11, 2023",145,61,401520382,TBD,0-0,23,"Sanford Stadium, Athens, GA"
+1,"Saturday, September 2, 2023",119,120,401520161,TBD,0-0,24,"SECU Stadium, College Park, MD"
+2,"Saturday, September 9, 2023",2429,120,401520200,TBD,0-0,24,"SECU Stadium, College Park, MD"
+3,"Saturday, September 16, 2023",258,120,401520231,TBD,0-0,24,"SECU Stadium, College Park, MD"
+5,"Saturday, September 30, 2023",84,120,401520283,TBD,0-0,24,"SECU Stadium, College Park, MD"
+7,"Saturday, October 14, 2023",356,120,401520320,TBD,0-0,24,"SECU Stadium, College Park, MD"
+10,"Saturday, November 4, 2023",213,120,401520367,TBD,0-0,24,"SECU Stadium, College Park, MD"
+12,"Saturday, November 18, 2023",130,120,401520410,TBD,0-0,24,"SECU Stadium, College Park, MD"
+1,"Saturday, September 2, 2023",233,142,401520165,TBD,0-0,25,"Memorial Stadium/Faurot Field, Columbia, MO"
+2,"Saturday, September 9, 2023",2393,142,401520206,TBD,0-0,25,"Memorial Stadium/Faurot Field, Columbia, MO"
+3,"Saturday, September 16, 2023",2306,142,401520236,TBD,0-0,25,"Memorial Stadium/Faurot Field, Columbia, MO"
+6,"Saturday, October 7, 2023",99,142,401520305,TBD,0-0,25,"Memorial Stadium/Faurot Field, Columbia, MO"
+8,"Saturday, October 21, 2023",2579,142,401520341,TBD,0-0,25,"Memorial Stadium/Faurot Field, Columbia, MO"
+11,"Saturday, November 11, 2023",2633,142,401520391,TBD,0-0,25,"Memorial Stadium/Faurot Field, Columbia, MO"
+12,"Saturday, November 18, 2023",57,142,401520413,TBD,0-0,25,"Memorial Stadium/Faurot Field, Columbia, MO"
+1,"Saturday, September 2, 2023",2579,153,401520167,TBD,0-0,26,"Bank of America Stadium, Charlotte, NC"
+14,"Saturday, December 2, 2023",0,0,401539478,TBD,0-0,26,"Bank of America Stadium, Charlotte, NC"
+1,"Saturday, September 2, 2023",278,2509,401520170,TBD,0-0,27,"Ross-Ade Stadium, West Lafayette, IN"
+3,"Saturday, September 16, 2023",183,2509,401520242,TBD,0-0,27,"Ross-Ade Stadium, West Lafayette, IN"
+4,"Saturday, September 23, 2023",275,2509,401520266,TBD,0-0,27,"Ross-Ade Stadium, West Lafayette, IN"
+5,"Saturday, September 30, 2023",356,2509,401520289,TBD,0-0,27,"Ross-Ade Stadium, West Lafayette, IN"
+7,"Saturday, October 14, 2023",194,2509,401520323,TBD,0-0,27,"Ross-Ade Stadium, West Lafayette, IN"
+11,"Saturday, November 11, 2023",135,2509,401520395,TBD,0-0,27,"Ross-Ade Stadium, West Lafayette, IN"
+13,"Saturday, November 25, 2023",84,2509,401520438,TBD,0-0,27,"Ross-Ade Stadium, West Lafayette, IN"
+1,"Saturday, September 2, 2023",77,164,401520171,TBD,0-0,28,"SHI Stadium, Piscataway, NJ"
+2,"Saturday, September 9, 2023",218,164,401520210,TBD,0-0,28,"SHI Stadium, Piscataway, NJ"
+3,"Saturday, September 16, 2023",259,164,401520243,TBD,0-0,28,"SHI Stadium, Piscataway, NJ"
+5,"Saturday, September 30, 2023",2681,164,401520290,TBD,0-0,28,"SHI Stadium, Piscataway, NJ"
+7,"Saturday, October 14, 2023",127,164,401520324,TBD,0-0,28,"SHI Stadium, Piscataway, NJ"
+10,"Saturday, November 4, 2023",194,164,401520375,TBD,0-0,28,"SHI Stadium, Piscataway, NJ"
+13,"Saturday, November 25, 2023",120,164,401520439,TBD,0-0,28,"SHI Stadium, Piscataway, NJ"
+1,"Saturday, September 2, 2023",2348,2567,401520172,TBD,0-0,29,"Gerald J. Ford Stadium, Dallas, TX"
+3,"Saturday, September 16, 2023",2504,2567,401531438,TBD,0-0,29,"Gerald J. Ford Stadium, Dallas, TX"
+5,"Saturday, September 30, 2023",2429,2567,401531404,TBD,0-0,29,"Gerald J. Ford Stadium, Dallas, TX"
+9,"Saturday, October 28, 2023",202,2567,401531342,TBD,0-0,29,"Gerald J. Ford Stadium, Dallas, TX"
+11,"Friday, November 10, 2023",249,2567,401531437,TBD,0-0,29,"Gerald J. Ford Stadium, Dallas, TX"
+13,"Saturday, November 25, 2023",2426,2567,401531435,TBD,0-0,29,"Gerald J. Ford Stadium, Dallas, TX"
+1,"Saturday, September 2, 2023",152,41,401520174,TBD,0-0,30,"Pratt & Whitney Stadium, East Hartford, CT"
+3,"Saturday, September 16, 2023",2229,41,401520246,TBD,0-0,30,"Pratt & Whitney Stadium, East Hartford, CT"
+4,"Saturday, September 23, 2023",150,41,401520272,TBD,0-0,30,"Pratt & Whitney Stadium, East Hartford, CT"
+5,"Saturday, September 30, 2023",328,41,401520292,TBD,0-0,30,"Pratt & Whitney Stadium, East Hartford, CT"
+8,"Saturday, October 21, 2023",58,41,401520344,TBD,0-0,30,"Pratt & Whitney Stadium, East Hartford, CT"
+12,"Saturday, November 18, 2023",2529,41,401520421,TBD,0-0,30,"Pratt & Whitney Stadium, East Hartford, CT"
+1,"Saturday, September 2, 2023",2916,2638,401520177,TBD,0-0,31,"Sun Bowl, El Paso, TX"
+4,"Saturday, September 23, 2023",2439,2638,401520273,TBD,0-0,31,"Sun Bowl, El Paso, TX"
+5,"Friday, September 29, 2023",2348,2638,401520278,TBD,0-0,31,"Sun Bowl, El Paso, TX"
+8,"Wednesday, October 18, 2023",166,2638,401520332,TBD,0-0,31,"Sun Bowl, El Paso, TX"
+10,"Saturday, November 4, 2023",98,2638,401520378,TBD,0-0,31,"Sun Bowl, El Paso, TX"
+13,"Saturday, November 25, 2023",2335,2638,401520444,TBD,0-0,31,"Sun Bowl, El Paso, TX"
+1,"Saturday, September 2, 2023",258,2633,401520179,TBD,0-0,32,"Nissan Stadium, Nashville, TN"
+1,"Saturday, September 2, 2023",2084,275,401520180,TBD,0-0,33,"Camp Randall Stadium, Madison, WI"
+3,"Saturday, September 16, 2023",290,275,401520249,TBD,0-0,33,"Camp Randall Stadium, Madison, WI"
+6,"Saturday, October 7, 2023",164,275,401520311,TBD,0-0,33,"Camp Randall Stadium, Madison, WI"
+7,"Saturday, October 14, 2023",2294,275,401520328,TBD,0-0,33,"Camp Randall Stadium, Madison, WI"
+9,"Saturday, October 28, 2023",194,275,401520360,TBD,0-0,33,"Camp Randall Stadium, Madison, WI"
+11,"Saturday, November 11, 2023",77,275,401520398,TBD,0-0,33,"Camp Randall Stadium, Madison, WI"
+12,"Saturday, November 18, 2023",158,275,401520422,TBD,0-0,33,"Camp Randall Stadium, Madison, WI"
+1,"Saturday, September 2, 2023",58,98,401520181,TBD,0-0,34,"Houchens Industries-L.T. Smith Stadium, Bowling Green, KY"
+2,"Saturday, September 9, 2023",2277,98,401520218,TBD,0-0,34,"Houchens Industries-L.T. Smith Stadium, Bowling Green, KY"
+5,"Thursday, September 28, 2023",2393,98,401520277,TBD,0-0,34,"Houchens Industries-L.T. Smith Stadium, Bowling Green, KY"
+9,"Tuesday, October 24, 2023",2335,98,401520346,TBD,0-0,34,"Houchens Industries-L.T. Smith Stadium, Bowling Green, KY"
+11,"Saturday, November 11, 2023",166,98,401520399,TBD,0-0,34,"Houchens Industries-L.T. Smith Stadium, Bowling Green, KY"
+12,"Saturday, November 18, 2023",2534,98,401520423,TBD,0-0,34,"Houchens Industries-L.T. Smith Stadium, Bowling Green, KY"
+1,"Saturday, September 2, 2023",2464,12,401523989,TBD,0-0,35,"Arizona Stadium, Tucson, AZ"
+3,"Saturday, September 16, 2023",2638,12,401520219,TBD,0-0,35,"Arizona Stadium, Tucson, AZ"
+5,"Saturday, September 30, 2023",264,12,401524021,TBD,0-0,35,"Arizona Stadium, Tucson, AZ"
+9,"Saturday, October 28, 2023",204,12,401524039,TBD,0-0,35,"Arizona Stadium, Tucson, AZ"
+10,"Saturday, November 4, 2023",26,12,401524045,TBD,0-0,35,"Arizona Stadium, Tucson, AZ"
+12,"Saturday, November 18, 2023",254,12,401524058,TBD,0-0,35,"Arizona Stadium, Tucson, AZ"
+1,"Saturday, September 2, 2023",265,36,401523990,TBD,0-0,36,"Canvas Stadium, Fort Collins, CO"
+5,"Saturday, September 30, 2023",3101,36,401532585,TBD,0-0,36,"Canvas Stadium, Fort Collins, CO"
+7,"Saturday, October 14, 2023",68,36,401532593,TBD,0-0,36,"Canvas Stadium, Fort Collins, CO"
+9,"Saturday, October 28, 2023",2005,36,401532603,TBD,0-0,36,"Canvas Stadium, Fort Collins, CO"
+11,"Saturday, November 11, 2023",21,36,401532617,TBD,0-0,36,"Canvas Stadium, Fort Collins, CO"
+12,"Saturday, November 18, 2023",2440,36,401532621,TBD,0-0,36,"Canvas Stadium, Fort Collins, CO"
+1,"Saturday, September 2, 2023",25,249,401523991,TBD,0-0,37,"Apogee Stadium, Denton, TX"
+5,"Saturday, September 30, 2023",2000,249,401531436,TBD,0-0,37,"Apogee Stadium, Denton, TX"
+7,"Saturday, October 14, 2023",218,249,401531390,TBD,0-0,37,"Apogee Stadium, Denton, TX"
+9,"Saturday, October 28, 2023",235,249,401531430,TBD,0-0,37,"Apogee Stadium, Denton, TX"
+10,"Saturday, November 4, 2023",2636,249,401531399,TBD,0-0,37,"Apogee Stadium, Denton, TX"
+13,"Saturday, November 25, 2023",5,249,401531386,TBD,0-0,37,"Apogee Stadium, Denton, TX"
+1,"Saturday, September 2, 2023",2502,2483,401523992,TBD,0-0,38,"Autzen Stadium, Eugene, OR"
+3,"Saturday, September 16, 2023",62,2483,401524008,TBD,0-0,38,"Autzen Stadium, Eugene, OR"
+4,"Saturday, September 23, 2023",38,2483,401524015,TBD,0-0,38,"Autzen Stadium, Eugene, OR"
+8,"Saturday, October 21, 2023",265,2483,401524035,TBD,0-0,38,"Autzen Stadium, Eugene, OR"
+10,"Saturday, November 4, 2023",25,2483,401524047,TBD,0-0,38,"Autzen Stadium, Eugene, OR"
+11,"Saturday, November 11, 2023",30,2483,401524053,TBD,0-0,38,"Autzen Stadium, Eugene, OR"
+13,"Friday, November 24, 2023",204,2483,401524063,TBD,0-0,38,"Autzen Stadium, Eugene, OR"
+1,"Saturday, September 2, 2023",38,2628,401523994,TBD,0-0,39,"Amon G. Carter Stadium, Fort Worth, TX"
+2,"Saturday, September 9, 2023",2447,2628,401525832,TBD,0-0,39,"Amon G. Carter Stadium, Fort Worth, TX"
+4,"Saturday, September 23, 2023",2567,2628,401525849,TBD,0-0,39,"Amon G. Carter Stadium, Fort Worth, TX"
+5,"Saturday, September 30, 2023",277,2628,401525853,TBD,0-0,39,"Amon G. Carter Stadium, Fort Worth, TX"
+7,"Saturday, October 14, 2023",252,2628,401525865,TBD,0-0,39,"Amon G. Carter Stadium, Fort Worth, TX"
+11,"Saturday, November 11, 2023",251,2628,401525891,TBD,0-0,39,"Amon G. Carter Stadium, Fort Worth, TX"
+12,"Saturday, November 18, 2023",239,2628,401525897,TBD,0-0,39,"Amon G. Carter Stadium, Fort Worth, TX"
+1,"Saturday, September 2, 2023",324,26,401523995,TBD,0-0,40,"Rose Bowl, Pasadena, CA"
+3,"Saturday, September 16, 2023",2428,26,401524011,TBD,0-0,40,"Rose Bowl, Pasadena, CA"
+6,"Saturday, October 7, 2023",265,26,401524028,TBD,0-0,40,"Rose Bowl, Pasadena, CA"
+9,"Saturday, October 28, 2023",38,26,401524043,TBD,0-0,40,"Rose Bowl, Pasadena, CA"
+11,"Saturday, November 11, 2023",9,26,401524055,TBD,0-0,40,"Rose Bowl, Pasadena, CA"
+13,"Saturday, November 25, 2023",25,26,401524066,TBD,0-0,40,"Rose Bowl, Pasadena, CA"
+1,"Saturday, September 2, 2023",68,264,401523997,TBD,0-0,41,"Husky Stadium, Seattle, WA"
+2,"Saturday, September 9, 2023",202,264,401524004,TBD,0-0,41,"Husky Stadium, Seattle, WA"
+4,"Saturday, September 23, 2023",25,264,401524018,TBD,0-0,41,"Husky Stadium, Seattle, WA"
+7,"Saturday, October 14, 2023",2483,264,401524034,TBD,0-0,41,"Husky Stadium, Seattle, WA"
+8,"Saturday, October 21, 2023",9,264,401524038,TBD,0-0,41,"Husky Stadium, Seattle, WA"
+11,"Saturday, November 11, 2023",254,264,401524056,TBD,0-0,41,"Husky Stadium, Seattle, WA"
+13,"Saturday, November 25, 2023",265,264,401524068,TBD,0-0,41,"Husky Stadium, Seattle, WA"
+1,"Saturday, September 2, 2023",2634,87,401525435,TBD,0-0,42,"Notre Dame Stadium, Notre Dame, IN"
+3,"Saturday, September 16, 2023",2117,87,401525437,TBD,0-0,42,"Notre Dame Stadium, Notre Dame, IN"
+4,"Saturday, September 23, 2023",194,87,401521330,TBD,0-0,42,"Notre Dame Stadium, Notre Dame, IN"
+7,"Saturday, October 14, 2023",30,87,401524031,TBD,0-0,42,"Notre Dame Stadium, Notre Dame, IN"
+9,"Saturday, October 28, 2023",221,87,401525440,TBD,0-0,42,"Notre Dame Stadium, Notre Dame, IN"
+12,"Saturday, November 18, 2023",154,87,401525442,TBD,0-0,42,"Notre Dame Stadium, Notre Dame, IN"
+1,"Saturday, September 2, 2023",2459,103,401525464,TBD,0-0,43,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA"
+2,"Saturday, September 9, 2023",107,103,401525490,TBD,0-0,43,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA"
+3,"Saturday, September 16, 2023",52,103,401525500,TBD,0-0,43,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA"
+5,"Saturday, September 30, 2023",258,103,401525513,TBD,0-0,43,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA"
+9,"Saturday, October 28, 2023",41,103,401520351,TBD,0-0,43,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA"
+11,"Saturday, November 11, 2023",259,103,401525547,TBD,0-0,43,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA"
+13,"Friday, November 24, 2023",2390,103,401525560,TBD,0-0,43,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA"
+1,"Saturday, September 2, 2023",2747,221,401525465,TBD,0-0,44,"Acrisure Stadium, Pittsburgh, PA"
+2,"Saturday, September 9, 2023",2132,221,401525496,TBD,0-0,44,"Acrisure Stadium, Pittsburgh, PA"
+4,"Saturday, September 23, 2023",153,221,401525510,TBD,0-0,44,"Acrisure Stadium, Pittsburgh, PA"
+7,"Saturday, October 14, 2023",97,221,401525525,TBD,0-0,44,"Acrisure Stadium, Pittsburgh, PA"
+10,"Saturday, November 4, 2023",52,221,401525541,TBD,0-0,44,"Acrisure Stadium, Pittsburgh, PA"
+12,"Thursday, November 16, 2023",103,221,401525553,TBD,0-0,44,"Acrisure Stadium, Pittsburgh, PA"
+1,"Saturday, September 2, 2023",2142,183,401525466,TBD,0-0,45,"JMA Wireless Dome, Syracuse, NY"
+2,"Saturday, September 9, 2023",2711,183,401525497,TBD,0-0,45,"JMA Wireless Dome, Syracuse, NY"
+4,"Saturday, September 23, 2023",349,183,401520268,TBD,0-0,45,"JMA Wireless Dome, Syracuse, NY"
+5,"Saturday, September 30, 2023",228,183,401525514,TBD,0-0,45,"JMA Wireless Dome, Syracuse, NY"
+10,"Friday, November 3, 2023",103,183,401525540,TBD,0-0,45,"JMA Wireless Dome, Syracuse, NY"
+13,"Saturday, November 25, 2023",154,183,401525563,TBD,0-0,45,"JMA Wireless Dome, Syracuse, NY"
+1,"Saturday, September 2, 2023",295,259,401525467,TBD,0-0,46,"Lane Stadium, Blacksburg, VA"
+2,"Saturday, September 9, 2023",2509,259,401520215,TBD,0-0,46,"Lane Stadium, Blacksburg, VA"
+5,"Saturday, September 30, 2023",221,259,401525516,TBD,0-0,46,"Lane Stadium, Blacksburg, VA"
+7,"Saturday, October 14, 2023",154,259,401525527,TBD,0-0,46,"Lane Stadium, Blacksburg, VA"
+9,"Thursday, October 26, 2023",183,259,401525533,TBD,0-0,46,"Lane Stadium, Blacksburg, VA"
+12,"Saturday, November 18, 2023",152,259,401525559,TBD,0-0,46,"Lane Stadium, Blacksburg, VA"
+1,"Saturday, September 2, 2023",326,239,401525817,TBD,0-0,47,"McLane Stadium, Waco, TX"
+2,"Saturday, September 9, 2023",254,239,401523999,TBD,0-0,47,"McLane Stadium, Waco, TX"
+3,"Saturday, September 16, 2023",112358,239,401525834,TBD,0-0,47,"McLane Stadium, Waco, TX"
+4,"Saturday, September 23, 2023",251,239,401525844,TBD,0-0,47,"McLane Stadium, Waco, TX"
+6,"Saturday, October 7, 2023",2641,239,401525858,TBD,0-0,47,"McLane Stadium, Waco, TX"
+9,"Saturday, October 28, 2023",66,239,401525873,TBD,0-0,47,"McLane Stadium, Waco, TX"
+10,"Saturday, November 4, 2023",248,239,401525880,TBD,0-0,47,"McLane Stadium, Waco, TX"
+13,"Saturday, November 25, 2023",277,239,401525902,TBD,0-0,47,"McLane Stadium, Waco, TX"
+1,"Saturday, September 2, 2023",2198,2132,401525818,TBD,0-0,48,"Nippert Stadium, Cincinnati, OH"
+3,"Saturday, September 16, 2023",193,2132,401525835,TBD,0-0,48,"Nippert Stadium, Cincinnati, OH"
+4,"Saturday, September 23, 2023",201,2132,401525845,TBD,0-0,48,"Nippert Stadium, Cincinnati, OH"
+7,"Saturday, October 14, 2023",66,2132,401525863,TBD,0-0,48,"Nippert Stadium, Cincinnati, OH"
+8,"Saturday, October 21, 2023",239,2132,401525868,TBD,0-0,48,"Nippert Stadium, Cincinnati, OH"
+10,"Saturday, November 4, 2023",2116,2132,401525881,TBD,0-0,48,"Nippert Stadium, Cincinnati, OH"
+13,"Saturday, November 25, 2023",2305,2132,401525903,TBD,0-0,48,"Nippert Stadium, Cincinnati, OH"
+1,"Saturday, September 2, 2023",2636,248,401525819,TBD,0-0,49,"TDECU Stadium, Houston, TX"
+3,"Saturday, September 16, 2023",2628,248,401525836,TBD,0-0,49,"TDECU Stadium, Houston, TX"
+4,"Saturday, September 23, 2023",2534,248,401520254,TBD,0-0,49,"TDECU Stadium, Houston, TX"
+7,"Thursday, October 12, 2023",277,248,401525862,TBD,0-0,49,"TDECU Stadium, Houston, TX"
+8,"Saturday, October 21, 2023",251,248,401525869,TBD,0-0,49,"TDECU Stadium, Houston, TX"
+11,"Saturday, November 11, 2023",2132,248,401525887,TBD,0-0,49,"TDECU Stadium, Houston, TX"
+12,"Saturday, November 18, 2023",197,248,401525894,TBD,0-0,49,"TDECU Stadium, Houston, TX"
+1,"Saturday, September 2, 2023",2460,66,401525820,TBD,0-0,50,"Jack Trice Stadium, Ames, IA"
+2,"Saturday, September 9, 2023",2294,66,401520194,TBD,0-0,50,"Jack Trice Stadium, Ames, IA"
+4,"Saturday, September 23, 2023",197,66,401525846,TBD,0-0,50,"Jack Trice Stadium, Ames, IA"
+6,"Saturday, October 7, 2023",2628,66,401525859,TBD,0-0,50,"Jack Trice Stadium, Ames, IA"
+10,"Saturday, November 4, 2023",2305,66,401525882,TBD,0-0,50,"Jack Trice Stadium, Ames, IA"
+12,"Saturday, November 18, 2023",251,66,401525895,TBD,0-0,50,"Jack Trice Stadium, Ames, IA"
+1,"Saturday, September 2, 2023",2546,2306,401525821,TBD,0-0,51,"Bill Snyder Family Stadium, Manhattan, KS"
+2,"Saturday, September 9, 2023",2653,2306,401525829,TBD,0-0,51,"Bill Snyder Family Stadium, Manhattan, KS"
+4,"Saturday, September 23, 2023",2116,2306,401525848,TBD,0-0,51,"Bill Snyder Family Stadium, Manhattan, KS"
+8,"Saturday, October 21, 2023",2628,2306,401525870,TBD,0-0,51,"Bill Snyder Family Stadium, Manhattan, KS"
+9,"Saturday, October 28, 2023",248,2306,401525875,TBD,0-0,51,"Bill Snyder Family Stadium, Manhattan, KS"
+11,"Saturday, November 11, 2023",239,2306,401525889,TBD,0-0,51,"Bill Snyder Family Stadium, Manhattan, KS"
+13,"Saturday, November 25, 2023",66,2306,401525904,TBD,0-0,51,"Bill Snyder Family Stadium, Manhattan, KS"
+1,"Saturday, September 2, 2023",2032,201,401525822,TBD,0-0,52,"Memorial Stadium (Norman, OK), Norman, OK"
+2,"Saturday, September 9, 2023",2567,201,401525830,TBD,0-0,52,"Memorial Stadium (Norman, OK), Norman, OK"
+5,"Saturday, September 30, 2023",66,201,401525852,TBD,0-0,52,"Memorial Stadium (Norman, OK), Norman, OK"
+8,"Saturday, October 21, 2023",2116,201,401525871,TBD,0-0,52,"Memorial Stadium (Norman, OK), Norman, OK"
+11,"Saturday, November 11, 2023",277,201,401525890,TBD,0-0,52,"Memorial Stadium (Norman, OK), Norman, OK"
+13,"Friday, November 24, 2023",2628,201,401525900,TBD,0-0,52,"Memorial Stadium (Norman, OK), Norman, OK"
+1,"Saturday, September 2, 2023",2110,197,401525823,TBD,0-0,53,"Boone Pickens Stadium, Stillwater, OK"
+3,"Saturday, September 16, 2023",6,197,401525839,TBD,0-0,53,"Boone Pickens Stadium, Stillwater, OK"
+6,"Friday, October 6, 2023",2306,197,401525857,TBD,0-0,53,"Boone Pickens Stadium, Stillwater, OK"
+7,"Saturday, October 14, 2023",2305,197,401525864,TBD,0-0,53,"Boone Pickens Stadium, Stillwater, OK"
+9,"Saturday, October 28, 2023",2132,197,401525876,TBD,0-0,53,"Boone Pickens Stadium, Stillwater, OK"
+10,"Saturday, November 4, 2023",201,197,401525883,TBD,0-0,53,"Boone Pickens Stadium, Stillwater, OK"
+13,"Saturday, November 25, 2023",252,197,401525905,TBD,0-0,53,"Boone Pickens Stadium, Stillwater, OK"
+1,"Saturday, September 2, 2023",242,251,401525824,TBD,0-0,54,"DKR-Texas Memorial Stadium, Austin, TX"
+3,"Saturday, September 16, 2023",2751,251,401525840,TBD,0-0,54,"DKR-Texas Memorial Stadium, Austin, TX"
+5,"Saturday, September 30, 2023",2305,251,401525854,TBD,0-0,54,"DKR-Texas Memorial Stadium, Austin, TX"
+9,"Saturday, October 28, 2023",252,251,401525877,TBD,0-0,54,"DKR-Texas Memorial Stadium, Austin, TX"
+10,"Saturday, November 4, 2023",2306,251,401525884,TBD,0-0,54,"DKR-Texas Memorial Stadium, Austin, TX"
+13,"Friday, November 24, 2023",2641,251,401525901,TBD,0-0,54,"DKR-Texas Memorial Stadium, Austin, TX"
+1,"Saturday, September 2, 2023",2641,2751,401525825,TBD,0-0,55,"Jonah Field at War Memorial Stadium, Laramie, WY"
+2,"Saturday, September 9, 2023",2502,2751,401532580,TBD,0-0,55,"Jonah Field at War Memorial Stadium, Laramie, WY"
+4,"Saturday, September 23, 2023",2026,2751,401531870,TBD,0-0,55,"Jonah Field at War Memorial Stadium, Laramie, WY"
+5,"Saturday, September 30, 2023",167,2751,401532588,TBD,0-0,55,"Jonah Field at War Memorial Stadium, Laramie, WY"
+6,"Saturday, October 7, 2023",278,2751,401532591,TBD,0-0,55,"Jonah Field at War Memorial Stadium, Laramie, WY"
+10,"Saturday, November 4, 2023",36,2751,401532609,TBD,0-0,55,"Jonah Field at War Memorial Stadium, Laramie, WY"
+12,"Saturday, November 18, 2023",62,2751,401532620,TBD,0-0,55,"Jonah Field at War Memorial Stadium, Laramie, WY"
+1,"Saturday, September 2, 2023",2029,202,401531337,TBD,0-0,56,"Chapman Stadium, Tulsa, OK"
+3,"Saturday, September 16, 2023",201,202,401525842,TBD,0-0,56,"Chapman Stadium, Tulsa, OK"
+5,"Thursday, September 28, 2023",218,202,401531339,TBD,0-0,56,"Chapman Stadium, Tulsa, OK"
+8,"Thursday, October 19, 2023",242,202,401531341,TBD,0-0,56,"Chapman Stadium, Tulsa, OK"
+10,"Saturday, November 4, 2023",2429,202,401531343,TBD,0-0,56,"Chapman Stadium, Tulsa, OK"
+12,"Saturday, November 18, 2023",249,202,401531345,TBD,0-0,56,"Chapman Stadium, Tulsa, OK"
+1,"Saturday, September 2, 2023",6,2655,401531347,TBD,0-0,57,"Yulman Stadium, New Orleans, LA"
+2,"Saturday, September 9, 2023",145,2655,401520214,TBD,0-0,57,"Yulman Stadium, New Orleans, LA"
+4,"Saturday, September 23, 2023",2447,2655,401531349,TBD,0-0,57,"Yulman Stadium, New Orleans, LA"
+5,"Saturday, September 30, 2023",5,2655,401531370,TBD,0-0,57,"Yulman Stadium, New Orleans, LA"
+8,"Saturday, October 21, 2023",249,2655,401531372,TBD,0-0,57,"Yulman Stadium, New Orleans, LA"
+11,"Saturday, November 11, 2023",202,2655,401531344,TBD,0-0,57,"Yulman Stadium, New Orleans, LA"
+13,"Saturday, November 25, 2023",2636,2655,401531376,TBD,0-0,57,"Yulman Stadium, New Orleans, LA"
+1,"Saturday, September 2, 2023",2006,218,401531387,TBD,0-0,58,"Lincoln Financial Field, Philadelphia, PA"
+3,"Saturday, September 16, 2023",2450,218,401531388,TBD,0-0,58,"Lincoln Financial Field, Philadelphia, PA"
+4,"Saturday, September 23, 2023",2390,218,401525509,TBD,0-0,58,"Lincoln Financial Field, Philadelphia, PA"
+6,"Saturday, October 7, 2023",2636,218,401531389,TBD,0-0,58,"Lincoln Financial Field, Philadelphia, PA"
+8,"Friday, October 20, 2023",2567,218,401531391,TBD,0-0,58,"Lincoln Financial Field, Philadelphia, PA"
+10,"Saturday, November 4, 2023",2426,218,401531392,TBD,0-0,58,"Lincoln Financial Field, Philadelphia, PA"
+13,"Saturday, November 25, 2023",235,218,401531394,TBD,0-0,58,"Lincoln Financial Field, Philadelphia, PA"
+1,"Saturday, September 2, 2023",2569,2429,401531402,TBD,0-0,59,"Jerry Richardson Stadium, Charlotte, NC"
+3,"Saturday, September 16, 2023",2247,2429,401531403,TBD,0-0,59,"Jerry Richardson Stadium, Charlotte, NC"
+7,"Saturday, October 14, 2023",2426,2429,401531405,TBD,0-0,59,"Jerry Richardson Stadium, Charlotte, NC"
+9,"Friday, October 27, 2023",2226,2429,401531407,TBD,0-0,59,"Jerry Richardson Stadium, Charlotte, NC"
+11,"Saturday, November 11, 2023",235,2429,401531408,TBD,0-0,59,"Jerry Richardson Stadium, Charlotte, NC"
+12,"Saturday, November 18, 2023",242,2429,401531409,TBD,0-0,59,"Jerry Richardson Stadium, Charlotte, NC"
+1,"Saturday, September 2, 2023",2405,2226,401531418,TBD,0-0,60,"FAU Stadium, Boca Raton, FL"
+2,"Saturday, September 9, 2023",195,2226,401531419,TBD,0-0,60,"FAU Stadium, Boca Raton, FL"
+6,"Saturday, October 7, 2023",202,2226,401531340,TBD,0-0,60,"FAU Stadium, Boca Raton, FL"
+8,"Saturday, October 21, 2023",2636,2226,401531397,TBD,0-0,60,"FAU Stadium, Boca Raton, FL"
+11,"Saturday, November 11, 2023",151,2226,401531416,TBD,0-0,60,"FAU Stadium, Boca Raton, FL"
+12,"Saturday, November 18, 2023",2655,2226,401531375,TBD,0-0,60,"FAU Stadium, Boca Raton, FL"
+1,"Saturday, September 2, 2023",2065,235,401531426,TBD,0-0,61,"Simmons Bank Liberty Stadium, Memphis, TN"
+3,"Thursday, September 14, 2023",2426,235,401531428,TBD,0-0,61,"Simmons Bank Liberty Stadium, Memphis, TN"
+5,"Saturday, September 30, 2023",68,235,401531429,TBD,0-0,61,"Simmons Bank Liberty Stadium, Memphis, TN"
+7,"Friday, October 13, 2023",2655,235,401531371,TBD,0-0,61,"Simmons Bank Liberty Stadium, Memphis, TN"
+10,"Saturday, November 4, 2023",58,235,401531425,TBD,0-0,61,"Simmons Bank Liberty Stadium, Memphis, TN"
+12,"Saturday, November 18, 2023",2567,235,401531431,TBD,0-0,61,"Simmons Bank Liberty Stadium, Memphis, TN"
+1,"Saturday, September 2, 2023",2241,2026,401531835,TBD,0-0,62,"Kidd Brewer Stadium, Boone, NC"
+3,"Saturday, September 16, 2023",151,2026,401531412,TBD,0-0,62,"Kidd Brewer Stadium, Boone, NC"
+7,"Tuesday, October 10, 2023",324,2026,401531888,TBD,0-0,62,"Kidd Brewer Stadium, Boone, NC"
+9,"Saturday, October 28, 2023",2572,2026,401531898,TBD,0-0,62,"Kidd Brewer Stadium, Boone, NC"
+10,"Saturday, November 4, 2023",276,2026,401531905,TBD,0-0,62,"Kidd Brewer Stadium, Boone, NC"
+13,"Saturday, November 25, 2023",290,2026,401531922,TBD,0-0,62,"Kidd Brewer Stadium, Boone, NC"
+1,"Saturday, September 2, 2023",2643,290,401531836,TBD,0-0,63,"Allen E. Paulson Stadium, Statesboro, GA"
+2,"Saturday, September 9, 2023",5,290,401531378,TBD,0-0,63,"Allen E. Paulson Stadium, Statesboro, GA"
+5,"Saturday, September 30, 2023",324,290,401531878,TBD,0-0,63,"Allen E. Paulson Stadium, Statesboro, GA"
+8,"Saturday, October 21, 2023",2433,290,401531894,TBD,0-0,63,"Allen E. Paulson Stadium, Statesboro, GA"
+9,"Thursday, October 26, 2023",2247,290,401531929,TBD,0-0,63,"Allen E. Paulson Stadium, Statesboro, GA"
+12,"Saturday, November 18, 2023",295,290,401531917,TBD,0-0,63,"Allen E. Paulson Stadium, Statesboro, GA"
+1,"Saturday, September 2, 2023",2083,256,401531837,TBD,0-0,64,"Bridgeforth Stadium/Zane Showker Field, Harrisonburg, VA"
+5,"Saturday, September 30, 2023",6,256,401531880,TBD,0-0,64,"Bridgeforth Stadium/Zane Showker Field, Harrisonburg, VA"
+7,"Saturday, October 14, 2023",290,256,401531890,TBD,0-0,64,"Bridgeforth Stadium/Zane Showker Field, Harrisonburg, VA"
+9,"Saturday, October 28, 2023",295,256,401531900,TBD,0-0,64,"Bridgeforth Stadium/Zane Showker Field, Harrisonburg, VA"
+11,"Saturday, November 11, 2023",41,256,401520385,TBD,0-0,64,"Bridgeforth Stadium/Zane Showker Field, Harrisonburg, VA"
+12,"Saturday, November 18, 2023",2026,256,401531918,TBD,0-0,64,"Bridgeforth Stadium/Zane Showker Field, Harrisonburg, VA"
+1,"Saturday, September 2, 2023",399,276,401531838,TBD,0-0,65,"Joan C. Edwards Stadium, Huntington, WV"
+4,"Saturday, September 23, 2023",259,276,401525511,TBD,0-0,65,"Joan C. Edwards Stadium, Huntington, WV"
+5,"Saturday, September 30, 2023",295,276,401531881,TBD,0-0,65,"Joan C. Edwards Stadium, Huntington, WV"
+8,"Thursday, October 19, 2023",256,276,401531893,TBD,0-0,65,"Joan C. Edwards Stadium, Huntington, WV"
+11,"Saturday, November 11, 2023",290,276,401531914,TBD,0-0,65,"Joan C. Edwards Stadium, Huntington, WV"
+13,"Saturday, November 25, 2023",2032,276,401531924,TBD,0-0,65,"Joan C. Edwards Stadium, Huntington, WV"
+1,"Saturday, September 2, 2023",2466,309,401531839,TBD,0-0,66,"Cajun Field, Lafayette, LA"
+4,"Saturday, September 23, 2023",2084,309,401531875,TBD,0-0,66,"Cajun Field, Lafayette, LA"
+6,"Saturday, October 7, 2023",326,309,401531884,TBD,0-0,66,"Cajun Field, Lafayette, LA"
+8,"Saturday, October 21, 2023",2247,309,401531897,TBD,0-0,66,"Cajun Field, Lafayette, LA"
+11,"Thursday, November 9, 2023",2572,309,401531911,TBD,0-0,66,"Cajun Field, Lafayette, LA"
+13,"Saturday, November 25, 2023",2433,309,401531926,TBD,0-0,66,"Cajun Field, Lafayette, LA"
+1,"Saturday, September 2, 2023",2016,2572,401531840,TBD,0-0,67,"M. M. Roberts Stadium, Hattiesburg, MS"
+3,"Saturday, September 16, 2023",2655,2572,401531348,TBD,0-0,67,"M. M. Roberts Stadium, Hattiesburg, MS"
+5,"Saturday, September 30, 2023",326,2572,401531883,TBD,0-0,67,"M. M. Roberts Stadium, Hattiesburg, MS"
+6,"Saturday, October 7, 2023",295,2572,401531886,TBD,0-0,67,"M. M. Roberts Stadium, Hattiesburg, MS"
+10,"Saturday, November 4, 2023",2433,2572,401531909,TBD,0-0,67,"M. M. Roberts Stadium, Hattiesburg, MS"
+13,"Saturday, November 25, 2023",2653,2572,401531927,TBD,0-0,67,"M. M. Roberts Stadium, Hattiesburg, MS"
+1,"Saturday, September 2, 2023",2617,2653,401531841,TBD,0-0,68,"Veterans Memorial Stadium (AL), Troy, AL"
+3,"Saturday, September 16, 2023",256,2653,401531848,TBD,0-0,68,"Veterans Memorial Stadium (AL), Troy, AL"
+4,"Saturday, September 23, 2023",98,2653,401520271,TBD,0-0,68,"Veterans Memorial Stadium (AL), Troy, AL"
+6,"Saturday, October 7, 2023",2032,2653,401531887,TBD,0-0,68,"Veterans Memorial Stadium (AL), Troy, AL"
+10,"Thursday, November 2, 2023",6,2653,401531904,TBD,0-0,68,"Veterans Memorial Stadium (AL), Troy, AL"
+12,"Saturday, November 18, 2023",309,2653,401531921,TBD,0-0,68,"Veterans Memorial Stadium (AL), Troy, AL"
+1,"Saturday, September 2, 2023",112358,195,401532395,TBD,0-0,69,"Peden Stadium, Athens, OH"
+3,"Saturday, September 16, 2023",66,195,401525838,TBD,0-0,69,"Peden Stadium, Athens, OH"
+6,"Saturday, October 7, 2023",2309,195,401532417,TBD,0-0,69,"Peden Stadium, Athens, OH"
+8,"Saturday, October 21, 2023",2711,195,401532428,TBD,0-0,69,"Peden Stadium, Athens, OH"
+9,"Saturday, October 28, 2023",193,195,401532432,TBD,0-0,69,"Peden Stadium, Athens, OH"
+12,"Wednesday, November 15, 2023",2117,195,401532446,TBD,0-0,69,"Peden Stadium, Athens, OH"
+1,"Saturday, September 2, 2023",2523,2005,401532570,TBD,0-0,70,"Falcon Stadium, USAF Academy, CO"
+3,"Saturday, September 16, 2023",328,2005,401532581,TBD,0-0,70,"Falcon Stadium, USAF Academy, CO"
+5,"Saturday, September 30, 2023",21,2005,401532589,TBD,0-0,70,"Falcon Stadium, USAF Academy, CO"
+7,"Saturday, October 14, 2023",2751,2005,401532598,TBD,0-0,70,"Falcon Stadium, USAF Academy, CO"
+12,"Saturday, November 18, 2023",2439,2005,401532624,TBD,0-0,70,"Falcon Stadium, USAF Academy, CO"
+1,"Saturday, September 2, 2023",2803,2439,401532572,TBD,0-0,71,"Allegiant Stadium, Las Vegas, NV"
+3,"Saturday, September 16, 2023",238,2439,401520247,TBD,0-0,71,"Allegiant Stadium, Las Vegas, NV"
+5,"Saturday, September 30, 2023",62,2439,401532586,TBD,0-0,71,"Allegiant Stadium, Las Vegas, NV"
+8,"Saturday, October 21, 2023",36,2439,401532599,TBD,0-0,71,"Allegiant Stadium, Las Vegas, NV"
+11,"Saturday, November 11, 2023",2751,2439,401532618,TBD,0-0,71,"Allegiant Stadium, Las Vegas, NV"
+13,"Saturday, November 25, 2023",23,2439,401532628,TBD,0-0,71,"Allegiant Stadium, Las Vegas, NV"
+14,"Friday, December 1, 2023",0,0,401539475,TBD,0-0,71,"Allegiant Stadium, Las Vegas, NV"
+1,"Saturday, September 2, 2023",2393,333,401520149,TBD,0-0,72,"Bryant-Denny Stadium, Tuscaloosa, AL"
+2,"Saturday, September 9, 2023",251,333,401520183,TBD,0-0,72,"Bryant-Denny Stadium, Tuscaloosa, AL"
+4,"Saturday, September 23, 2023",145,333,401520250,TBD,0-0,72,"Bryant-Denny Stadium, Tuscaloosa, AL"
+7,"Saturday, October 14, 2023",8,333,401520316,TBD,0-0,72,"Bryant-Denny Stadium, Tuscaloosa, AL"
+8,"Saturday, October 21, 2023",2633,333,401520333,TBD,0-0,72,"Bryant-Denny Stadium, Tuscaloosa, AL"
+10,"Saturday, November 4, 2023",99,333,401520362,TBD,0-0,72,"Bryant-Denny Stadium, Tuscaloosa, AL"
+12,"Saturday, November 18, 2023",236,333,401520401,TBD,0-0,72,"Bryant-Denny Stadium, Tuscaloosa, AL"
+1,"Saturday, September 2, 2023",2717,8,401520150,TBD,0-0,73,"War Memorial Stadium (AR), Little Rock, AR"
+1,"Saturday, September 2, 2023",2649,356,401520155,TBD,0-0,74,"Memorial Stadium (Champaign, IL), Champaign, IL"
+3,"Saturday, September 16, 2023",213,356,401520226,TBD,0-0,74,"Memorial Stadium (Champaign, IL), Champaign, IL"
+4,"Saturday, September 23, 2023",2226,356,401520255,TBD,0-0,74,"Memorial Stadium (Champaign, IL), Champaign, IL"
+6,"Saturday, October 7, 2023",158,356,401520301,TBD,0-0,74,"Memorial Stadium (Champaign, IL), Champaign, IL"
+8,"Saturday, October 21, 2023",275,356,401520336,TBD,0-0,74,"Memorial Stadium (Champaign, IL), Champaign, IL"
+11,"Saturday, November 11, 2023",84,356,401520383,TBD,0-0,74,"Memorial Stadium (Champaign, IL), Champaign, IL"
+13,"Saturday, November 25, 2023",77,356,401520431,TBD,0-0,74,"Memorial Stadium (Champaign, IL), Champaign, IL"
+1,"Saturday, September 2, 2023",194,84,401520156,TBD,0-0,75,"Memorial Stadium (Bloomington, IN), Bloomington, IN"
+2,"Saturday, September 9, 2023",282,84,401520193,TBD,0-0,75,"Memorial Stadium (Bloomington, IN), Bloomington, IN"
+4,"Saturday, September 23, 2023",2006,84,401520256,TBD,0-0,75,"Memorial Stadium (Bloomington, IN), Bloomington, IN"
+8,"Saturday, October 21, 2023",164,84,401520337,TBD,0-0,75,"Memorial Stadium (Bloomington, IN), Bloomington, IN"
+10,"Saturday, November 4, 2023",275,84,401520365,TBD,0-0,75,"Memorial Stadium (Bloomington, IN), Bloomington, IN"
+12,"Saturday, November 18, 2023",127,84,401520405,TBD,0-0,75,"Memorial Stadium (Bloomington, IN), Bloomington, IN"
+1,"Saturday, September 2, 2023",328,2294,401520157,TBD,0-0,76,"Kinnick Stadium, Iowa City, IA"
+3,"Saturday, September 16, 2023",2711,2294,401520227,TBD,0-0,76,"Kinnick Stadium, Iowa City, IA"
+5,"Saturday, September 30, 2023",127,2294,401520281,TBD,0-0,76,"Kinnick Stadium, Iowa City, IA"
+6,"Saturday, October 7, 2023",2509,2294,401520302,TBD,0-0,76,"Kinnick Stadium, Iowa City, IA"
+8,"Saturday, October 21, 2023",135,2294,401520338,TBD,0-0,76,"Kinnick Stadium, Iowa City, IA"
+11,"Saturday, November 11, 2023",164,2294,401520384,TBD,0-0,76,"Kinnick Stadium, Iowa City, IA"
+12,"Saturday, November 18, 2023",356,2294,401520406,TBD,0-0,76,"Kinnick Stadium, Iowa City, IA"
+1,"Saturday, September 2, 2023",2050,96,401520159,TBD,0-0,77,"Kroger Field, Lexington, KY"
+2,"Saturday, September 9, 2023",2198,96,401520196,TBD,0-0,77,"Kroger Field, Lexington, KY"
+3,"Saturday, September 16, 2023",2006,96,401520228,TBD,0-0,77,"Kroger Field, Lexington, KY"
+5,"Saturday, September 30, 2023",57,96,401520282,TBD,0-0,77,"Kroger Field, Lexington, KY"
+7,"Saturday, October 14, 2023",142,96,401520318,TBD,0-0,77,"Kroger Field, Lexington, KY"
+9,"Saturday, October 28, 2023",2633,96,401520353,TBD,0-0,77,"Kroger Field, Lexington, KY"
+11,"Saturday, November 11, 2023",333,96,401520386,TBD,0-0,77,"Kroger Field, Lexington, KY"
+1,"Saturday, September 2, 2023",189,2335,401520160,TBD,0-0,78,"Williams Stadium (VA), Lynchburg, VA"
+2,"Saturday, September 9, 2023",166,2335,401520198,TBD,0-0,78,"Williams Stadium (VA), Lynchburg, VA"
+6,"Thursday, October 5, 2023",2534,2335,401520296,TBD,0-0,78,"Williams Stadium (VA), Lynchburg, VA"
+8,"Tuesday, October 17, 2023",2393,2335,401520330,TBD,0-0,78,"Williams Stadium (VA), Lynchburg, VA"
+10,"Saturday, November 4, 2023",2348,2335,401520366,TBD,0-0,78,"Williams Stadium (VA), Lynchburg, VA"
+11,"Saturday, November 11, 2023",295,2335,401520388,TBD,0-0,78,"Williams Stadium (VA), Lynchburg, VA"
+12,"Saturday, November 18, 2023",113,2335,401520408,TBD,0-0,78,"Williams Stadium (VA), Lynchburg, VA"
+1,"Saturday, September 2, 2023",151,130,401520162,TBD,0-0,79,"Michigan Stadium, Ann Arbor, MI"
+2,"Saturday, September 9, 2023",2439,130,401520202,TBD,0-0,79,"Michigan Stadium, Ann Arbor, MI"
+3,"Saturday, September 16, 2023",189,130,401520232,TBD,0-0,79,"Michigan Stadium, Ann Arbor, MI"
+4,"Saturday, September 23, 2023",164,130,401520260,TBD,0-0,79,"Michigan Stadium, Ann Arbor, MI"
+7,"Saturday, October 14, 2023",84,130,401520321,TBD,0-0,79,"Michigan Stadium, Ann Arbor, MI"
+10,"Saturday, November 4, 2023",2509,130,401520368,TBD,0-0,79,"Michigan Stadium, Ann Arbor, MI"
+13,"Saturday, November 25, 2023",194,130,401520434,TBD,0-0,79,"Michigan Stadium, Ann Arbor, MI"
+1,"Saturday, September 2, 2023",2117,127,401520163,TBD,0-0,80,"Spartan Stadium, East Lansing, MI"
+2,"Saturday, September 9, 2023",257,127,401520203,TBD,0-0,80,"Spartan Stadium, East Lansing, MI"
+3,"Saturday, September 16, 2023",264,127,401520233,TBD,0-0,80,"Spartan Stadium, East Lansing, MI"
+4,"Saturday, September 23, 2023",120,127,401520261,TBD,0-0,80,"Spartan Stadium, East Lansing, MI"
+8,"Saturday, October 21, 2023",130,127,401520340,TBD,0-0,80,"Spartan Stadium, East Lansing, MI"
+10,"Saturday, November 4, 2023",158,127,401520369,TBD,0-0,80,"Spartan Stadium, East Lansing, MI"
+13,"Saturday, November 25, 2023",213,127,401520435,TBD,0-0,80,"Spartan Stadium, East Lansing, MI"
+1,"Saturday, September 2, 2023",2545,344,401520164,TBD,0-0,81,"Davis Wade Stadium, Starkville, MS"
+2,"Saturday, September 9, 2023",12,344,401520205,TBD,0-0,81,"Davis Wade Stadium, Starkville, MS"
+3,"Saturday, September 16, 2023",99,344,401520235,TBD,0-0,81,"Davis Wade Stadium, Starkville, MS"
+5,"Saturday, September 30, 2023",333,344,401520285,TBD,0-0,81,"Davis Wade Stadium, Starkville, MS"
+6,"Saturday, October 7, 2023",2711,344,401520304,TBD,0-0,81,"Davis Wade Stadium, Starkville, MS"
+10,"Saturday, November 4, 2023",96,344,401520371,TBD,0-0,81,"Davis Wade Stadium, Starkville, MS"
+12,"Saturday, November 18, 2023",2572,344,401520412,TBD,0-0,81,"Davis Wade Stadium, Starkville, MS"
+13,"Thursday, November 23, 2023",145,344,401520424,TBD,0-0,81,"Davis Wade Stadium, Starkville, MS"
+1,"Saturday, September 2, 2023",2382,145,401520168,TBD,0-0,82,"Vaught-Hemingway Stadium, Oxford, MS"
+3,"Saturday, September 16, 2023",59,145,401520241,TBD,0-0,82,"Vaught-Hemingway Stadium, Oxford, MS"
+5,"Saturday, September 30, 2023",99,145,401520288,TBD,0-0,82,"Vaught-Hemingway Stadium, Oxford, MS"
+6,"Saturday, October 7, 2023",8,145,401520308,TBD,0-0,82,"Vaught-Hemingway Stadium, Oxford, MS"
+9,"Saturday, October 28, 2023",238,145,401520357,TBD,0-0,82,"Vaught-Hemingway Stadium, Oxford, MS"
+10,"Saturday, November 4, 2023",245,145,401520374,TBD,0-0,82,"Vaught-Hemingway Stadium, Oxford, MS"
+12,"Saturday, November 18, 2023",2433,145,401520416,TBD,0-0,82,"Vaught-Hemingway Stadium, Oxford, MS"
+1,"Saturday, September 2, 2023",277,213,401520169,TBD,0-0,83,"Beaver Stadium, University Park, PA"
+2,"Saturday, September 9, 2023",48,213,401520209,TBD,0-0,83,"Beaver Stadium, University Park, PA"
+4,"Saturday, September 23, 2023",2294,213,401520265,TBD,0-0,83,"Beaver Stadium, University Park, PA"
+7,"Saturday, October 14, 2023",113,213,401520322,TBD,0-0,83,"Beaver Stadium, University Park, PA"
+9,"Saturday, October 28, 2023",84,213,401520358,TBD,0-0,83,"Beaver Stadium, University Park, PA"
+11,"Saturday, November 11, 2023",130,213,401520394,TBD,0-0,83,"Beaver Stadium, University Park, PA"
+12,"Saturday, November 18, 2023",164,213,401520417,TBD,0-0,83,"Beaver Stadium, University Park, PA"
+1,"Saturday, September 2, 2023",167,245,401520173,TBD,0-0,84,"Kyle Field, College Station, TX"
+3,"Saturday, September 16, 2023",2433,245,401520245,TBD,0-0,84,"Kyle Field, College Station, TX"
+4,"Saturday, September 23, 2023",2,245,401520270,TBD,0-0,84,"Kyle Field, College Station, TX"
+6,"Saturday, October 7, 2023",333,245,401520310,TBD,0-0,84,"Kyle Field, College Station, TX"
+9,"Saturday, October 28, 2023",2579,245,401520359,TBD,0-0,84,"Kyle Field, College Station, TX"
+11,"Saturday, November 11, 2023",344,245,401520397,TBD,0-0,84,"Kyle Field, College Station, TX"
+12,"Saturday, November 18, 2023",2000,245,401520420,TBD,0-0,84,"Kyle Field, College Station, TX"
+1,"Saturday, September 2, 2023",349,2433,401520175,TBD,0-0,85,"Malone Stadium, Monroe, LA"
+2,"Saturday, September 9, 2023",2320,2433,401531843,TBD,0-0,85,"Malone Stadium, Monroe, LA"
+5,"Saturday, September 30, 2023",2026,2433,401531882,TBD,0-0,85,"Malone Stadium, Monroe, LA"
+6,"Saturday, October 7, 2023",6,2433,401531885,TBD,0-0,85,"Malone Stadium, Monroe, LA"
+9,"Saturday, October 28, 2023",2032,2433,401531901,TBD,0-0,85,"Malone Stadium, Monroe, LA"
+11,"Saturday, November 11, 2023",2653,2433,401531915,TBD,0-0,85,"Malone Stadium, Monroe, LA"
+1,"Sunday, September 3, 2023",99,52,401520182,TBD,0-0,86,"Camping World Stadium, Orlando, FL"
+1,"Sunday, September 3, 2023",204,23,401532573,TBD,0-0,87,"CEFCU Stadium, San Jose, CA"
+2,"Saturday, September 9, 2023",13,23,401532578,TBD,0-0,87,"CEFCU Stadium, San Jose, CA"
+4,"Saturday, September 23, 2023",2005,23,401532584,TBD,0-0,87,"CEFCU Stadium, San Jose, CA"
+8,"Saturday, October 21, 2023",328,23,401532602,TBD,0-0,87,"CEFCU Stadium, San Jose, CA"
+11,"Saturday, November 11, 2023",278,23,401532614,TBD,0-0,87,"CEFCU Stadium, San Jose, CA"
+12,"Saturday, November 18, 2023",21,23,401532623,TBD,0-0,87,"CEFCU Stadium, San Jose, CA"
+1,"Monday, September 4, 2023",228,150,401525468,TBD,0-0,88,"Wallace Wade Stadium, Durham, NC"
+2,"Saturday, September 9, 2023",322,150,401525492,TBD,0-0,88,"Wallace Wade Stadium, Durham, NC"
+3,"Saturday, September 16, 2023",77,150,401520223,TBD,0-0,88,"Wallace Wade Stadium, Durham, NC"
+5,"Saturday, September 30, 2023",87,150,401525438,TBD,0-0,88,"Wallace Wade Stadium, Durham, NC"
+7,"Saturday, October 14, 2023",152,150,401525523,TBD,0-0,88,"Wallace Wade Stadium, Durham, NC"
+10,"Thursday, November 2, 2023",154,150,401525539,TBD,0-0,88,"Wallace Wade Stadium, Durham, NC"
+13,"Saturday, November 25, 2023",221,150,401525561,TBD,0-0,88,"Wallace Wade Stadium, Durham, NC"
+2,"Thursday, September 7, 2023",93,97,401525469,TBD,0-0,89,"Cardinal Stadium, Louisville, KY"
+4,"Saturday, September 23, 2023",103,97,401525506,TBD,0-0,89,"Cardinal Stadium, Louisville, KY"
+6,"Saturday, October 7, 2023",87,97,401525439,TBD,0-0,89,"Cardinal Stadium, Louisville, KY"
+9,"Saturday, October 28, 2023",150,97,401525535,TBD,0-0,89,"Cardinal Stadium, Louisville, KY"
+10,"Saturday, November 4, 2023",259,97,401525543,TBD,0-0,89,"Cardinal Stadium, Louisville, KY"
+11,"Thursday, November 9, 2023",258,97,401525546,TBD,0-0,89,"Cardinal Stadium, Louisville, KY"
+13,"Saturday, November 25, 2023",96,97,401520432,TBD,0-0,89,"Cardinal Stadium, Louisville, KY"
+2,"Saturday, September 9, 2023",2309,8,401520184,TBD,0-0,90,"Razorback Stadium, Fayetteville, AR"
+3,"Saturday, September 16, 2023",252,8,401520220,TBD,0-0,90,"Razorback Stadium, Fayetteville, AR"
+8,"Saturday, October 21, 2023",344,8,401520334,TBD,0-0,90,"Razorback Stadium, Fayetteville, AR"
+11,"Saturday, November 11, 2023",2,8,401520380,TBD,0-0,90,"Razorback Stadium, Fayetteville, AR"
+12,"Saturday, November 18, 2023",2229,8,401520402,TBD,0-0,90,"Razorback Stadium, Fayetteville, AR"
+13,"Saturday, November 25, 2023",142,8,401520426,TBD,0-0,90,"Razorback Stadium, Fayetteville, AR"
+2,"Saturday, September 9, 2023",2169,349,401520185,TBD,0-0,91,"Michie Stadium, West Point, NY"
+6,"Saturday, October 7, 2023",103,349,401520298,TBD,0-0,91,"Michie Stadium, West Point, NY"
+7,"Saturday, October 14, 2023",2653,349,401520317,TBD,0-0,91,"Michie Stadium, West Point, NY"
+9,"Saturday, October 28, 2023",113,349,401520349,TBD,0-0,91,"Michie Stadium, West Point, NY"
+11,"Saturday, November 11, 2023",107,349,401520381,TBD,0-0,91,"Michie Stadium, West Point, NY"
+12,"Saturday, November 18, 2023",324,349,401520403,TBD,0-0,91,"Michie Stadium, West Point, NY"
+2,"Saturday, September 9, 2023",158,38,401520188,TBD,0-0,92,"Folsom Field, Boulder, CO"
+3,"Saturday, September 16, 2023",36,38,401524007,TBD,0-0,92,"Folsom Field, Boulder, CO"
+5,"Saturday, September 30, 2023",30,38,401524023,TBD,0-0,92,"Folsom Field, Boulder, CO"
+7,"Friday, October 13, 2023",24,38,401524029,TBD,0-0,92,"Folsom Field, Boulder, CO"
+10,"Saturday, November 4, 2023",204,38,401524046,TBD,0-0,92,"Folsom Field, Boulder, CO"
+11,"Saturday, November 11, 2023",12,38,401524052,TBD,0-0,92,"Folsom Field, Boulder, CO"
+2,"Saturday, September 9, 2023",2377,57,401520190,TBD,0-0,93,"Ben Hill Griffin Stadium, Gainesville, FL"
+3,"Saturday, September 16, 2023",2633,57,401520224,TBD,0-0,93,"Ben Hill Griffin Stadium, Gainesville, FL"
+4,"Saturday, September 23, 2023",2429,57,401520251,TBD,0-0,93,"Ben Hill Griffin Stadium, Gainesville, FL"
+6,"Saturday, October 7, 2023",238,57,401520299,TBD,0-0,93,"Ben Hill Griffin Stadium, Gainesville, FL"
+10,"Saturday, November 4, 2023",8,57,401520363,TBD,0-0,93,"Ben Hill Griffin Stadium, Gainesville, FL"
+13,"Saturday, November 25, 2023",52,57,401520429,TBD,0-0,93,"Ben Hill Griffin Stadium, Gainesville, FL"
+2,"Saturday, September 9, 2023",2005,2534,401520211,TBD,0-0,94,"NRG Stadium, Houston, TX"
+2,"Saturday, September 9, 2023",275,265,401520217,TBD,0-0,95,"Martin Stadium, Pullman, WA"
+3,"Saturday, September 16, 2023",2458,265,401524013,TBD,0-0,95,"Martin Stadium, Pullman, WA"
+4,"Saturday, September 23, 2023",204,265,401524019,TBD,0-0,95,"Martin Stadium, Pullman, WA"
+7,"Saturday, October 14, 2023",12,265,401524030,TBD,0-0,95,"Martin Stadium, Pullman, WA"
+10,"Saturday, November 4, 2023",24,265,401524050,TBD,0-0,95,"Martin Stadium, Pullman, WA"
+12,"Friday, November 17, 2023",38,265,401524057,TBD,0-0,95,"Martin Stadium, Pullman, WA"
+2,"Saturday, September 9, 2023",302,204,401524000,TBD,0-0,96,"Reser Stadium, Corvallis, OR"
+3,"Saturday, September 16, 2023",21,204,401524009,TBD,0-0,96,"Reser Stadium, Corvallis, OR"
+5,"Friday, September 29, 2023",254,204,401524020,TBD,0-0,96,"Reser Stadium, Corvallis, OR"
+7,"Saturday, October 14, 2023",26,204,401524032,TBD,0-0,96,"Reser Stadium, Corvallis, OR"
+11,"Saturday, November 11, 2023",24,204,401524054,TBD,0-0,96,"Reser Stadium, Corvallis, OR"
+12,"Saturday, November 18, 2023",264,204,401524060,TBD,0-0,96,"Reser Stadium, Corvallis, OR"
+2,"Saturday, September 9, 2023",2483,2641,401524002,TBD,0-0,97,"Jones AT&T Stadium, Lubbock, TX"
+3,"Saturday, September 16, 2023",2627,2641,401525841,TBD,0-0,97,"Jones AT&T Stadium, Lubbock, TX"
+5,"Saturday, September 30, 2023",248,2641,401525855,TBD,0-0,97,"Jones AT&T Stadium, Lubbock, TX"
+7,"Saturday, October 14, 2023",2306,2641,401525866,TBD,0-0,97,"Jones AT&T Stadium, Lubbock, TX"
+10,"Thursday, November 2, 2023",2628,2641,401525879,TBD,0-0,97,"Jones AT&T Stadium, Lubbock, TX"
+12,"Saturday, November 18, 2023",2116,2641,401525898,TBD,0-0,97,"Jones AT&T Stadium, Lubbock, TX"
+2,"Saturday, September 9, 2023",87,152,401525436,TBD,0-0,98,"Carter-Finley Stadium, Raleigh, NC"
+3,"Saturday, September 16, 2023",2678,152,401525502,TBD,0-0,98,"Carter-Finley Stadium, Raleigh, NC"
+5,"Friday, September 29, 2023",97,152,401525512,TBD,0-0,98,"Carter-Finley Stadium, Raleigh, NC"
+6,"Saturday, October 7, 2023",276,152,401525521,TBD,0-0,98,"Carter-Finley Stadium, Raleigh, NC"
+9,"Saturday, October 28, 2023",228,152,401525534,TBD,0-0,98,"Carter-Finley Stadium, Raleigh, NC"
+10,"Saturday, November 4, 2023",2390,152,401525544,TBD,0-0,98,"Carter-Finley Stadium, Raleigh, NC"
+13,"Saturday, November 25, 2023",153,152,401525562,TBD,0-0,98,"Carter-Finley Stadium, Raleigh, NC"
+2,"Saturday, September 9, 2023",2127,228,401525491,TBD,0-0,99,"Memorial Stadium (Clemson, SC), Clemson, SC"
+3,"Saturday, September 16, 2023",2226,228,401525501,TBD,0-0,99,"Memorial Stadium (Clemson, SC), Clemson, SC"
+4,"Saturday, September 23, 2023",52,228,401525507,TBD,0-0,99,"Memorial Stadium (Clemson, SC), Clemson, SC"
+6,"Saturday, October 7, 2023",154,228,401525517,TBD,0-0,99,"Memorial Stadium (Clemson, SC), Clemson, SC"
+10,"Saturday, November 4, 2023",87,228,401525441,TBD,0-0,99,"Memorial Stadium (Clemson, SC), Clemson, SC"
+11,"Saturday, November 11, 2023",59,228,401525548,TBD,0-0,99,"Memorial Stadium (Clemson, SC), Clemson, SC"
+12,"Saturday, November 18, 2023",153,228,401525554,TBD,0-0,99,"Memorial Stadium (Clemson, SC), Clemson, SC"
+2,"Saturday, September 9, 2023",2572,52,401525493,TBD,0-0,100,"Doak Campbell Stadium, Tallahassee, FL"
+6,"Saturday, October 7, 2023",259,52,401525518,TBD,0-0,100,"Doak Campbell Stadium, Tallahassee, FL"
+7,"Saturday, October 14, 2023",183,52,401525524,TBD,0-0,100,"Doak Campbell Stadium, Tallahassee, FL"
+8,"Saturday, October 21, 2023",150,52,401525530,TBD,0-0,100,"Doak Campbell Stadium, Tallahassee, FL"
+11,"Saturday, November 11, 2023",2390,52,401525550,TBD,0-0,100,"Doak Campbell Stadium, Tallahassee, FL"
+12,"Saturday, November 18, 2023",2453,52,401525556,TBD,0-0,100,"Doak Campbell Stadium, Tallahassee, FL"
+2,"Saturday, September 9, 2023",2569,59,401525494,TBD,0-0,101,"Bobby Dodd Stadium, Atlanta, GA"
+5,"Saturday, September 30, 2023",189,59,401525515,TBD,0-0,101,"Bobby Dodd Stadium, Atlanta, GA"
+8,"Saturday, October 21, 2023",103,59,401525528,TBD,0-0,101,"Bobby Dodd Stadium, Atlanta, GA"
+9,"Saturday, October 28, 2023",153,59,401525537,TBD,0-0,101,"Bobby Dodd Stadium, Atlanta, GA"
+12,"Saturday, November 18, 2023",183,59,401525557,TBD,0-0,101,"Bobby Dodd Stadium, Atlanta, GA"
+13,"Saturday, November 25, 2023",61,59,401520430,TBD,0-0,101,"Bobby Dodd Stadium, Atlanta, GA"
+2,"Saturday, September 9, 2023",2026,153,401525495,TBD,0-0,102,"Kenan Stadium, Chapel Hill, NC"
+3,"Saturday, September 16, 2023",135,153,401520239,TBD,0-0,102,"Kenan Stadium, Chapel Hill, NC"
+6,"Saturday, October 7, 2023",183,153,401525520,TBD,0-0,102,"Kenan Stadium, Chapel Hill, NC"
+7,"Saturday, October 14, 2023",2390,153,401525526,TBD,0-0,102,"Kenan Stadium, Chapel Hill, NC"
+8,"Saturday, October 21, 2023",258,153,401525531,TBD,0-0,102,"Kenan Stadium, Chapel Hill, NC"
+10,"Saturday, November 4, 2023",2097,153,401525545,TBD,0-0,102,"Kenan Stadium, Chapel Hill, NC"
+11,"Saturday, November 11, 2023",150,153,401525549,TBD,0-0,102,"Kenan Stadium, Chapel Hill, NC"
+2,"Saturday, September 9, 2023",256,258,401525498,TBD,0-0,103,"Scott Stadium, Charlottesville, VA"
+4,"Friday, September 22, 2023",152,258,401525505,TBD,0-0,103,"Scott Stadium, Charlottesville, VA"
+6,"Saturday, October 7, 2023",2729,258,401525522,TBD,0-0,103,"Scott Stadium, Charlottesville, VA"
+10,"Saturday, November 4, 2023",59,258,401525542,TBD,0-0,103,"Scott Stadium, Charlottesville, VA"
+12,"Saturday, November 18, 2023",150,258,401525555,TBD,0-0,103,"Scott Stadium, Charlottesville, VA"
+13,"Saturday, November 25, 2023",259,258,401525564,TBD,0-0,103,"Scott Stadium, Charlottesville, VA"
+2,"Saturday, September 9, 2023",2116,68,401525827,TBD,0-0,104,"Albertsons Stadium, Boise, ID"
+3,"Saturday, September 16, 2023",155,68,401532582,TBD,0-0,104,"Albertsons Stadium, Boise, ID"
+6,"Saturday, October 7, 2023",23,68,401532592,TBD,0-0,104,"Albertsons Stadium, Boise, ID"
+9,"Saturday, October 28, 2023",2751,68,401532607,TBD,0-0,104,"Albertsons Stadium, Boise, ID"
+11,"Saturday, November 11, 2023",167,68,401532616,TBD,0-0,104,"Albertsons Stadium, Boise, ID"
+13,"Saturday, November 25, 2023",2005,68,401532625,TBD,0-0,104,"Albertsons Stadium, Boise, ID"
+2,"Saturday, September 9, 2023",248,242,401525831,TBD,0-0,105,"Rice Stadium, Houston, TX"
+3,"Saturday, September 16, 2023",2640,242,401531441,TBD,0-0,105,"Rice Stadium, Houston, TX"
+5,"Saturday, September 30, 2023",151,242,401531414,TBD,0-0,105,"Rice Stadium, Houston, TX"
+6,"Saturday, October 7, 2023",41,242,401520309,TBD,0-0,105,"Rice Stadium, Houston, TX"
+9,"Saturday, October 28, 2023",2655,242,401531373,TBD,0-0,105,"Rice Stadium, Houston, TX"
+10,"Saturday, November 4, 2023",2567,242,401531440,TBD,0-0,105,"Rice Stadium, Houston, TX"
+13,"Saturday, November 25, 2023",2226,242,401531421,TBD,0-0,105,"Rice Stadium, Houston, TX"
+2,"Saturday, September 9, 2023",2184,277,401525833,TBD,0-0,106,"Milan Puskar Stadium, Morgantown, WV"
+3,"Saturday, September 16, 2023",221,277,401525503,TBD,0-0,106,"Milan Puskar Stadium, Morgantown, WV"
+4,"Saturday, September 23, 2023",2641,277,401525850,TBD,0-0,106,"Milan Puskar Stadium, Morgantown, WV"
+8,"Saturday, October 21, 2023",197,277,401525872,TBD,0-0,106,"Milan Puskar Stadium, Morgantown, WV"
+10,"Saturday, November 4, 2023",252,277,401525885,TBD,0-0,106,"Milan Puskar Stadium, Morgantown, WV"
+12,"Saturday, November 18, 2023",2132,277,401525899,TBD,0-0,106,"Milan Puskar Stadium, Morgantown, WV"
+2,"Saturday, September 9, 2023",193,113,401526833,TBD,0-0,107,"Warren McGuirk Alumni Stadium, Amherst, MA"
+4,"Saturday, September 23, 2023",167,113,401526835,TBD,0-0,107,"Warren McGuirk Alumni Stadium, Amherst, MA"
+5,"Saturday, September 30, 2023",2032,113,401526836,TBD,0-0,107,"Warren McGuirk Alumni Stadium, Amherst, MA"
+6,"Saturday, October 7, 2023",2649,113,401526837,TBD,0-0,107,"Warren McGuirk Alumni Stadium, Amherst, MA"
+10,"Saturday, November 4, 2023",2771,113,401520400,TBD,0-0,107,"Warren McGuirk Alumni Stadium, Amherst, MA"
+2,"Saturday, September 9, 2023",326,2636,401531395,TBD,0-0,108,"Alamodome, San Antonio, TX"
+3,"Friday, September 15, 2023",349,2636,401531396,TBD,0-0,108,"Alamodome, San Antonio, TX"
+7,"Saturday, October 14, 2023",5,2636,401531381,TBD,0-0,108,"Alamodome, San Antonio, TX"
+9,"Saturday, October 28, 2023",151,2636,401531398,TBD,0-0,108,"Alamodome, San Antonio, TX"
+11,"Saturday, November 11, 2023",242,2636,401531400,TBD,0-0,108,"Alamodome, San Antonio, TX"
+12,"Friday, November 17, 2023",58,2636,401531401,TBD,0-0,108,"Alamodome, San Antonio, TX"
+2,"Saturday, September 9, 2023",276,151,401531411,TBD,0-0,109,"Dowdy-Ficklen Stadium, Greenville, NC"
+4,"Saturday, September 23, 2023",2241,151,401531413,TBD,0-0,109,"Dowdy-Ficklen Stadium, Greenville, NC"
+7,"Thursday, October 12, 2023",2567,151,401531415,TBD,0-0,109,"Dowdy-Ficklen Stadium, Greenville, NC"
+8,"Saturday, October 21, 2023",2429,151,401531406,TBD,0-0,109,"Dowdy-Ficklen Stadium, Greenville, NC"
+10,"Saturday, November 4, 2023",2655,151,401531374,TBD,0-0,109,"Dowdy-Ficklen Stadium, Greenville, NC"
+13,"Saturday, November 25, 2023",202,151,401531346,TBD,0-0,109,"Dowdy-Ficklen Stadium, Greenville, NC"
+2,"Saturday, September 9, 2023",50,58,401531422,TBD,0-0,110,"Raymond James Stadium, Tampa, FL"
+3,"Saturday, September 16, 2023",333,58,401520244,TBD,0-0,110,"Raymond James Stadium, Tampa, FL"
+4,"Saturday, September 23, 2023",242,58,401531423,TBD,0-0,110,"Raymond James Stadium, Tampa, FL"
+7,"Saturday, October 14, 2023",2226,58,401531420,TBD,0-0,110,"Raymond James Stadium, Tampa, FL"
+11,"Saturday, November 11, 2023",218,58,401531393,TBD,0-0,110,"Raymond James Stadium, Tampa, FL"
+13,"Saturday, November 25, 2023",2429,58,401531410,TBD,0-0,110,"Raymond James Stadium, Tampa, FL"
+2,"Saturday, September 9, 2023",235,2032,401531427,TBD,0-0,111,"Centennial Bank Stadium, Jonesboro, AR"
+3,"Saturday, September 16, 2023",2619,2032,401531846,TBD,0-0,111,"Centennial Bank Stadium, Jonesboro, AR"
+4,"Saturday, September 23, 2023",2572,2032,401531874,TBD,0-0,111,"Centennial Bank Stadium, Jonesboro, AR"
+8,"Saturday, October 21, 2023",324,2032,401531896,TBD,0-0,111,"Centennial Bank Stadium, Jonesboro, AR"
+10,"Saturday, November 4, 2023",309,2032,401531908,TBD,0-0,111,"Centennial Bank Stadium, Jonesboro, AR"
+12,"Saturday, November 18, 2023",326,2032,401531919,TBD,0-0,111,"Centennial Bank Stadium, Jonesboro, AR"
+2,"Saturday, September 9, 2023",2681,2426,401531432,TBD,0-0,112,"Navy-Marine Corps Memorial Stadium, Annapolis, MD"
+5,"Saturday, September 30, 2023",58,2426,401531424,TBD,0-0,112,"Navy-Marine Corps Memorial Stadium, Annapolis, MD"
+6,"Saturday, October 7, 2023",249,2426,401531433,TBD,0-0,112,"Navy-Marine Corps Memorial Stadium, Annapolis, MD"
+8,"Saturday, October 21, 2023",2005,2426,401531434,TBD,0-0,112,"Navy-Marine Corps Memorial Stadium, Annapolis, MD"
+11,"Saturday, November 11, 2023",5,2426,401531384,TBD,0-0,112,"Navy-Marine Corps Memorial Stadium, Annapolis, MD"
+12,"Saturday, November 18, 2023",151,2426,401531417,TBD,0-0,112,"Navy-Marine Corps Memorial Stadium, Annapolis, MD"
+2,"Saturday, September 9, 2023",309,295,401531842,TBD,0-0,113,"S.B. Ballard Stadium, Norfolk, VA"
+3,"Saturday, September 16, 2023",154,295,401525504,TBD,0-0,113,"S.B. Ballard Stadium, Norfolk, VA"
+4,"Saturday, September 23, 2023",2837,295,401531873,TBD,0-0,113,"S.B. Ballard Stadium, Norfolk, VA"
+8,"Saturday, October 21, 2023",2026,295,401531895,TBD,0-0,113,"S.B. Ballard Stadium, Norfolk, VA"
+10,"Saturday, November 4, 2023",324,295,401531907,TBD,0-0,113,"S.B. Ballard Stadium, Norfolk, VA"
+13,"Saturday, November 25, 2023",2247,295,401531925,TBD,0-0,113,"S.B. Ballard Stadium, Norfolk, VA"
+2,"Saturday, September 9, 2023",2545,6,401531844,TBD,0-0,114,"Hancock Whitney Stadium, Mobile, AL"
+4,"Saturday, September 23, 2023",2117,6,401531876,TBD,0-0,114,"Hancock Whitney Stadium, Mobile, AL"
+8,"Tuesday, October 17, 2023",2572,6,401531892,TBD,0-0,114,"Hancock Whitney Stadium, Mobile, AL"
+9,"Saturday, October 28, 2023",309,6,401531902,TBD,0-0,114,"Hancock Whitney Stadium, Mobile, AL"
+11,"Saturday, November 11, 2023",2032,6,401531916,TBD,0-0,114,"Hancock Whitney Stadium, Mobile, AL"
+12,"Saturday, November 18, 2023",276,6,401531920,TBD,0-0,114,"Hancock Whitney Stadium, Mobile, AL"
+2,"Saturday, September 9, 2023",160,2117,401532396,TBD,0-0,115,"Kelly/Shorts Stadium, Mount Pleasant, MI"
+5,"Saturday, September 30, 2023",2199,2117,401532410,TBD,0-0,115,"Kelly/Shorts Stadium, Mount Pleasant, MI"
+7,"Saturday, October 14, 2023",2006,2117,401532420,TBD,0-0,115,"Kelly/Shorts Stadium, Mount Pleasant, MI"
+10,"Tuesday, October 31, 2023",2459,2117,401532433,TBD,0-0,115,"Kelly/Shorts Stadium, Mount Pleasant, MI"
+13,"Friday, November 24, 2023",2649,2117,401532451,TBD,0-0,115,"Kelly/Shorts Stadium, Mount Pleasant, MI"
+2,"Saturday, September 9, 2023",79,2459,401532397,TBD,0-0,116,"Huskie Stadium, DeKalb, IL"
+4,"Saturday, September 23, 2023",202,2459,401531338,TBD,0-0,116,"Huskie Stadium, DeKalb, IL"
+7,"Saturday, October 14, 2023",195,2459,401532424,TBD,0-0,116,"Huskie Stadium, DeKalb, IL"
+8,"Saturday, October 21, 2023",2199,2459,401532426,TBD,0-0,116,"Huskie Stadium, DeKalb, IL"
+11,"Tuesday, November 7, 2023",2050,2459,401532437,TBD,0-0,116,"Huskie Stadium, DeKalb, IL"
+12,"Tuesday, November 14, 2023",2711,2459,401532444,TBD,0-0,116,"Huskie Stadium, DeKalb, IL"
+2,"Saturday, September 9, 2023",2640,2649,401532398,TBD,0-0,117,"Glass Bowl, Toledo, OH"
+3,"Saturday, September 16, 2023",23,2649,401532403,TBD,0-0,117,"Glass Bowl, Toledo, OH"
+4,"Saturday, September 23, 2023",2711,2649,401532406,TBD,0-0,117,"Glass Bowl, Toledo, OH"
+5,"Saturday, September 30, 2023",2459,2649,401532411,TBD,0-0,117,"Glass Bowl, Toledo, OH"
+10,"Tuesday, October 31, 2023",2084,2649,401532434,TBD,0-0,117,"Glass Bowl, Toledo, OH"
+11,"Wednesday, November 8, 2023",2199,2649,401532440,TBD,0-0,117,"Glass Bowl, Toledo, OH"
+2,"Saturday, September 9, 2023",2415,2006,401532399,TBD,0-0,118,"InfoCision Stadium, Akron, OH"
+5,"Saturday, September 30, 2023",2084,2006,401532412,TBD,0-0,118,"InfoCision Stadium, Akron, OH"
+6,"Saturday, October 7, 2023",2459,2006,401532418,TBD,0-0,118,"InfoCision Stadium, Akron, OH"
+10,"Wednesday, November 1, 2023",2309,2006,401532436,TBD,0-0,118,"InfoCision Stadium, Akron, OH"
+13,"Friday, November 24, 2023",195,2006,401532452,TBD,0-0,118,"InfoCision Stadium, Akron, OH"
+2,"Saturday, September 9, 2023",2197,189,401532400,TBD,0-0,119,"Doyt L. Perry Stadium, Bowling Green, OH"
+4,"Saturday, September 23, 2023",195,189,401532405,TBD,0-0,119,"Doyt L. Perry Stadium, Bowling Green, OH"
+8,"Saturday, October 21, 2023",2006,189,401532429,TBD,0-0,119,"Doyt L. Perry Stadium, Bowling Green, OH"
+10,"Wednesday, November 1, 2023",2050,189,401532435,TBD,0-0,119,"Doyt L. Perry Stadium, Bowling Green, OH"
+12,"Tuesday, November 14, 2023",2649,189,401532443,TBD,0-0,119,"Doyt L. Perry Stadium, Bowling Green, OH"
+2,"Saturday, September 9, 2023",2230,2084,401532401,TBD,0-0,120,"UB Stadium, Buffalo, NY"
+3,"Saturday, September 16, 2023",2335,2084,401520222,TBD,0-0,120,"UB Stadium, Buffalo, NY"
+6,"Saturday, October 7, 2023",2117,2084,401532415,TBD,0-0,120,"UB Stadium, Buffalo, NY"
+7,"Saturday, October 14, 2023",189,2084,401532421,TBD,0-0,120,"UB Stadium, Buffalo, NY"
+11,"Tuesday, November 7, 2023",195,2084,401532439,TBD,0-0,120,"UB Stadium, Buffalo, NY"
+13,"Tuesday, November 21, 2023",2199,2084,401532449,TBD,0-0,120,"UB Stadium, Buffalo, NY"
+2,"Saturday, September 9, 2023",331,278,401532574,TBD,0-0,121,"Bulldog Stadium (CA), Fresno, CA"
+4,"Saturday, September 23, 2023",2309,278,401532407,TBD,0-0,121,"Bulldog Stadium (CA), Fresno, CA"
+5,"Saturday, September 30, 2023",2440,278,401532587,TBD,0-0,121,"Bulldog Stadium (CA), Fresno, CA"
+9,"Saturday, October 28, 2023",2439,278,401532606,TBD,0-0,121,"Bulldog Stadium (CA), Fresno, CA"
+10,"Saturday, November 4, 2023",68,278,401532608,TBD,0-0,121,"Bulldog Stadium (CA), Fresno, CA"
+12,"Saturday, November 18, 2023",167,278,401532622,TBD,0-0,121,"Bulldog Stadium (CA), Fresno, CA"
+2,"Saturday, September 9, 2023",70,2440,401532576,TBD,0-0,122,"Mackay Stadium, Reno, NV"
+3,"Saturday, September 16, 2023",2305,2440,401525837,TBD,0-0,122,"Mackay Stadium, Reno, NV"
+7,"Saturday, October 14, 2023",2439,2440,401532597,TBD,0-0,122,"Mackay Stadium, Reno, NV"
+9,"Saturday, October 28, 2023",167,2440,401532604,TBD,0-0,122,"Mackay Stadium, Reno, NV"
+10,"Saturday, November 4, 2023",62,2440,401532610,TBD,0-0,122,"Mackay Stadium, Reno, NV"
+13,"Saturday, November 25, 2023",2751,2440,401532630,TBD,0-0,122,"Mackay Stadium, Reno, NV"
+2,"Saturday, September 9, 2023",2635,167,401532577,TBD,0-0,123,"University Stadium (NM), Albuquerque, NM"
+3,"Saturday, September 16, 2023",166,167,401520238,TBD,0-0,123,"University Stadium (NM), Albuquerque, NM"
+7,"Saturday, October 14, 2023",23,167,401532596,TBD,0-0,123,"University Stadium (NM), Albuquerque, NM"
+8,"Saturday, October 21, 2023",62,167,401532600,TBD,0-0,123,"University Stadium (NM), Albuquerque, NM"
+10,"Saturday, November 4, 2023",2439,167,401532611,TBD,0-0,123,"University Stadium (NM), Albuquerque, NM"
+13,"Saturday, November 25, 2023",328,167,401532629,TBD,0-0,123,"University Stadium (NM), Albuquerque, NM"
+2,"Saturday, September 9, 2023",304,328,401532579,TBD,0-0,124,"Maverik Stadium, Logan, UT"
+4,"Saturday, September 23, 2023",256,328,401531872,TBD,0-0,124,"Maverik Stadium, Logan, UT"
+6,"Saturday, October 7, 2023",36,328,401532590,TBD,0-0,124,"Maverik Stadium, Logan, UT"
+7,"Saturday, October 14, 2023",278,328,401532594,TBD,0-0,124,"Maverik Stadium, Logan, UT"
+11,"Saturday, November 11, 2023",2440,328,401532615,TBD,0-0,124,"Maverik Stadium, Logan, UT"
+12,"Saturday, November 18, 2023",68,328,401532619,TBD,0-0,124,"Maverik Stadium, Logan, UT"
+2,"Saturday, September 9, 2023",2,25,401520186,TBD,0-0,125,"California Memorial Stadium, Berkeley, CA"
+3,"Saturday, September 16, 2023",70,25,401524006,TBD,0-0,125,"California Memorial Stadium, Berkeley, CA"
+5,"Saturday, September 30, 2023",9,25,401524022,TBD,0-0,125,"California Memorial Stadium, Berkeley, CA"
+6,"Saturday, October 7, 2023",204,25,401524027,TBD,0-0,125,"California Memorial Stadium, Berkeley, CA"
+9,"Saturday, October 28, 2023",30,25,401524041,TBD,0-0,125,"California Memorial Stadium, Berkeley, CA"
+11,"Saturday, November 11, 2023",265,25,401524051,TBD,0-0,125,"California Memorial Stadium, Berkeley, CA"
+2,"Saturday, September 9, 2023",55,324,401520187,TBD,0-0,126,"Brooks Stadium (SC), Conway, SC"
+3,"Saturday, September 16, 2023",2184,324,401531845,TBD,0-0,126,"Brooks Stadium (SC), Conway, SC"
+4,"Thursday, September 21, 2023",2247,324,401531849,TBD,0-0,126,"Brooks Stadium (SC), Conway, SC"
+9,"Saturday, October 28, 2023",276,324,401531899,TBD,0-0,126,"Brooks Stadium (SC), Conway, SC"
+11,"Saturday, November 11, 2023",326,324,401531912,TBD,0-0,126,"Brooks Stadium (SC), Conway, SC"
+13,"Saturday, November 25, 2023",256,324,401531923,TBD,0-0,126,"Brooks Stadium (SC), Conway, SC"
+2,"Saturday, September 9, 2023",2755,99,401520199,TBD,0-0,127,"Tiger Stadium (LA), Baton Rouge, LA"
+4,"Saturday, September 23, 2023",8,99,401520258,TBD,0-0,127,"Tiger Stadium (LA), Baton Rouge, LA"
+7,"Saturday, October 14, 2023",2,99,401520319,TBD,0-0,127,"Tiger Stadium (LA), Baton Rouge, LA"
+8,"Saturday, October 21, 2023",349,99,401520339,TBD,0-0,127,"Tiger Stadium (LA), Baton Rouge, LA"
+11,"Saturday, November 11, 2023",57,99,401520389,TBD,0-0,127,"Tiger Stadium (LA), Baton Rouge, LA"
+12,"Saturday, November 18, 2023",2247,99,401520409,TBD,0-0,127,"Tiger Stadium (LA), Baton Rouge, LA"
+13,"Saturday, November 25, 2023",245,99,401520433,TBD,0-0,127,"Tiger Stadium (LA), Baton Rouge, LA"
+2,"Saturday, September 9, 2023",2638,77,401520207,TBD,0-0,128,"Ryan Field, Evanston, IL"
+4,"Saturday, September 23, 2023",135,77,401520264,TBD,0-0,128,"Ryan Field, Evanston, IL"
+5,"Saturday, September 30, 2023",213,77,401520287,TBD,0-0,128,"Ryan Field, Evanston, IL"
+6,"Saturday, October 7, 2023",47,77,401520306,TBD,0-0,128,"Ryan Field, Evanston, IL"
+9,"Saturday, October 28, 2023",120,77,401520356,TBD,0-0,128,"Ryan Field, Evanston, IL"
+12,"Saturday, November 18, 2023",2509,77,401520414,TBD,0-0,128,"Ryan Field, Evanston, IL"
+2,"Saturday, September 9, 2023",2754,194,401520208,TBD,0-0,129,"Ohio Stadium, Columbus, OH"
+3,"Saturday, September 16, 2023",98,194,401520240,TBD,0-0,129,"Ohio Stadium, Columbus, OH"
+6,"Saturday, October 7, 2023",120,194,401520307,TBD,0-0,129,"Ohio Stadium, Columbus, OH"
+8,"Saturday, October 21, 2023",213,194,401520343,TBD,0-0,129,"Ohio Stadium, Columbus, OH"
+11,"Saturday, November 11, 2023",127,194,401520393,TBD,0-0,129,"Ohio Stadium, Columbus, OH"
+12,"Saturday, November 18, 2023",135,194,401520415,TBD,0-0,129,"Ohio Stadium, Columbus, OH"
+2,"Saturday, September 9, 2023",231,2579,401520212,TBD,0-0,130,"Williams-Brice Stadium, Columbia, SC"
+4,"Saturday, September 23, 2023",344,2579,401520267,TBD,0-0,130,"Williams-Brice Stadium, Columbia, SC"
+7,"Saturday, October 14, 2023",57,2579,401520325,TBD,0-0,130,"Williams-Brice Stadium, Columbia, SC"
+10,"Saturday, November 4, 2023",55,2579,401520376,TBD,0-0,130,"Williams-Brice Stadium, Columbia, SC"
+11,"Saturday, November 11, 2023",238,2579,401520396,TBD,0-0,130,"Williams-Brice Stadium, Columbia, SC"
+12,"Saturday, November 18, 2023",96,2579,401520418,TBD,0-0,130,"Williams-Brice Stadium, Columbia, SC"
+13,"Saturday, November 25, 2023",228,2579,401520441,TBD,0-0,130,"Williams-Brice Stadium, Columbia, SC"
+2,"Saturday, September 9, 2023",2046,2633,401520213,TBD,0-0,131,"Neyland Stadium, Knoxville, TN"
+4,"Saturday, September 23, 2023",2636,2633,401520269,TBD,0-0,131,"Neyland Stadium, Knoxville, TN"
+5,"Saturday, September 30, 2023",2579,2633,401520291,TBD,0-0,131,"Neyland Stadium, Knoxville, TN"
+7,"Saturday, October 14, 2023",245,2633,401520326,TBD,0-0,131,"Neyland Stadium, Knoxville, TN"
+10,"Saturday, November 4, 2023",41,2633,401520377,TBD,0-0,131,"Neyland Stadium, Knoxville, TN"
+12,"Saturday, November 18, 2023",61,2633,401520419,TBD,0-0,131,"Neyland Stadium, Knoxville, TN"
+13,"Saturday, November 25, 2023",238,2633,401520442,TBD,0-0,131,"Neyland Stadium, Knoxville, TN"
+3,"Saturday, September 16, 2023",97,84,401520230,TBD,0-0,132,"Lucas Oil Stadium, Indianapolis, IN"
+14,"Saturday, December 2, 2023",0,0,401539480,TBD,0-0,132,"Lucas Oil Stadium, Indianapolis, IN"
+3,"Saturday, September 16, 2023",93,2393,401520234,TBD,0-0,133,"Johnny ""Red"" Floyd Stadium, Murfreesboro, TN"
+4,"Saturday, September 23, 2023",36,2393,401520262,TBD,0-0,133,"Johnny ""Red"" Floyd Stadium, Murfreesboro, TN"
+6,"Wednesday, October 4, 2023",55,2393,401520294,TBD,0-0,133,"Johnny ""Red"" Floyd Stadium, Murfreesboro, TN"
+7,"Tuesday, October 10, 2023",2348,2393,401520313,TBD,0-0,133,"Johnny ""Red"" Floyd Stadium, Murfreesboro, TN"
+11,"Saturday, November 11, 2023",2229,2393,401520390,TBD,0-0,133,"Johnny ""Red"" Floyd Stadium, Murfreesboro, TN"
+12,"Saturday, November 18, 2023",2638,2393,401520411,TBD,0-0,133,"Johnny ""Red"" Floyd Stadium, Murfreesboro, TN"
+3,"Saturday, September 16, 2023",16,24,401524010,TBD,0-0,134,"Stanford Stadium, Stanford, CA"
+4,"Saturday, September 23, 2023",12,24,401524016,TBD,0-0,134,"Stanford Stadium, Stanford, CA"
+5,"Saturday, September 30, 2023",2483,24,401524024,TBD,0-0,134,"Stanford Stadium, Stanford, CA"
+8,"Saturday, October 21, 2023",26,24,401524036,TBD,0-0,134,"Stanford Stadium, Stanford, CA"
+9,"Saturday, October 28, 2023",264,24,401524042,TBD,0-0,134,"Stanford Stadium, Stanford, CA"
+12,"Saturday, November 18, 2023",25,24,401524061,TBD,0-0,134,"Stanford Stadium, Stanford, CA"
+13,"Saturday, November 25, 2023",87,24,401524065,TBD,0-0,134,"Stanford Stadium, Stanford, CA"
+3,"Saturday, September 16, 2023",2296,326,401531847,TBD,0-0,135,"Bobcat Stadium (TX), San Marcos, TX"
+4,"Saturday, September 23, 2023",2440,326,401531877,TBD,0-0,135,"Bobcat Stadium (TX), San Marcos, TX"
+7,"Saturday, October 14, 2023",2433,326,401531891,TBD,0-0,135,"Bobcat Stadium (TX), San Marcos, TX"
+9,"Saturday, October 28, 2023",2653,326,401531903,TBD,0-0,135,"Bobcat Stadium (TX), San Marcos, TX"
+10,"Saturday, November 4, 2023",290,326,401531910,TBD,0-0,135,"Bobcat Stadium (TX), San Marcos, TX"
+13,"Saturday, November 25, 2023",6,326,401531928,TBD,0-0,135,"Bobcat Stadium (TX), San Marcos, TX"
+3,"Saturday, September 16, 2023",282,2050,401532402,TBD,0-0,136,"Scheumann Stadium, Muncie, IN"
+4,"Saturday, September 23, 2023",290,2050,401531871,TBD,0-0,136,"Scheumann Stadium, Muncie, IN"
+7,"Saturday, October 14, 2023",2649,2050,401532419,TBD,0-0,136,"Scheumann Stadium, Muncie, IN"
+8,"Saturday, October 21, 2023",2117,2050,401532425,TBD,0-0,136,"Scheumann Stadium, Muncie, IN"
+12,"Saturday, November 18, 2023",2309,2050,401532448,TBD,0-0,136,"Scheumann Stadium, Muncie, IN"
+13,"Saturday, November 25, 2023",193,2050,401532454,TBD,0-0,136,"Scheumann Stadium, Muncie, IN"
+3,"Saturday, September 16, 2023",2115,2309,401532404,TBD,0-0,137,"Dix Stadium, Kent, OH"
+5,"Saturday, September 30, 2023",193,2309,401532413,TBD,0-0,137,"Dix Stadium, Kent, OH"
+8,"Saturday, October 21, 2023",2084,2309,401532430,TBD,0-0,137,"Dix Stadium, Kent, OH"
+11,"Wednesday, November 8, 2023",189,2309,401532442,TBD,0-0,137,"Dix Stadium, Kent, OH"
+13,"Saturday, November 25, 2023",2459,2309,401532453,TBD,0-0,137,"Dix Stadium, Kent, OH"
+3,"Saturday, September 16, 2023",2459,158,401520237,TBD,0-0,138,"Memorial Stadium (Lincoln, NE), Lincoln, NE"
+4,"Saturday, September 23, 2023",2348,158,401520263,TBD,0-0,138,"Memorial Stadium (Lincoln, NE), Lincoln, NE"
+5,"Saturday, September 30, 2023",130,158,401520286,TBD,0-0,138,"Memorial Stadium (Lincoln, NE), Lincoln, NE"
+8,"Saturday, October 21, 2023",77,158,401520342,TBD,0-0,138,"Memorial Stadium (Lincoln, NE), Lincoln, NE"
+9,"Saturday, October 28, 2023",2509,158,401520355,TBD,0-0,138,"Memorial Stadium (Lincoln, NE), Lincoln, NE"
+11,"Saturday, November 11, 2023",120,158,401520392,TBD,0-0,138,"Memorial Stadium (Lincoln, NE), Lincoln, NE"
+13,"Friday, November 24, 2023",2294,158,401520425,TBD,0-0,138,"Memorial Stadium (Lincoln, NE), Lincoln, NE"
+4,"Saturday, September 23, 2023",235,142,401520259,TBD,0-0,139,"The Dome at America's Center, Saint Louis, MO"
+4,"Saturday, September 23, 2023",2169,193,401532408,TBD,0-0,140,"Yager Stadium, Oxford, OH"
+6,"Saturday, October 7, 2023",189,193,401532416,TBD,0-0,140,"Yager Stadium, Oxford, OH"
+8,"Saturday, October 21, 2023",2649,193,401532427,TBD,0-0,140,"Yager Stadium, Oxford, OH"
+11,"Wednesday, November 8, 2023",2006,193,401532441,TBD,0-0,140,"Yager Stadium, Oxford, OH"
+12,"Wednesday, November 15, 2023",2084,193,401532447,TBD,0-0,140,"Yager Stadium, Oxford, OH"
+5,"Saturday, September 30, 2023",245,8,401520279,TBD,0-0,141,"AT&T Stadium, Arlington, TX"
+14,"Saturday, December 2, 2023",0,0,401539479,TBD,0-0,141,"AT&T Stadium, Arlington, TX"
+6,"Saturday, October 7, 2023",201,251,401525861,TBD,0-0,142,"Cotton Bowl, Dallas, TX"
+8,"Wednesday, October 18, 2023",2229,2534,401520331,TBD,0-0,143,"Elliot T. Bowers Stadium, Huntsville, TX"
+9,"Wednesday, October 25, 2023",2638,2534,401520348,TBD,0-0,143,"Elliot T. Bowers Stadium, Huntsville, TX"
+13,"Saturday, November 25, 2023",2393,2534,401520440,TBD,0-0,143,"Elliot T. Bowers Stadium, Huntsville, TX"
+9,"Saturday, October 28, 2023",61,57,401520352,TBD,0-0,144,"TIAA Bank Field, Jacksonville, FL"
+10,"Saturday, November 4, 2023",349,2005,401520361,TBD,0-0,145,"Empower Field at Mile High, Denver, CO"
+10,"Saturday, November 4, 2023",2294,77,401520373,TBD,0-0,146,"Wrigley Field, Chicago, IL"
+11,"Saturday, November 11, 2023",221,183,401525552,TBD,0-0,147,"Yankee Stadium, Bronx, NY"
+14,"Saturday, December 2, 2023",0,0,401539481,TBD,0-0,148,"Ford Field, Detroit, MI"
