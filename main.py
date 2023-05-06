@@ -16,7 +16,7 @@ def full_extract(year):
 
     games_df = games.scrape_games(year)
 
-    unique_schools = games_df[games_df['home_school'] != '0']['home_school'].unique()
+    unique_schools = games_df[games_df['away_school'] != '0']['away_school'].unique()
     schools_df = schools.scrape_schools(unique_schools)
 
     conferences_df = conferences.scrape_conferences()
