@@ -1,0 +1,18 @@
+conference_id,division_id,conference_name,division_name
+1,10,American Athletic Conference,
+2,11,Atlantic Coast Conference,Atlantic
+2,12,Atlantic Coast Conference,Coastal
+3,12,Big 12 Conference,
+4,13,Big Ten Conference,East
+4,14,Big Ten Conference,West
+5,14,Conference USA,
+6,14,FBS Independents,
+7,15,Mid-American Conference,East
+7,16,Mid-American Conference,West
+8,17,Mountain West Conference,Mountain
+8,18,Mountain West Conference,West
+9,18,Pac-12 Conference,
+10,19,Southeastern Conference,East
+10,20,Southeastern Conference,West
+11,21,Sun Belt Conference,East
+11,22,Sun Belt Conference,West

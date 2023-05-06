@@ -1,10 +1,10 @@
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-from etl_classes.scrape_all import ScrapeAll
+from etl_classes.extract_all import ExtractAll
 
 
-class ScrapeConferences(ScrapeAll):
+class ScrapeConferences(ExtractAll):
     """This class contains the methods needed to scrape college football conferences and
     division data from ESPN at (https://www.espn.com/college-football/team/_/id/WXYZ/)."""
     def __init__(self):

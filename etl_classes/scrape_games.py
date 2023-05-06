@@ -2,9 +2,9 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, date
-from etl_classes.scrape_all import ScrapeAll
+from etl_classes.extract_all import ExtractAll
 
-class ScrapeGames(ScrapeAll):
+class ScrapeGames(ExtractAll):
     """This class contains the methods needed to scrape college football game 
     schedule data from ESPN at (https://www.espn.com/college-football/schedule)."""
     def __init__(self):

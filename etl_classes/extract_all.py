@@ -1,7 +1,7 @@
 import pandas as pd
 from datetime import datetime
 
-class ScrapeAll:
+class ExtractAll:
     """This class contains methods needed to scrape data from more than one source/webpage."""
     def __init__(self):
         self.logfile = open('./logs/scrape_all_' + datetime.now().strftime('%Y.%m.%d.%H.%M.%S') + '.log', 'a')

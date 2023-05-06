@@ -1,8 +1,8 @@
 import pandas as pd
 import requests
-from etl_classes.scrape_all import ScrapeAll
+from etl_classes.extract_all import ExtractAll
 
-class GetGameLocations(ScrapeAll):
+class GetGameLocations(ExtractAll):
     """This class contains the methods needed to retrieve geocoordinate data from the `geocode.maps.io` API."""
     def __init__(self):
         super().__init__()
@@ -50,6 +50,6 @@ class GetGameLocations(ScrapeAll):
                     self.logfile.write(f'\n!!! Data not retrieved for location: {location}...\n')
                     pass
 
-        print('\nCompleted retrieving geocode data.')
-        self.logfile.write('\nCompleted retrieving geocode data.')        
+        print('Completed retrieving geocode data.\n')
+        self.logfile.write('\nCompleted retrieving geocode data.\n')        
         return locations_df

@@ -1,5 +1,5 @@
 import pandas as pd
-from etl_classes.scrape_all import ScrapeAll
+from etl_classes.extract_all import ExtractAll
 from etl_classes.scrape_games import ScrapeGames
 from etl_classes.scrape_schools import ScrapeSchools
 from etl_classes.scrape_conferences import ScrapeConferences
@@ -8,7 +8,7 @@ from etl_classes.load_data import LoadData
 
 
 def full_extract(year):
-    scrape = ScrapeAll()
+    scrape = ExtractAll()
     games = ScrapeGames()
     schools = ScrapeSchools()
     conferences = ScrapeConferences()
@@ -30,13 +30,13 @@ def full_extract(year):
 def full_transform(games_df, schools_df, old_conf_df, locations_df):
     #games_df['location_id'] = locations_df[locations_df['location_name'] == games_df['location']]
     games_df = pd.merge(games_df, locations_df[['location_id', 'location_name']], left_on='location', right_on='location_id')
-    games_df = games_df.drop(['location'])
+    games_df = games_df.drop(['location'], axis=1)
 
     schools_df = pd.merge(schools_df, old_conf_df, on='school_id', how='left')
     schools_df = schools_df.drop(['conference_name', 'division_name'], axis=1)    
     
     conferences_df = old_conf_df.drop(['school_id'], axis=1).drop_duplicates()
-    return games_df, schools_df, conferences_df
+    return games_df, schools_df, conferences_df, locations_df
 
 def full_load(games_df, schools_df, conferences_df, locations_df):
     load_obj = LoadData(games_df, schools_df, conferences_df, locations_df)
@@ -46,7 +46,7 @@ def full_load(games_df, schools_df, conferences_df, locations_df):
 
 def full_etl(year):
     games_df, schools_df, conferences_df, locations_df = full_extract(year)
-    schools_df, conferences_df = full_transform(games_df, schools_df, conferences_df, locations_df)
+    games_df, schools_df, conferences_df, locations_df = full_transform(games_df, schools_df, conferences_df, locations_df)
     full_load(games_df, schools_df, conferences_df, locations_df)
 
 
