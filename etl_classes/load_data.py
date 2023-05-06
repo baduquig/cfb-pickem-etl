@@ -33,7 +33,7 @@ class LoadData:
         if not self.locations_df.empty:
             print(f'  ~ Loading locations data into CSV file...')
             self.logfile.write(f'  ~ Loading locations data into CSV file...\n')
-            self.conferences_df.to_csv('./data/locations.csv', index=False)
+            self.locations_df.to_csv('./data/locations.csv', index=False)
         
         self.logfile.write('Completed loading data into CSV files.\n\n')
         print('Completed loading data into CSV files.\n')
@@ -61,7 +61,7 @@ class LoadData:
         if not self.locations_df.empty:
             print(f'  ~ Loading locations data into JSON file...')
             self.logfile.write(f'  ~ Loading locations data into JSON file...\n')
-            self.conferences_df.to_json('./data/locations.json', orient='records')
+            self.locations_df.to_json('./data/locations.json', orient='records')
         
         self.logfile.write('Completed loading data into JSON files.\n\n')
         print('Completed loading data into JSON files.\n')
