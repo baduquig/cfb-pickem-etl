@@ -1,18 +1,149 @@
-conference_id,division_id,conference_name,division_name
-1,10,American Athletic Conference,
-2,11,Atlantic Coast Conference,Atlantic
-2,12,Atlantic Coast Conference,Coastal
-3,12,Big 12 Conference,
-4,13,Big Ten Conference,East
-4,14,Big Ten Conference,West
-5,14,Conference USA,
-6,14,FBS Independents,
-7,15,Mid-American Conference,East
-7,16,Mid-American Conference,West
-8,17,Mountain West Conference,Mountain
-8,18,Mountain West Conference,West
-9,18,Pac-12 Conference,
-10,19,Southeastern Conference,East
-10,20,Southeastern Conference,West
-11,21,Sun Belt Conference,East
-11,22,Sun Belt Conference,West
+location_id,location_name,city,state,latitude,longitude
+1,"FirstBank Stadium, Nashville, TN",Nashville,TN,36.1622767,-86.7742984
+2,"Los Angeles Memorial Coliseum, Los Angeles, CA",Los Angeles,CA,34.0536909,-118.242766
+3,"Aggie Memorial Stadium, Las Cruces, NM",Las Cruces,NM,32.3140354,-106.7798078
+4,"Snapdragon Stadium, San Diego, CA",San Diego,CA,32.7174202,-117.1627728
+5,"Burgess-Snow Field, Jacksonville, AL",Jacksonville,AL,33.8137163,-85.7613476
+6,"Joe Aillet Stadium, Ruston, LA",Ruston,LA,32.5232053,-92.637927
+7,"Huntington Bank Stadium, Minneapolis, MN",Minneapolis,MN,44.9772995,-93.2654692
+8,"Rice-Eccles Stadium, Salt Lake City, UT",Salt Lake City,UT,40.7596198,-111.8867975
+9,"Sun Devil Stadium, Tempe, AZ",Tempe,AZ,33.4255056,-111.9400091
+10,"Truist Field, Winston-Salem, NC",Winston-Salem,NC,36.0998131,-80.2440518
+11,"David Booth Kansas Memorial Stadium, Lawrence, KS",Lawrence,KS,38.9719384,-95.2359496
+12,"FBC Mortgage Stadium, Orlando, FL",Orlando,FL,28.5421109,-81.3790304
+13,"Protective Stadium, Birmingham, AL",Birmingham,AL,33.5206824,-86.8024326
+14,"Center Parc Stadium, Atlanta, GA",Atlanta,GA,33.7489924,-84.3902644
+15,"Waldo Stadium, Kalamazoo, MI",Kalamazoo,MI,42.291707,-85.5872286
+16,"Clarence T.C. Ching Athletics Complex, Honolulu, HI",Honolulu,HI,21.304547,-157.855676
+17,"Mercedes-Benz Stadium, Atlanta, GA",Atlanta,GA,33.7489924,-84.3902644
+18,"Hard Rock Stadium, Miami Gardens, FL",Miami Gardens,FL,25.9420377,-80.2456045
+19,"Rynearson Stadium, Ypsilanti, MI",Ypsilanti,MI,42.2410562,-83.613055
+20,"Jordan-Hare Stadium, Auburn, AL",Auburn,AL,32.6098566,-85.4807825
+21,"LaVell Edwards Stadium, Provo, UT",Provo,UT,40.2338438,-111.6585337
+22,"Riccardo Silva Stadium, Miami, FL",Miami,FL,25.7741728,-80.19362
+23,"Sanford Stadium, Athens, GA",Athens,GA,33.9597677,-83.376398
+24,"SECU Stadium, College Park, MD",College Park,MD,38.980666,-76.9369189
+25,"Memorial Stadium/Faurot Field, Columbia, MO",Columbia,MO,38.951883,-92.3337366
+26,"Bank of America Stadium, Charlotte, NC",Charlotte,NC,35.2272086,-80.8430827
+27,"Ross-Ade Stadium, West Lafayette, IN",West Lafayette,IN,40.4258686,-86.9080655
+28,"SHI Stadium, Piscataway, NJ",Piscataway,NJ,40.5462553,-74.4660408
+29,"Gerald J. Ford Stadium, Dallas, TX",Dallas,TX,32.7762719,-96.7968559
+30,"Pratt & Whitney Stadium, East Hartford, CT",East Hartford,CT,41.7823216,-72.6120346
+31,"Sun Bowl, El Paso, TX",El Paso,TX,31.7754152,-106.464634
+32,"Nissan Stadium, Nashville, TN",Nashville,TN,36.1622767,-86.7742984
+33,"Camp Randall Stadium, Madison, WI",Madison,WI,43.074761,-89.3837613
+34,"Houchens Industries-L.T. Smith Stadium, Bowling Green, KY",Bowling Green,KY,36.9903199,-86.4436018
+35,"Arizona Stadium, Tucson, AZ",Tucson,AZ,32.2228765,-110.9748477
+36,"Canvas Stadium, Fort Collins, CO",Fort Collins,CO,40.5508527,-105.0668085
+37,"Apogee Stadium, Denton, TX",Denton,TX,33.2150386,-97.1330516
+38,"Autzen Stadium, Eugene, OR",Eugene,OR,44.0505054,-123.0950506
+39,"Amon G. Carter Stadium, Fort Worth, TX",Fort Worth,TX,32.753177,-97.3327459
+40,"Rose Bowl, Pasadena, CA",Pasadena,CA,34.1476452,-118.1444779
+41,"Husky Stadium, Seattle, WA",Seattle,WA,47.6038321,-122.3300624
+42,"Notre Dame Stadium, Notre Dame, IN",Notre Dame,IN,41.6992003,-86.2373691
+43,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA",Chestnut Hill,MA,42.3306529,-71.1661647
+44,"Acrisure Stadium, Pittsburgh, PA",Pittsburgh,PA,40.4416941,-79.9900861
+45,"JMA Wireless Dome, Syracuse, NY",Syracuse,NY,43.0481221,-76.1474244
+46,"Lane Stadium, Blacksburg, VA",Blacksburg,VA,37.2296566,-80.4136767
+47,"McLane Stadium, Waco, TX",Waco,TX,31.549333,-97.1466695
+48,"Nippert Stadium, Cincinnati, OH",Cincinnati,OH,39.1014537,-84.5124602
+49,"TDECU Stadium, Houston, TX",Houston,TX,29.7589382,-95.3676974
+50,"Jack Trice Stadium, Ames, IA",Ames,IA,42.0267567,-93.6170448
+51,"Bill Snyder Family Stadium, Manhattan, KS",Manhattan,KS,39.1836082,-96.5716694
+52,"Memorial Stadium (Norman, OK), Norman, OK",Norman,OK,35.2225717,-97.4394816
+53,"Boone Pickens Stadium, Stillwater, OK",Stillwater,OK,36.1135071,-97.0586215
+54,"DKR-Texas Memorial Stadium, Austin, TX",Austin,TX,30.2711286,-97.7436995
+55,"Jonah Field at War Memorial Stadium, Laramie, WY",Laramie,WY,41.311367,-105.591101
+56,"Chapman Stadium, Tulsa, OK",Tulsa,OK,36.1556805,-95.9929113
+57,"Yulman Stadium, New Orleans, LA",New Orleans,LA,29.9759983,-90.0782127
+58,"Lincoln Financial Field, Philadelphia, PA",Philadelphia,PA,39.9527237,-75.1635262
+59,"Jerry Richardson Stadium, Charlotte, NC",Charlotte,NC,35.2272086,-80.8430827
+60,"FAU Stadium, Boca Raton, FL",Boca Raton,FL,26.3586885,-80.0830984
+61,"Simmons Bank Liberty Stadium, Memphis, TN",Memphis,TN,35.1490215,-90.0516285
+62,"Kidd Brewer Stadium, Boone, NC",Boone,NC,36.2165362,-81.6746158
+63,"Allen E. Paulson Stadium, Statesboro, GA",Statesboro,GA,32.4490141,-81.7832912
+64,"Bridgeforth Stadium/Zane Showker Field, Harrisonburg, VA",Harrisonburg,VA,38.4493315,-78.8688833
+65,"Joan C. Edwards Stadium, Huntington, WV",Huntington,WV,38.4192496,-82.445154
+66,"Cajun Field, Lafayette, LA",Lafayette,LA,30.2240897,-92.0198427
+67,"M. M. Roberts Stadium, Hattiesburg, MS",Hattiesburg,MS,31.3271189,-89.2903392
+68,"Veterans Memorial Stadium (AL), Troy, AL",Troy,AL,31.8087678,-85.969951
+69,"Peden Stadium, Athens, OH",Athens,OH,39.3289242,-82.1012479
+70,"Falcon Stadium, USAF Academy, CO",USAF Academy,CO,38.99705645,-104.84364992062919
+71,"Allegiant Stadium, Las Vegas, NV",Las Vegas,NV,36.1672559,-115.148516
+72,"Bryant-Denny Stadium, Tuscaloosa, AL",Tuscaloosa,AL,33.2095614,-87.5675258
+73,"War Memorial Stadium (AR), Little Rock, AR",Little Rock,AR,34.7465071,-92.2896267
+74,"Memorial Stadium (Champaign, IL), Champaign, IL",Champaign,IL,40.1164841,-88.2430932
+75,"Memorial Stadium (Bloomington, IN), Bloomington, IN",Bloomington,IN,39.1670396,-86.5342881
+76,"Kinnick Stadium, Iowa City, IA",Iowa City,IA,41.6612561,-91.5299106
+77,"Kroger Field, Lexington, KY",Lexington,KY,38.0464066,-84.4970393
+78,"Williams Stadium (VA), Lynchburg, VA",Lynchburg,VA,37.4137536,-79.1422464
+79,"Michigan Stadium, Ann Arbor, MI",Ann Arbor,MI,42.2681569,-83.7312291
+80,"Spartan Stadium, East Lansing, MI",East Lansing,MI,42.7320307,-84.4721678
+81,"Davis Wade Stadium, Starkville, MS",Starkville,MS,33.4503998,-88.8183872
+82,"Vaught-Hemingway Stadium, Oxford, MS",Oxford,MS,34.3663773,-89.5187664
+83,"Beaver Stadium, University Park, PA",University Park,PA,40.8087493,-77.8585662
+84,"Kyle Field, College Station, TX",College Station,TX,30.5955289,-96.3071042
+85,"Malone Stadium, Monroe, LA",Monroe,LA,32.5093109,-92.1193012
+86,"Camping World Stadium, Orlando, FL",Orlando,FL,28.5421109,-81.3790304
+87,"CEFCU Stadium, San Jose, CA",San Jose,CA,37.3361905,-121.890583
+88,"Wallace Wade Stadium, Durham, NC",Durham,NC,35.996653,-78.9018053
+89,"Cardinal Stadium, Louisville, KY",Louisville,KY,38.2542376,-85.759407
+90,"Razorback Stadium, Fayetteville, AR",Fayetteville,AR,36.0625843,-94.1574328
+91,"Michie Stadium, West Point, NY",West Point,NY,41.3875623,-73.96418970621724
+92,"Folsom Field, Boulder, CO",Boulder,CO,40.0149856,-105.270545
+93,"Ben Hill Griffin Stadium, Gainesville, FL",Gainesville,FL,29.6519684,-82.3249846
+94,"NRG Stadium, Houston, TX",Houston,TX,29.7589382,-95.3676974
+95,"Martin Stadium, Pullman, WA",Pullman,WA,46.7304268,-117.173895
+96,"Reser Stadium, Corvallis, OR",Corvallis,OR,44.5645659,-123.2620435
+97,"Jones AT&T Stadium, Lubbock, TX",Lubbock,TX,33.5635206,-101.879336
+98,"Carter-Finley Stadium, Raleigh, NC",Raleigh,NC,35.7803977,-78.6390989
+99,"Memorial Stadium (Clemson, SC), Clemson, SC",Clemson,SC,34.6850749,-82.8364111
+100,"Doak Campbell Stadium, Tallahassee, FL",Tallahassee,FL,30.4380832,-84.2809332
+101,"Bobby Dodd Stadium, Atlanta, GA",Atlanta,GA,33.7489924,-84.3902644
+102,"Kenan Stadium, Chapel Hill, NC",Chapel Hill,NC,35.9131542,-79.05578
+103,"Scott Stadium, Charlottesville, VA",Charlottesville,VA,38.029306,-78.4766781
+104,"Albertsons Stadium, Boise, ID",Boise,ID,43.6166163,-116.200886
+105,"Rice Stadium, Houston, TX",Houston,TX,29.7589382,-95.3676974
+106,"Milan Puskar Stadium, Morgantown, WV",Morgantown,WV,39.6296809,-79.9559437
+107,"Warren McGuirk Alumni Stadium, Amherst, MA",Amherst,MA,42.3685658,-72.505714
+108,"Alamodome, San Antonio, TX",San Antonio,TX,29.4246002,-98.4951405
+109,"Dowdy-Ficklen Stadium, Greenville, NC",Greenville,NC,35.613224,-77.3724593
+110,"Raymond James Stadium, Tampa, FL",Tampa,FL,27.9477595,-82.458444
+111,"Centennial Bank Stadium, Jonesboro, AR",Jonesboro,AR,35.8428646,-90.7034522
+112,"Navy-Marine Corps Memorial Stadium, Annapolis, MD",Annapolis,MD,38.9786401,-76.492786
+113,"S.B. Ballard Stadium, Norfolk, VA",Norfolk,VA,36.8968052,-76.2602336
+114,"Hancock Whitney Stadium, Mobile, AL",Mobile,AL,30.6943566,-88.0430541
+115,"Kelly/Shorts Stadium, Mount Pleasant, MI",Mount Pleasant,MI,33.1570582,-94.9694007
+116,"Huskie Stadium, DeKalb, IL",DeKalb,IL,41.9295371,-88.7503776
+117,"Glass Bowl, Toledo, OH",Toledo,OH,41.6529143,-83.5378173
+118,"InfoCision Stadium, Akron, OH",Akron,OH,41.083064,-81.518485
+119,"Doyt L. Perry Stadium, Bowling Green, OH",Bowling Green,OH,41.3747744,-83.6513229
+120,"UB Stadium, Buffalo, NY",Buffalo,NY,42.8867166,-78.8783922
+121,"Bulldog Stadium (CA), Fresno, CA",Fresno,CA,36.7394421,-119.7848307
+122,"Mackay Stadium, Reno, NV",Reno,NV,39.5261206,-119.8126581
+123,"University Stadium (NM), Albuquerque, NM",Albuquerque,NM,35.0841034,-106.650985
+124,"Maverik Stadium, Logan, UT",Logan,UT,41.7313447,-111.8348631
+125,"California Memorial Stadium, Berkeley, CA",Berkeley,CA,37.8708393,-122.272863
+126,"Brooks Stadium (SC), Conway, SC",Conway,SC,33.8360035,-79.0478143
+127,"Tiger Stadium (LA), Baton Rouge, LA",Baton Rouge,LA,30.4459596,-91.18738
+128,"Ryan Field, Evanston, IL",Evanston,IL,42.0447388,-87.6930459
+129,"Ohio Stadium, Columbus, OH",Columbus,OH,39.9622601,-83.0007065
+130,"Williams-Brice Stadium, Columbia, SC",Columbia,SC,34.0007493,-81.0343313
+131,"Neyland Stadium, Knoxville, TN",Knoxville,TN,35.9603948,-83.9210261
+132,"Lucas Oil Stadium, Indianapolis, IN",Indianapolis,IN,39.7683331,-86.1583502
+133,"Johnny ""Red"" Floyd Stadium, Murfreesboro, TN",Murfreesboro,TN,35.8460396,-86.3921096
+134,"Stanford Stadium, Stanford, CA",Stanford,CA,37.427467,-122.1702445
+135,"Bobcat Stadium (TX), San Marcos, TX",San Marcos,TX,29.8826436,-97.9405828
+136,"Scheumann Stadium, Muncie, IN",Muncie,IN,40.1936892,-85.3865271
+137,"Dix Stadium, Kent, OH",Kent,OH,41.1536674,-81.357886
+138,"Memorial Stadium (Lincoln, NE), Lincoln, NE",Lincoln,NE,40.8088861,-96.7077751
+139,"The Dome at America's Center, Saint Louis, MO",Saint Louis,MO,38.6264256,-90.1995853
+140,"Yager Stadium, Oxford, OH",Oxford,OH,39.5103048,-84.7420519
+141,"AT&T Stadium, Arlington, TX",Arlington,TX,32.7355816,-97.1071186
+142,"Cotton Bowl, Dallas, TX",Dallas,TX,32.7762719,-96.7968559
+143,"Elliot T. Bowers Stadium, Huntsville, TX",Huntsville,TX,30.7235263,-95.5507771
+144,"TIAA Bank Field, Jacksonville, FL",Jacksonville,FL,30.3321838,-81.655651
+145,"Empower Field at Mile High, Denver, CO",Denver,CO,39.7392364,-104.9848623
+146,"Wrigley Field, Chicago, IL",Chicago,IL,41.8755616,-87.6244212
+147,"Yankee Stadium, Bronx, NY",Bronx,NY,40.8466508,-73.8785937
+148,"Ford Field, Detroit, MI",Detroit,MI,42.3315509,-83.0466403
