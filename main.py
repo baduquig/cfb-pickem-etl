@@ -29,7 +29,7 @@ def full_extract(year):
 
 def full_transform(games_df, schools_df, old_conf_df, locations_df):
     games_df = pd.merge(games_df, locations_df[['location_id', 'location_name']], left_on='location', right_on='location_name')
-    games_df = games_df.drop(['location'], axis=1)
+    games_df = games_df.drop(['location', 'location_name'], axis=1)
 
     schools_df = pd.merge(schools_df, old_conf_df, on='school_id', how='left')
     schools_df = schools_df.drop(['conference_name', 'division_name'], axis=1)    
