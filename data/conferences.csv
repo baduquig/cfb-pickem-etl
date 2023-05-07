@@ -1,4 +1,4 @@
-conference_id,division_id,conference_name,division_name
+conferenceID,divisionID,conferenceName,divisionName
 1,10,American Athletic Conference,
 2,11,Atlantic Coast Conference,Atlantic
 2,12,Atlantic Coast Conference,Coastal

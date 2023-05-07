@@ -1,4 +1,3 @@
-import pandas as pd
 from datetime import datetime
 
 class ExtractAll:
@@ -40,4 +39,8 @@ class ExtractAll:
             logo_url = 'https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/4.png&h=2000&w=2000'
         return logo_url
     
+    def cfb_etl_log(self, message):
+        """Method to print logging message to log file and terminal"""
+        self.logfile.writelines(message)
+        print(message)
 

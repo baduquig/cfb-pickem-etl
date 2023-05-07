@@ -9,18 +9,17 @@ class ScrapeSchools(ExtractAll):
     data from ESPN at (https://www.espn.com/college-football/team/_/id/WXYZ/)."""
     def __init__(self):
         super().__init__()
-        self.schools_df = pd.DataFrame(columns=['school_id', 'logo_url', 'name', 'mascot', 'record', 'wins', 'losses', 'ties'])
     
     def scrape_schools(self, schools_list):
         """ Method to scrape school data from https://www.espn.com/college-football/team/_/id/WXYZ/ for a given list of schools."""
-        print('\nBeginning scraping schools data.')
-        self.logfile.write('\nBeginning scraping schools data.\n')
+        self.cfb_etl_log('\nBeginning scraping schools data.')
+        
+        schools_df = pd.DataFrame(columns=['schoolID', 'logoUrl', 'name', 'mascot', 'record', 'wins', 'losses', 'ties'])
         
         # Iterate through distinct schools in list of away schools
         for school_id in schools_list:
             espn_url = 'https://www.espn.com/college-football/team/_/id/' + str(school_id) + '/'
-            print(f'  ~ Scraping data for School ID: {school_id}...')
-            self.logfile.write(f'  ~ Scraping data for School ID: {school_id}...\n')
+            self.cfb_etl_log(f'  ~ Scraping data for School ID: {school_id}...')
 
             # Scrape HTML from HTTP request to the URL above and store in variable `soup`
             response = requests.get(espn_url)
@@ -48,10 +47,10 @@ class ScrapeSchools(ExtractAll):
 
             # Assign new DataFrame row
             new_school = pd.DataFrame({
-                'school_id': [school_id], 'logo_url': [logo], 'name': [name], 'mascot': [mascot], 
+                'schoolID': [school_id], 'logoUrl': [logo], 'name': [name], 'mascot': [mascot], 
                 'record': [record], 'wins': [wins], 'losses': [losses], 'ties': [ties]
             })
-            self.schools_df = pd.concat([self.schools_df, new_school], ignore_index=True)
-        print('Completed scraping schools data.\n')
-        self.logfile.write('Completed scraping schools data.\n\n')
-        return self.schools_df
+            schools_df = pd.concat([schools_df, new_school], ignore_index=True)
+            
+        self.cfb_etl_log('Completed scraping schools data.\n')
+        return schools_df

@@ -1,4 +1,4 @@
-week,game_date,away_school,home_school,game_id,time,score,location_id
+week,gameDate,awaySchool,homeSchool,gameID,time,score,locationID
 1,"Saturday, August 26, 2023",62,238,401520147,TBD,0-0,1
 1,"Saturday, September 2, 2023",2010,238,401520178,TBD,0-0,1
 4,"Saturday, September 23, 2023",96,238,401520274,TBD,0-0,1

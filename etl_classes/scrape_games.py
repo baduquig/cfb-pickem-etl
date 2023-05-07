@@ -8,22 +8,21 @@ class ScrapeGames(ExtractAll):
     """This class contains the methods needed to scrape college football game 
     schedule data from ESPN at (https://www.espn.com/college-football/schedule)."""
     def __init__(self):
-        super().__init__()
-        self.weeks = 14    
-        self.games_df = pd.DataFrame(columns=['week', 'game_date', 'away_school', 'home_school', 'game_id', 'time', 'location'])
+        super().__init__()        
 
     def scrape_games(self, year=2023):
         """Method to scrape college football schedule data from https://www.espn.com/college-football/schedule for a given year (default: 2023)."""
-        self.logfile.write('\nBeginning scraping games data.\n')
-        print('\nBeginning scraping games data.')
+        self.cfb_etl_log('\nBeginning scraping games data.\n')
+
+        weeks = 14    
+        games_df = pd.DataFrame(columns=['week', 'gameDate', 'awaySchool', 'homeSchool', 'gameID', 'time', 'location'])
 
         # Iterate through each week of 15 week schedule
-        for week in range(self.weeks):
+        for week in range(weeks):
             week_num = int(week + 1)
             espn_url = 'https://www.espn.com/college-football/schedule/_/week/' + str(week_num) + '/year/' + str(year)
             
-            self.logfile.write(f'  ~ Scraping data for Week {week_num}... \n')
-            print(f'  ~ Scraping data for Week {week_num}...')
+            self.cfb_etl_log(f'  ~ Scraping data for Week {week_num}...')
 
             # Scrape HTML from HTTP request to the URL above and store in variable `soup`
             response = requests.get(espn_url)
@@ -61,12 +60,12 @@ class ScrapeGames(ExtractAll):
 
                     # Assign new DataFrame row
                     new_game = pd.DataFrame({
-                        'week': [week_num],  'game_date': [date_str], 
-                        'away_school': [away_school], 'home_school': [home_school], 
-                        'game_id': [game_id], 'time': [time], 
+                        'week': [week_num],  'gameDate': [date_str], 
+                        'awaySchool': [away_school], 'homeSchool': [home_school], 
+                        'gameID': [game_id], 'time': [time], 
                         'score': [score], 'location': [location]
                     })                    
-                    self.games_df = pd.concat([self.games_df, new_game], ignore_index=True)
-        self.logfile.write('Completed scraping games data.\n\n')
-        print('Completed scraping games data.\n')
-        return self.games_df
+                    games_df = pd.concat([games_df, new_game], ignore_index=True)
+                    
+        self.cfb_etl_log('Completed scraping games data.\n')
+        return games_df

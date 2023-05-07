@@ -1,4 +1,4 @@
-location_id,location_name,city,state,latitude,longitude
+locationID,locationName,city,state,latitude,longitude
 1,"FirstBank Stadium, Nashville, TN",Nashville,TN,36.1622767,-86.7742984
 2,"Los Angeles Memorial Coliseum, Los Angeles, CA",Los Angeles,CA,34.0536909,-118.242766
 3,"Aggie Memorial Stadium, Las Cruces, NM",Las Cruces,NM,32.3140354,-106.7798078
