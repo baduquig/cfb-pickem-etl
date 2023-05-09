@@ -22,7 +22,7 @@ class ScrapeGames(ExtractAll):
             week_num = int(week + 1)
             espn_url = 'https://www.espn.com/college-football/schedule/_/week/' + str(week_num) + '/year/' + str(year)
             
-            self.cfb_etl_log(f'  ~ Scraping data for Week {week_num}...')
+            self.cfb_etl_log(f'  ~ Scraping data for Week {week_num}')
 
             # Scrape HTML from HTTP request to the URL above and store in variable `soup`
             response = requests.get(espn_url)

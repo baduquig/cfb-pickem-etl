@@ -30,7 +30,7 @@ class ScrapeConferences(ExtractAll):
 
         # Iterate through each overarching conference DIV
         for conf_div in conference_divs:
-            self.cfb_etl_log(f'  ~ Scraping data for Conference ID: {conference_id}...')
+            self.cfb_etl_log(f'  ~ Scraping data for Conference ID: {conference_id}')
 
             conference_title_div = conf_div.find('div', class_='Table__Title')
             conference_table = conf_div.find('div', class_='flex').find('table')
@@ -41,8 +41,9 @@ class ScrapeConferences(ExtractAll):
             conference_table_rows = conference_table.find('tbody', class_='Table__TBODY').find_all('tr')
 
             # Iterate through divisions/teams in Table Body
+
             for conference_row in conference_table_rows:
-                if 'subgroup-headers' in conference_row.get('class'):
+                if 'Table__sub-header' in conference_row.get('class'):
                     division_span = conference_row.find('td', class_='Table__TD').find('span')
                     division_name = self.get_cell_text(division_span)
                     division_id += 1
@@ -50,16 +51,17 @@ class ScrapeConferences(ExtractAll):
                     school_span = conference_row.find('td').find('div').find_all('span')[2]
                     school_id = self.get_school_id(school_span)
 
-                new_school_conference = pd.DataFrame({
-                    'schoolID': [school_id], 
-                    'conferenceID': [conference_id],
-                    'divisionID': [division_id],
-                    'conferenceName': [conference_name], 
-                    'divisionName': [division_name]
-                })                
-                conferences_df = pd.concat([conferences_df, new_school_conference], ignore_index=True)
+                    new_school_conference = pd.DataFrame({
+                        'schoolID': [school_id], 
+                        'conferenceID': [conference_id],
+                        'divisionID': [division_id],
+                        'conferenceName': [conference_name], 
+                        'divisionName': [division_name]
+                    })                
+                    conferences_df = pd.concat([conferences_df, new_school_conference], ignore_index=True)
                 
             conference_id += 1
+            division_id += 1
 
         self.cfb_etl_log('Completed scraping conference data.\n')
         return conferences_df

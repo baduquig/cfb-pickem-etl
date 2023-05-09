@@ -23,34 +23,37 @@ class TransformAll:
         self.logfile.writelines('Preparing Schools Data...')
         self.schools_df = pd.merge(self.schools_df, self.conferences_df, on='schoolID', how='left')
         self.schools_df = self.schools_df.drop(['conferenceID', 'conferenceName', 'divisionName'], axis=1)
+        self.schools_df = self.schools_df.drop_duplicates()
         return self.schools_df
 
     def transform_conferences_data(self):
         print('Preparing Conferences Data...')
         self.logfile.writelines('Preparing Conferences Data...')
-        return self.conferences_df.drop(['schoolID'], axis=1).drop_duplicates()
+        self.conferences_df = self.conferences_df.drop(['schoolID'], axis=1).drop_duplicates()
+        return self.conferences_df
 
     def consolidate_data(self):
         print('Preparing Consolidated Data...')
         self.logfile.writelines('Preparing Consolidated Data...')
 
         # Join Away School Data to consolidated DataFrame
-        all_data = pd.merge(self.games_df, self.schools_df[['schoolID', 'name', 'mascot', 'divisionID']], left_on='awaySchool', right_on='schoolID')
+        # TODO: Investigate why records are increasing from 858 to 922 record
+        all_data = pd.merge(self.games_df, self.schools_df[['schoolID', 'name', 'mascot', 'divisionID']], left_on='awaySchool', right_on='schoolID', how='left')
         all_data = all_data.rename(columns={'name': 'awaySchoolName', 'mascot': 'awaySchoolMascot', 'divisionID': 'awayDivisionID'})
         all_data = all_data.drop(['schoolID'], axis=1)
         
         # Join Home School Data to consolidated DataFrame
-        all_data = pd.merge(all_data, self.schools_df[['schoolID', 'name', 'mascot', 'divisionID']], left_on='homeSchool', right_on='schoolID')
+        all_data = pd.merge(all_data, self.schools_df[['schoolID', 'name', 'mascot', 'divisionID']], left_on='homeSchool', right_on='schoolID', how='left')
         all_data = all_data.rename(columns={'name': 'homeSchoolName', 'mascot': 'homeSchoolMascot', 'divisionID': 'homeDivisionID'})
         all_data = all_data.drop(['schoolID'], axis=1)
 
-        # Join Away Shool Conference Data to consolidated DataFrame
-        all_data = pd.merge(all_data, self.conferences_df[['divisionID', 'conferenceName', 'divisionName']], left_on='awayDivisionID', right_on='divisionID')
+        # Join Away School Conference Data to consolidated DataFrame
+        all_data = pd.merge(all_data, self.conferences_df[['divisionID', 'conferenceName', 'divisionName']], left_on='awayDivisionID', right_on='divisionID', how='left')
         all_data = all_data.rename(columns={'conferenceName': 'awayConferenceName', 'divisionName': 'awayDivisionName'})
         all_data = all_data.drop(['divisionID'], axis=1)
 
         # Join Home Shool Conference Data to consolidated DataFrame
-        all_data = pd.merge(all_data, self.conferences_df[['divisionID', 'conferenceName', 'divisionName']], left_on='homeDivisionID', right_on='divisionID')
+        all_data = pd.merge(all_data, self.conferences_df[['divisionID', 'conferenceName', 'divisionName']], left_on='homeDivisionID', right_on='divisionID', how='left')
         all_data = all_data.rename(columns={'conferenceName': 'homeConferenceName', 'divisionName': 'homeDivisionName'})
         all_data = all_data.drop(['divisionID'], axis=1)
 

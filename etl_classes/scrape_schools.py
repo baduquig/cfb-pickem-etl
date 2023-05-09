@@ -19,7 +19,7 @@ class ScrapeSchools(ExtractAll):
         # Iterate through distinct schools in list of away schools
         for school_id in schools_list:
             espn_url = 'https://www.espn.com/college-football/team/_/id/' + str(school_id) + '/'
-            self.cfb_etl_log(f'  ~ Scraping data for School ID: {school_id}...')
+            self.cfb_etl_log(f'  ~ Scraping data for School ID: {school_id}')
 
             # Scrape HTML from HTTP request to the URL above and store in variable `soup`
             response = requests.get(espn_url)

@@ -1,5 +1,6 @@
 import pandas as pd
 import requests
+import time
 from etl_classes.extract_all import ExtractAll
 
 class GetGameLocations(ExtractAll):
@@ -16,7 +17,7 @@ class GetGameLocations(ExtractAll):
 
         for location in locations:
             if location != '':
-                self.cfb_etl_log(f'  ~ Retrieving data for location: {location}...')
+                self.cfb_etl_log(f'  ~ Retrieving data for location: {location}')
 
                 city = location.split(',')[-2].strip()
                 state = location.split(',')[-1].strip()
@@ -44,7 +45,9 @@ class GetGameLocations(ExtractAll):
 
                     location_id += 1
                 except:
-                    self.cfb_etl_log(f'\n!!! Data not retrieved for location: {location}...\n')
+                    self.cfb_etl_log(f'\n!!! Data not retrieved for location: {location}\n')
+                
+                time.sleep(.75)
 
         self.cfb_etl_log('Completed retrieving geocode data.\n')     
         return locations_df
