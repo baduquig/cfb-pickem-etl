@@ -41,6 +41,6 @@ class ExtractAll:
     
     def cfb_etl_log(self, message):
         """Method to print logging message to log file and terminal"""
-        self.logfile.writelines(message + '\n')
+        self.logfile.write(message + '\n')
         print(message)
 
