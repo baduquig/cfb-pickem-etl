@@ -1,4 +1,3 @@
-import pandas as pd
 from etl_classes.extract_all import ExtractAll
 from etl_classes.scrape_games import ScrapeGames
 from etl_classes.scrape_schools import ScrapeSchools
@@ -42,6 +41,7 @@ def full_load(games_df, schools_df, conferences_df, locations_df, all_data):
     load_obj = LoadData(games_df, schools_df, conferences_df, locations_df, all_data)
     load_obj.load_csv()
     load_obj.load_json()
+    load_obj.load_mysql_db()
     load_obj.logfile.close()
 
 def full_etl(year):

@@ -1,5 +1,6 @@
 import pandas as pd
 from datetime import datetime
+from sqlalchemy import create_engine
 
 class LoadData:
     """This class contains methods needed to load data into all 'potential' consumable forms."""
@@ -76,3 +77,81 @@ class LoadData:
         
         print('Completed loading data into JSON files.\n')
         self.logfile.write('Completed loading data into JSON files.\n\n')
+
+    def load_mysql_db(self):
+        """This method to load schedule data stored in Pandas DataFrames into FreeMySQLHosting MySQL database instance."""
+        print('\nBeginning loading data into MySQL Database.')
+        self.logfile.write('\nBeginning loading data into MySQL Database.\n')
+
+        engine = create_engine('mysql+mysqlconnector://sql9634488:2usSRQH2hu@sql9.freemysqlhosting.net:3306/sql9634488')
+
+        # Locations
+        if not self.locations_df.empty:
+            print(f'  ~ Loading locations data into MySQL Database...')
+            self.logfile.write(f'  ~ Loading locations data into MySQL Database...\n')
+
+            db_column_names = {
+                'locationID': 'LOCATION_ID',
+                'locationName': 'LOCATION_NAME',
+                'city': 'CITY',
+                'state': 'STATE_NAME',
+                'latitude': 'LATITUDE',
+                'longitude': 'LONGITUDE'
+            }
+            self.locations_df.rename(columns=db_column_names, inplace=True)
+            self.locations_df.to_sql(name='CFB_LOCATIONS', con=engine, if_exists='append', index=False)
+        
+        # Conferences
+        if not self.conferences_df.empty:
+            print(f'  ~ Loading conferences data into MySQL Database...')
+            self.logfile.write(f'  ~ Loading conferences data into MySQL Database...\n')
+
+            db_column_names = {
+                'conferenceID': 'CONFERENCE_ID',
+                'divisionID': 'DIVISION_ID',
+                'conferenceName': 'CONFERENCE_NAME',
+                'divisionName': 'DIVISION_NAME'
+            }
+            self.conferences_df.rename(columns=db_column_names, inplace=True)
+            self.conferences_df.to_sql(name='CFB_CONFERENCES', con=engine, if_exists='append', index=False)
+
+        # Schools
+        if not self.schools_df.empty:
+            print(f'  ~ Loading schools data into MySQL Database...')
+            self.logfile.write(f'  ~ Loading schools data into MySQL Database...\n')
+
+            db_column_names = {
+                'schoolID': 'SCHOOL_ID',
+                'logoUrl': 'LOGO_URL',
+                'name': 'SCHOOL_NAME',
+                'mascot': 'MASCOT',
+                'record': 'RECORD',
+                'wins': 'WINS',
+                'losses': 'LOSSES',
+                'ties': 'TIES',
+                'divisionID': 'DIVISION'
+            }
+            self.schools_df.rename(columns=db_column_names, inplace=True)
+            self.schools_df.to_sql(name='CFB_SCHOOLS', con=engine, if_exists='append', index=False)
+
+        # Games
+        if not self.games_df.empty:
+            print(f'  ~ Loading games data into MySQL Database...')
+            self.logfile.write(f'  ~ Loading games data into MySQL Database...\n')
+
+            db_column_names = {
+                'week': 'GAME_WEEK',
+                'gameDate': 'GAME_DATE',
+                'awaySchool': 'AWAY_SCHOOL',
+                'homeSchool': 'HOME_SCHOOL',
+                'gameID': 'GAME_ID',
+                'time': 'GAME_TIME',
+                'score': 'SCORE',
+                'locationID': 'GAME_LOCATION'
+            }
+            self.games_df.rename(columns=db_column_names, inplace=True)
+            self.games_df.to_sql(name='CFB_GAMES', con=engine, if_exists='append', index=False)
+
+        
+        print('Completed loading data into MySQL Database.\n')
+        self.logfile.write('Completed loading data into MySQL Database.\n\n')
