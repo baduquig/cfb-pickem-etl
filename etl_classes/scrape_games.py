@@ -1,5 +1,6 @@
 import pandas as pd
 import requests
+import sys
 from bs4 import BeautifulSoup
 from datetime import datetime, date
 from etl_classes.extract_all import ExtractAll
@@ -46,6 +47,9 @@ class ScrapeGames(ExtractAll):
             
             # Instantiate variable for 'parent' schedule DIV and for each distinct day with games in this particular week
             schedule_div = soup.find('div', class_='mt3')
+            if schedule_div is None:
+                print(soup)
+                sys.exit()
             
             # Iterate through each distinct day with games on this particular week
             for day in schedule_div.children:
