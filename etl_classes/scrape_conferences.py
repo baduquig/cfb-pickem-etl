@@ -18,7 +18,10 @@ class ScrapeConferences(ExtractAll):
         standings_url = 'https://www.espn.com/college-football/standings'
 
         # Scrape HTML from HTTP request to the URL above and store in variable `soup`
-        response = requests.get(standings_url)
+        custom_header = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+        }
+        response = requests.get(standings_url, headers=custom_header)
         soup = BeautifulSoup(response.content, 'html.parser')
 
         # Instantiate parent element variables

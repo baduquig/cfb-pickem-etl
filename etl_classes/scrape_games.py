@@ -17,7 +17,10 @@ class ScrapeGames(ExtractAll):
         game_url = 'https://www.espn.com/college-football/game?gameId=' + str(game_id)
         
         # Scrape HTML from HTTP request to the URL for the provided Game ID
-        game_resp = requests.get(game_url)
+        custom_header = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+        }
+        game_resp = requests.get(game_url, headers=custom_header)
         game_soup = BeautifulSoup(game_resp.content, 'html.parser')
 
         # Instantiate variable for parent/child Gamestrip DIVs
@@ -42,11 +45,14 @@ class ScrapeGames(ExtractAll):
             self.cfb_etl_log(f'  ~ Scraping data for Week {week_num}')
 
             # Scrape HTML from HTTP request to the URL above and store in variable `soup`
-            response = requests.get(espn_url)
+            custom_header = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+            }
+            response = requests.get(espn_url, headers=custom_header)
             soup = BeautifulSoup(response.content, 'html.parser')
             
             # Instantiate variable for 'parent' schedule DIV and for each distinct day with games in this particular week
-            schedule_div = soup.find('div', class_='mt3')
+            schedule_div = soup.find_all('div', class_='mt3')[1]
             if schedule_div is None:
                 print(soup)
                 sys.exit()

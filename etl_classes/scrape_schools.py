@@ -22,7 +22,10 @@ class ScrapeSchools(ExtractAll):
             self.cfb_etl_log(f'  ~ Scraping data for School ID: {school_id}')
 
             # Scrape HTML from HTTP request to the URL above and store in variable `soup`
-            response = requests.get(espn_url)
+            custom_header = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
+            }
+            response = requests.get(espn_url, headers=custom_header)
             soup = BeautifulSoup(response.content, 'html.parser')
 
             # Instantiate variable for Parent DIV of main school ("clubhouse") banner
