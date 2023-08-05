@@ -8,7 +8,23 @@ class ScrapeGames(ExtractAll):
     """This class contains the methods needed to scrape college football game 
     schedule data from ESPN at (https://www.espn.com/college-football/schedule)."""
     def __init__(self):
-        super().__init__()        
+        super().__init__()
+    
+    def scrape_score(self, game_id):
+        """Method to scrape score from https://www.espn.com/college-football/game?gameId=xxxxxxxxx for a given Game ID"""
+        self.cfb_etl_log(f'    ~ Game time passed, getting score for Game {game_id}')
+        game_url = 'https://www.espn.com/college-football/game?gameId=' + str(game_id)
+        
+        # Scrape HTML from HTTP request to the URL for the provided Game ID
+        game_resp = requests.get(game_url)
+        game_soup = BeautifulSoup(game_resp.content, 'html.parser')
+
+        # Instantiate variable for parent/child Gamestrip DIVs
+        score_container = game_soup.find('div', class_='Gamestrip__Competitors')
+        away_score = score_container.find('div', class_='Gamestrip__Team--away').find('div', class_='Gamestrip__Score').text
+        home_score = score_container.find('div', class_='Gamestrip__Team--home').find('div', class_='Gamestrip__Score').text
+        
+        return away_score, home_score
 
     def scrape_games(self, year=2023):
         """Method to scrape college football schedule data from https://www.espn.com/college-football/schedule for a given year (default: 2023)."""
@@ -29,7 +45,7 @@ class ScrapeGames(ExtractAll):
             soup = BeautifulSoup(response.content, 'html.parser')
             
             # Instantiate variable for 'parent' schedule DIV and for each distinct day with games in this particular week
-            schedule_div = soup.find_all('div', class_='mt3')[1]
+            schedule_div = soup.find('div', class_='mt3')
             
             # Iterate through each distinct day with games on this particular week
             for day in schedule_div.children:
@@ -51,10 +67,11 @@ class ScrapeGames(ExtractAll):
                     
                     if game_date >= date.today():
                         time = self.get_cell_text(game_columns[2])
-                        score = '0-0'
+                        away_score = 0
+                        home_score = 0
                     else:
                         time = 'TBD'
-                        score = self.get_cell_text(game_columns[2])
+                        away_score, home_score = self.scrape_score(game_id)
 
                     location = self.get_cell_text(game_columns[5])
 
@@ -63,7 +80,8 @@ class ScrapeGames(ExtractAll):
                         'week': [week_num],  'gameDate': [date_str], 
                         'awaySchool': [away_school], 'homeSchool': [home_school], 
                         'gameID': [game_id], 'time': [time], 
-                        'score': [score], 'location': [location]
+                        'awayScore': [away_score], 'homeScore': [home_score], 
+                        'location': [location]
                     })                    
                     games_df = pd.concat([games_df, new_game], ignore_index=True)
                     

@@ -146,7 +146,8 @@ class LoadData:
                 'homeSchool': 'HOME_SCHOOL',
                 'gameID': 'GAME_ID',
                 'time': 'GAME_TIME',
-                'score': 'SCORE',
+                'awayScore': 'AWAY_SCORE',
+                'homeScore': 'HOME_SCORE',
                 'locationID': 'GAME_LOCATION'
             }
             self.games_df.rename(columns=db_column_names, inplace=True)
