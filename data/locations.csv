@@ -32,11 +32,11 @@ locationID,locationName,city,state,latitude,longitude
 31,"Amon G. Carter Stadium, Fort Worth, TX",Fort Worth,TX,32.753177,-97.3327459
 32,"Alumni Stadium (Chestnut Hill, MA), Chestnut Hill, MA",Chestnut Hill,MA,42.3306529,-71.1661647
 33,"Memorial Stadium (Norman, OK), Norman, OK",Norman,OK,35.2225717,-97.4394816
-34,"Vaught-Hemingway Stadium, Oxford, MS",Oxford,MS,34.3663773,-89.5187664
-35,"Jack Trice Stadium, Ames, IA",Ames,IA,42.0267567,-93.6170448
-36,"Lincoln Financial Field, Philadelphia, PA",Philadelphia,PA,39.9527237,-75.1635262
-37,"Peden Stadium, Athens, OH",Athens,OH,39.3289242,-82.1012479
-38,"Falcon Stadium, USAF Academy, CO",USAF Academy,CO,38.99705645,-104.84364992062919
+34,"Falcon Stadium, USAF Academy, CO",USAF Academy,CO,38.99705645,-104.84364992062919
+35,"Vaught-Hemingway Stadium, Oxford, MS",Oxford,MS,34.3663773,-89.5187664
+36,"Jack Trice Stadium, Ames, IA",Ames,IA,42.0267567,-93.6170448
+37,"Lincoln Financial Field, Philadelphia, PA",Philadelphia,PA,39.9527237,-75.1635262
+38,"Peden Stadium, Athens, OH",Athens,OH,39.3289242,-82.1012479
 39,"Autzen Stadium, Eugene, OR",Eugene,OR,44.0505054,-123.0950506
 40,"Jordan-Hare Stadium, Auburn, AL",Auburn,AL,32.6098566,-85.4807825
 41,"Memorial Stadium (Bloomington, IN), Bloomington, IN",Bloomington,IN,39.1670396,-86.5342881
@@ -51,7 +51,7 @@ locationID,locationName,city,state,latitude,longitude
 50,"Kidd Brewer Stadium, Boone, NC",Boone,NC,36.2165362,-81.6746158
 51,"War Memorial Stadium (AR), Little Rock, AR",Little Rock,AR,34.7465071,-92.2896267
 52,"Davis Wade Stadium, Starkville, MS",Starkville,MS,33.4503998,-88.8183872
-53,"Apogee Stadium, Denton, TX",Denton,TX,33.2150386,-97.1330516
+53,"DATCU Stadium, Denton, TX",Denton,TX,33.2150386,-97.1330516
 54,"JMA Wireless Dome, Syracuse, NY",Syracuse,NY,43.0481221,-76.1474244
 55,"Allegiant Stadium, Las Vegas, NV",Las Vegas,NV,36.1672559,-115.148516
 56,"Sanford Stadium, Athens, GA",Athens,GA,33.9597677,-83.376398
@@ -89,44 +89,44 @@ locationID,locationName,city,state,latitude,longitude
 88,"Wallace Wade Stadium, Durham, NC",Durham,NC,35.996653,-78.9018053
 89,"Cardinal Stadium, Louisville, KY",Louisville,KY,38.2542376,-85.759407
 90,"Bulldog Stadium (CA), Fresno, CA",Fresno,CA,36.7394421,-119.7848307
-91,"University Stadium (NM), Albuquerque, NM",Albuquerque,NM,35.0841034,-106.650985
-92,"Maverik Stadium, Logan, UT",Logan,UT,41.7313447,-111.8348631
-93,"Michie Stadium, West Point, NY",West Point,NY,41.3875623,-73.96418970621724
-94,"Folsom Field, Boulder, CO",Boulder,CO,40.0149856,-105.270545
-95,"Ohio Stadium, Columbus, OH",Columbus,OH,39.9622601,-83.0007065
-96,"Carter-Finley Stadium, Raleigh, NC",Raleigh,NC,35.7803977,-78.6390989
-97,"Scott Stadium, Charlottesville, VA",Charlottesville,VA,38.029306,-78.4766781
-98,"Bobby Dodd Stadium, Atlanta, GA",Atlanta,GA,33.7489924,-84.3902644
-99,"Kelly/Shorts Stadium, Mount Pleasant, MI",Mount Pleasant,MI,33.1570582,-94.9694007
-100,"Doyt L. Perry Stadium, Bowling Green, OH",Bowling Green,OH,41.3747744,-83.6513229
-101,"Memorial Stadium (Clemson, SC), Clemson, SC",Clemson,SC,34.6850749,-82.8364111
-102,"Ryan Field, Evanston, IL",Evanston,IL,42.0447388,-87.6930459
-103,"Warren McGuirk Alumni Stadium, Amherst, MA",Amherst,MA,42.3685658,-72.505714
-104,"Alamodome, San Antonio, TX",San Antonio,TX,29.4246002,-98.4951405
-105,"Navy-Marine Corps Memorial Stadium, Annapolis, MD",Annapolis,MD,38.9786401,-76.492786
-106,"Huskie Stadium, DeKalb, IL",DeKalb,IL,41.9295371,-88.7503776
-107,"Glass Bowl, Toledo, OH",Toledo,OH,41.6529143,-83.5378173
-108,"Razorback Stadium, Fayetteville, AR",Fayetteville,AR,36.0625843,-94.1574328
-109,"Dowdy-Ficklen Stadium, Greenville, NC",Greenville,NC,35.613224,-77.3724593
-110,"Neyland Stadium, Knoxville, TN",Knoxville,TN,35.9603948,-83.9210261
-111,"Hancock Whitney Stadium, Mobile, AL",Mobile,AL,30.6943566,-88.0430541
-112,"Kenan Stadium, Chapel Hill, NC",Chapel Hill,NC,35.9131542,-79.05578
-113,"Milan Puskar Stadium, Morgantown, WV",Morgantown,WV,39.6296809,-79.9559437
-114,"S.B. Ballard Stadium, Norfolk, VA",Norfolk,VA,36.8968052,-76.2602336
-115,"InfoCision Stadium, Akron, OH",Akron,OH,41.083064,-81.518485
-116,"UB Stadium, Buffalo, NY",Buffalo,NY,42.8867166,-78.8783922
-117,"Brooks Stadium (SC), Conway, SC",Conway,SC,33.8360035,-79.0478143
-118,"Jones AT&T Stadium, Lubbock, TX",Lubbock,TX,33.5635206,-101.879336
-119,"Albertsons Stadium, Boise, ID",Boise,ID,43.6166163,-116.200886
-120,"Rice Stadium, Houston, TX",Houston,TX,29.7589382,-95.3676974
-121,"Raymond James Stadium, Tampa, FL",Tampa,FL,27.9477595,-82.458444
-122,"Centennial Bank Stadium, Jonesboro, AR",Jonesboro,AR,35.8428646,-90.7034522
-123,"Mackay Stadium, Reno, NV",Reno,NV,39.5261206,-119.8126581
-124,"Ben Hill Griffin Stadium, Gainesville, FL",Gainesville,FL,29.6519684,-82.3249846
-125,"Tiger Stadium (LA), Baton Rouge, LA",Baton Rouge,LA,30.4459596,-91.18738
-126,"Williams-Brice Stadium, Columbia, SC",Columbia,SC,34.0007493,-81.0343313
-127,"Martin Stadium, Pullman, WA",Pullman,WA,46.7304268,-117.173895
-128,"NRG Stadium, Houston, TX",Houston,TX,29.7589382,-95.3676974
+91,"Maverik Stadium, Logan, UT",Logan,UT,41.7313447,-111.8348631
+92,"Michie Stadium, West Point, NY",West Point,NY,41.3875623,-73.96418970621724
+93,"Folsom Field, Boulder, CO",Boulder,CO,40.0149856,-105.270545
+94,"Ohio Stadium, Columbus, OH",Columbus,OH,39.9622601,-83.0007065
+95,"Carter-Finley Stadium, Raleigh, NC",Raleigh,NC,35.7803977,-78.6390989
+96,"Scott Stadium, Charlottesville, VA",Charlottesville,VA,38.029306,-78.4766781
+97,"Bobby Dodd Stadium, Atlanta, GA",Atlanta,GA,33.7489924,-84.3902644
+98,"Kelly/Shorts Stadium, Mount Pleasant, MI",Mount Pleasant,MI,33.1570582,-94.9694007
+99,"Doyt L. Perry Stadium, Bowling Green, OH",Bowling Green,OH,41.3747744,-83.6513229
+100,"Memorial Stadium (Clemson, SC), Clemson, SC",Clemson,SC,34.6850749,-82.8364111
+101,"Ryan Field, Evanston, IL",Evanston,IL,42.0447388,-87.6930459
+102,"Warren McGuirk Alumni Stadium, Amherst, MA",Amherst,MA,42.3685658,-72.505714
+103,"Alamodome, San Antonio, TX",San Antonio,TX,29.4246002,-98.4951405
+104,"Navy-Marine Corps Memorial Stadium, Annapolis, MD",Annapolis,MD,38.9786401,-76.492786
+105,"Huskie Stadium, DeKalb, IL",DeKalb,IL,41.9295371,-88.7503776
+106,"Glass Bowl, Toledo, OH",Toledo,OH,41.6529143,-83.5378173
+107,"Razorback Stadium, Fayetteville, AR",Fayetteville,AR,36.0625843,-94.1574328
+108,"Dowdy-Ficklen Stadium, Greenville, NC",Greenville,NC,35.613224,-77.3724593
+109,"Neyland Stadium, Knoxville, TN",Knoxville,TN,35.9603948,-83.9210261
+110,"Hancock Whitney Stadium, Mobile, AL",Mobile,AL,30.6943566,-88.0430541
+111,"Kenan Stadium, Chapel Hill, NC",Chapel Hill,NC,35.9131542,-79.05578
+112,"Milan Puskar Stadium, Morgantown, WV",Morgantown,WV,39.6296809,-79.9559437
+113,"S.B. Ballard Stadium, Norfolk, VA",Norfolk,VA,36.8968052,-76.2602336
+114,"InfoCision Stadium, Akron, OH",Akron,OH,41.083064,-81.518485
+115,"UB Stadium, Buffalo, NY",Buffalo,NY,42.8867166,-78.8783922
+116,"Brooks Stadium (SC), Conway, SC",Conway,SC,33.8360035,-79.0478143
+117,"Jones AT&T Stadium, Lubbock, TX",Lubbock,TX,33.5635206,-101.879336
+118,"Albertsons Stadium, Boise, ID",Boise,ID,43.6166163,-116.200886
+119,"Rice Stadium, Houston, TX",Houston,TX,29.7589382,-95.3676974
+120,"Raymond James Stadium, Tampa, FL",Tampa,FL,27.9477595,-82.458444
+121,"Centennial Bank Stadium, Jonesboro, AR",Jonesboro,AR,35.8428646,-90.7034522
+122,"Mackay Stadium, Reno, NV",Reno,NV,39.5261206,-119.8126581
+123,"Ben Hill Griffin Stadium, Gainesville, FL",Gainesville,FL,29.6519684,-82.3249846
+124,"Tiger Stadium (LA), Baton Rouge, LA",Baton Rouge,LA,30.4459596,-91.18738
+125,"Williams-Brice Stadium, Columbia, SC",Columbia,SC,34.0007493,-81.0343313
+126,"Martin Stadium, Pullman, WA",Pullman,WA,46.7304268,-117.173895
+127,"NRG Stadium, Houston, TX",Houston,TX,29.7589382,-95.3676974
+128,"University Stadium (NM), Albuquerque, NM",Albuquerque,NM,35.0841034,-106.650985
 129,"Doak Campbell Stadium, Tallahassee, FL",Tallahassee,FL,30.4380832,-84.2809332
 130,"Reser Stadium, Corvallis, OR",Corvallis,OR,44.5645659,-123.2620435
 131,"California Memorial Stadium, Berkeley, CA",Berkeley,CA,37.8708393,-122.272863

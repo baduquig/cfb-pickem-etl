@@ -33,11 +33,11 @@ schoolID,logoUrl,name,mascot,record,wins,losses,ties,divisionID
 38,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/38.png&h=2000&w=2000,Colorado,Buffaloes,0-0,0,0,0,22
 2459,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2459.png&h=2000&w=2000,Northern Illinois,Huskies,0-0,0,0,0,20
 2032,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2032.png&h=2000&w=2000,Arkansas State,Red Wolves,0-0,0,0,0,28
+2523,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=2000&w=2000,Robert Morris,Colonials,0-0,0,0,0,
 2382,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2382.png&h=2000&w=2000,Mercer,Bears,0-0,0,0,0,
 2460,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2460.png&h=2000&w=2000,Northern Iowa,Panthers,0-0,0,0,0,
 2006,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2006.png&h=2000&w=2000,Akron,Zips,0-0,0,0,0,19
 112358,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/112358.png&h=2000&w=2000,Long Island University,Sharks,0-0,0,0,0,
-2523,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2523.png&h=2000&w=2000,Robert Morris,Colonials,0-0,0,0,0,
 2502,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2502.png&h=2000&w=2000,Portland State,Vikings,0-0,0,0,0,
 194,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/194.png&h=2000&w=2000,Ohio State,Buckeyes,0-0,0,0,0,14
 119,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/119.png&h=2000&w=2000,Towson,Tigers,0-0,0,0,0,
@@ -94,11 +94,7 @@ schoolID,logoUrl,name,mascot,record,wins,losses,ties,divisionID
 93,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/93.png&h=2000&w=2000,Murray State,Racers,0-0,0,0,0,
 282,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/282.png&h=2000&w=2000,Indiana State,Sycamores,0-0,0,0,0,
 356,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/356.png&h=2000&w=2000,Illinois,Fighting Illini,0-0,0,0,0,15
-2132,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2132.png&h=2000&w=2000,Cincinnati,Bearcats,0-0,0,0,0,12
-2711,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2711.png&h=2000&w=2000,Western Michigan,Broncos,0-0,0,0,0,20
 331,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/331.png&h=2000&w=2000,Eastern Washington,Eagles,0-0,0,0,0,
-2635,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2635.png&h=2000&w=2000,Tennessee Tech,Golden Eagles,0-0,0,0,0,
-13,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/13.png&h=2000&w=2000,Cal Poly,Mustangs,0-0,0,0,0,
 238,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/238.png&h=2000&w=2000,Vanderbilt,Commodores,0-0,0,0,0,24
 2169,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2169.png&h=2000&w=2000,Delaware State,Hornets,0-0,0,0,0,
 2754,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2754.png&h=2000&w=2000,Youngstown State,Penguins,0-0,0,0,0,
@@ -117,10 +113,12 @@ schoolID,logoUrl,name,mascot,record,wins,losses,ties,divisionID
 2439,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2439.png&h=2000&w=2000,UNLV,Rebels,0-0,0,0,0,21
 257,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/257.png&h=2000&w=2000,Richmond,Spiders,0-0,0,0,0,
 145,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/145.png&h=2000&w=2000,Ole Miss,Rebels,0-0,0,0,0,25
+2711,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2711.png&h=2000&w=2000,Western Michigan,Broncos,0-0,0,0,0,20
 2681,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2681.png&h=2000&w=2000,Wagner,Seahawks,0-0,0,0,0,
 79,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/79.png&h=2000&w=2000,Southern Illinois,Salukis,0-0,0,0,0,
 2640,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2640.png&h=2000&w=2000,Texas Southern,Tigers,0-0,0,0,0,
 276,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/276.png&h=2000&w=2000,Marshall,Thundering Herd,0-0,0,0,0,27
+13,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/13.png&h=2000&w=2000,Cal Poly,Mustangs,0-0,0,0,0,
 2046,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2046.png&h=2000&w=2000,Austin Peay,Governors,0-0,0,0,0,
 202,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/202.png&h=2000&w=2000,Tulsa,Golden Hurricane,0-0,0,0,0,10
 2026,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2026.png&h=2000&w=2000,Appalachian State,Mountaineers,0-0,0,0,0,27
@@ -133,6 +131,7 @@ schoolID,logoUrl,name,mascot,record,wins,losses,ties,divisionID
 2415,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2415.png&h=2000&w=2000,Morgan State,Bears,0-0,0,0,0,
 2230,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2230.png&h=2000&w=2000,Fordham,Rams,0-0,0,0,0,
 249,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/249.png&h=2000&w=2000,North Texas,Mean Green,0-0,0,0,0,10
+2132,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2132.png&h=2000&w=2000,Cincinnati,Bearcats,0-0,0,0,0,12
 251,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/251.png&h=2000&w=2000,Texas,Longhorns,0-0,0,0,0,12
 55,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/55.png&h=2000&w=2000,Jacksonville State,Gamecocks,0-0,0,0,0,16
 41,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/41.png&h=2000&w=2000,UConn,Huskies,0-0,0,0,0,17
@@ -155,11 +154,11 @@ schoolID,logoUrl,name,mascot,record,wins,losses,ties,divisionID
 2005,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2005.png&h=2000&w=2000,Air Force,Falcons,0-0,0,0,0,21
 2447,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2447.png&h=2000&w=2000,Nicholls,Colonels,0-0,0,0,0,
 2320,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2320.png&h=2000&w=2000,Lamar,Cardinals,0-0,0,0,0,
+2635,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2635.png&h=2000&w=2000,Tennessee Tech,Golden Eagles,0-0,0,0,0,
 2572,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2572.png&h=2000&w=2000,Southern Miss,Golden Eagles,0-0,0,0,0,28
 302,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/302.png&h=2000&w=2000,UC Davis,Aggies,0-0,0,0,0,
 2,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2.png&h=2000&w=2000,Auburn,Tigers,0-0,0,0,0,25
 197,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/197.png&h=2000&w=2000,Oklahoma State,Cowboys,0-0,0,0,0,12
-2678,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2678.png&h=2000&w=2000,VMI,Keydets,0-0,0,0,0,
 2335,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2335.png&h=2000&w=2000,Liberty,Flames,0-0,0,0,0,16
 213,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/213.png&h=2000&w=2000,Penn State,Nittany Lions,0-0,0,0,0,14
 2306,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2306.png&h=2000&w=2000,Kansas State,Wildcats,0-0,0,0,0,12
@@ -170,6 +169,7 @@ schoolID,logoUrl,name,mascot,record,wins,losses,ties,divisionID
 2115,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2115.png&h=2000&w=2000,Central Connecticut,Blue Devils,0-0,0,0,0,
 155,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/155.png&h=2000&w=2000,North Dakota,Fighting Hawks,0-0,0,0,0,
 2692,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2692.png&h=2000&w=2000,Weber State,Wildcats,0-0,0,0,0,
+2678,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2678.png&h=2000&w=2000,VMI,Keydets,0-0,0,0,0,
 2450,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2450.png&h=2000&w=2000,Norfolk State,Spartans,0-0,0,0,0,
 2579,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2579.png&h=2000&w=2000,South Carolina,Gamecocks,0-0,0,0,0,24
 135,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/135.png&h=2000&w=2000,Minnesota,Golden Gophers,0-0,0,0,0,15
@@ -221,8 +221,8 @@ schoolID,logoUrl,name,mascot,record,wins,losses,ties,divisionID
 2000,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2000.png&h=2000&w=2000,Abilene Christian,Wildcats,0-0,0,0,0,
 3101,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/3101.png&h=2000&w=2000,Utah Tech,Trailblazers,0-0,0,0,0,
 2729,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2729.png&h=2000&w=2000,William & Mary,Tribe,0-0,0,0,0,
-2771,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2771.png&h=2000&w=2000,Merrimack,Warriors,0-0,0,0,0,
 2097,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2097.png&h=2000&w=2000,Campbell,Fighting Camels,0-0,0,0,0,
+2771,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2771.png&h=2000&w=2000,Merrimack,Warriors,0-0,0,0,0,
 2453,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2453.png&h=2000&w=2000,North Alabama,Lions,0-0,0,0,0,
 236,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/236.png&h=2000&w=2000,Chattanooga,Mocs,0-0,0,0,0,
 2529,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2529.png&h=2000&w=2000,Sacred Heart,Pioneers,0-0,0,0,0,
