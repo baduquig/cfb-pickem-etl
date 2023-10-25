@@ -5,6 +5,7 @@ Author: Gabe Baduqui
 Scrape, transform and load college football schedule data from various web pages
 """
 import requests
+import pandas as pd
 from bs4 import BeautifulSoup
 
 etl_log_path = './logs/cfb_etl.log'
@@ -262,52 +263,52 @@ def get_game_data(game_id):
     try:
         # Instantiate Gamestring Container data fields
         gamestrip_div = game_soup.find('div', class_='Gamestrip')
-        away_school_id = get_away_school_id(gamestrip_div)
-        home_school_id = get_home_school_id(gamestrip_div)
+        game_data['away_school_id'] = get_away_school_id(gamestrip_div)
+        game_data['home_school_id'] = get_home_school_id(gamestrip_div)
         try:
-            away_school_box_score = get_away_box_score(gamestrip_div)
-            home_school_box_score = get_home_box_score(gamestrip_div)
+            game_data['away_school_box_score'] = get_away_box_score(gamestrip_div)
+            game_data['home_school_box_score'] = get_home_box_score(gamestrip_div)
         except:
-            away_school_box_score = None
-            home_school_box_score = None
+            game_data['away_school_box_score'] = None
+            game_data['home_school_box_score'] = None
             print(f'\nBox Score Table not present on webpage.\n')
             logfile(f'\nBox Score Table not present on webpage.\n')
     except:
         print(f'\n\nError occurred while scraping `Gamestrip` DIV from Game webpage: \n\n{game_soup}\n\n')
         logfile(f'\n\nError occurred while scraping `Gamestrip` DIV from Game webpage: \n\n{game_soup}\n\n')
-        away_school_id = None
-        home_school_id = None
+        game_data['away_school_id'] = None
+        game_data['home_school_id'] = None
     
     try:
         # Instantiate Information Section data fields
         info_section = game_soup.find('section', class_='GameInfo')
-        stadium = get_stadium(info_section)
-        location = get_location(info_section)
-        game_timestamp = get_timestamp(info_section)
-        tv_coverage = get_tv_coverage(info_section)
-        betting_line = get_betting_line(info_section)
-        betting_over_under = get_betting_over_under(info_section)
-        stadium_capacity = get_stadium_capacity(info_section)
-        attendance = get_attendance(info_section)
+        game_data['stadium'] = get_stadium(info_section)
+        game_data['location'] = get_location(info_section)
+        game_data['game_timestamp'] = get_timestamp(info_section)
+        game_data['tv_coverage'] = get_tv_coverage(info_section)
+        game_data['betting_line'] = get_betting_line(info_section)
+        game_data['betting_over_under'] = get_betting_over_under(info_section)
+        game_data['stadium_capacity'] = get_stadium_capacity(info_section)
+        game_data['attendance'] = get_attendance(info_section)
     except:
         print(f'\n\nError occurred while scraping `GameInfo` SECTION from Game webpage: \n\n{game_soup}\n\n')
         logfile(f'\n\nError occurred while scraping `GameInfo` SECTION from Game webpage: \n\n{game_soup}\n\n')
-        stadium = None
-        location = None
-        game_timestamp = None
-        tv_coverage = None
-        betting_line = None
-        betting_over_under = None
-        stadium_capacity = None
-        attendance = None
+        game_data['stadium'] = None
+        game_data['location'] = None
+        game_data['game_timestamp'] = None
+        game_data['tv_coverage'] = None
+        game_data['betting_line'] = None
+        game_data['betting_over_under'] = None
+        game_data['stadium_capacity'] = None
+        game_data['attendance'] = None
 
     try: 
         matchup_div = game_soup.find('div', class_='matchupPredictor')
-        away_win_pct = get_away_winning_probability(matchup_div)
-        home_win_pct = get_home_winning_probability(matchup_div)
+        game_data['away_win_pct'] = get_away_winning_probability(matchup_div)
+        game_data['home_win_pct'] = get_home_winning_probability(matchup_div)
     except:
-        away_win_pct = None
-        home_win_pct = None
+        game_data['away_win_pct'] = None
+        game_data['home_win_pct'] = None
 
 
 
@@ -371,6 +372,18 @@ def get_all_game_ids(year=2023, season_weeks=15):
 def main():
     # Begin ETL Process
     game_ids = get_all_game_ids()
+    games_df = pd.DataFrame([], columns=['away_school_id', 'home_school_id', 
+                                         'away_school_box_score', 'home_school_box_score', 
+                                         'stadium', 'location', 'game_timestamp', 
+                                         'tv_coverage', 'betting_line', 'stadium_capacity', 
+                                         'attendance', 'away_win_pct', 'home_win_pct'])
+
+    for game_id in game_ids:
+        game_data = get_game_data(game_id)
+        games_df = games_df.append(game_data, ignore_index=True)
+    
+    print(games_df)
+        
 
 if __name__ == '__main__':
     main()
