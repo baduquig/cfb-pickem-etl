@@ -32,9 +32,6 @@ def get_away_school_id(gamestrip):
        Returns `school_id`: String"""
     away_school_container = gamestrip.find('div', class_='Gamestrip__Team--away')
     school_id = get_school_id(away_school_container)
-    if school_id is None: 
-        print(f'~~~~ Could not extract Away School ID')
-        logfile.write(f'~~~~ Could not extract Away School ID')
     return school_id
 
 def get_home_school_id(gamestrip):
@@ -44,9 +41,6 @@ def get_home_school_id(gamestrip):
     #try:
     home_school_container = gamestrip.find('div', class_='Gamestrip__Team--home')
     school_id = get_school_id(home_school_container)
-    if school_id is None: 
-        print(f'~~~~ Could not extract Home School ID')
-        logfile.write(f'~~~~ Could not extract Home School ID')
     return school_id
 
 def get_box_score_table(gamestrip):
@@ -56,7 +50,7 @@ def get_box_score_table(gamestrip):
     try:
         box_score_container = gamestrip.find('div', class_='Gamestrip__Overview').find('div', class_='Gamestrip__Table').find('div', class_='Table__Scroller').find('table')
         box_score_table = box_score_container.find('tbody', class_='Table__TBODY')
-    except:
+    except Exception as e:
         box_score_table = None
         print(f'~~~~ No Box Score available to scrape')
         logfile.write(f'~~~~ No Box Score available to scrape\n')
@@ -91,11 +85,11 @@ def get_home_box_score(gamestrip):
     try:
         box_score_tbody = get_box_score_table(gamestrip)
         home_box_score_quarters = box_score_tbody.find_all('tr')[1].find_all('td')
-        home_box_score['1'] = home_box_score_quarters[1]
-        home_box_score['2'] = home_box_score_quarters[2]
-        home_box_score['3'] = home_box_score_quarters[3]
-        home_box_score['4'] = home_box_score_quarters[4]
-        home_box_score['total'] = home_box_score_quarters[5]
+        home_box_score['1'] = home_box_score_quarters[1].text
+        home_box_score['2'] = home_box_score_quarters[2].text
+        home_box_score['3'] = home_box_score_quarters[3].text
+        home_box_score['4'] = home_box_score_quarters[4].text
+        home_box_score['total'] = home_box_score_quarters[5].text
     except:
         home_box_score['1'] = None
         home_box_score['2'] = None
@@ -111,13 +105,7 @@ def get_stadium(information):
     # Example `information` string: '<section class="Card GameInfo">...</section>
     try:
         stadium_name = information.find('div', class_='GameInfo__Location__Name').text
-    except Exception as e:
-        if hasattr(e, 'message'):
-            print(e.message)
-        else:
-            print(e)
-        #print(f'\nError occurred while extracting Stadium name from DIV: \n\n{information}\n')
-        #logfile(f'\nError occurred while extracting Stadium name from the DIV: \n\n{information}\n')
+    except:
         stadium_name = None
     return stadium_name
 
@@ -128,13 +116,7 @@ def get_location(information):
     # Example `information` string: '<section class="Card GameInfo">...</section>
     try:
         location = information.find('span', class_='Location__Text').text
-    except Exception as e:
-        if hasattr(e, 'message'):
-            print(e.message)
-        else:
-            print(e)
-        #print(f'\nError occurred while extracting Game Location from DIV: \n\n{information}\n')
-        #logfile(f'\nError occurred while extracting Game Location from the DIV: \n\n{information}\n')
+    except:
         location = None
     return location
 
@@ -145,13 +127,7 @@ def get_timestamp(information):
     # Example `information` string: '<div class="Gamestrip relative overflow-hidden college-football Gamestrip--xl Gamestrip--post bb">...</div>'
     try:
         game_timestamp = information.find('div', class_='GameInfo__Meta').find('span')[0].text
-    except Exception as e:
-        if hasattr(e, 'message'):
-            print(e.message)
-        else:
-            print(e)
-        #print(f'\nError occurred while extracting Game Date and Time from DIV: \n\n{information}\n')
-        #logfile(f'\nError occurred while extracting Game Date and Time from the DIV: \n\n{information}\n')
+    except:
         game_timestamp = None
     return game_timestamp
 
@@ -162,13 +138,7 @@ def get_tv_coverage(information):
     # Example `information` string: '<div class="Gamestrip relative overflow-hidden college-football Gamestrip--xl Gamestrip--post bb">...</div>'
     try:
         tv_coverage = information.find('div', class_='GameInfo__Meta').find('span')[1].text
-    except Exception as e:
-        if hasattr(e, 'message'):
-            print(e.message)
-        else:
-            print(e)
-        #print(f'\nError occurred while extracting TV Coverage Channel from DIV: \n\n{information}\n')
-        #logfile(f'\nError occurred while extracting TV Coverage Channel from the DIV: \n\n{information}\n')
+    except:
         tv_coverage = None
     return tv_coverage
 
@@ -178,14 +148,8 @@ def get_betting_line(information):
        Returns `betting_line`: String"""
     # Example `information` string: '<div class="Gamestrip relative overflow-hidden college-football Gamestrip--xl Gamestrip--post bb">...</div>'
     try:
-        betting_line = information.find('div', class_='GameInfo__BettingItem line')
-    except Exception as e:
-        if hasattr(e, 'message'):
-            print(e.message)
-        else:
-            print(e)
-        #print(f'\nError occurred while extracting Betting Line from DIV: \n\n{information}\n')
-        #logfile(f'\nError occurred while extracting Betting Line from the DIV: \n\n{information}\n')
+        betting_line = information.find('div', class_='GameInfo__BettingItem line').text
+    except:
         betting_line = None
     return betting_line
 
@@ -195,14 +159,8 @@ def get_betting_over_under(information):
        Returns `betting_over_under`: String"""
     # Example `information` string: '<div class="Gamestrip relative overflow-hidden college-football Gamestrip--xl Gamestrip--post bb">...</div>'
     try:
-        betting_over_under = information.find('div', class_='GameInfo__BettingItem ou')
-    except Exception as e:
-        if hasattr(e, 'message'):
-            print(e.message)
-        else:
-            print(e)
-        #print(f'\nError occurred while extracting Betting Over/Under from DIV: \n\n{information}\n')
-        #logfile(f'\nError occurred while extracting Betting Over/Under from the DIV: \n\n{information}\n')
+        betting_over_under = information.find('div', class_='GameInfo__BettingItem ou').text
+    except:
         betting_over_under = None
     return betting_over_under
 
@@ -212,14 +170,8 @@ def get_stadium_capacity(information):
        Returns `stadium_capacity`: String"""
     # Example `information` string: '<div class="Gamestrip relative overflow-hidden college-football Gamestrip--xl Gamestrip--post bb">...</div>'
     try:
-        stadium_capacity = information.find('div', class_='Attendance__Capacity')
-    except Exception as e:
-        if hasattr(e, 'message'):
-            print(e.message)
-        else:
-            print(e)
-        #print(f'\nError occurred while extracting Stadium Capacity from DIV: \n\n{information}\n')
-        #logfile(f'\nError occurred while extracting Stadium Capacity from the DIV: \n\n{information}\n')
+        stadium_capacity = information.find('div', class_='Attendance__Capacity').text
+    except:
         stadium_capacity = None
     return stadium_capacity
 
@@ -229,14 +181,8 @@ def get_attendance(information):
        Returns `attendance`: String"""
     # Example `information` string: '<div class="Gamestrip relative overflow-hidden college-football Gamestrip--xl Gamestrip--post bb">...</div>'
     try:
-        attendance = information.find('div', class_='Attendance__Capacity')
-    except Exception as e:
-        if hasattr(e, 'message'):
-            print(e.message)
-        else:
-            print(e)
-        #print(f'\nError occurred while extracting Game Attendance from DIV: \n\n{information}\n')
-        #logfile(f'\nError occurred while extracting Game Attendance from the DIV: \n\n{information}\n')
+        attendance = information.find('div', class_='Attendance__Capacity').text
+    except:
         attendance = None
     return attendance
 
@@ -246,14 +192,8 @@ def get_away_winning_probability(matchup):
        Returns `win_pct`: String"""
     # Example `matchup` string: '<div class="matchupPredictor">...</div>'
     try:
-        win_pct = matchup.find('div', class_='matchupPredictor__teamValue')[0].text
-    except Exception as e:
-        if hasattr(e, 'message'):
-            print(e.message)
-        else:
-            print(e)
-        #print(f'\nError occurred while extracting Away School Winning Percentage from DIV: \n{matchup}\n')
-        #logfile(f'\nError occurred while extracting Away School Winning Percentage from the DIV: \n{matchup}\n')
+        win_pct = matchup.find('div', class_='matchupPredictor__teamValue--b').text
+    except:
         win_pct = None
     return win_pct
 
@@ -263,16 +203,11 @@ def get_home_winning_probability(matchup):
        Returns `win_pct`: String"""
     # Example `matchup` string: '<div class="matchupPredictor">...</div>'
     try:
-        win_pct = matchup.find('div', class_='matchupPredictor__teamValue')[1].text
-    except Exception as e:
-        if hasattr(e, 'message'):
-            print(e.message)
-        else:
-            print(e)
-        #print(f'\nError occurred while extracting Home School Winning Percentage from DIV: \n{matchup}\n')
-        #logfile(f'\nError occurred while extracting Home School Winning Percentage from the DIV: \n{matchup}\n')
+        win_pct = matchup.find('div', class_='matchupPredictor__teamValue--a').text
+    except:
         win_pct = None
     return win_pct
+
 
 def get_game_data(game_id):
     """Function that scrapes the webpage of a given Game ID and extracts needed data fields.
@@ -299,82 +234,46 @@ def get_game_data(game_id):
 
     #try:
     # Instantiate Gamestring Container data fields
-    gamestrip_div = game_soup.find('div', class_='Gamestrip')
-
-    away_school_id = get_away_school_id(gamestrip_div)
-    home_school_id = get_home_school_id(gamestrip_div)
-    #away_school_box_score = get_away_box_score(gamestrip_div)
-    #home_school_box_score = get_home_box_score(gamestrip_div)
-    
-    if away_school_id is not None:
-        game_data['away_school_id'] = away_school_id
-    else:
-        print(f'~~~~ Could not extract Away School ID for GameID: {game_id}')
-        logfile.write(f'~~~~ Could not extract Away School ID forGame ID: {game_id}\n')
-    
-    if home_school_id is not None:
-        game_data['home_school_id'] = home_school_id
-    else:
-        print(f'~~~~ Could not extract Home School ID for GameID: {game_id}')
-        logfile.write(f'~~~~ Could not extract Home School ID for GameID: {game_id}\n')
-    
-    game_data['away_school_box_score'] = get_away_box_score(gamestrip_div)
-    game_data['home_school_box_score'] = get_home_box_score(gamestrip_div)
-    
-    """except Exception as e:
-            if hasattr(e, 'message'):
-                print(e.message)
-            else:
-                print(e)
-            game_data['away_school_box_score'] = None
-            game_data['home_school_box_score'] = None
-            #print(f'\nBox Score Table not present on webpage.\n')
-            #logfile(f'\nBox Score Table not present on webpage.\n')
-    except Exception as e:
-        if hasattr(e, 'message'):
-            print(e.message)
+    try:
+        gamestrip_div = game_soup.find('div', class_='Gamestrip')
+        away_school_id = get_away_school_id(gamestrip_div)
+        home_school_id = get_home_school_id(gamestrip_div)    
+        if away_school_id is not None:
+            game_data['away_school_id'] = away_school_id
         else:
-            print(e)
-        #print(f'\n\nError occurred while scraping `Gamestrip` DIV from Game webpage: \n{game_soup}\n')
-        #logfile(f'\n\nError occurred while scraping `Gamestrip` DIV from Game webpage: \n{game_soup}\n')
-        game_data['away_school_id'] = None
-        game_data['home_school_id'] = None"""
-    
-    """try:
-        # Instantiate Information Section data fields
-        info_section = game_soup.find('section', class_='GameInfo')
-        game_data['stadium'] = get_stadium(info_section)
-        game_data['location'] = get_location(info_section)
-        game_data['game_timestamp'] = get_timestamp(info_section)
-        game_data['tv_coverage'] = get_tv_coverage(info_section)
-        game_data['betting_line'] = get_betting_line(info_section)
-        game_data['betting_over_under'] = get_betting_over_under(info_section)
-        game_data['stadium_capacity'] = get_stadium_capacity(info_section)
-        game_data['attendance'] = get_attendance(info_section)
-    except Exception as e:
-        if hasattr(e, 'message'):
-            print(e.message)
+            print(f'~~~~ Could not extract Away School ID for GameID: {game_id}')
+            logfile.write(f'~~~~ Could not extract Away School ID forGame ID: {game_id}\n')
+        if home_school_id is not None:
+            game_data['home_school_id'] = home_school_id
         else:
-            print(e)
-        #print(f'\nError occurred while scraping `GameInfo` SECTION from Game webpage: \n{game_soup}\n')
-        #logfile(f'\nError occurred while scraping `GameInfo` SECTION from Game webpage: \n{game_soup}\n')
-        game_data['stadium'] = None
-        game_data['location'] = None
-        game_data['game_timestamp'] = None
-        game_data['tv_coverage'] = None
-        game_data['betting_line'] = None
-        game_data['betting_over_under'] = None
-        game_data['stadium_capacity'] = None
-        game_data['attendance'] = None
-
+            print(f'~~~~ Could not extract Home School ID for GameID: {game_id}')
+            logfile.write(f'~~~~ Could not extract Home School ID for GameID: {game_id}\n')
+        game_data['away_school_box_score'] = get_away_box_score(gamestrip_div)
+        game_data['home_school_box_score'] = get_home_box_score(gamestrip_div)
+    except:
+        print(f'~~~~ Could not find Gamestrip Container for GameID: {game_id}')
+        logfile.write(f'~~~~ Could not find Gamestrip Container for Game ID: {game_id}\n')
+    
+    # Instantiate Information Section data fields
+    info_section = game_soup.find('section', class_='GameInfo')
+    game_data['stadium'] = get_stadium(info_section)
+    game_data['location'] = get_location(info_section)
+    game_data['game_timestamp'] = get_timestamp(info_section)
+    game_data['tv_coverage'] = get_tv_coverage(info_section)
+    game_data['betting_line'] = get_betting_line(info_section)
+    game_data['betting_over_under'] = get_betting_over_under(info_section)
+    game_data['stadium_capacity'] = get_stadium_capacity(info_section)
+    game_data['attendance'] = get_attendance(info_section)
+    
+    # Instantiate Matchup Container data fields
     try: 
         matchup_div = game_soup.find('div', class_='matchupPredictor')
         game_data['away_win_pct'] = get_away_winning_probability(matchup_div)
         game_data['home_win_pct'] = get_home_winning_probability(matchup_div)
     except:
         game_data['away_win_pct'] = None
-        game_data['home_win_pct'] = None"""
-    
+        game_data['home_win_pct'] = None
+
     return game_data
 
 
