@@ -2,7 +2,7 @@
 CFB Pickem ETL
 Author: Gabe Baduqui
 
-Scrape all Game data elements for a given Game ID.
+Scrape all Game-specific data elements for a given Game ID.
 """
 import requests
 from bs4 import BeautifulSoup
@@ -234,8 +234,7 @@ def get_game_data(game_id, logfile):
         'home_school_box_score': None
     }
 
-    #try:
-    # Instantiate Gamestring Container data fields
+    # Instantiate Gamestring Container and scrape data fields
     try:
         gamestrip_div = game_soup.find('div', class_='Gamestrip')
         away_school_id = get_away_school_id(gamestrip_div)
@@ -256,7 +255,7 @@ def get_game_data(game_id, logfile):
         print(f'~~~~ Could not find Gamestrip Container for GameID: {game_id}')
         logfile.write(f'~~~~ Could not find Gamestrip Container for Game ID: {game_id}\n')
     
-    # Instantiate Information Section data fields
+    # Instantiate Information Section and scrape data fields
     info_section = game_soup.find('section', class_='GameInfo')
     game_data['stadium'] = get_stadium(info_section)
     game_data['location'] = get_location(info_section)
@@ -267,7 +266,7 @@ def get_game_data(game_id, logfile):
     game_data['stadium_capacity'] = get_stadium_capacity(info_section)
     game_data['attendance'] = get_attendance(info_section)
     
-    # Instantiate Matchup Container data fields
+    # Instantiate Matchup Container and scrape data fields
     try: 
         matchup_div = game_soup.find('div', class_='matchupPredictor')
         game_data['away_win_pct'] = get_away_winning_probability(matchup_div)

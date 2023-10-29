@@ -5,8 +5,8 @@ Author: Gabe Baduqui
 Scrape college football schedule data from various web sources.
 """
 import pandas as pd
-from .scrape_schedule_pages import get_all_game_ids as gag
-from .scrape_game_pages import get_game_data as gd
+from .scrape_schedule_page import get_all_game_ids as gag
+from .scrape_game_page import get_game_data as gd
 
 etl_log_path = './logs/cfb_etl.log'
 logfile = open(etl_log_path, 'a')
