@@ -226,12 +226,9 @@ def get_game_data(game_id, logfile):
     game_resp = requests.get(espn_game_url, headers=custom_header)
     game_soup = BeautifulSoup(game_resp.content, 'html.parser')
 
+    # Instantiate `game_data` dictionary
     game_data = {
-        'game_id': game_id,
-        'away_school_id': None,
-        'home_school_id': None,
-        'away_school_box_score': None,
-        'home_school_box_score': None
+        'game_id': game_id
     }
 
     # Instantiate Gamestring Container and scrape data fields
