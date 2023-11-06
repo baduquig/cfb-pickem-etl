@@ -59,5 +59,6 @@ def get_all_game_ids(logfile, year=2023, season_weeks=15):
                 game_id = get_game_id(game_row, logfile)
                 if game_id is not None:
                     game_ids.append(game_id)
-        logfile.write('\n')
+    print('')
+    logfile.write('\n')
     return game_ids
