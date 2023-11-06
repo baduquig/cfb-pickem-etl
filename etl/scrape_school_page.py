@@ -164,3 +164,5 @@ def get_school_data(school_id, logfile):
     except:
         print(f'~~~~ Could not find Team Standings Section for School ID: {school_id}')
         logfile.write(f'~~~~ Could not find Team Standings Section for School ID: {school_id}\n')
+
+    return school_data
