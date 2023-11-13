@@ -1,5 +1,5 @@
 """
-CFB Pickem ETL
+Pickem ETL
 Author: Gabe Baduqui
 
 Scrape all School-specific data elements for a given School ID
@@ -11,14 +11,19 @@ def get_logo_url(clubhouse_div):
     """Function that extracts the ESPN url to a given school's PNG image logo
        Accepts `clubhouse_div`: <div> HTML Element String
        Returns `logo_url`: String"""
-    # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main_Aside pl4 relative">...</div>'
-
+    # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main">...</div>'
+    try:
+        school_img = clubhouse_div.find('img', class_='Logo', href=True)
+        logo_url = school_img['href']
+    except:
+        logo_url = None
+    return logo_url
 
 def get_clubhouse_header_span(clubhouse_div):
     """Function that scrapes and returns the <H1> tag storing the school name and mascot
        Accepts `clubhose_div`: <div> HTML Element String
        Returns `header_span`: <span> HTML Element String"""
-    # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main_Aside pl4 relative">...</div>'
+    # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main">...</div>'
     try:
         header_h1 = clubhouse_div.find('h1', class_='ClubhouseHeader__Name')
         header_span = header_h1.find('span')
@@ -30,7 +35,7 @@ def get_school_name(clubhouse_div):
     """Function that scrapes the school name from a given ClubhouseHeader DIV tag
        Accepts `clubhouse_div`: <div> HTML Element String
        Returns `school_name`: String"""
-    # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main_Aside pl4 relative">...</div>'
+    # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main">...</div>'
     header_span = get_clubhouse_header_span(clubhouse_div)
     try:
         school_name = header_span.find_all('span')[0]
@@ -42,7 +47,7 @@ def get_school_mascot(clubhouse_div):
     """Function that scrapes the school name from a given ClubhouseHeader DIV tag
        Accepts `clubhouse_div`: <div> HTML Element String
        Returns `school_name`: String"""
-    # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main_Aside pl4 relative">...</div>'
+    # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main">...</div>'
     header_span = get_clubhouse_header_span(clubhouse_div)
     try:
         school_mascot = header_span.find_all('span')[1]
@@ -120,7 +125,7 @@ def get_overall_record(school_standing_row):
     return overall_record
 
 
-def get_school_data(school_id, logfile):
+def get_school_data(school_id, logfile='./logs/cfb_extract.log'):
     """Function that scrapes the webpage of a given School ID and extracts the needed data fields.
        Accepts `school_id`: Number
        Returns school_data: Dictionary"""

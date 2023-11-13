@@ -1,5 +1,5 @@
 """
-CFB Pickem ETL
+Pickem ETL
 Author: Gabe Baduqui
 
 Retrieve location data from Geocode.maps forward geocode API
@@ -26,7 +26,7 @@ def get_state_name(location_name):
         state = None
     return state
 
-def call_forward_geocode_api(stadium, city, state):
+def call_geocode_api(stadium, city, state):
     """Fucntion that makes a GET request to 'https://geocode.maps.co/search?q=' for a given location
        Accepts `query_str`: String
        Returns `geocode_record`: Dictionary"""
@@ -46,7 +46,7 @@ def call_forward_geocode_api(stadium, city, state):
         geocode_record = None
     return geocode_record
 
-def get_location_data(location_id, stadium, location_name, logfile):
+def get_location_data(location_id, stadium, location_name, logfile='./logs/cfb_extract.log'):
     """Function that calls the Geocode.maps forward geocode API.
        Accepts `location_names`: List of Strings
        Returns location_data: Dictionary"""    
@@ -56,7 +56,7 @@ def get_location_data(location_id, stadium, location_name, logfile):
     # Call Forward Geocode API
     city = get_city_name(location_name)
     state = get_state_name(location_name)
-    geocode_record = call_forward_geocode_api(stadium, city, state)
+    geocode_record = call_geocode_api(stadium, city, state)
     
     # Instantiate `location_data` dictionary
     location_data = {

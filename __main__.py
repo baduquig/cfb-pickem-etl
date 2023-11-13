@@ -4,7 +4,7 @@ Author: Gabe Baduqui
 
 Scrape, transform and load college football schedule data from various web pages
 """
-import cfb_etl.cfb_extract.extract as x
+import cfb_etl.cfb_extract.cfb_extract as x
 
 def main():
     x.full_extract()

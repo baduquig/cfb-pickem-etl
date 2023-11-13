@@ -1,5 +1,5 @@
 """
-CFB Pickem ETL
+ Pickem ETL
 Author: Gabe Baduqui
 
 Scrape all Game-specific data elements for a given Game ID.
@@ -12,6 +12,7 @@ def get_school_id(school_container_div):
     """Function that extracts the School ID from the HREF attribute from a given Anchor Tag.
        Accepts `team_anchor_tag`: <a> HTML Element String
        Returns `school_id`: String"""
+    # Example `school_container_div` string: '<div class="Gamestrip__Team--xxxx">...</div>'
     try:
         school_anchor_tag = school_container_div.find('div', class_='Gamestrip__TeamContainer').find('a', href=True)
         school_href_attr = school_anchor_tag['href'] # Example `school_href_attr` string: 'https://www.espn.com/college-football/team/_/id/0000/schoolName-schoolMascot
@@ -211,7 +212,7 @@ def get_home_winning_probability(matchup):
     return win_pct
 
 
-def get_game_data(game_id, logfile):
+def get_game_data(game_id, logfile='./logs/cfb_extract.log'):
     """Function that scrapes the webpage of a given Game ID and extracts needed data fields.
        Accepts `game_id`: Number
        Returns `game_data`: Dictionary"""
@@ -240,7 +241,7 @@ def get_game_data(game_id, logfile):
             game_data['away_school_id'] = away_school_id
         else:
             print(f'~~~~ Could not extract Away School ID for GameID: {game_id}')
-            logfile.write(f'~~~~ Could not extract Away School ID forGame ID: {game_id}\n')
+            logfile.write(f'~~~~ Could not extract Away School ID for Game ID: {game_id}\n')
         if home_school_id is not None:
             game_data['home_school_id'] = home_school_id
         else:
