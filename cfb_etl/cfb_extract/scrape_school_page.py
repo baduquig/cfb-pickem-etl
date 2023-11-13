@@ -135,7 +135,7 @@ def get_school_data(school_id, logfile):
     school_resp = requests.get(espn_school_url, headers=custom_header)
     school_soup = BeautifulSoup(school_resp.content, 'html.parser')
 
-    # Instantiate`school_data` dictionary
+    # Instantiate `school_data` dictionary
     school_data = {
         'school_id': school_id
     }

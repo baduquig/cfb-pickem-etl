@@ -271,6 +271,4 @@ def get_game_data(game_id, logfile):
     except:
         game_data['away_win_pct'] = None
         game_data['home_win_pct'] = None
-    print('')
-    logfile.write('\n')
     return game_data
