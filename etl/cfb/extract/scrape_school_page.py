@@ -7,7 +7,7 @@ Scrape all School-specific data elements for a given School ID
 import requests
 from bs4 import BeautifulSoup
 
-def get_logo_url(clubhouse_div):
+def get_logo_url(clubhouse_div: str):
     """Function that extracts the ESPN url to a given school's PNG image logo
        Accepts `clubhouse_div`: <div> HTML Element String
        Returns `logo_url`: String"""
@@ -19,7 +19,7 @@ def get_logo_url(clubhouse_div):
         logo_url = None
     return logo_url
 
-def get_clubhouse_header_span(clubhouse_div):
+def get_clubhouse_header_span(clubhouse_div: str):
     """Function that scrapes and returns the <H1> tag storing the school name and mascot
        Accepts `clubhose_div`: <div> HTML Element String
        Returns `header_span`: <span> HTML Element String"""
@@ -31,7 +31,7 @@ def get_clubhouse_header_span(clubhouse_div):
         header_span = None
     return header_span
 
-def get_school_name(clubhouse_div):
+def get_school_name(clubhouse_div: str):
     """Function that scrapes the school name from a given ClubhouseHeader DIV tag
        Accepts `clubhouse_div`: <div> HTML Element String
        Returns `school_name`: String"""
@@ -43,7 +43,7 @@ def get_school_name(clubhouse_div):
         school_name = None
     return school_name
 
-def get_school_mascot(clubhouse_div):
+def get_school_mascot(clubhouse_div: str):
     """Function that scrapes the school name from a given ClubhouseHeader DIV tag
        Accepts `clubhouse_div`: <div> HTML Element String
        Returns `school_name`: String"""
@@ -57,7 +57,7 @@ def get_school_mascot(clubhouse_div):
 
 
 
-def get_conference_name(standings_section):
+def get_conference_name(standings_section: str):
     """Function that scrapes the header of the a given TeamStandings SECTION tag and extracts the conference name
        Accepts `standings_section`: <section> HTML Element String
        Returns `conference_name`: String"""
@@ -71,7 +71,7 @@ def get_conference_name(standings_section):
         conference_name = None
     return conference_name
 
-def get_school_standing_row(conference_standing_rows, school_name=None):
+def get_school_standing_row(conference_standing_rows: str, school_name=None):
     """Function that extracts the the <tr> tag storing the conference and overall records for the current school being scraped
        Accepts `conference_standing_rows`: List of <tr> HTML Element Strings
        Returns `school_standing_row`: <tr> HTML Element String"""
@@ -89,7 +89,7 @@ def get_school_standing_row(conference_standing_rows, school_name=None):
         school_standing_row = None
     return school_standing_row
 
-def get_record_text(record_td):
+def get_record_text(record_td: str):
     """Function that extracts the record text from a given TD tag
        Accepts `record_td`: <td> HTML Element String
        Returns `record`: String"""
@@ -100,7 +100,7 @@ def get_record_text(record_td):
         record_text = None
     return record_text
 
-def get_conference_record(school_standing_row):
+def get_conference_record(school_standing_row: str):
     """Function that extracts the conference record from a given TR tag
        Accepts `school_standing_row`: <tr> HTML Element String
        Returns `conference_record`: String"""
@@ -112,7 +112,7 @@ def get_conference_record(school_standing_row):
         conf_record = None
     return conf_record
 
-def get_overall_record(school_standing_row):
+def get_overall_record(school_standing_row: str):
     """Function that extracts the overall record from a given TR tag
        Accepts `school_standing_row`: <tr> HTML Element String
        Returns `overall_record`: String"""
@@ -163,7 +163,7 @@ def get_school_data(school_id, logfile='./logs/cfb_extract.log'):
         standings_table = standings_section.find('div', class_='Wrapper Card__Content').find('div', class_='Table__ScrollerWrapper').find('div', class_='Table__Scroller').find('table')
         standings_rows = standings_table.find('tbody').find_all('tr')
         
-        school_standing_row = get_school_standing_row(standings_rows)
+        school_standing_row = get_school_standing_row(standings_rows, school_data['name'])
         school_data['conference_record'] = get_conference_record(school_standing_row)
         school_data['overall_record'] = get_overall_record(school_standing_row)
     except:

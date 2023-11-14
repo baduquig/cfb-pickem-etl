@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def get_game_id(game_row_html):
+def get_game_id(game_row_html: str):
     """Function that extracts the Game ID from the <TR> HTML Element for a given game.
        Accepts `game_row_html`: <tr> HTML Element String
        Returns `game_id`: String"""

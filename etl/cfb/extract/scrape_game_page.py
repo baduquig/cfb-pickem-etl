@@ -8,7 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-def get_school_id(school_container_div):
+def get_school_id(school_container_div: str):
     """Function that extracts the School ID from the HREF attribute from a given Anchor Tag.
        Accepts `team_anchor_tag`: <a> HTML Element String
        Returns `school_id`: String"""
@@ -23,7 +23,7 @@ def get_school_id(school_container_div):
         school_id = None
     return school_id
 
-def get_away_school_id(gamestrip):
+def get_away_school_id(gamestrip: str):
     """Function that scrapes the Away School ID from a given 'Gamestrip' DIV tag.
        Accepts `gamestrip`: <div> HTML Element String
        Returns `school_id`: String"""
@@ -32,7 +32,7 @@ def get_away_school_id(gamestrip):
     school_id = get_school_id(away_school_container)
     return school_id
 
-def get_home_school_id(gamestrip):
+def get_home_school_id(gamestrip: str):
     """Function that scrapes the Home School ID from a given 'Gamestrip' DIV tag.
        Accepts `gamestrip`: <div> HTML Element String
        Returns `school_id`: String"""
@@ -42,9 +42,9 @@ def get_home_school_id(gamestrip):
     return school_id
 
 
-def get_box_score_table(gamestrip, logfile):
+def get_box_score_table(gamestrip: str, logfile):
     """Function that scrapes the Box Score from a given 'Gamestrip' DIV tag.
-       Accepts `gamestrip`: <div> HTML Element String
+       Accepts `gamestrip`: <div> HTML Element String, `logfile`: String
        Returns `box_score_table`: <tbody> HTML Element String"""
     # Example `gamestrip` string: '<div class="Gamestrip relative overflow-hidden college-football Gamestrip--xl Gamestrip--post bb">...</div>'
     try:
@@ -56,7 +56,7 @@ def get_box_score_table(gamestrip, logfile):
         logfile.write(f'~~~~ No Box Score available to scrape\n')
     return box_score_table
 
-def get_away_box_score(gamestrip, logfile):
+def get_away_box_score(gamestrip: str, logfile):
     """Function that scrapes the Away school Box Score from a given 'Gamestrip' DIV tag.
        Accepts `gamestrip`: <div> HTML Element String
        Returns `away_box_score`: Dictionary"""
@@ -78,7 +78,7 @@ def get_away_box_score(gamestrip, logfile):
         away_box_score['total'] = None
     return away_box_score
 
-def get_home_box_score(gamestrip, logfile):
+def get_home_box_score(gamestrip: str, logfile):
     """Function that scrapes the Home School Box Score from a given 'Gamestrip' DIV tag.
        Accepts `gamestring`: <div> HTML Element String
        Returns `home_box_score`: Dictionary"""
@@ -100,7 +100,7 @@ def get_home_box_score(gamestrip, logfile):
     return home_box_score
 
 
-def get_stadium(information):
+def get_stadium(information: str):
     """Function that scrapes the Stadium Name from a given 'GameInfo' Section tag.
        Accepts `information`: <section> HTML Element String
        Returns `stadium_name: String`"""
@@ -111,7 +111,7 @@ def get_stadium(information):
         stadium_name = None
     return stadium_name
 
-def get_location(information):
+def get_location(information: str):
     """Function that scrapes the City and State from a given 'GameInfo' Section tag.
        Accepts `information`: <section> HTML Element String
        Returns `location`: String"""
@@ -122,7 +122,7 @@ def get_location(information):
         location = None
     return location
 
-def get_timestamp(information):
+def get_timestamp(information: str):
     """Function that scrapes the Game Date and Time from a given 'information' DIV tag.
        Accepts `information`: <div> HTML Element String
        Returns `game_timestamp`: String"""
@@ -133,7 +133,7 @@ def get_timestamp(information):
         game_timestamp = None
     return game_timestamp
 
-def get_tv_coverage(information):
+def get_tv_coverage(information: str):
     """Function that scrapes the TV Coverage Channel from a given 'information' DIV tag.
        Accepts `information`: <div> HTML Element String
        Returns `tv_coverage`: String"""
@@ -144,7 +144,7 @@ def get_tv_coverage(information):
         tv_coverage = None
     return tv_coverage
 
-def get_betting_line(information):
+def get_betting_line(information: str):
     """Function that scrapes the Betting Line from a given 'information' DIV tag.
        Accepts `information`: <div> HTML Element String
        Returns `betting_line`: String"""
@@ -155,7 +155,7 @@ def get_betting_line(information):
         betting_line = None
     return betting_line
 
-def get_betting_over_under(information):
+def get_betting_over_under(information: str):
     """Function that scrapes the Betting Over/Under from a given 'information' DIV tag.
        Accepts `information`: <div> HTML Element String
        Returns `betting_over_under`: String"""
@@ -166,7 +166,7 @@ def get_betting_over_under(information):
         betting_over_under = None
     return betting_over_under
 
-def get_stadium_capacity(information):
+def get_stadium_capacity(information: str):
     """Function that scrapes the Stadium Capacity from a given 'information' DIV tag.
        Accepts `information`: <div> HTML Element String
        Returns `stadium_capacity`: String"""
@@ -177,7 +177,7 @@ def get_stadium_capacity(information):
         stadium_capacity = None
     return stadium_capacity
 
-def get_attendance(information):
+def get_attendance(information: str):
     """Function that scrapes the Game Attendance from a given 'information' DIV tag.
        Accepts `information`: <div> HTML Element String
        Returns `attendance`: String"""
@@ -189,7 +189,7 @@ def get_attendance(information):
     return attendance
 
 
-def get_away_winning_probability(matchup):
+def get_away_winning_probability(matchup: str):
     """Function that scrapes the winning probability percentage of the Away School for a given 'matchup' DIV tag.
        Accepts `matchup`: <div> HTML Element String
        Returns `win_pct`: String"""
@@ -200,7 +200,7 @@ def get_away_winning_probability(matchup):
         win_pct = None
     return win_pct
 
-def get_home_winning_probability(matchup):
+def get_home_winning_probability(matchup: str):
     """Function that scrapes the winning probability percentage of the Away School for a given 'matchup' DIV tag.
        Accepts `matchup`: <div> HTML Element String
        Returns `win_pct`: String"""
