@@ -36,10 +36,10 @@ def get_all_game_ids(year=2023, season_weeks=15, logfile='./logs/cfb_extract.log
     }
     
     for week in range(season_weeks):
+        week += 1
         print(f'~~~~ Scraping Week {week} Games')
         logfile.write(f'~~~~ Scraping Week {week} Games\n')
 
-        week += 1
         espn_current_week_url = espn_schedule_url + f'week/{week}/year/{year}/'
 
         # Scrape HTML from HTTP request to the URL above and store in variable `soup`
@@ -56,7 +56,7 @@ def get_all_game_ids(year=2023, season_weeks=15, logfile='./logs/cfb_extract.log
                     games_table_rows = day.find('div', class_='Table__Scroller').find('table', class_='Table').find('tbody', class_='Table__TBODY').find_all('tr')
                     
                     for game_row in games_table_rows:
-                        game_id = get_game_id(game_row, logfile)
+                        game_id = get_game_id(game_row)
                         if game_id is not None:
                             game_ids.append(game_id)
                         else:

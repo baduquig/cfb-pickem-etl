@@ -34,9 +34,10 @@ def create_schools_df(school_ids: list):
        Returns `schools_df`: Pandas DataFrame"""
     schools_df = pd.DataFrame([], columns=['name', 'mascot', 'logo_url', 'conference_name', 'conference_record', 'overall_record'])
     for school_id in school_ids:
-        school_data = cfb_school.get_school_data(school_id, logfile=cfb_extract_logfile)
-        new_school_row = pd.DataFrame([school_data])
-        schools_df = pd.concat([schools_df, new_school_row], ignore_index=True)
+        if school_id is not None:
+            school_data = cfb_school.get_school_data(school_id, logfile=cfb_extract_logfile)
+            new_school_row = pd.DataFrame([school_data])
+            schools_df = pd.concat([schools_df, new_school_row], ignore_index=True)
 
 def create_locations_df(stadiums: list, location_names: list):
     """Function that instantiates a Pandas DataFrame storing Geocode Data retrieved from Geocode.maps REST API
@@ -53,7 +54,7 @@ def create_locations_df(stadiums: list, location_names: list):
         
         if concatenated_location not in unique_locations:
             unique_locations.append(concatenated_location)
-            location_data = geo.get_location_data(location_id, stadium, location_name)
+            location_data = geo.get_location_data(location_id, stadium, location_name, logfile=cfb_extract_logfile)
             new_location_row = pd.DataFrame([location_data])
             locations_df = pd.concat([locations_df, new_location_row], ignore_index=True)
             location_id += 1

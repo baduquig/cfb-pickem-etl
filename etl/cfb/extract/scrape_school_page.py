@@ -131,7 +131,7 @@ def get_school_data(school_id, logfile='./logs/cfb_extract.log'):
        Returns school_data: Dictionary"""
     print(f'~~ Scraping SchoolID {school_id} data')
     logfile.write(f'~~ Scraping SchoolID {school_id} data\n')
-    espn_school_url = f'https://www.espn.com/college-football/team/_/id/{school_id}'
+    espn_school_url = f'https://www.espn.com/college-football/team/_/id/{school_id}\n'
 
     # Scrape HTML from HTTP request to the URL above and store in variable `page_soup`
     custom_header = {
@@ -170,6 +170,4 @@ def get_school_data(school_id, logfile='./logs/cfb_extract.log'):
         print(f'~~~~ Could not find Team Standings Section for School ID: {school_id}')
         logfile.write(f'~~~~ Could not find Team Standings Section for School ID: {school_id}\n')
     
-    print('')
-    logfile.write('\n')
     return school_data

@@ -26,19 +26,38 @@ def get_state_name(location_name):
         state = None
     return state
 
+def get_latitude(geocode_record):
+    """Function that extracts latitude property from the Geocode API response
+       Accepts `geocode_record`: Dictionary (JSON response)
+       Returns `latitude`: Number"""
+    try:
+        lat = geocode_record['lat']
+    except:
+        lat = None
+    return lat
+
+def get_longitude(geocode_record):
+    """Function that extracts longitude property from the Geocode API response
+       Accepts `geocode_record`: Dictionary (JSON response)
+       Returns `longitude`: Number"""
+    try:
+        long = geocode_record['lat']
+    except:
+        long = None
+    return long
+
 def call_geocode_api(stadium, city, state):
     """Fucntion that makes a GET request to 'https://geocode.maps.co/search?q=' for a given location
        Accepts `query_str`: String
        Returns `geocode_record`: Dictionary"""
-    general_query = stadium.replace(' ', '+')
-    
-    if (state is None) and (city is None):
-        geocode_api_url = f'https://geocode.maps.co/search?q={general_query}'
-    elif state is None:
-        geocode_api_url = f'https://geocode.maps.co/search?q={general_query}&city={city}'
+    if stadium is None:
+        geocode_api_url = f'https://geocode.maps.co/search?city={city}&state={state}'
     else:
-        geocode_api_url = f'https://geocode.maps.co/search?q={general_query}&city={city}&state={state}'
-
+        general_query = stadium.replace(' ', '+')
+        if state is None:
+            geocode_api_url = f'https://geocode.maps.co/search?q={general_query}'
+        else:
+            geocode_api_url = f'https://geocode.maps.co/search?q={general_query}&city={city}&state={state}'
     try:
         response = requests.get(geocode_api_url)
         geocode_record = response.json()[0]
@@ -50,13 +69,15 @@ def get_location_data(location_id, stadium, location_name, logfile='./logs/cfb_e
     """Function that calls the Geocode.maps forward geocode API.
        Accepts `location_names`: List of Strings
        Returns location_data: Dictionary"""    
-    print(f'~~ Scraping geocode data for {location_name}')
-    logfile.write(f'~~ Scraping geocode data for {location_name}\n')
+    print(f'~~ Scraping geocode data for {stadium}, {location_name}')
+    logfile.write(f'~~ Scraping geocode data for {stadium}, {location_name}\n')
 
     # Call Forward Geocode API
     city = get_city_name(location_name)
     state = get_state_name(location_name)
     geocode_record = call_geocode_api(stadium, city, state)
+    lat = get_latitude(geocode_record)
+    lon = get_longitude(geocode_record)
     
     # Instantiate `location_data` dictionary
     location_data = {
@@ -64,8 +85,8 @@ def get_location_data(location_id, stadium, location_name, logfile='./logs/cfb_e
         'stadium': stadium,
         'city': city,
         'state': state,
-        'latitude': geocode_record['lat'],
-        'longitude': geocode_record['lon']
+        'latitude': lat,
+        'longitude': lon
     }
 
     return location_data

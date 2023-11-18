@@ -4,10 +4,10 @@ Author: Gabe Baduqui
 
 Scrape, transform and load college football schedule data from various web pages
 """
-import cfb_etl.cfb_extract.cfb_extract as x
+import etl.cfb.extract.extract as ext
 
 def main():
-    x.full_extract()
+    ext.full_extract()
 
 if __name__ == '__main__':
     main()
