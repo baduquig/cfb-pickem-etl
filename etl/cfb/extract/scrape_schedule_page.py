@@ -22,20 +22,17 @@ def get_game_id(game_row_html: str):
         game_id = None
     return game_id
 
-def get_all_game_ids(year=2023, season_weeks=15, logfile='./logs/cfb_extract.log'):
+def get_all_game_ids(year=2023, weeks=15, logfile='./logs/cfb_extract.log'):
     """Function that scrapes the Game ID from each game row for a given season.
        Accepts: `year`: Number, `season_weeks`: Number
-       Returns List: game_ids"""
-    print(f'\n~~ Retrieving Game IDs for {year} schedule ~~')
-    logfile.write(f'\n~~ Retrieving Game IDs for {year} schedule ~~\n')
-    
+       Returns List: game_ids"""    
     game_ids = []
     espn_schedule_url = 'https://www.espn.com/college-football/schedule/_/'
     custom_header = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
     }
     
-    for week in range(season_weeks):
+    for week in range(weeks):
         week += 1
         print(f'~~~~ Scraping Week {week} Games')
         logfile.write(f'~~~~ Scraping Week {week} Games\n')
