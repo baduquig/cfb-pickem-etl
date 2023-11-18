@@ -65,9 +65,14 @@ def full_extract():
     """Function that calls all necessary functions to extract all CFB pickem data from required sources and return in Pandas DataFrames
        Accepts `stadiums`: List, `location_names`: List
        Returns `locations_df`: Pandas DataFrame"""
+    print.write('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nBeginning Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
+    cfb_extract_logfile.write('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nBeginning Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n')
     game_ids = cfb_schedule.get_all_game_ids(logfile=cfb_extract_logfile)
     games_raw = create_games_df(game_ids)
     schools_raw = create_schools_df(games_raw['away_school_id'].unique())
     locations_raw = create_locations_df(games_raw['stadium'], games_raw['location'])
+
+    print.write('\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n')
+    cfb_extract_logfile.write('\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n')
 
     return games_raw, schools_raw, locations_raw
