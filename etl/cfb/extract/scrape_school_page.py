@@ -78,6 +78,7 @@ def get_school_standing_row(conference_standing_rows: str, school_name=None):
        Accepts `conference_standing_rows`: List of <tr> HTML Element Strings
        Returns `school_standing_row`: <tr> HTML Element String"""
     # Example `conference_standing_rows` list: ['<tr class="Table__TR Table__TR--sm Table__even" data-idx="n">...</tr>', ....]
+    school_standing_row = ''
     try:
         for row in conference_standing_rows:
             row_anchor = row.find('td', class_='Table__TD').find('a')
@@ -162,8 +163,12 @@ def get_school_data(school_id, logfile='./logs/cfb_extract.log'):
         standings_section = school_soup.find('section', class_='TeamStandings')
         school_data['conference_name'] = get_conference_name(standings_section)
 
-        standings_table = standings_section.find('div', class_='Wrapper Card__Content').find('div', class_='Table__ScrollerWrapper').find('div', class_='Table__Scroller').find('table')
-        standings_rows = standings_table.find('tbody').find_all('tr')
+        standings_tables = standings_section.find('div', class_='Wrapper Card__Content').find_all('div', class_='ResponsiveTable') 
+        for standings_table in standings_tables:
+            standings_table.find('div', class_='Table__ScrollerWrapper').find('div', class_='Table__Scroller').find('table')
+            standings_rows = standings_table.find('tbody').find_all('tr')
+            if standings_rows != '' and standings_rows is not None:
+                break
         
         school_standing_row = get_school_standing_row(standings_rows, school_data['name'])
         school_data['conference_record'] = get_conference_record(school_standing_row)

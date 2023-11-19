@@ -183,7 +183,7 @@ def get_attendance(information: str):
        Returns `attendance`: String"""
     # Example `information` string: '<section class="Card GameInfo">...</section>
     try:
-        attendance = information.find('div', class_='Attendance__Capacity').text
+        attendance = information.find('div', class_='Attendance__Numbers').text
     except:
         attendance = None
     return attendance

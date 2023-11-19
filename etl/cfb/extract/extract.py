@@ -5,6 +5,7 @@ Author: Gabe Baduqui
 Scrape college football schedule data from various web sources.
 """
 import pandas as pd
+import time
 import etl.common.get_timestamp as ts
 import etl.cfb.extract.scrape_schedule_page as cfb_schedule
 import etl.cfb.extract.scrape_game_page as cfb_game
@@ -26,6 +27,7 @@ def create_games_df(game_ids: list):
         game_data = cfb_game.get_game_data(game_id, logfile=cfb_extract_logfile)
         new_game_row = pd.DataFrame([game_data])
         games_df = pd.concat([games_df, new_game_row], ignore_index=True)
+        time.sleep(.1)
     return games_df
 
 def create_schools_df(school_ids: list):
@@ -38,6 +40,8 @@ def create_schools_df(school_ids: list):
             school_data = cfb_school.get_school_data(school_id, logfile=cfb_extract_logfile)
             new_school_row = pd.DataFrame([school_data])
             schools_df = pd.concat([schools_df, new_school_row], ignore_index=True)
+            time.sleep(.1)
+    return schools_df
 
 def create_locations_df(stadiums: list, location_names: list):
     """Function that instantiates a Pandas DataFrame storing Geocode Data retrieved from Geocode.maps REST API
@@ -58,6 +62,7 @@ def create_locations_df(stadiums: list, location_names: list):
             new_location_row = pd.DataFrame([location_data])
             locations_df = pd.concat([locations_df, new_location_row], ignore_index=True)
             location_id += 1
+        time.sleep(.1)
     return locations_df
 
 
