@@ -13,8 +13,8 @@ def get_logo_url(clubhouse_div: str):
        Returns `logo_url`: String"""
     # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main">...</div>'
     try:
-        school_img = clubhouse_div.find('img', class_='Logo', href=True)
-        logo_url = school_img['href']
+        school_img = clubhouse_div.find('img', class_='Logo', src=True)
+        logo_url = school_img['src']
     except:
         logo_url = None
     return logo_url
@@ -38,7 +38,8 @@ def get_school_name(clubhouse_div: str):
     # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main">...</div>'
     header_span = get_clubhouse_header_span(clubhouse_div)
     try:
-        school_name = header_span.find_all('span')[0]
+        school_name_span = header_span.find_all('span')[0]
+        school_name = school_name_span.text
     except:
         school_name = None
     return school_name
@@ -50,7 +51,8 @@ def get_school_mascot(clubhouse_div: str):
     # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main">...</div>'
     header_span = get_clubhouse_header_span(clubhouse_div)
     try:
-        school_mascot = header_span.find_all('span')[1]
+        school_mascot_span = header_span.find_all('span')[1]
+        school_mascot = school_mascot_span.text
     except:
         school_mascot = None
     return school_mascot
@@ -131,7 +133,7 @@ def get_school_data(school_id, logfile='./logs/cfb_extract.log'):
        Returns school_data: Dictionary"""
     print(f'~~ Scraping SchoolID {school_id} data')
     logfile.write(f'~~ Scraping SchoolID {school_id} data\n')
-    espn_school_url = f'https://www.espn.com/college-football/team/_/id/{school_id}\n'
+    espn_school_url = f'https://www.espn.com/college-football/team/_/id/{school_id}'
 
     # Scrape HTML from HTTP request to the URL above and store in variable `page_soup`
     custom_header = {
