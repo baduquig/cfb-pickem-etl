@@ -12,8 +12,8 @@ import etl.cfb.extract.scrape_school_page as cfb_school
 import etl.common.get_geocode_data as geo
 
 timestamp = ts.get_timestamp()
-cfb_extract_logfile = f'./logs/cfb_extract_{timestamp}.log'
-cfb_extract_logfile = open(cfb_extract_logfile, 'a')
+cfb_extract_logfile_path = f'./logs/cfb_extract_{timestamp}.log'
+cfb_extract_logfile = open(cfb_extract_logfile_path, 'a')
 
 def create_games_df(game_ids: list):
     """Function that instantiates a Pandas DataFrame storing Game Data scraped from ESPN Game web pages
