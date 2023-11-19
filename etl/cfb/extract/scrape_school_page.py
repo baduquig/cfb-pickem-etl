@@ -80,7 +80,7 @@ def get_school_standing_row(conference_standing_rows: str, school_name=None):
     # Example `conference_standing_rows` list: ['<tr class="Table__TR Table__TR--sm Table__even" data-idx="n">...</tr>', ....]
     try:
         for row in conference_standing_rows:
-            row_anchor = row.find('div', class_='Table__TD').find('a')
+            row_anchor = row.find('td', class_='Table__TD').find('a')
             anchor_text = row_anchor.text
             class_name = row_anchor['class']
             bolded_class = 'AnchorLink fw-bold'
