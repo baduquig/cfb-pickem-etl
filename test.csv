@@ -1,2 +1,0 @@
-away_school_id,home_school_id,away_school_box_score,home_school_box_score,stadium,location,game_timestamp,tv_coverage,betting_line,betting_over_under,stadium_capacity,attendance,away_win_pct,home_win_pct,game_id
-23,30,"{'1': '0', '2': '14', '3': '7', '4': '7', 'total': '28'}","{'1': '7', '2': '14', '3': '21', '4': '14', 'total': '56'}",Los Angeles Memorial Coliseum,"Los Angeles, CA ",,,,,"Capacity: 77,500","Capacity: 77,500",,,401523986

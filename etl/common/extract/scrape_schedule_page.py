@@ -22,12 +22,12 @@ def get_game_id(game_row_html: str):
         game_id = None
     return game_id
 
-def get_all_game_ids(year=2023, weeks=15, logfile='./logs/cfb_extract.log'):
+def get_all_game_ids(espn_schedule_url: str, year: any, weeks: any, logfile: str):
     """Function that scrapes the Game ID from each game row for a given season.
-       Accepts: `year`: Number, `season_weeks`: Number
-       Returns List: game_ids"""    
+       Accepts: `espn_schedule_url`: String, `year`: Number, `weeks`: Number, `logfile`: String
+       Returns: game_ids: List"""    
     game_ids = []
-    espn_schedule_url = 'https://www.espn.com/college-football/schedule/_/'
+    # espn_schedule_url = 'https://www.espn.com/college-football/schedule/_/'
     custom_header = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
     }
@@ -57,15 +57,23 @@ def get_all_game_ids(year=2023, weeks=15, logfile='./logs/cfb_extract.log'):
                         if game_id is not None:
                             game_ids.append(game_id)
                         else:
-                            print(f'\n\nError occurred while extracting Game IDs from\n\n{game_row}\n\n')
-                            logfile.write(f'\n\nError occurred while extracting Game IDs from\n\n{game_row}\n\n\n')
+                            print(f'Error occurred while extracting Game IDs from\n{game_row}\n')
+                            logfile.write(f'Error occurred while extracting Game IDs from\n{game_row}\n\n')
                 except:
-                    print(f'\n\nError occurred while extracting Games from\n\n{day}\n\n')
-                    logfile.write(f'\n\nError occurred while extracting Games from\n\n{day}\n\n\n')
+                    print(f'Error occurred while extracting Games from\n{day}\n')
+                    logfile.write(f'Error occurred while extracting Games from\n{day}\n\n')
         except:
-            print(f'\n\nError occurred scraping schedule for week {week}\n\n')
-            logfile.write(f'\n\nError occurred scraping schedule for week {week}\n\n\n')
+            print(f'Error occurred scraping schedule for week {week}\n')
+            logfile.write(f'Error occurred scraping schedule for week {week}\n\n')
         
     print('')
     logfile.write('\n')
     return game_ids
+
+
+cfb_games = get_all_game_ids('https://www.espn.com/college-football/schedule/_/', 2023, 15, open('../../../logs/cfb_extract.log', 'a'))
+nfl_games = get_all_game_ids('https://www.espn.com/nfl/schedule/_/', 2023, 18, open('../../../logs/nfl_extract.log', 'a'))
+
+print(cfb_games)
+print()
+print(nfl_games)

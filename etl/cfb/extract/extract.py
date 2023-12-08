@@ -7,7 +7,7 @@ Scrape college football schedule data from various web sources.
 import pandas as pd
 import time
 import etl.common.get_timestamp as ts
-import etl.cfb.extract.scrape_schedule_page as cfb_schedule
+import common.extract.scrape_schedule_page as cfb_schedule
 import etl.cfb.extract.scrape_game_page as cfb_game
 import etl.cfb.extract.scrape_school_page as cfb_school
 import etl.common.get_geocode_data as geo
@@ -66,7 +66,7 @@ def create_locations_df(stadiums: list, location_names: list):
     return locations_df
 
 
-def full_extract(year=2023, weeks=15):
+def full_extract(year: int, weeks: int):
     """Function that calls all necessary functions to extract all CFB pickem data from required sources and return in Pandas DataFrames
        Accepts `stadiums`: List, `location_names`: List
        Returns `locations_df`: Pandas DataFrame"""
