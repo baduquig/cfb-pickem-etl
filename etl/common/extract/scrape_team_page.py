@@ -92,8 +92,6 @@ def get_team_standing_row(conference_standing_rows: str, team_name=None):
         team_standing_row = None
     return team_standing_row
 
-#####################################################################################################
-# CFB
 def get_record_text(record_td: str):
     """Function that extracts the record text from a given TD tag
        Accepts `record_td`: <td> HTML Element String
@@ -116,8 +114,6 @@ def get_conference_record(team_standing_row: str):
     except:
         conf_record = None
     return conf_record
-# CFB
-#####################################################################################################
 
 def get_overall_record(team_standing_row: str):
     """Function that extracts the overall record from a given TR tag

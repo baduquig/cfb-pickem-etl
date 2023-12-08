@@ -5,10 +5,10 @@ Author: Gabe Baduqui
 Scrape all Game-specific data elements for a given Game ID.
 """
 import requests
+import etl.cfb.extract.scrape_game_page as cfb_game
+import etl.nfl.extract.scrape_game_page as nfl_game
 from bs4 import BeautifulSoup
 
-#########################################################################################
-# CFB
 def get_team_id(team_container_div: str):
     """Function that extracts the Team ID from the HREF attribute from a given Anchor Tag.
        Accepts `team_container_div`: <div> HTML Element String
@@ -17,20 +17,13 @@ def get_team_id(team_container_div: str):
     try:
         team_anchor_tag = team_container_div.find('div', class_='Gamestrip__TeamContainer').find('a', href=True)
         team_href_attr = team_anchor_tag['href']
-        if team_href_attr.find('/id/') != -1:
-            # Example `team_href_attr` string: 'https://www.espn.com/college-football/team/_/id/0000/schoolName-schoolMascot'
-            begin_idx = team_href_attr.index('/id/') + 4
-            end_idx = team_href_attr.rfind('/')
-            team_id = team_href_attr[begin_idx:end_idx]
+        if team_href_attr.find('/nfl/') != -1:
+            team_id = cfb_game.get_team_id(team_href_attr)
         else:
-            # Example `team_href_attr` string: 'https://www.espn.com/nfl/team/_/name/abbreviation/teamLocation-teamMascho'
-            end_idx = team_href_attr.rfind('/')
-            team_id = team_href_attr[end_idx + 1:]
+            team_id = nfl_game.get_team_id(team_href_attr)
     except:
         team_id = None
     return team_id
-# CFB
-#########################################################################################
 
 def get_away_team_id(gamestrip: str):
     """Function that scrapes the Away Team ID from a given 'Gamestrip' DIV tag.
