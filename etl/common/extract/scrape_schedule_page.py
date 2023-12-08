@@ -22,10 +22,10 @@ def get_game_id(game_row_html: str):
         game_id = None
     return game_id
 
-def get_all_game_ids(espn_schedule_url: str, year: any, weeks: any, logfile: str):
+def get_all_game_ids(espn_schedule_url: str, year: any, weeks: any, logfile: object):
     """Function that scrapes the Game ID from each game row for a given season.
-       Accepts: `espn_schedule_url`: String, `year`: Number, `weeks`: Number, `logfile`: String
-       Returns: game_ids: List"""    
+       Accepts: `espn_schedule_url`: String, `year`: Number, `weeks`: Number, `logfile`: File Object
+       Returns: game_ids: List of Strings"""    
     game_ids = []
     # espn_schedule_url = 'https://www.espn.com/college-football/schedule/_/'
     custom_header = {
@@ -69,11 +69,3 @@ def get_all_game_ids(espn_schedule_url: str, year: any, weeks: any, logfile: str
     print('')
     logfile.write('\n')
     return game_ids
-
-
-cfb_games = get_all_game_ids('https://www.espn.com/college-football/schedule/_/', 2023, 15, open('../../../logs/cfb_extract.log', 'a'))
-nfl_games = get_all_game_ids('https://www.espn.com/nfl/schedule/_/', 2023, 18, open('../../../logs/nfl_extract.log', 'a'))
-
-print(cfb_games)
-print()
-print(nfl_games)
