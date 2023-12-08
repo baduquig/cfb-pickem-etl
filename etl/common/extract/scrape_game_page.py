@@ -7,7 +7,8 @@ Scrape all Game-specific data elements for a given Game ID.
 import requests
 from bs4 import BeautifulSoup
 
-
+#########################################################################################
+# CFB
 def get_team_id(team_container_div: str):
     """Function that extracts the Team ID from the HREF attribute from a given Anchor Tag.
        Accepts `team_container_div`: <div> HTML Element String
@@ -28,6 +29,8 @@ def get_team_id(team_container_div: str):
     except:
         team_id = None
     return team_id
+# CFB
+#########################################################################################
 
 def get_away_team_id(gamestrip: str):
     """Function that scrapes the Away Team ID from a given 'Gamestrip' DIV tag.
@@ -220,7 +223,7 @@ def get_home_winning_probability(matchup: str):
 
 def get_game_data(game_id: str, espn_game_url: str, logfile: object):
     """Function that scrapes the webpage of a given Game ID and extracts needed data fields.
-       Accepts `game_id`: String
+       Accepts `game_id`: String, `espn_game_url`: String, `logfile`: File Object
        Returns `game_data`: Dictionary"""
     print(f'~~ Scraping GameID {game_id} data')
     logfile.write(f'~~ Scraping GameID {game_id} data\n')
@@ -281,8 +284,3 @@ def get_game_data(game_id: str, espn_game_url: str, logfile: object):
         game_data['away_win_pct'] = None
         game_data['home_win_pct'] = None
     return game_data
-
-
-
-game_df = get_game_data('401547579', 'https://www.espn.com/nfl/game?gameId=', open('../../../logs/nfl_extract.log', 'a'))
-print(game_df)

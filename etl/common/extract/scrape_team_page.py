@@ -7,16 +7,17 @@ Scrape all Team-specific data elements for a given Team ID
 import requests
 from bs4 import BeautifulSoup
 
-def get_logo_url(clubhouse_div: str):
+def get_logo_url(team_id: str):
     """Function that extracts the ESPN url to a given team's PNG image logo
-       Accepts `clubhouse_div`: <div> HTML Element String
+       Accepts `team_id`: String
        Returns `logo_url`: String"""
-    # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main">...</div>'
     try:
-        team_img = clubhouse_div.find('img', class_='Logo', src=True)
-        logo_url = team_img['src']
+        # College team logo
+        int(team_id)
+        logo_url = f'https://www.espn.com/college-football/team/_/id/{team_id}'
     except:
-        logo_url = None
+        # NFL team logo
+        logo_url = f'https://www.espn.com/nfl/team/_/name/{team_id}'
     return logo_url
 
 def get_clubhouse_header_span(clubhouse_div: str):
@@ -26,7 +27,7 @@ def get_clubhouse_header_span(clubhouse_div: str):
     # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main">...</div>'
     try:
         header_h1 = clubhouse_div.find('h1', class_='ClubhouseHeader__Name')
-        header_span = header_h1.find('span')
+        header_span = header_h1.find('span', class_='flex')
     except:
         header_span = None
     return header_span
@@ -58,8 +59,7 @@ def get_team_mascot(clubhouse_div: str):
     return team_mascot
 
 
-
-def get_conference_name(standings_section: str, year: int):
+def get_conference_name(standings_section: str):
     """Function that scrapes the header of the a given TeamStandings SECTION tag and extracts the conference name
        Accepts `standings_section`: <section> HTML Element String
        Returns `conference_name`: String"""
@@ -67,8 +67,8 @@ def get_conference_name(standings_section: str, year: int):
     try:
         section_header = standings_section.find('div', class_='Card__Header__Title__Wrapper')
         h3 = section_header.find('h3').text
-        conference_name = h3.replace(f'{year} ', '')
-        conference_name = h3.replace(' Standings', '')
+        conference_name_elements = h3.split(' ')
+        conference_name = conference_name_elements[1]
     except:
         conference_name = None
     return conference_name
@@ -92,6 +92,8 @@ def get_team_standing_row(conference_standing_rows: str, team_name=None):
         team_standing_row = None
     return team_standing_row
 
+#####################################################################################################
+# CFB
 def get_record_text(record_td: str):
     """Function that extracts the record text from a given TD tag
        Accepts `record_td`: <td> HTML Element String
@@ -114,6 +116,8 @@ def get_conference_record(team_standing_row: str):
     except:
         conf_record = None
     return conf_record
+# CFB
+#####################################################################################################
 
 def get_overall_record(team_standing_row: str):
     """Function that extracts the overall record from a given TR tag
@@ -128,13 +132,13 @@ def get_overall_record(team_standing_row: str):
     return overall_record
 
 
-def get_team_data(team_id, year, logfile):
+def get_team_data(team_id: str, espn_team_url: str, year: int, logfile: object):
     """Function that scrapes the webpage of a given Team and extracts the needed data fields.
-       Accepts `team_id`: Number
+       Accepts `team_id`: String, `espn_team_url`: String, `year`: Number, `logfile`: File Object
        Returns team_data: Dictionary"""
     print(f'~~ Scraping TeamID {team_id} data')
     logfile.write(f'~~ Scraping TeamID {team_id} data\n')
-    espn_team_url = f'https://www.espn.com/college-football/team/_/id/{team_id}'
+    espn_team_url = espn_team_url + team_id
 
     # Scrape HTML from HTTP request to the URL above and store in variable `page_soup`
     custom_header = {
@@ -153,7 +157,7 @@ def get_team_data(team_id, year, logfile):
         clubhouse_div = team_soup.find('div', class_='ClubhouseHeader').find('div', class_='ClubhouseHeader__Main')
         team_data['name'] = get_team_name(clubhouse_div)
         team_data['mascot'] = get_team_mascot(clubhouse_div)
-        team_data['logo_url'] = get_logo_url(clubhouse_div)
+        team_data['logo_url'] = get_logo_url(team_id)
     except:
         print(f'~~~~ Could not find ClubhouseHeader Container for Team ID: {team_id}')
         logfile.write(f'~~~~ Could not find ClubhouseHeader Container for Team ID: {team_id}\n')
@@ -178,3 +182,8 @@ def get_team_data(team_id, year, logfile):
         logfile.write(f'~~~~ Could not find Team Standings Section for TeamID: {team_id}\n')
     
     return team_data
+
+
+#team_df = get_team_data('228', 'https://www.espn.com/college-football/team/_/id/', 2023, open('../../../logs/cfb_extract.log', 'a'))
+team_df = get_team_data('gb/green-bay-packers', 'https://www.espn.com/nfl/team/_/name/', 2023, open('../../../logs/nfl_extract.log', 'a'))
+print(team_df)
