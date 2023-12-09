@@ -9,15 +9,15 @@ import etl.cfb.extract.scrape_game_page as cfb_game
 import etl.nfl.extract.scrape_game_page as nfl_game
 from bs4 import BeautifulSoup
 
-def get_team_id(team_container_div: str):
+def get_team_id(team_container_div: str, league: str):
     """Function that extracts the Team ID from the HREF attribute from a given Anchor Tag.
-       Accepts `team_container_div`: <div> HTML Element String
+       Accepts `team_container_div`: <div> HTML Element String, `league`: String
        Returns `team_id`: String"""
     # Example `team_container_div` string: '<div class="Gamestrip__Team--xxxx">...</div>'
     try:
         team_anchor_tag = team_container_div.find('div', class_='Gamestrip__TeamContainer').find('a', href=True)
         team_href_attr = team_anchor_tag['href']
-        if team_href_attr.find('/nfl/') != -1:
+        if league.upper() == 'CFB':
             team_id = cfb_game.get_team_id(team_href_attr)
         else:
             team_id = nfl_game.get_team_id(team_href_attr)
@@ -25,22 +25,22 @@ def get_team_id(team_container_div: str):
         team_id = None
     return team_id
 
-def get_away_team_id(gamestrip: str):
+def get_away_team_id(gamestrip: str, league: str):
     """Function that scrapes the Away Team ID from a given 'Gamestrip' DIV tag.
-       Accepts `gamestrip`: <div> HTML Element String
+       Accepts `gamestrip`: <div> HTML Element String, `league`: String
        Returns `team_id`: String"""
     # Example `gamestrip` string: '<div class="Gamestrip relative overflow-hidden college-football Gamestrip--xl Gamestrip--post bb">...</div>'
     away_team_container = gamestrip.find('div', class_='Gamestrip__Team--away')
-    team_id = get_team_id(away_team_container)
+    team_id = get_team_id(away_team_container, league)
     return team_id
 
-def get_home_team_id(gamestrip: str):
+def get_home_team_id(gamestrip: str, league: str):
     """Function that scrapes the Home Team ID from a given 'Gamestrip' DIV tag.
-       Accepts `gamestrip`: <div> HTML Element String
+       Accepts `gamestrip`: <div> HTML Element String, `league`: String
        Returns `team_id`: String"""
     # Example `gamestrip` string: '<div class="Gamestrip relative overflow-hidden college-football Gamestrip--xl Gamestrip--post bb">...</div>'
     home_team_container = gamestrip.find('div', class_='Gamestrip__Team--home')
-    team_id = get_team_id(home_team_container)
+    team_id = get_team_id(home_team_container, league)
     return team_id
 
 
@@ -214,14 +214,17 @@ def get_home_winning_probability(matchup: str):
     return win_pct
 
 
-def get_game_data(game_id: str, espn_game_url: str, logfile: object):
+def get_game_data(league: str, game_id: str, logfile: object):
     """Function that scrapes the webpage of a given Game ID and extracts needed data fields.
        Accepts `game_id`: String, `espn_game_url`: String, `logfile`: File Object
        Returns `game_data`: Dictionary"""
     print(f'~~ Scraping GameID {game_id} data')
     logfile.write(f'~~ Scraping GameID {game_id} data\n')
-    #espn_game_url = f'https://www.espn.com/college-football/game?gameId={game_id}'
-    espn_game_url = espn_game_url + game_id
+
+    if league.upper() == 'CFB':
+        espn_game_url = f'https://www.espn.com/college-football/game?gameId={game_id}'
+    else:
+        espn_game_url = f'https://www.espn.com/nfl/game?gameId={game_id}'
 
     # Scrape HTML from HTTP request to the URL above and store in variable `page_soup`
     custom_header = {
@@ -238,8 +241,8 @@ def get_game_data(game_id: str, espn_game_url: str, logfile: object):
     # Instantiate Gamestring Container and scrape data fields
     try:
         gamestrip_div = game_soup.find('div', class_='Gamestrip')
-        away_team_id = get_away_team_id(gamestrip_div)
-        home_team_id = get_home_team_id(gamestrip_div)
+        away_team_id = get_away_team_id(gamestrip_div, league)
+        home_team_id = get_home_team_id(gamestrip_div, league)
         game_data['away_team_id'] = away_team_id
         game_data['home_team_id'] = home_team_id
 

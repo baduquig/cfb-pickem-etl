@@ -5,18 +5,17 @@ Author: Gabe Baduqui
 Scrape all Team-specific data elements for a given Team ID
 """
 import requests
+import etl.cfb.extract.scrape_team_page as cfb_team
+import etl.nfl.extract.scrape_team_page as nfl_team
 from bs4 import BeautifulSoup
 
-def get_logo_url(team_id: str):
+def get_logo_url(league: str, team_id: str):
     """Function that extracts the ESPN url to a given team's PNG image logo
-       Accepts `team_id`: String
+       Accepts `league`: String, team_id`: String
        Returns `logo_url`: String"""
-    try:
-        # College team logo
-        int(team_id)
+    if league.upper == 'CFB':
         logo_url = f'https://www.espn.com/college-football/team/_/id/{team_id}'
-    except:
-        # NFL team logo
+    else:
         logo_url = f'https://www.espn.com/nfl/team/_/name/{team_id}'
     return logo_url
 
@@ -92,51 +91,42 @@ def get_team_standing_row(conference_standing_rows: str, team_name=None):
         team_standing_row = None
     return team_standing_row
 
-def get_record_text(record_td: str):
-    """Function that extracts the record text from a given TD tag
-       Accepts `record_td`: <td> HTML Element String
-       Returns `record`: String"""
-    # Exampe `record_td` string: '<div class="fw-bold clr-gray-01 Table__TD">...</div>'
-    try:
-        record_text = record_td.find('span').text
-    except:
-        record_text = None
-    return record_text
-
-def get_conference_record(team_standing_row: str):
+def get_conference_record(league: str, team_standing_row: str):
     """Function that extracts the conference record from a given TR tag
-       Accepts `team_standing_row`: <tr> HTML Element String
+       Accepts `league`: String, `team_standing_row`: <tr> HTML Element String
        Returns `conference_record`: String"""
     # Example `team_standing_row` string: '<div class="Table__TR Table__TR--sm Table__even">...</div>'
-    try:
-        conf_record_td = team_standing_row.find_all('td')[1]
-        conf_record = get_record_text(conf_record_td)
-    except:
+    if league.upper() == 'CFB':
+        conf_record = cfb_team.get_conference_record(team_standing_row, league)
+    else:
         conf_record = None
     return conf_record
 
-def get_overall_record(team_standing_row: str):
+def get_overall_record(league: str, team_standing_row: str):
     """Function that extracts the overall record from a given TR tag
-       Accepts `team_standing_row`: <tr> HTML Element String
+       Accepts `league`: String, `team_standing_row`: <tr> HTML Element String
        Returns `overall_record`: String"""
     # Example `team_standing_row` string: '<div class="Table__TR Table__TR--sm Table__even">...</div>'
-    try:
-        overall_record_td = team_standing_row.find_all('td')[2]
-        overall_record = get_record_text(overall_record_td)
-    except:
-        overall_record = None
+    if league.upper() == 'CFB':
+        overall_record = cfb_team.get_overall_record(team_standing_row, league)
+    else:
+        overall_record = nfl_team.get_overall_record(team_standing_row, league)
     return overall_record
 
 
-def get_team_data(team_id: str, espn_team_url: str, year: int, logfile: object):
+def get_team_data(league: str, team_id: str, logfile: object):
     """Function that scrapes the webpage of a given Team and extracts the needed data fields.
-       Accepts `team_id`: String, `espn_team_url`: String, `year`: Number, `logfile`: File Object
+       Accepts `league`: String, team_id`: String, `espn_team_url`: String `logfile`: File Object
        Returns team_data: Dictionary"""
     print(f'~~ Scraping TeamID {team_id} data')
     logfile.write(f'~~ Scraping TeamID {team_id} data\n')
-    espn_team_url = espn_team_url + team_id
 
     # Scrape HTML from HTTP request to the URL above and store in variable `page_soup`
+    if league.upper() == 'CFB':
+        espn_team_url = f'https://www.espn.com/college-football/team/_/id/{team_id}'
+    else:
+        espn_team_url = f'https://www.espn.com/nfl/team/_/name/{team_id}'
+
     custom_header = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
     }
@@ -161,7 +151,7 @@ def get_team_data(team_id: str, espn_team_url: str, year: int, logfile: object):
     # Instantiate Team Standings Section and scrape data fields
     try:
         standings_section = team_soup.find('section', class_='TeamStandings')
-        team_data['conference_name'] = get_conference_name(standings_section, year)
+        team_data['conference_name'] = get_conference_name(standings_section)
 
         standings_tables = standings_section.find('div', class_='Wrapper Card__Content').find_all('div', class_='ResponsiveTable') 
         for standings_table in standings_tables:
@@ -171,15 +161,10 @@ def get_team_data(team_id: str, espn_team_url: str, year: int, logfile: object):
                 break
         
         team_standing_row = get_team_standing_row(standings_rows, team_data['name'])
-        team_data['conference_record'] = get_conference_record(team_standing_row)
-        team_data['overall_record'] = get_overall_record(team_standing_row)
+        team_data['conference_record'] = get_conference_record(league, team_standing_row)
+        team_data['overall_record'] = get_overall_record(league, team_standing_row)
     except:
         print(f'~~~~ Could not find Team Standings Section for TeamID: {team_id}')
         logfile.write(f'~~~~ Could not find Team Standings Section for TeamID: {team_id}\n')
     
     return team_data
-
-
-#team_df = get_team_data('228', 'https://www.espn.com/college-football/team/_/id/', 2023, open('../../../logs/cfb_extract.log', 'a'))
-team_df = get_team_data('gb/green-bay-packers', 'https://www.espn.com/nfl/team/_/name/', 2023, open('../../../logs/nfl_extract.log', 'a'))
-print(team_df)

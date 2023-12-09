@@ -22,12 +22,16 @@ def get_game_id(game_row_html: str):
         game_id = None
     return game_id
 
-def get_all_game_ids(espn_schedule_url: str, year: any, weeks: any, logfile: object):
+def get_all_game_ids(league: str, year: any, weeks: any, logfile: object):
     """Function that scrapes the Game ID from each game row for a given season.
        Accepts: `espn_schedule_url`: String, `year`: Number, `weeks`: Number, `logfile`: File Object
-       Returns: game_ids: List of Strings"""    
+       Returns: game_ids: List of Strings"""
+    if league.upper() == 'CFB':
+        espn_schedule_url = 'https://www.espn.com/college-football/schedule/_/'
+    else:
+        espn_schedule_url = 'https://www.espn.com/nfl/schedule/_/'
+
     game_ids = []
-    # espn_schedule_url = 'https://www.espn.com/college-football/schedule/_/'
     custom_header = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
     }
