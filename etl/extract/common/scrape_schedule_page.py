@@ -43,17 +43,18 @@ def get_all_game_ids(league: str, year: any, weeks: any, logfile: object):
         espn_current_week_url = espn_schedule_url + f'week/{week}/year/{year}/'
 
         # Scrape HTML from HTTP request to the URL above and store in variable `soup`
-        resp = requests.get(espn_current_week_url, headers=custom_header)
-        week_soup = BeautifulSoup(resp.content, 'html.parser')
+        page = requests.get(espn_current_week_url, headers=custom_header)
+        page_soup = BeautifulSoup(page.content, 'html.parser')
 
         # Instantiate variable for 'parent' schedule DIV and for each distinct day with games in this particular week
         try:
-            schedule_div = week_soup.find_all('div', class_='mt3')[1]
-        
+            schedule_tables = page_soup.find_all('div', class_='mt3')[1]
+            #schedule_tables = page_soup.find_all('div', class_='ScheduleTables')
+            
             # Iterate through each distinct day with games on this particular week
-            for day in schedule_div.children:
+            for gameday in schedule_tables:
                 try:
-                    games_table_rows = day.find('div', class_='Table__Scroller').find('table', class_='Table').find('tbody', class_='Table__TBODY').find_all('tr')
+                    games_table_rows = gameday.find('div', class_='Table__Scroller').find('table', class_='Table').find('tbody', class_='Table__TBODY').find_all('tr')
                     
                     for game_row in games_table_rows:
                         game_id = get_game_id(game_row)
@@ -63,10 +64,10 @@ def get_all_game_ids(league: str, year: any, weeks: any, logfile: object):
                             print(f'Error occurred while extracting Game IDs from\n{game_row}\n')
                             logfile.write(f'Error occurred while extracting Game IDs from\n{game_row}\n\n')
                 except:
-                    print(f'Error occurred while extracting Games from\n{day}\n')
-                    logfile.write(f'Error occurred while extracting Games from\n{day}\n\n')
-        except:
-            print(f'Error occurred scraping schedule for week {week}\n')
+                    print(f'Error occurred while extracting Games from\n{gameday}\n')
+                    logfile.write(f'Error occurred while extracting Games from\n{gameday}\n\n')
+        except Exception:
+            print(f'Error occurred scraping schedule for week {week}')
             logfile.write(f'Error occurred scraping schedule for week {week}\n\n')
         
     print('')

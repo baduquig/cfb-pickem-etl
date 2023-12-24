@@ -51,7 +51,7 @@ def create_teams_df(league: str, team_ids: list, extract_logfile: object):
 def create_locations_df(stadiums: list, location_names: list, extract_logfile: object):
     """Function that instantiates a Pandas DataFrame storing Geocode Data retrieved from Geocode.maps REST API
        Accepts `stadiums`: List, `location_names`: List, `extract_logfile`: File Object
-       Returns `locations_df`: Pandas DataFrame"""
+       Returns `games_raw`: Pandas DataFrame, `teams_raw`: Pandas DataFrame, `locations_raw`: Pandas DataFrame"""
     locations_df = pd.DataFrame([], columns=['location_id', 'stadium', 'city', 'state', 'latitude', 'longitude'])
     unique_locations = []
     location_id = 1
@@ -73,7 +73,7 @@ def create_locations_df(stadiums: list, location_names: list, extract_logfile: o
 
 def full_extract(league: str, year: int, weeks: int):
     """Function that calls all necessary functions to extract all CFB pickem data from required sources and return in Pandas DataFrames
-       Accepts `stadiums`: List, `location_names`: List
+       Accepts `leage`: String, `year`: Number, `weeks`: Number
        Returns `locations_df`: Pandas DataFrame"""
     extract_logfile = instantiate_logfile(league)
     print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nBeginning Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
