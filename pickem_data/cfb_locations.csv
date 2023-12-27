@@ -17,15 +17,15 @@ location_id,stadium,city,state,latitude,longitude
 16,Chapman Stadium,Tulsa,OK ,33.79430875,33.79430875
 17,Protective Stadium,Birmingham,AL ,,
 18,Mountain America Stadium,Tempe,AZ ,42.7296385,42.7296385
-19,Rynearson Stadium,Ypsilanti,MI ,,
-20,Spartan Stadium,East Lansing,MI ,37.31969865,37.31969865
-21,Hard Rock Stadium,Miami Gardens,FL ,,
-22,Mercedes-Benz Stadium,Atlanta,GA ,33.755396250000004,33.755396250000004
-23,David Booth Kansas Memorial Stadium,Lawrence,KS ,,
-24,,Honolulu,HI ,21.304547,21.304547
-25,Sanford Stadium,Athens,GA ,,
-26,Michigan Stadium,Ann Arbor,MI ,42.2658652,42.2658652
-27,"Memorial Stadium (Bloomington, IN)",Bloomington,IN ,,
+19,Rynearson Stadium,Ypsilanti,MI ,42.2558724,42.2558724
+20,Spartan Stadium,East Lansing,MI ,,
+21,Hard Rock Stadium,Miami Gardens,FL ,25.95790315,25.95790315
+22,Mercedes-Benz Stadium,Atlanta,GA ,,
+23,David Booth Kansas Memorial Stadium,Lawrence,KS ,38.963013149999995,38.963013149999995
+24,,Honolulu,HI ,,
+25,Sanford Stadium,Athens,GA ,33.949724700000004,33.949724700000004
+26,Michigan Stadium,Ann Arbor,MI ,,
+27,"Memorial Stadium (Bloomington, IN)",Bloomington,IN ,39.180894300000006,39.180894300000006
 28,Bryant-Denny Stadium,Tuscaloosa,AL ,33.2076889,33.2076889
 29,Beaver Stadium,University Park,PA ,,
 30,Husky Stadium,Seattle,WA ,47.650373599999995,47.650373599999995
@@ -47,13 +47,13 @@ location_id,stadium,city,state,latitude,longitude
 46,Ross-Ade Stadium,West Lafayette,IN ,40.4344107,40.4344107
 47,Gerald J. Ford Stadium,Dallas,TX ,,
 48,"Alumni Stadium (Chestnut Hill, MA)",Chestnut Hill,MA ,,
-49,Peden Stadium,Athens,OH ,,
-50,,Little Rock,AR ,34.7465071,34.7465071
-51,Falcon Stadium,USAF Academy,CO ,,
-52,Jack Trice Stadium,Ames,IA ,42.01384885,42.01384885
-53,Lincoln Financial Field,Philadelphia,PA ,,
-54,Jordan-Hare Stadium,Auburn,AL ,32.602161550000005,32.602161550000005
-55,SECU Stadium,College Park,MD ,,
+49,Peden Stadium,Athens,OH ,39.3210671,39.3210671
+50,,Little Rock,AR ,,
+51,Falcon Stadium,USAF Academy,CO ,38.99705645,38.99705645
+52,Jack Trice Stadium,Ames,IA ,,
+53,Lincoln Financial Field,Philadelphia,PA ,39.9009099,39.9009099
+54,Jordan-Hare Stadium,Auburn,AL ,,
+55,SECU Stadium,College Park,MD ,46.7865889,46.7865889
 56,Houchens Industries-L.T. Smith Stadium,Bowling Green,KY ,36.98479165,36.98479165
 57,Acrisure Stadium,Pittsburgh,PA ,,
 58,Nippert Stadium,Cincinnati,OH ,39.131121300000004,39.131121300000004
@@ -61,21 +61,21 @@ location_id,stadium,city,state,latitude,longitude
 60,Davis Wade Stadium,Starkville,MS ,33.4565166,33.4565166
 61,DATCU Stadium,Denton,TX ,,
 62,JMA Wireless Dome,Syracuse,NY ,,
-63,Allegiant Stadium,Las Vegas,NV ,,
-64,Jerry Richardson Stadium,Charlotte,NC ,35.3105015,35.3105015
-65,FAU Stadium,Boca Raton,FL ,,
-66,,Statesboro,GA ,32.4490141,32.4490141
-67,,Harrisonburg,VA ,,
-68,Joan C. Edwards Stadium,Huntington,WV ,38.4248685,38.4248685
-69,Riccardo Silva Stadium,Miami,FL ,,
-70,,Monroe,LA ,32.5093109,32.5093109
-71,,Fort Collins,CO ,,
-72,McLane Stadium,Waco,TX ,31.5584194,31.5584194
-73,TDECU Stadium,Houston,TX ,,
-74,Boone Pickens Stadium,Stillwater,OK ,36.1256929,36.1256929
+63,Allegiant Stadium,Las Vegas,NV ,36.09083455,36.09083455
+64,Jerry Richardson Stadium,Charlotte,NC ,,
+65,FAU Stadium,Boca Raton,FL ,26.376294950000002,26.376294950000002
+66,,Statesboro,GA ,,
+67,,Harrisonburg,VA ,38.4493315,38.4493315
+68,Joan C. Edwards Stadium,Huntington,WV ,,
+69,Riccardo Silva Stadium,Miami,FL ,25.7524884,25.7524884
+70,,Monroe,LA ,,
+71,,Fort Collins,CO ,40.5508527,40.5508527
+72,McLane Stadium,Waco,TX ,,
+73,TDECU Stadium,Houston,TX ,29.72192555,29.72192555
+74,Boone Pickens Stadium,Stillwater,OK ,,
 75,Simmons Bank Liberty Stadium,Memphis,TN ,,
-76,M. M. Roberts Stadium,Hattiesburg,MS ,30.5319402,30.5319402
-77,Veterans Memorial Stadium (AL),Troy,AL ,,
+76,M. M. Roberts Stadium,Hattiesburg,MS ,,
+77,Veterans Memorial Stadium (AL),Troy,AL ,31.7996023,31.7996023
 78,"Memorial Stadium (Champaign, IL)",Champaign,IL ,40.09931775,40.09931775
 79,Lane Stadium,Blacksburg,VA ,,
 80,Cajun Field,Lafayette,LA ,30.21587275,30.21587275
