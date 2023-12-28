@@ -70,9 +70,7 @@ def get_conference_name(standings_section: str, logfile: object):
     # Example `standings_section String: '<section class="Card TeamStandings">...</section>'`
     try:
         section_header = standings_section.find('div', class_='Card__Header__Title__Wrapper')
-        h3 = section_header.find('h3').text
-        conference_name_elements = h3.split(' ')
-        conference_name = conference_name_elements[1]
+        conference_name = section_header.find('h3').text
         logfile.write(f'conference_name: {conference_name}\n')
     except Exception as e:
         conference_name = None
