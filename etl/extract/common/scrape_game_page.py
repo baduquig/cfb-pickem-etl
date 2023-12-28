@@ -114,7 +114,7 @@ def get_stadium(information: str, logfile: object):
     # Example `information` string: '<section class="Card GameInfo">...</section>
     try:
         stadium_name = information.find('div', class_='GameInfo__Location__Name').text
-        logfile.write(f'stadium_name: {stadium_name}')
+        logfile.write(f'stadium_name: {stadium_name}\n')
     except Exception as e:
         stadium_name = None
         logfile.write(f'stadium_name: {e}\n')
@@ -302,8 +302,8 @@ def get_game_data(league: str, game_id: str, logfile: object):
     except:
         game_data['away_win_pct'] = None
         game_data['home_win_pct'] = None
-        logfile.write(f'away_win_pct: None')
-        logfile.write(f'home_win_pct: None')
+        logfile.write(f'away_win_pct: None\n')
+        logfile.write(f'home_win_pct: None\n')
 
     logfile.write('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n')
 

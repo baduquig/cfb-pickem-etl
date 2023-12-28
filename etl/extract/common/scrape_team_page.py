@@ -9,14 +9,15 @@ import etl.extract.cfb.scrape_team_page as cfb_team
 import etl.extract.nfl.scrape_team_page as nfl_team
 from bs4 import BeautifulSoup
 
-def get_logo_url(league: str, team_id: str):
+def get_logo_url(league: str, team_id: str, logfile: object):
     """Function that extracts the ESPN url to a given team's PNG image logo
-       Accepts `league`: String, team_id`: String
+       Accepts `league`: String, team_id`: String, `logfile`: File Object
        Returns `logo_url`: String"""
     if league.upper == 'CFB':
-        logo_url = f'https://www.espn.com/college-football/team/_/id/{team_id}'
+        logo_url = f'https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/{team_id}.png'
     else:
-        logo_url = f'https://www.espn.com/nfl/team/_/name/{team_id}'
+        logo_url = f'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/{team_id}.png'
+    logfile.write(f'logo_url: {logo_url}\n')
     return logo_url
 
 def get_clubhouse_header_span(clubhouse_div: str):
@@ -31,36 +32,40 @@ def get_clubhouse_header_span(clubhouse_div: str):
         header_span = None
     return header_span
 
-def get_team_name(clubhouse_div: str):
+def get_team_name(clubhouse_div: str, logfile: object):
     """Function that scrapes the team name from a given ClubhouseHeader DIV tag
-       Accepts `clubhouse_div`: <div> HTML Element String
+       Accepts `clubhouse_div`: <div> HTML Element String, `logfile`: File Object
        Returns `team_name`: String"""
     # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main">...</div>'
     header_span = get_clubhouse_header_span(clubhouse_div)
     try:
         team_name_span = header_span.find_all('span')[0]
         team_name = team_name_span.text
-    except:
+        logfile.write(f'team_name: {team_name}\n')
+    except Exception as e:
         team_name = None
+        logfile.write(f'team_name: {e}\n')
     return team_name
 
-def get_team_mascot(clubhouse_div: str):
+def get_team_mascot(clubhouse_div: str, logfile: object):
     """Function that scrapes the team name from a given ClubhouseHeader DIV tag
-       Accepts `clubhouse_div`: <div> HTML Element String
+       Accepts `clubhouse_div`: <div> HTML Element String, `logfile`: File Object
        Returns `team_name`: String"""
     # Example `clubhouse_div` string: '<div class="ClubhouseHeader__Main">...</div>'
     header_span = get_clubhouse_header_span(clubhouse_div)
     try:
         team_mascot_span = header_span.find_all('span')[1]
         team_mascot = team_mascot_span.text
-    except:
+        logfile.write(f'team_mascot: {team_mascot}\n')
+    except Exception as e:
         team_mascot = None
+        logfile.write(f'team_mascot: {e}\n')
     return team_mascot
 
 
-def get_conference_name(standings_section: str):
+def get_conference_name(standings_section: str, logfile: object):
     """Function that scrapes the header of the a given TeamStandings SECTION tag and extracts the conference name
-       Accepts `standings_section`: <section> HTML Element String
+       Accepts `standings_section`: <section> HTML Element String, `logfile`: File Object
        Returns `conference_name`: String"""
     # Example `standings_section String: '<section class="Card TeamStandings">...</section>'`
     try:
@@ -68,13 +73,15 @@ def get_conference_name(standings_section: str):
         h3 = section_header.find('h3').text
         conference_name_elements = h3.split(' ')
         conference_name = conference_name_elements[1]
-    except:
+        logfile.write(f'conference_name: {conference_name}\n')
+    except Exception as e:
         conference_name = None
+        logfile.write(f'conference_name: {e}\n')
     return conference_name
 
-def get_team_standing_row(conference_standing_rows: str, team_name=None):
+def get_team_standing_row(conference_standing_rows: str, team_name: str):
     """Function that extracts the the <tr> tag storing the conference and overall records for the current team being scraped
-       Accepts `conference_standing_rows`: List of <tr> HTML Element Strings
+       Accepts `conference_standing_rows`: List of <tr> HTML Element Strings, `team_name`: String
        Returns `team_standing_row`: <tr> HTML Element String"""
     # Example `conference_standing_rows` list: ['<tr class="Table__TR Table__TR--sm Table__even" data-idx="n">...</tr>', ....]
     team_standing_row = ''
@@ -91,26 +98,28 @@ def get_team_standing_row(conference_standing_rows: str, team_name=None):
         team_standing_row = None
     return team_standing_row
 
-def get_conference_record(league: str, team_standing_row: str):
+def get_conference_record(league: str, team_standing_row: str, logfile: object):
     """Function that extracts the conference record from a given TR tag
-       Accepts `league`: String, `team_standing_row`: <tr> HTML Element String
+       Accepts `league`: String, `team_standing_row`: <tr> HTML Element String, `logfile`: File Object
        Returns `conference_record`: String"""
     # Example `team_standing_row` string: '<div class="Table__TR Table__TR--sm Table__even">...</div>'
     if league.upper() == 'CFB':
         conf_record = cfb_team.get_conference_record(team_standing_row, league)
     else:
         conf_record = None
+    logfile.write(f'conf_record: {conf_record}\n')
     return conf_record
 
-def get_overall_record(league: str, team_standing_row: str):
+def get_overall_record(league: str, team_standing_row: str, logfile: object):
     """Function that extracts the overall record from a given TR tag
-       Accepts `league`: String, `team_standing_row`: <tr> HTML Element String
+       Accepts `league`: String, `team_standing_row`: <tr> HTML Element String, `logfile`: File Object
        Returns `overall_record`: String"""
     # Example `team_standing_row` string: '<div class="Table__TR Table__TR--sm Table__even">...</div>'
     if league.upper() == 'CFB':
         overall_record = cfb_team.get_overall_record(team_standing_row, league)
     else:
         overall_record = nfl_team.get_overall_record(team_standing_row, league)
+    logfile.write(f'overall_record: {overall_record}\n')
     return overall_record
 
 
@@ -119,7 +128,7 @@ def get_team_data(league: str, team_id: str, logfile: object):
        Accepts `league`: String, team_id`: String, `espn_team_url`: String `logfile`: File Object
        Returns team_data: Dictionary"""
     print(f'~~ Scraping TeamID {team_id} data')
-    logfile.write(f'~~ Scraping TeamID {team_id} data\n')
+    logfile.write(f'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nScraping TeamID {team_id} data\n')
 
     # Scrape HTML from HTTP request to the URL above and store in variable `page_soup`
     if league.upper() == 'CFB':
@@ -141,17 +150,16 @@ def get_team_data(league: str, team_id: str, logfile: object):
     # Instantiate Clubhouse Container and scrape data fields
     try:
         clubhouse_div = team_soup.find('div', class_='ClubhouseHeader').find('div', class_='ClubhouseHeader__Main')
-        team_data['name'] = get_team_name(clubhouse_div)
-        team_data['mascot'] = get_team_mascot(clubhouse_div)
-        team_data['logo_url'] = get_logo_url(team_id)
-    except:
-        print(f'~~~~ Could not find ClubhouseHeader Container for Team ID: {team_id}')
-        logfile.write(f'~~~~ Could not find ClubhouseHeader Container for Team ID: {team_id}\n')
+        team_data['name'] = get_team_name(clubhouse_div, logfile)
+        team_data['mascot'] = get_team_mascot(clubhouse_div, logfile)
+        team_data['logo_url'] = get_logo_url(league, team_id, logfile)
+    except Exception as e:
+        logfile.write(f'Could not find `ClubhouseHeader__Main` DIV: {e} for Team {team_id}\n')
 
     # Instantiate Team Standings Section and scrape data fields
     try:
         standings_section = team_soup.find('section', class_='TeamStandings')
-        team_data['conference_name'] = get_conference_name(standings_section)
+        team_data['conference_name'] = get_conference_name(standings_section, logfile)
 
         standings_tables = standings_section.find('div', class_='Wrapper Card__Content').find_all('div', class_='ResponsiveTable') 
         for standings_table in standings_tables:
@@ -161,10 +169,11 @@ def get_team_data(league: str, team_id: str, logfile: object):
                 break
         
         team_standing_row = get_team_standing_row(standings_rows, team_data['name'])
-        team_data['conference_record'] = get_conference_record(league, team_standing_row)
-        team_data['overall_record'] = get_overall_record(league, team_standing_row)
-    except:
-        print(f'~~~~ Could not find Team Standings Section for TeamID: {team_id}')
-        logfile.write(f'~~~~ Could not find Team Standings Section for TeamID: {team_id}\n')
+        team_data['conference_record'] = get_conference_record(league, team_standing_row, logfile)
+        team_data['overall_record'] = get_overall_record(league, team_standing_row, logfile)
+    except Exception as e:
+        logfile.write(f'Could not find `TeamStandings` DIV: {e} for Team {team_id}\n')
     
+    logfile.write('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n')
+
     return team_data
