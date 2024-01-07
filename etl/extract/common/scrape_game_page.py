@@ -73,12 +73,19 @@ def get_away_box_score(gamestrip: str, logfile: object):
         away_box_score['2'] = away_box_score_quarters[2].text
         away_box_score['3'] = away_box_score_quarters[3].text
         away_box_score['4'] = away_box_score_quarters[4].text
-        away_box_score['total'] = away_box_score_quarters[5].text
+        
+        if len(away_box_score_quarters) == 7:
+            away_box_score['overtime'] = away_box_score_quarters[5].text
+        else:
+            away_box_score['overtime'] = None
+
+        away_box_score['total'] = away_box_score_quarters[-1].text    
     except:
         away_box_score['1'] = None
         away_box_score['2'] = None
         away_box_score['3'] = None
         away_box_score['4'] = None
+        away_box_score['overtime'] = None
         away_box_score['total'] = None
     logfile.write(f'away_box_score: {away_box_score}\n')
     return away_box_score
@@ -96,12 +103,19 @@ def get_home_box_score(gamestrip: str, logfile: object):
         home_box_score['2'] = home_box_score_quarters[2].text
         home_box_score['3'] = home_box_score_quarters[3].text
         home_box_score['4'] = home_box_score_quarters[4].text
-        home_box_score['total'] = home_box_score_quarters[5].text
+        
+        if len(home_box_score_quarters) == 7:
+            home_box_score['overtime'] = home_box_score_quarters[5].text
+        else:
+            home_box_score['overtime'] = None
+
+        home_box_score['total'] = home_box_score_quarters[-1].text            
     except:
         home_box_score['1'] = None
         home_box_score['2'] = None
         home_box_score['3'] = None
         home_box_score['4'] = None
+        home_box_score['overtime'] = None
         home_box_score['total'] = None
     logfile.write(f'home_box_score: {home_box_score}\n')
     return home_box_score

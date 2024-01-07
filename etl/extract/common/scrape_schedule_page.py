@@ -15,8 +15,9 @@ def get_game_id(game_row_html: str):
     try:
         td_elem = game_row_html.find_all('td')[2]
         href_str = td_elem.find('a', href=True)['href']
-        game_id_index = href_str.index('gameId=') + 7
-        game_id = href_str[game_id_index:]
+        begin_index = href_str.index('gameId=') + 7
+        end_index = href_str.index('&_slug_=')
+        game_id = href_str[begin_index:end_index]
     except:
         game_id = None
     return game_id

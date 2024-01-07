@@ -6,16 +6,18 @@ Cleanse, format and prepare Games data
 """
 from datetime import datetime
 
+
 def transform_box_score(box_score_raw: dict):
     """Function that transforms box score data element into individuals fields
        Accepts: `box_score_raw`: Dictionary
        Returns: `quarter1`: Number, `quarter2`: Number, `quarter3`: Number, `quarter4`: Number, `total`: Number"""
-    quarter1 = int(box_score_raw[0])
-    quarter2 = int(box_score_raw[1])
-    quarter3 = int(box_score_raw[2])
-    quarter4 = int(box_score_raw[3])
-    total = int(box_score_raw[4])
-    return quarter1, quarter2, quarter3, quarter4, total
+    quarter1 = box_score_raw['1']
+    quarter2 = box_score_raw['2']
+    quarter3 = box_score_raw['3']
+    quarter4 = box_score_raw['4']
+    overtime = box_score_raw['overtime']
+    total = box_score_raw['total']
+    return quarter1, quarter2, quarter3, quarter4, overtime, total
 
 def transform_location(location_raw: str):
     """Function that trims trailing space characters from game location
