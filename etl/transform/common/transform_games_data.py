@@ -30,28 +30,26 @@ def transform_game_time(game_timestamp: str):
     """Function that extracts time from datetime string and converts to datetime object
        Accepts: `game_timestamp`: String
        Returns: `game_time`: Datetime"""
-    time_raw = game_timestamp.split(',')[0]
-    game_time = datetime.strptime(time_raw, '%I:%M %p')
+    game_time = game_timestamp.split(',')[0]
     return game_time
 
 def transform_game_date(game_timestamp: str):
     """Function that extracts date from datetime string and converts to datetime object
        Accepts: `game_timestamp`: String
        Returns: `game_date`: Datetime"""
-    date_raw = game_timestamp.lstrip(game_timestamp.split(',')[0])
-    game_date = datetime.strptime(date_raw, '%B %d, %Y') 
+    game_date = game_timestamp.lstrip(f'{game_timestamp.split(",")[0]}, ')
     return game_date
 
 def transform_stadium_capacity(stadium_capacity_raw: str):
     """Function that converts stadium_capacity into a Number type field
        Accepts `stadium_capacity_raw`: String
        Returns `stadium_capacity`: Number"""
-    stadium_capacity = int(stadium_capacity_raw.lstrip('Capacity: '))
+    stadium_capacity = int(stadium_capacity_raw.lstrip('Capacity: ').replace(',', ''))
     return stadium_capacity
 
 def transform_stadium_attendance(attendance_raw: str):
     """Function that converts attendance into a Number type field
        Accepts `attendance_raw`: String
        Returns `attendance`: Number"""
-    attendance = int(attendance_raw.lstrip('Attendance: '))
+    attendance = int(attendance_raw.lstrip('Attendance: ').replace(',', ''))
     return attendance

@@ -60,6 +60,25 @@ def get_box_score_table(gamestrip: str):
         box_score_table = None
     return box_score_table
 
+def get_box_score(box_score_quarters: list):
+    """Function that extracts the score from each quarter of a given box score
+       Accepts `box_score_quarters`: List
+       Returns `box_score`: Dictionary"""
+    box_score = {}
+    box_score['1'] = box_score_quarters[1].text
+    box_score['2'] = box_score_quarters[2].text
+    box_score['3'] = box_score_quarters[3].text
+    box_score['4'] = box_score_quarters[4].text
+
+    if len(box_score_quarters) == 7:
+        box_score['overtime'] = box_score_quarters[5].text
+    else:
+        box_score['overtime'] = None
+
+    box_score['total'] = box_score_quarters[-1].text
+    return box_score
+
+
 def get_away_box_score(gamestrip: str, logfile: object):
     """Function that scrapes the Away Team Box Score from a given 'Gamestrip' DIV tag.
        Accepts `gamestrip`: <div> HTML Element String
@@ -69,24 +88,9 @@ def get_away_box_score(gamestrip: str, logfile: object):
     try:
         box_score_tbody = get_box_score_table(gamestrip)
         away_box_score_quarters = box_score_tbody.find_all('tr')[0].find_all('td')
-        away_box_score['1'] = away_box_score_quarters[1].text
-        away_box_score['2'] = away_box_score_quarters[2].text
-        away_box_score['3'] = away_box_score_quarters[3].text
-        away_box_score['4'] = away_box_score_quarters[4].text
-        
-        if len(away_box_score_quarters) == 7:
-            away_box_score['overtime'] = away_box_score_quarters[5].text
-        else:
-            away_box_score['overtime'] = None
-
-        away_box_score['total'] = away_box_score_quarters[-1].text    
+        away_box_score = get_box_score(away_box_score_quarters)
     except:
-        away_box_score['1'] = None
-        away_box_score['2'] = None
-        away_box_score['3'] = None
-        away_box_score['4'] = None
-        away_box_score['overtime'] = None
-        away_box_score['total'] = None
+        away_box_score = {'1': None, '2': None, '3': None, '4': None, 'overtime': None, 'total': None}     
     logfile.write(f'away_box_score: {away_box_score}\n')
     return away_box_score
 
@@ -99,24 +103,9 @@ def get_home_box_score(gamestrip: str, logfile: object):
     try:
         box_score_tbody = get_box_score_table(gamestrip)
         home_box_score_quarters = box_score_tbody.find_all('tr')[1].find_all('td')
-        home_box_score['1'] = home_box_score_quarters[1].text
-        home_box_score['2'] = home_box_score_quarters[2].text
-        home_box_score['3'] = home_box_score_quarters[3].text
-        home_box_score['4'] = home_box_score_quarters[4].text
-        
-        if len(home_box_score_quarters) == 7:
-            home_box_score['overtime'] = home_box_score_quarters[5].text
-        else:
-            home_box_score['overtime'] = None
-
-        home_box_score['total'] = home_box_score_quarters[-1].text            
+        home_box_score = get_box_score(home_box_score_quarters)          
     except:
-        home_box_score['1'] = None
-        home_box_score['2'] = None
-        home_box_score['3'] = None
-        home_box_score['4'] = None
-        home_box_score['overtime'] = None
-        home_box_score['total'] = None
+        home_box_score = {'1': None, '2': None, '3': None, '4': None, 'overtime': None, 'total': None}
     logfile.write(f'home_box_score: {home_box_score}\n')
     return home_box_score
 
