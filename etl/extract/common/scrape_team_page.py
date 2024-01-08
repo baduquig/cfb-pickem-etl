@@ -85,7 +85,7 @@ def get_team_standing_row(conference_standing_rows: str, team_name: str):
     team_standing_row = ''
     try:
         for row in conference_standing_rows:
-            row_anchor = row.find('td', class_='Table__TD').find('a')
+            row_anchor = row.find_all('td', class_='Table__TD')[0].find('a')
             anchor_text = row_anchor.text
             class_name = row_anchor['class']
             bolded_class = 'AnchorLink fw-bold'

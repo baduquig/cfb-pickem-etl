@@ -18,7 +18,7 @@ def transform_box_score(box_score_raw: dict, transform_logfile: object):
     quarter4 = box_score_raw['4']
     overtime = box_score_raw['overtime']
     total = box_score_raw['total']
-    transform_box_score.write(f'{quarter1}, {quarter2}, {quarter3}, {quarter4}, {overtime}, {total}\n')
+    transform_logfile.write(f'{quarter1}, {quarter2}, {quarter3}, {quarter4}, {overtime}, {total}\n')
     return quarter1, quarter2, quarter3, quarter4, overtime, total
 
 def transform_location(location_raw: str, transform_logfile: object):

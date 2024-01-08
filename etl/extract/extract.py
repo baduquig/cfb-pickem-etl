@@ -87,12 +87,12 @@ def full_extract(league: str, year: int, weeks: int):
     extract_logfile.write('\n~~ Retrieving Game Data ~~\n')
     games_raw = extract_games(league, game_ids, extract_logfile)
 
-    print('\n~~ Retrieving Schools Data ~~')
-    extract_logfile.write('\n~~ Retrieving Schools Data ~~\n')
+    print('\n\n~~ Retrieving Schools Data ~~')
+    extract_logfile.write('\n\n~~ Retrieving Schools Data ~~\n')
     teams_raw = extract_teams(league, games_raw['away_team_id'].unique(), extract_logfile)
 
-    print('\n~~ Retrieving Locations Data ~~')
-    extract_logfile.write('\n~~ Retrieving Locations Data ~~\n')
+    print('\n\n~~ Retrieving Locations Data ~~')
+    extract_logfile.write('\n\n~~ Retrieving Locations Data ~~\n')
     locations_raw = extract_locations(games_raw['stadium'], games_raw['location'], extract_logfile)
 
     print('\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n')
