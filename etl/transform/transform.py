@@ -87,16 +87,26 @@ def transform_teams(teams_df: dict, transform_logfile: object):
         teams_df.loc[idx, 'conference_name'] = tf_teams.transform_conference_name(conference_name, transform_logfile)
 
         # Conference Record
-        conference_wins, conference_losses, conference_ties = tf_teams.transform_record(conference_record, transform_logfile)
-        teams_df.loc[idx, 'conference_wins'] = conference_wins
-        teams_df.loc[idx, 'conference_losses'] = conference_losses
-        teams_df.loc[idx, 'conference_ties'] = conference_ties
+        if conference_record is None:
+            teams_df.loc[idx, 'conference_wins'] = 0
+            teams_df.loc[idx, 'conference_losses'] = 0
+            teams_df.loc[idx, 'conference_ties'] = 0
+        else:    
+            conference_wins, conference_losses, conference_ties = tf_teams.transform_record(conference_record, transform_logfile)
+            teams_df.loc[idx, 'conference_wins'] = conference_wins
+            teams_df.loc[idx, 'conference_losses'] = conference_losses
+            teams_df.loc[idx, 'conference_ties'] = conference_ties
         
         # Overall Record
-        overall_wins, overall_losses, overall_ties = tf_teams.transform_record(overall_record, transform_logfile)
-        teams_df.loc[idx, 'overall_wins'] = overall_wins
-        teams_df.loc[idx, 'overall_losses'] = overall_losses
-        teams_df.loc[idx, 'overall_ties'] = overall_ties
+        if conference_record is None:
+            teams_df.loc[idx, 'overall_wins'] = 0
+            teams_df.loc[idx, 'overall_losses'] = 0
+            teams_df.loc[idx, 'overall_ties'] = 0
+        else:   
+            overall_wins, overall_losses, overall_ties = tf_teams.transform_record(overall_record, transform_logfile)
+            teams_df.loc[idx, 'overall_wins'] = overall_wins
+            teams_df.loc[idx, 'overall_losses'] = overall_losses
+            teams_df.loc[idx, 'overall_ties'] = overall_ties
     
     print(f'Dropping columns [\'conference_record\', \'overall_record\'] from teams_df')
     transform_logfile.write(f'Dropping columns [\'conference_record\', \'overall_record\'] from teams_df\n')

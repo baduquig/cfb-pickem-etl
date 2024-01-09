@@ -11,8 +11,8 @@ def transform_conference_name(conference_name_raw: str, transform_logfile: objec
        Returns `conference_name`: String"""
     transform_logfile.write(f'Transforming conference name {conference_name_raw} -> ')
 
-    standings_header_words = conference_name_raw.split(' ')
-    conference_name = conference_name_raw.lstrip(f'{standings_header_words[0]} ').rstrip(f' {standings_header_words[-1]}')
+    year = conference_name_raw.split(' ')[0]
+    conference_name = conference_name_raw.replace(year, '').replace('Standings', '').lstrip().rstrip()
 
     transform_logfile.write(f'{conference_name}\n')
     return conference_name

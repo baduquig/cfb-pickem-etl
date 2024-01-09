@@ -8,6 +8,10 @@ import requests
 import etl.extract.cfb.scrape_team_page as cfb_team
 import etl.extract.nfl.scrape_team_page as nfl_team
 from bs4 import BeautifulSoup
+from datetime import datetime
+
+today = datetime.now().date()
+season_start = datetime(2024, 8, 24).date()
 
 def get_logo_url(league: str, team_id: str, logfile: object):
     """Function that extracts the ESPN url to a given team's PNG image logo
@@ -159,16 +163,21 @@ def get_team_data(league: str, team_id: str, logfile: object):
         standings_section = team_soup.find('section', class_='TeamStandings')
         team_data['conference_name'] = get_conference_name(standings_section, logfile)
 
-        standings_tables = standings_section.find('div', class_='Wrapper Card__Content').find_all('div', class_='ResponsiveTable') 
-        for standings_table in standings_tables:
-            standings_table.find('div', class_='Table__ScrollerWrapper').find('div', class_='Table__Scroller').find('table')
-            standings_rows = standings_table.find('tbody').find_all('tr')
-            if standings_rows != '' and standings_rows is not None:
-                break
-        
-        team_standing_row = get_team_standing_row(standings_rows, team_data['name'])
-        team_data['conference_record'] = get_conference_record(league, team_standing_row, logfile)
-        team_data['overall_record'] = get_overall_record(league, team_standing_row, logfile)
+        if today >= season_start:
+            standings_tables = standings_section.find('div', class_='Wrapper Card__Content').find_all('div', class_='ResponsiveTable') 
+            standings_rows = []
+            for standings_table in standings_tables:
+                standings_table.find('div', class_='Table__ScrollerWrapper').find('div', class_='Table__Scroller').find('table')
+                standings_rows = standings_table.find('tbody').find_all('tr')
+                team_standing_row = get_team_standing_row(standings_rows, team_data['name'])
+                if team_standing_row != '' and team_standing_row is not None:
+                    break        
+            team_data['conference_record'] = get_conference_record(league, team_standing_row, logfile)
+            team_data['overall_record'] = get_overall_record(league, team_standing_row, logfile)
+        else:
+            team_data['conference_record'] = '0-0'
+            team_data['overall_record'] = '0-0'
+
     except Exception as e:
         logfile.write(f'Could not find `TeamStandings` DIV: {e} for Team {team_id}\n')
     
