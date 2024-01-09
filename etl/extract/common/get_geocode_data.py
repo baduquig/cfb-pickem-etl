@@ -22,6 +22,7 @@ def get_state_name(location_name: dict):
        Returns `state`: String"""
     try:
         state = location_name.split(', ')[1]
+        state = state.rstrip()
     except:
         state = None
     return state
