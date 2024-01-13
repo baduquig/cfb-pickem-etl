@@ -10,6 +10,7 @@ def get_team_id(team_href_attr: str):
        Accepts `team_href_attr`: String 
        Returns `team_id`: String"""
     # Example `team_href_attr` string: 'https://www.espn.com/nfl/team/_/name/abbreviation/teamLocation-teamMascho'
+    begin_idx = team_href_attr.index('/name/') + 6
     end_idx = team_href_attr.rfind('/')
-    team_id = team_href_attr[end_idx + 1:]
+    team_id = team_href_attr[begin_idx:end_idx]
     return team_id

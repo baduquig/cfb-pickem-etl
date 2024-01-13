@@ -11,6 +11,7 @@ import etl.extract.common.scrape_schedule_page as schedule
 import etl.extract.common.scrape_game_page as game
 import etl.extract.common.scrape_team_page as team
 import etl.extract.common.get_geocode_data as geo
+from datetime import date
 
 def instantiate_logfile(league: str):
     """Function that instantiates logfile for current extract job
@@ -71,9 +72,9 @@ def extract_locations(stadiums: list, location_names: list, extract_logfile: obj
     return locations_df
 
 
-def full_extract(league: str, year: int, weeks: int):
+def full_extract(league: str, year: int, weeks: int, schedule_window_begin: date, schedule_window_end: date):
     """Function that calls all necessary functions to extract all CFB pickem data from required sources and return in Pandas DataFrames
-       Accepts `leage`: String, `year`: Number, `weeks`: Number
+       Accepts `leage`: String, `year`: Number, `weeks`: Number, `schedule_window_begin`: Date, `schedule_window_end`: Date
        Returns `locations_df`: Pandas DataFrame"""
     extract_logfile = instantiate_logfile(league)
     print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nBeginning Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
@@ -81,19 +82,25 @@ def full_extract(league: str, year: int, weeks: int):
     
     print(f'\n~~ Retrieving Game IDs for {year} schedule ~~')
     extract_logfile.write(f'\n~~ Retrieving Game IDs for {year} schedule ~~\n')
-    game_ids = schedule.get_all_game_ids(league, year, weeks, extract_logfile)
+    if league in ['CFB', 'NFL']: 
+        game_ids = schedule.get_football_game_ids(league, year, weeks, extract_logfile)
+    if league == 'MLB':
+        game_ids = schedule.get_non_football_game_ids(league)
 
     print('\n~~ Retrieving Game Data ~~')
     extract_logfile.write('\n~~ Retrieving Game Data ~~\n')
-    games_raw = extract_games(league, game_ids, extract_logfile)
+    if league in ['CFB', 'NFL']:
+        games_raw = extract_games(league, game_ids, extract_logfile)
 
-    print('\n\n~~ Retrieving Schools Data ~~')
-    extract_logfile.write('\n\n~~ Retrieving Schools Data ~~\n')
-    teams_raw = extract_teams(league, games_raw['away_team_id'].unique(), extract_logfile)
+    print('\n\n~~ Retrieving Teams Data ~~')
+    extract_logfile.write('\n\n~~ Retrieving Teams Data ~~\n')
+    if league in ['CFB', 'NFL']:
+        teams_raw = extract_teams(league, games_raw['away_team_id'].unique(), extract_logfile)
 
     print('\n\n~~ Retrieving Locations Data ~~')
     extract_logfile.write('\n\n~~ Retrieving Locations Data ~~\n')
-    locations_raw = extract_locations(games_raw['stadium'], games_raw['location'], extract_logfile)
+    if league in ['CFB', 'NFL']:
+        locations_raw = extract_locations(games_raw['stadium'], games_raw['location'], extract_logfile)
 
     print('\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n')
     extract_logfile.write('\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n')
