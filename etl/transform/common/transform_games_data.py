@@ -4,8 +4,6 @@ Author: Gabe Baduqui
 
 Cleanse, format and prepare Games data
 """
-from datetime import datetime
-
 
 def transform_box_score(box_score_raw: dict, transform_logfile: object):
     """Function that transforms box score data element into individuals fields

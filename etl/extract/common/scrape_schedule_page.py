@@ -9,7 +9,6 @@ import etl.utils.get_all_dates_in_range as all_dates
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-game_ids = []
 custom_header = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
 }
@@ -61,6 +60,7 @@ def get_football_game_ids(league: str, year: any, weeks: any, logfile: object):
     """Function that scrapes the Game ID from each game row for a given season.
        Accepts: `espn_schedule_url`: String, `year`: Number, `weeks`: Number, `logfile`: File Object
        Returns: game_ids: List of Strings"""
+    game_ids = []
     espn_url = 'https://www.espn.com'
     if league.upper() == 'CFB':
         schedule_url = f'{espn_url}/college-football/schedule/_/'
@@ -93,7 +93,7 @@ def get_football_game_ids(league: str, year: any, weeks: any, logfile: object):
                     games_table_rows = gameday.find('div', class_='Table__Scroller').find('table', class_='Table').find('tbody', class_='Table__TBODY').find_all('tr')
                     
                     for game_row in games_table_rows:
-                        game_id = get_game_id(game_row)
+                        game_id = get_game_id(game_row, logfile)
                         if game_id is not None:
                             game_ids.append(game_id)
                 except Exception as e:

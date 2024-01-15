@@ -4,6 +4,7 @@ Author: Gabe Baduqui
 
 Scrape pickem data from various web sources.
 """
+import math
 import pandas as pd
 import time
 import etl.utils.get_timestamp as ts
@@ -42,11 +43,10 @@ def extract_teams(league: str, team_ids: list, extract_logfile: object):
        Returns `teams_df`: Pandas DataFrame"""
     teams_df = pd.DataFrame([], columns=['name', 'mascot', 'logo_url', 'conference_name', 'conference_record', 'overall_record'])
     for team_id in team_ids:
-        if team_id is not None:
-            team_data = team.get_team_data(league, team_id, extract_logfile)
-            new_team_row = pd.DataFrame([team_data])
-            teams_df = pd.concat([teams_df, new_team_row], ignore_index=True)
-            time.sleep(.1)
+        team_data = team.get_team_data(league, team_id, extract_logfile)
+        new_team_row = pd.DataFrame([team_data])
+        teams_df = pd.concat([teams_df, new_team_row], ignore_index=True)
+        time.sleep(.1)
     return teams_df
 
 def extract_locations(stadiums: list, location_names: list, extract_logfile: object):
@@ -62,7 +62,7 @@ def extract_locations(stadiums: list, location_names: list, extract_logfile: obj
         location_name = location_names[i]
         concatenated_location = f'{stadium}, {location_name}'
         
-        if concatenated_location not in unique_locations:
+        if ((stadium is not None) and (location_name is not None)) and (concatenated_location not in unique_locations):
             unique_locations.append(concatenated_location)
             location_data = geo.get_location_data(location_id, stadium, location_name, extract_logfile)
             new_location_row = pd.DataFrame([location_data])
@@ -72,7 +72,7 @@ def extract_locations(stadiums: list, location_names: list, extract_logfile: obj
     return locations_df
 
 
-def full_extract(league: str, year: int, weeks: int, schedule_window_begin: date, schedule_window_end: date):
+def full_extract(league: str, year: int, weeks: int, schedule_window_begin=date(2024, 3, 28), schedule_window_end=date(2024, 9, 29)):
     """Function that calls all necessary functions to extract all CFB pickem data from required sources and return in Pandas DataFrames
        Accepts `leage`: String, `year`: Number, `weeks`: Number, `schedule_window_begin`: Date, `schedule_window_end`: Date
        Returns `locations_df`: Pandas DataFrame"""
@@ -80,27 +80,26 @@ def full_extract(league: str, year: int, weeks: int, schedule_window_begin: date
     print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nBeginning Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
     extract_logfile.write('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nBeginning Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n')
     
-    print(f'\n~~ Retrieving Game IDs for {year} schedule ~~')
-    extract_logfile.write(f'\n~~ Retrieving Game IDs for {year} schedule ~~\n')
+    print(f'\n~~ Retrieving {league.upper()} Game IDs for {year} schedule ~~')
+    extract_logfile.write(f'\n~~ Retrieving {league.upper()} Game IDs for {year} schedule ~~\n')
     if league in ['CFB', 'NFL']: 
         game_ids = schedule.get_football_game_ids(league, year, weeks, extract_logfile)
     if league == 'MLB':
         game_ids = schedule.get_non_football_game_ids(league)
 
-    print('\n~~ Retrieving Game Data ~~')
-    extract_logfile.write('\n~~ Retrieving Game Data ~~\n')
+    print(f'\n~~ Retrieving {league.upper()} Game Data ~~')
+    extract_logfile.write(f'\n~~ Retrieving {league.upper()} Game Data ~~\n')
     if league in ['CFB', 'NFL']:
         games_raw = extract_games(league, game_ids, extract_logfile)
 
-    print('\n\n~~ Retrieving Teams Data ~~')
-    extract_logfile.write('\n\n~~ Retrieving Teams Data ~~\n')
+    print(f'\n\n~~ Retrieving {league.upper()} Teams Data ~~')
+    extract_logfile.write(f'\n\n~~ Retrieving {league.upper()} Teams Data ~~\n')
     if league in ['CFB', 'NFL']:
         teams_raw = extract_teams(league, games_raw['away_team_id'].unique(), extract_logfile)
 
-    print('\n\n~~ Retrieving Locations Data ~~')
-    extract_logfile.write('\n\n~~ Retrieving Locations Data ~~\n')
-    if league in ['CFB', 'NFL']:
-        locations_raw = extract_locations(games_raw['stadium'], games_raw['location'], extract_logfile)
+    print(f'\n\n~~ Retrieving {league.upper()} Locations Data ~~')
+    extract_logfile.write(f'\n\n~~ Retrieving {league.upper()} Locations Data ~~\n')
+    locations_raw = extract_locations(games_raw['stadium'], games_raw['location'], extract_logfile)
 
     print('\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n')
     extract_logfile.write('\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n')
