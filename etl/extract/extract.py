@@ -27,9 +27,12 @@ def extract_games(league: str, game_ids: list, extract_logfile: object):
     """Function that instantiates a Pandas DataFrame storing Game Data scraped from ESPN Game web pages
        Accepts `league`: String, game_ids`: List, `extract_logfile`: File Object
        Returns `games_df`: Pandas DataFrame"""
-    games_df = pd.DataFrame([], columns=['away_team_id', 'home_team_id', 'away_team_box_score', 'home_team_box_score', 
+    games_df = pd.DataFrame([], columns=['game_id', 'away_team_id', 'home_team_id', 'away_team_box_score', 'home_team_box_score', 
                                          'stadium', 'location', 'game_timestamp', 'tv_coverage', 'betting_line', 
                                          'betting_over_under', 'stadium_capacity', 'attendance', 'away_win_pct', 'home_win_pct'])
+    if league == 'MLB':
+        games_df.drop(['away_team_box_score', 'home_team_box_score'], axis=1)
+
     for game_id in game_ids:
         game_data = game.get_game_data(league, game_id, extract_logfile)
         new_game_row = pd.DataFrame([game_data])
@@ -72,8 +75,8 @@ def extract_locations(stadiums: list, location_names: list, extract_logfile: obj
     return locations_df
 
 
-def full_extract(league: str, year: int, weeks: int, schedule_window_begin=date(2024, 3, 28), schedule_window_end=date(2024, 9, 29)):
-    """Function that calls all necessary functions to extract all CFB pickem data from required sources and return in Pandas DataFrames
+def full_extract(league: str, year=2024, weeks=15, schedule_window_begin=date(2024, 8, 21), schedule_window_end=date(2024, 9, 29)):
+    """Function that calls all necessary functions to extract all pickem data from required sources and return in Pandas DataFrames
        Accepts `leage`: String, `year`: Number, `weeks`: Number, `schedule_window_begin`: Date, `schedule_window_end`: Date
        Returns `locations_df`: Pandas DataFrame"""
     extract_logfile = instantiate_logfile(league)
@@ -85,12 +88,12 @@ def full_extract(league: str, year: int, weeks: int, schedule_window_begin=date(
     if league in ['CFB', 'NFL']: 
         game_ids = schedule.get_football_game_ids(league, year, weeks, extract_logfile)
     if league == 'MLB':
-        game_ids = schedule.get_non_football_game_ids(league)
+        game_ids = schedule.get_non_football_game_ids(league, schedule_window_begin, schedule_window_end, extract_logfile)
 
     print(f'\n~~ Retrieving {league.upper()} Game Data ~~')
     extract_logfile.write(f'\n~~ Retrieving {league.upper()} Game Data ~~\n')
-    if league in ['CFB', 'NFL']:
-        games_raw = extract_games(league, game_ids, extract_logfile)
+    games_raw = extract_games(league, game_ids, extract_logfile)
+    print(games_raw)
 
     print(f'\n\n~~ Retrieving {league.upper()} Teams Data ~~')
     extract_logfile.write(f'\n\n~~ Retrieving {league.upper()} Teams Data ~~\n')

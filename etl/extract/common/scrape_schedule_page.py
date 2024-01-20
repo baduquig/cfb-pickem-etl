@@ -21,8 +21,8 @@ def get_game_id(game_row_html: str, logfile: object):
     try:
         td_elem = game_row_html.find_all('td')[2]
         href_str = td_elem.find('a', href=True)['href']
-        begin_index = href_str.index('gameId=') + 7
-        end_index = href_str.index('&_slug_=')
+        begin_index = href_str.index('gameId/') + 7
+        end_index = href_str.rfind('/')
         game_id = href_str[begin_index:end_index]
     except:
         game_id = None
@@ -33,9 +33,13 @@ def get_game_id(game_row_html: str, logfile: object):
 def get_non_football_game_ids(league: str, schedule_window_begin: datetime, schedule_window_end: datetime, logfile: object):
     """Function that scrapes the Game ID from each game row for a given period of a non-football season
        Accepts `league`: String, `schedule_window_begin`: Date, `schedule_window_end`: Date, logfile: File Object"""
-    espn_url = 'https://www.espn.com/mlb/schedule/_/date'
+    espn_url = f'https://www.espn.com/{league.lower()}/schedule/_/date'
     dates = all_dates.date_range(schedule_window_begin, schedule_window_end)
+    game_ids = []
     for distinct_date in dates:
+        print(f'~~~~ Scraping {league.upper()} Games for {distinct_date}')
+        logfile.write(f'~~~~ Scraping {league.upper()} Games for {distinct_date}\n')
+
         date_yyyymmdd = str(distinct_date).replace('-', '')
         schedule_page_url = f'{espn_url}/{date_yyyymmdd}'
 
@@ -48,12 +52,15 @@ def get_non_football_game_ids(league: str, schedule_window_begin: datetime, sche
             game_table = page_soup.find_all('div', class_='mt3')[1].find_all('div', class_='ScheduleTables')[0].find('div', class_='Table__ScrollerWrapper').find('div', 'Table__Scroller').find('table').find('tbody')
             table_rows = game_table.find_all('tr')
             for game_row in table_rows:
-                game_id = get_game_id(game_row)
+                game_id = get_game_id(game_row, logfile)
                 if game_id is not None:
                     game_ids.append(game_id)
         except Exception as e:
-            print(f'Error occurred scraping schedule for {distinct_date}')
-            logfile.write(f'Error occurred scraping schedule for {distinct_date}\n\n')
+            print(f'Error occurred scraping schedule for {distinct_date}\n{e}\n')
+            logfile.write(f'Error occurred scraping schedule for {distinct_date}\n{e}\n\n')
+
+    logfile.write('\n')
+    return game_ids
 
 
 def get_football_game_ids(league: str, year: any, weeks: any, logfile: object):
@@ -73,8 +80,8 @@ def get_football_game_ids(league: str, year: any, weeks: any, logfile: object):
     
     for week in range(weeks):
         week += 1
-        print(f'~~~~ Scraping Week {week} Games')
-        logfile.write(f'~~~~ Scraping Week {week} Games\n')
+        print(f'~~~~ Scraping {league.upper()} Week {week} Games')
+        logfile.write(f'~~~~ Scraping {league.upper()} Week {week} Games\n')
 
         espn_current_week_url = f'{schedule_url}week/{week}/year/{year}/'
 

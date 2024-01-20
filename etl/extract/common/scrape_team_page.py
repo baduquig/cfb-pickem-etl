@@ -17,10 +17,12 @@ def get_logo_url(league: str, team_id: str, logfile: object):
     """Function that extracts the ESPN url to a given team's PNG image logo
        Accepts `league`: String, team_id`: String, `logfile`: File Object
        Returns `logo_url`: String"""
-    if league.upper == 'CFB':
+    if league.upper() == 'CFB':
         logo_url = f'https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/{team_id}.png'
-    else:
+    elif league.upper() == 'NFL':
         logo_url = f'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/{team_id}.png'
+    else:
+        logfile.write(f'Could not create logo URL for Team ID {team_id}\n')
     logfile.write(f'logo_url: {logo_url}\n')
     return logo_url
 
