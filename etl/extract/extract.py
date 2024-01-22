@@ -27,11 +27,14 @@ def extract_games(league: str, game_ids: list, extract_logfile: object):
     """Function that instantiates a Pandas DataFrame storing Game Data scraped from ESPN Game web pages
        Accepts `league`: String, game_ids`: List, `extract_logfile`: File Object
        Returns `games_df`: Pandas DataFrame"""
-    games_df = pd.DataFrame([], columns=['game_id', 'away_team_id', 'home_team_id', 'away_team_box_score', 'home_team_box_score', 
-                                         'stadium', 'location', 'game_timestamp', 'tv_coverage', 'betting_line', 
-                                         'betting_over_under', 'stadium_capacity', 'attendance', 'away_win_pct', 'home_win_pct'])
-    if league == 'MLB':
-        games_df.drop(['away_team_box_score', 'home_team_box_score'], axis=1)
+    if league in ['CFB', 'NFL']:
+        games_df = pd.DataFrame([], columns=['game_id', 'away_team_id', 'home_team_id', 'away_team_box_score', 'home_team_box_score', 
+                                                'stadium', 'location', 'game_timestamp', 'tv_coverage', 'betting_line', 
+                                                'betting_over_under', 'stadium_capacity', 'attendance', 'away_win_pct', 'home_win_pct'])
+    else:
+        games_df = pd.DataFrame([], columns=['game_id', 'away_team_id', 'home_team_id', 'stadium', 'location', 
+                                                'game_timestamp', 'tv_coverage', 'betting_line', 'betting_over_under', 
+                                                'stadium_capacity', 'attendance', 'away_win_pct', 'home_win_pct'])
 
     for game_id in game_ids:
         game_data = game.get_game_data(league, game_id, extract_logfile)
@@ -45,6 +48,9 @@ def extract_teams(league: str, team_ids: list, extract_logfile: object):
        Accepts `league`: String, team_ids`: List, `extract_logfile`: File Object
        Returns `teams_df`: Pandas DataFrame"""
     teams_df = pd.DataFrame([], columns=['name', 'mascot', 'logo_url', 'conference_name', 'conference_record', 'overall_record'])
+    if league.upper() == 'MLB':
+        teams_df.drop(['conference_record'], axis=1)
+
     for team_id in team_ids:
         team_data = team.get_team_data(league, team_id, extract_logfile)
         new_team_row = pd.DataFrame([team_data])
@@ -97,8 +103,7 @@ def full_extract(league: str, year=2024, weeks=15, schedule_window_begin=date(20
 
     print(f'\n\n~~ Retrieving {league.upper()} Teams Data ~~')
     extract_logfile.write(f'\n\n~~ Retrieving {league.upper()} Teams Data ~~\n')
-    if league in ['CFB', 'NFL']:
-        teams_raw = extract_teams(league, games_raw['away_team_id'].unique(), extract_logfile)
+    teams_raw = extract_teams(league, games_raw['away_team_id'].unique(), extract_logfile)
 
     print(f'\n\n~~ Retrieving {league.upper()} Locations Data ~~')
     extract_logfile.write(f'\n\n~~ Retrieving {league.upper()} Locations Data ~~\n')

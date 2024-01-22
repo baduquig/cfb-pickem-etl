@@ -16,7 +16,7 @@ def get_record_text(record_td: str):
         record_text = None
     return record_text
 
-def get_conference_record(team_standing_row: str, league: str):
+def get_conference_record(team_standing_row: str):
     """Function that extracts the conference record from a given TR tag
        Accepts `team_standing_row`: <tr> HTML Element String
        Returns `conference_record`: String"""
@@ -28,7 +28,7 @@ def get_conference_record(team_standing_row: str, league: str):
         conf_record = None
     return conf_record
 
-def get_overall_record(team_standing_row: str, league: str):
+def get_overall_record(team_standing_row: str):
     """Function that extracts the overall record from a given TR tag
        Accepts `team_standing_row`: <tr> HTML Element String
        Returns `overall_record`: String"""

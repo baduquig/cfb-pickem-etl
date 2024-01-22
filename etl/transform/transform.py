@@ -17,7 +17,7 @@ def instantiate_logfile(league: str):
     transform_logfile = open(transfrom_logfile_path, 'a')
     return transform_logfile
 
-def transform_games(games_df: dict, transform_logfile: object):
+def transform_games(league:str, games_df: dict, transform_logfile: object):
     """Function that applies all necessary transformations to Games related data elements
        Accepts `games_df`: Pandas DataFrame, `transform_logfile`: File Object
        Returns `games_df`: Pandas DataFrame"""
@@ -26,30 +26,32 @@ def transform_games(games_df: dict, transform_logfile: object):
         transform_logfile.write(f'\n~~ Cleansing and formatting Data for Game ID {games_df.loc[idx, "game_id"]}\n')
 
         # Current row colum variables
-        away_team_box_score = games_df.loc[idx, 'away_team_box_score']
-        home_team_box_score = games_df.loc[idx, 'home_team_box_score']
         location = games_df.loc[idx, 'location']
         game_timestamp = games_df.loc[idx, 'game_timestamp']
         stadium_capacity = games_df.loc[idx, 'stadium_capacity']
         attendance = games_df.loc[idx, 'attendance']
 
         # Away Box Score
-        away_quarter1, away_quarter2, away_quarter3, away_quarter4, overtime, away_total = tf_games.transform_box_score(away_team_box_score, transform_logfile)
-        games_df.loc[idx, 'away_quarter1'] = away_quarter1
-        games_df.loc[idx, 'away_quarter2'] = away_quarter2
-        games_df.loc[idx, 'away_quarter3'] = away_quarter3
-        games_df.loc[idx, 'away_quarter4'] = away_quarter4
-        games_df.loc[idx, 'away_overtime'] = overtime
-        games_df.loc[idx, 'away_total'] = away_total
+        if 'away_team_box_score' in games_df.columns:
+            away_team_box_score = games_df.loc[idx, 'away_team_box_score']
+            away_quarter1, away_quarter2, away_quarter3, away_quarter4, overtime, away_total = tf_games.transform_box_score(away_team_box_score, transform_logfile)
+            games_df.loc[idx, 'away_quarter1'] = away_quarter1
+            games_df.loc[idx, 'away_quarter2'] = away_quarter2
+            games_df.loc[idx, 'away_quarter3'] = away_quarter3
+            games_df.loc[idx, 'away_quarter4'] = away_quarter4
+            games_df.loc[idx, 'away_overtime'] = overtime
+            games_df.loc[idx, 'away_total'] = away_total
 
         # Home Box Score
-        home_quarter1, home_quarter2, home_quarter3, home_quarter4, overtime, home_total = tf_games.transform_box_score(home_team_box_score, transform_logfile)
-        games_df.loc[idx, 'home_quarter1'] = home_quarter1
-        games_df.loc[idx, 'home_quarter2'] = home_quarter2
-        games_df.loc[idx, 'home_quarter3'] = home_quarter3
-        games_df.loc[idx, 'home_quarter4'] = home_quarter4
-        games_df.loc[idx, 'home_overtime'] = overtime
-        games_df.loc[idx, 'home_total'] = away_total
+        if 'home_team_box_score' in games_df.columns:
+            home_team_box_score = games_df.loc[idx, 'home_team_box_score']
+            home_quarter1, home_quarter2, home_quarter3, home_quarter4, overtime, home_total = tf_games.transform_box_score(home_team_box_score, transform_logfile)
+            games_df.loc[idx, 'home_quarter1'] = home_quarter1
+            games_df.loc[idx, 'home_quarter2'] = home_quarter2
+            games_df.loc[idx, 'home_quarter3'] = home_quarter3
+            games_df.loc[idx, 'home_quarter4'] = home_quarter4
+            games_df.loc[idx, 'home_overtime'] = overtime
+            games_df.loc[idx, 'home_total'] = home_total
 
         # Location
         games_df.loc[idx, 'location'] = tf_games.transform_location(location, transform_logfile)
@@ -63,14 +65,19 @@ def transform_games(games_df: dict, transform_logfile: object):
             games_df.loc[idx, 'stadium_capacity'] = tf_games.transform_stadium_capacity(stadium_capacity, transform_logfile)
         if attendance is not None:
             games_df.loc[idx, 'attendance'] = tf_games.transform_stadium_attendance(attendance, transform_logfile)
-        
-    print(f'Dropping columns [\'away_team_box_score\', \'home_team_box_score\'] from games_df\n')
-    transform_logfile.write(f'Dropping columns [\'away_team_box_score\', \'home_team_box_score\'] from games_df\n\n')
-    games_df.drop(['away_team_box_score', 'home_team_box_score'], axis=1)
+    
+    if league.upper() in ['CFB', 'NFL']:
+        print(f'Dropping columns [\'away_team_box_score\', \'home_team_box_score\', \'game_timestamp\'] from games_df\n')
+        transform_logfile.write(f'Dropping columns [\'away_team_box_score\', \'home_team_box_score\', \'game_timestamp\'] from games_df\n\n')
+        games_df.drop(['away_team_box_score', 'home_team_box_score', 'game_timestamp'], axis=1)
+    else:
+        print(f'Dropping column [\'game_timestamp\'] from games_df\n')
+        transform_logfile.write(f'Dropping column [\'game_timestamp\'] from games_df\n\n')
+        games_df.drop(['game_timestamp'], axis=1)
     return games_df
 
 
-def transform_teams(teams_df: dict, transform_logfile: object):
+def transform_teams(league: str, teams_df: dict, transform_logfile: object):
     """Function that applies all necessary transformations to Teams related data elements
        Accepts `teams_df`: Pandas DataFrame
        Returns `teams_df`: Pandas DataFrame"""
@@ -80,37 +87,43 @@ def transform_teams(teams_df: dict, transform_logfile: object):
 
         # Current row colum variables
         conference_name = teams_df.loc[idx, 'conference_name']
-        conference_record = teams_df.loc[idx, 'conference_record']
         overall_record = teams_df.loc[idx, 'overall_record']
 
         # Conference Name
         teams_df.loc[idx, 'conference_name'] = tf_teams.transform_conference_name(conference_name, transform_logfile)
 
         # Conference Record
-        if conference_record is None:
-            teams_df.loc[idx, 'conference_wins'] = 0
-            teams_df.loc[idx, 'conference_losses'] = 0
-            teams_df.loc[idx, 'conference_ties'] = 0
-        else:    
-            conference_wins, conference_losses, conference_ties = tf_teams.transform_record(conference_record, transform_logfile)
-            teams_df.loc[idx, 'conference_wins'] = conference_wins
-            teams_df.loc[idx, 'conference_losses'] = conference_losses
-            teams_df.loc[idx, 'conference_ties'] = conference_ties
+        if 'conference_record' in teams_df.columns:
+            conference_record = teams_df.loc[idx, 'conference_record']
+            if conference_record is not None:
+                conference_wins, conference_losses, conference_ties = tf_teams.transform_record(conference_record, transform_logfile)
+                teams_df.loc[idx, 'conference_wins'] = conference_wins
+                teams_df.loc[idx, 'conference_losses'] = conference_losses
+                teams_df.loc[idx, 'conference_ties'] = conference_ties
+            else:
+                teams_df.loc[idx, 'conference_wins'] = 0
+                teams_df.loc[idx, 'conference_losses'] = 0
+                teams_df.loc[idx, 'conference_ties'] = 0
         
         # Overall Record
-        if conference_record is None:
-            teams_df.loc[idx, 'overall_wins'] = 0
-            teams_df.loc[idx, 'overall_losses'] = 0
-            teams_df.loc[idx, 'overall_ties'] = 0
-        else:   
+        if conference_record is not None:
             overall_wins, overall_losses, overall_ties = tf_teams.transform_record(overall_record, transform_logfile)
             teams_df.loc[idx, 'overall_wins'] = overall_wins
             teams_df.loc[idx, 'overall_losses'] = overall_losses
             teams_df.loc[idx, 'overall_ties'] = overall_ties
+        else:
+            teams_df.loc[idx, 'overall_wins'] = 0
+            teams_df.loc[idx, 'overall_losses'] = 0
+            teams_df.loc[idx, 'overall_ties'] = 0
     
-    print(f'Dropping columns [\'conference_record\', \'overall_record\'] from teams_df\n')
-    transform_logfile.write(f'Dropping columns [\'conference_record\', \'overall_record\'] from teams_df\n\n')
-    teams_df.drop(['conference_record', 'overall_record'], axis=1)
+    if league.upper() in ['CFB', 'NFL']:
+        print(f'Dropping columns [\'conference_record\', \'overall_record\'] from teams_df\n')
+        transform_logfile.write(f'Dropping columns [\'conference_record\', \'overall_record\'] from teams_df\n\n')
+        teams_df.drop(['conference_record', 'overall_record'], axis=1)
+    else:
+        print(f'Dropping column [\'overall_record\'] from teams_df\n')
+        transform_logfile.write(f'Dropping columns [\'overall_record\'] from teams_df\n\n')
+        teams_df.drop(['overall_record'], axis=1)
     return teams_df
 
 
@@ -123,11 +136,11 @@ def full_transform(league: str, games_raw: dict, teams_raw: dict, locations_raw:
 
     print('~~ Transforming games data...')
     transform_logfile.write('\n~~ Transforming games data...')
-    games_df = transform_games(games_raw, transform_logfile)
+    games_df = transform_games(league, games_raw, transform_logfile)
 
     print('~~ Transforming teams data...')
     transform_logfile.write('\n~~ Transforming teams data...')
-    teams_df = transform_teams(teams_raw, transform_logfile)
+    teams_df = transform_teams(league, teams_raw, transform_logfile)
 
     transform_logfile.write('\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished Full Transform Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
 

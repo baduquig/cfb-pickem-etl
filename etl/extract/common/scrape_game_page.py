@@ -256,10 +256,12 @@ def get_game_data(league: str, game_id: str, logfile: object):
 
     if league.upper() == 'CFB':
         espn_game_url = f'https://www.espn.com/nfl/game/_/gameId/{game_id}'
-    if league.upper() == 'NFL':
+    elif league.upper() == 'NFL':
         espn_game_url = f'https://www.espn.com/nfl/game/_/gameId/{game_id}'
-    if league.upper() == 'MLB':
+    elif league.upper() == 'MLB':
         espn_game_url = f'https://www.espn.com/mlb/game/_/gameId/{game_id}'
+    else:
+        logfile.write(f'Invalid leage name: {league.upper()}\n')
 
     # Scrape HTML from HTTP request to the URL above and store in variable `page_soup`
     custom_header = {

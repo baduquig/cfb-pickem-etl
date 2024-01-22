@@ -10,12 +10,20 @@ def transform_box_score(box_score_raw: dict, transform_logfile: object):
        Accepts `box_score_raw`: Dictionary, `transform_logfile`: Logfile Object
        Returns `quarter1`: Number, `quarter2`: Number, `quarter3`: Number, `quarter4`: Number, `total`: Number"""
     transform_logfile.write(f'Transforming box score {box_score_raw} -> ')
-    quarter1 = box_score_raw['1']
-    quarter2 = box_score_raw['2']
-    quarter3 = box_score_raw['3']
-    quarter4 = box_score_raw['4']
-    overtime = box_score_raw['overtime']
-    total = box_score_raw['total']
+    try:
+       quarter1 = box_score_raw['1']
+       quarter2 = box_score_raw['2']
+       quarter3 = box_score_raw['3']
+       quarter4 = box_score_raw['4']
+       overtime = box_score_raw['overtime']
+       total = box_score_raw['total']
+    except Exception as e:
+       quarter1 = None
+       quarter2 = None
+       quarter3 = None
+       quarter4 = None
+       overtime = None
+       total = None
     transform_logfile.write(f'{quarter1}, {quarter2}, {quarter3}, {quarter4}, {overtime}, {total}\n')
     return quarter1, quarter2, quarter3, quarter4, overtime, total
 

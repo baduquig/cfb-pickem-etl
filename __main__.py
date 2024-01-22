@@ -18,7 +18,9 @@ def main():
     #load.full_load('CFB', cfb_games, cfb_teams, cfb_locations)
     #load.full_load('NFL', nfl_games, nfl_teams, nfl_locations)
 
-    mlb_game_ids = ext.full_extract('MLB')
+    mlb_games_raw, mlb_teams_raw, mlb_locations_raw = ext.full_extract('MLB')
+    mlb_games, mlb_teams, mlb_locations = trf.full_transform('MLB', mlb_games_raw, mlb_teams_raw, mlb_locations_raw)
+    load.full_load('MLB', mlb_games, mlb_teams, mlb_locations)
 
 if __name__ == '__main__':
     main()
