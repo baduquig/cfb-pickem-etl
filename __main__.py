@@ -20,10 +20,11 @@ def main():
     mlb_games, mlb_teams, mlb_locations = trf.full_transform('MLB', mlb_games_raw, mlb_teams_raw, mlb_locations_raw)
     nba_games, nba_teams, nba_locations = trf.full_transform('NBA', nba_games_raw, nba_teams_raw, nba_locations_raw)
 
-    load.full_load('CFB', cfb_games, cfb_teams, cfb_locations)
-    load.full_load('NFL', nfl_games, nfl_teams, nfl_locations)
-    load.full_load('MLB', mlb_games, mlb_teams, mlb_locations)
-    load.full_load('NBA', nba_games, nba_teams, nba_locations)
+    games = trf.consolidate_data('games', cfb_df=cfb_games, nfl_df=nfl_games, mlb_df=mlb_games, nba_df=nba_games)
+    teams = trf.consolidate_data('teams', cfb_df=cfb_teams, nfl_df=nfl_teams, mlb_df=mlb_teams, nba_df=nba_teams)
+    locations = trf.consolidate_data('locations', cfb_df=cfb_locations, nfl_df=nfl_locations, mlb_df=mlb_locations, nba_df=nba_locations)
+
+    load.full_load(games, teams, locations)
 
 if __name__ == '__main__':
     main()

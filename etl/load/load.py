@@ -6,9 +6,9 @@ Load pickem data from various web sources into desired destinations.
 """
 import etl.utils.get_timestamp as ts
 
-def instantiate_logfile(league: str):
+def instantiate_logfile():
     timestamp = ts.get_timestamp()
-    load_logfile_path = f'./pickem_logs/{league}_load_{timestamp}.log'
+    load_logfile_path = f'./pickem_logs/load_all_{timestamp}.log'
     load_logfile = open(load_logfile_path, 'a')
     return load_logfile
 
@@ -32,21 +32,21 @@ def load_json(df, table_name, load_logfile: object):
    json_path = f'./pickem_data/{table_name}.json'
    df.to_json(json_path, orient='records')
 
-def full_load(league: str, games_df: dict, teams_df: dict, locations_df: dict):
-   """Function that calls all necessary functions to load all CFB pickem data, stored in Pandas DataFrames, into the desired desinations
+def full_load(games_df: dict, teams_df: dict, locations_df: dict):
+   """Function that calls all necessary functions to load all consolidated pickem data, stored in Pandas DataFrames, into the desired desinations
       Accepts `league`: String, `games_df`: Pandas DataFrame, `teams_df`: Pandas DataFrame, `locations_df`: Pandas DataFrame
       Returns: n/a"""
-   load_logfile = instantiate_logfile(league)
+   load_logfile = instantiate_logfile()
    print('\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nBeginning Full Load Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
    load_logfile.write('\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nBeginning Full Load Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 
-   load_csv(games_df, f'{league.lower()}_games', load_logfile)
-   load_csv(teams_df, f'{league.lower()}_teams', load_logfile)
-   load_csv(locations_df, f'{league.lower()}_locations', load_logfile)
+   load_csv(games_df, 'games', load_logfile)
+   load_csv(teams_df, 'teams', load_logfile)
+   load_csv(locations_df, 'locations', load_logfile)
    
-   load_json(games_df, f'{league.lower()}_games', load_logfile)
-   load_json(teams_df, f'{league.lower()}_teams', load_logfile)
-   load_json(locations_df, f'{league.lower()}_locations', load_logfile)
+   load_json(games_df, 'games', load_logfile)
+   load_json(teams_df, 'teams', load_logfile)
+   load_json(locations_df, 'locations', load_logfile)
 
    print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished Full Load Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
    load_logfile.write('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished Full Load Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')

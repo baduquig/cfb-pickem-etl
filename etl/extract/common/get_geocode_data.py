@@ -66,7 +66,7 @@ def call_geocode_api(stadium: str, city: str, state: str):
         geocode_record = None
     return geocode_record
 
-def get_location_data(location_id: str, stadium: str, location_name: str, logfile: object):
+def get_location_data(league: str, location_id: str, stadium: str, location_name: str, logfile: object):
     """Function that calls the Geocode.maps forward geocode API.
        Accepts `location_id`: String, `stadium`: String, `location_name`: String, `logfile`: File Object
        Returns `location_data`: Dictionary"""    
@@ -82,6 +82,7 @@ def get_location_data(location_id: str, stadium: str, location_name: str, logfil
     
     # Instantiate `location_data` dictionary
     location_data = {
+        'league': league,
         'location_id': location_id,
         'stadium': stadium,
         'city': city,

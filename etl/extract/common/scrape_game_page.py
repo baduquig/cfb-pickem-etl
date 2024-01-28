@@ -254,8 +254,8 @@ def get_game_data(league: str, game_id: str, logfile: object):
     """Function that scrapes the webpage of a given Game ID and extracts needed data fields.
        Accepts `game_id`: String, `espn_game_url`: String, `logfile`: File Object
        Returns `game_data`: Dictionary"""
-    print(f'~~ Scraping GameID {game_id} data')
-    logfile.write(f'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nScraping GameID {game_id} data\n')
+    print(f'~~ Scraping {league.upper()} GameID {game_id} data')
+    logfile.write(f'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nScraping {league.upper()} GameID {game_id} data\n')
 
     if league.upper() == 'CFB':
         espn_game_url = f'https://www.espn.com/college-football/game/_/gameId/{game_id}'
@@ -271,7 +271,8 @@ def get_game_data(league: str, game_id: str, logfile: object):
 
     # Instantiate `game_data` dictionary
     game_data = {
-        'game_id': game_id
+        'game_id': game_id,
+        'league': league
     }
 
     # Instantiate Gamestring Container and scrape data fields
@@ -290,6 +291,9 @@ def get_game_data(league: str, game_id: str, logfile: object):
         if league in ['CFB', 'NFL']:
             game_data['away_team_box_score'] = get_away_box_score(gamestrip_div, logfile)
             game_data['home_team_box_score'] = get_home_box_score(gamestrip_div, logfile)
+        else:
+            game_data['away_team_box_score'] = None
+            game_data['home_team_box_score'] = None
         
     except:
         print(f'~~~~ Could not find Gamestrip Container for GameID: {game_id}')

@@ -129,8 +129,8 @@ def get_team_data(league: str, team_id: str, logfile: object):
     """Function that scrapes the webpage of a given Team and extracts the needed data fields.
        Accepts `league`: String, team_id`: String, `espn_team_url`: String `logfile`: File Object
        Returns team_data: Dictionary"""
-    print(f'~~ Scraping TeamID {team_id} data')
-    logfile.write(f'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nScraping TeamID {team_id} data\n')
+    print(f'~~ Scraping {league.upper()} TeamID {team_id} data')
+    logfile.write(f'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nScraping {league.upper()} TeamID {team_id} data\n')
 
     # Scrape HTML from HTTP request to the URL above and store in variable `page_soup`
     if league.upper() == 'CFB':
@@ -146,7 +146,8 @@ def get_team_data(league: str, team_id: str, logfile: object):
 
     # Instantiate `team_data` dictionary
     team_data = {
-        'team_id': team_id
+        'team_id': team_id,
+        'league': league
     }
 
     # Instantiate Clubhouse Container and scrape data fields
