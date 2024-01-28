@@ -19,10 +19,8 @@ def get_logo_url(league: str, team_id: str, logfile: object):
        Returns `logo_url`: String"""
     if league.upper() == 'CFB':
         logo_url = f'https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/{team_id}.png'
-    elif league.upper() == 'NFL':
-        logo_url = f'https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/{team_id}.png'
     else:
-        logfile.write(f'Could not create logo URL for Team ID {team_id}\n')
+        logo_url = f'https://a.espncdn.com/combiner/i?img=/i/teamlogos/{league.lower()}/500/{team_id}.png'
     logfile.write(f'logo_url: {logo_url}\n')
     return logo_url
 
@@ -137,13 +135,8 @@ def get_team_data(league: str, team_id: str, logfile: object):
     # Scrape HTML from HTTP request to the URL above and store in variable `page_soup`
     if league.upper() == 'CFB':
         espn_team_url = f'https://www.espn.com/college-football/team/_/id/{team_id}'
-    elif league.upper() == 'NFL':
-        espn_team_url = f'https://www.espn.com/nfl/team/_/name/{team_id}'
-    elif league.upper() == 'MLB':
-        espn_team_url = f'https://www.espn.com/mlb/team/_/name/{team_id}'
     else:
-        print(f'Incorrect league `{league.upper()}` inputted!!!')
-        logfile.write(f'Incorrect league `{league.upper()}` inputted!!!\n')
+        espn_team_url = f'https://www.espn.com/{league.lower()}/team/_/name/{team_id}'
 
     custom_header = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'

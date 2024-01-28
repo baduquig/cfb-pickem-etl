@@ -4,7 +4,6 @@ Author: Gabe Baduqui
 
 Scrape pickem data from various web sources.
 """
-import math
 import pandas as pd
 import time
 import etl.utils.get_timestamp as ts
@@ -48,8 +47,6 @@ def extract_teams(league: str, team_ids: list, extract_logfile: object):
        Accepts `league`: String, team_ids`: List, `extract_logfile`: File Object
        Returns `teams_df`: Pandas DataFrame"""
     teams_df = pd.DataFrame([], columns=['name', 'mascot', 'logo_url', 'conference_name', 'conference_record', 'overall_record'])
-    if league.upper() == 'MLB':
-        teams_df.drop(['conference_record'], axis=1)
 
     for team_id in team_ids:
         team_data = team.get_team_data(league, team_id, extract_logfile)
@@ -93,8 +90,11 @@ def full_extract(league: str, year=2024, weeks=15, schedule_window_begin=date(20
     extract_logfile.write(f'\n~~ Retrieving {league.upper()} Game IDs for {year} schedule ~~\n')
     if league in ['CFB', 'NFL']: 
         game_ids = schedule.get_football_game_ids(league, year, weeks, extract_logfile)
-    if league == 'MLB':
+    elif league in ['MLB', 'NBA']:
         game_ids = schedule.get_non_football_game_ids(league, schedule_window_begin, schedule_window_end, extract_logfile)
+    else:
+        print(f'\n~~ Invalid League: {league.upper()}')
+        extract_logfile.write(f'\n~~ Invalid League: {league.upper()}\n')
 
     print(f'\n~~ Retrieving {league.upper()} Game Data ~~')
     extract_logfile.write(f'\n~~ Retrieving {league.upper()} Game Data ~~\n')

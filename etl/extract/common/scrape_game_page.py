@@ -8,6 +8,7 @@ import requests
 import etl.extract.cfb.scrape_game_page as cfb_game
 import etl.extract.nfl.scrape_game_page as nfl_game
 import etl.extract.mlb.scrape_game_page as mlb_game
+import etl.extract.nba.scrape_game_page as nba_game
 from bs4 import BeautifulSoup
 
 def get_team_id(team_container_div: str, league: str, logfile: object):
@@ -25,6 +26,8 @@ def get_team_id(team_container_div: str, league: str, logfile: object):
             team_id = nfl_game.get_team_id(team_href_attr)
         if league.upper() == 'MLB':
             team_id = mlb_game.get_team_id(team_href_attr)
+        if league.upper() == 'NBA':
+            team_id = nba_game.get_team_id(team_href_attr)
         
         logfile.write(f'{team_id}\n')
     except Exception as e:
@@ -255,13 +258,9 @@ def get_game_data(league: str, game_id: str, logfile: object):
     logfile.write(f'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nScraping GameID {game_id} data\n')
 
     if league.upper() == 'CFB':
-        espn_game_url = f'https://www.espn.com/nfl/game/_/gameId/{game_id}'
-    elif league.upper() == 'NFL':
-        espn_game_url = f'https://www.espn.com/nfl/game/_/gameId/{game_id}'
-    elif league.upper() == 'MLB':
-        espn_game_url = f'https://www.espn.com/mlb/game/_/gameId/{game_id}'
+        espn_game_url = f'https://www.espn.com/college-football/game/_/gameId/{game_id}'
     else:
-        logfile.write(f'Invalid leage name: {league.upper()}\n')
+        espn_game_url = f'https://www.espn.com/{league.lower()}/game/_/gameId/{game_id}'
 
     # Scrape HTML from HTTP request to the URL above and store in variable `page_soup`
     custom_header = {

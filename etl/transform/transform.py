@@ -69,11 +69,11 @@ def transform_games(league:str, games_df: dict, transform_logfile: object):
     if league.upper() in ['CFB', 'NFL']:
         print(f'Dropping columns [\'away_team_box_score\', \'home_team_box_score\', \'game_timestamp\'] from games_df\n')
         transform_logfile.write(f'Dropping columns [\'away_team_box_score\', \'home_team_box_score\', \'game_timestamp\'] from games_df\n\n')
-        games_df.drop(['away_team_box_score', 'home_team_box_score', 'game_timestamp'], axis=1)
+        games_df.drop(['away_team_box_score', 'home_team_box_score', 'game_timestamp'], axis=1, inplace=True)
     else:
         print(f'Dropping column [\'game_timestamp\'] from games_df\n')
         transform_logfile.write(f'Dropping column [\'game_timestamp\'] from games_df\n\n')
-        games_df.drop(['game_timestamp'], axis=1)
+        games_df = games_df.drop(['game_timestamp'], axis=1)
     return games_df
 
 
@@ -106,24 +106,25 @@ def transform_teams(league: str, teams_df: dict, transform_logfile: object):
                 teams_df.loc[idx, 'conference_ties'] = 0
         
         # Overall Record
-        if conference_record is not None:
-            overall_wins, overall_losses, overall_ties = tf_teams.transform_record(overall_record, transform_logfile)
-            teams_df.loc[idx, 'overall_wins'] = overall_wins
-            teams_df.loc[idx, 'overall_losses'] = overall_losses
-            teams_df.loc[idx, 'overall_ties'] = overall_ties
-        else:
-            teams_df.loc[idx, 'overall_wins'] = 0
-            teams_df.loc[idx, 'overall_losses'] = 0
-            teams_df.loc[idx, 'overall_ties'] = 0
+        if 'overall_record' in teams_df.columns:
+            if overall_record is not None:
+                overall_wins, overall_losses, overall_ties = tf_teams.transform_record(overall_record, transform_logfile)
+                teams_df.loc[idx, 'overall_wins'] = overall_wins
+                teams_df.loc[idx, 'overall_losses'] = overall_losses
+                teams_df.loc[idx, 'overall_ties'] = overall_ties
+            else:
+                teams_df.loc[idx, 'overall_wins'] = 0
+                teams_df.loc[idx, 'overall_losses'] = 0
+                teams_df.loc[idx, 'overall_ties'] = 0
     
     if league.upper() in ['CFB', 'NFL']:
         print(f'Dropping columns [\'conference_record\', \'overall_record\'] from teams_df\n')
         transform_logfile.write(f'Dropping columns [\'conference_record\', \'overall_record\'] from teams_df\n\n')
-        teams_df.drop(['conference_record', 'overall_record'], axis=1)
+        teams_df.drop(['conference_record', 'overall_record'], axis=1, inplace=True)
     else:
-        print(f'Dropping column [\'overall_record\'] from teams_df\n')
-        transform_logfile.write(f'Dropping columns [\'overall_record\'] from teams_df\n\n')
-        teams_df.drop(['overall_record'], axis=1)
+        print(f'Dropping columns [\'conference_record\', \'overall_record\', \'conference_wins\', \'conference_losses\', \'conference_ties\'] from teams_df\n')
+        transform_logfile.write(f'Dropping columns [\'conference_record\', \'overall_record\', \'conference_wins\', \'conference_losses\', \'conference_ties\'] from teams_df\n\n')
+        teams_df = teams_df.drop(['conference_record', 'overall_record', 'conference_wins', 'conference_losses', 'conference_ties'], axis=1)
     return teams_df
 
 
