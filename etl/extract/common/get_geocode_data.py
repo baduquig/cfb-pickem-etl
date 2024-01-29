@@ -47,23 +47,36 @@ def get_longitude(geocode_record: dict):
         long = None
     return long
 
-def call_geocode_api(stadium: str, city: str, state: str):
+def call_geocode_api(stadium: str, city: str, state: str, logfile: object):
     """Fucntion that makes a GET request to 'https://geocode.maps.co/search?q=' for a given location
-       Accepts `stadium`: String, `cit`: String, `state`: String
+       Accepts `stadium`: String, `cit`: String, `state`: String, `logfile`: File Object
        Returns `geocode_record`: Dictionary"""
+    if city is not None:
+        city = city.strip().replace(' ', '+')
+    if state is not None:
+        state = state.strip()
+    if stadium is not None:
+        general_query = stadium.replace(' ', '+')
+
+    logfile.write('Geocode URL: ')
     if stadium is None:
         geocode_api_url = f'https://geocode.maps.co/search?city={city}&state={state}'
     else:
-        general_query = stadium.replace(' ', '+')
         if state is None:
             geocode_api_url = f'https://geocode.maps.co/search?q={general_query}'
         else:
             geocode_api_url = f'https://geocode.maps.co/search?q={general_query}&city={city}&state={state}'
+    logfile.write(f'{geocode_api_url}\n')
+
+    logfile.write('Geocode API Response: ')
     try:
         response = requests.get(geocode_api_url)
         geocode_record = response.json()[0]
-    except:
+        logfile.write(f'{geocode_record}\n')
+    except Exception as e:
         geocode_record = None
+        logfile.write(f'{e}\n')
+
     return geocode_record
 
 def get_location_data(league: str, location_id: str, stadium: str, location_name: str, logfile: object):
@@ -71,12 +84,12 @@ def get_location_data(league: str, location_id: str, stadium: str, location_name
        Accepts `location_id`: String, `stadium`: String, `location_name`: String, `logfile`: File Object
        Returns `location_data`: Dictionary"""    
     print(f'~~ Scraping geocode data for {stadium}, {location_name}')
-    logfile.write(f'~~ Scraping geocode data for {stadium}, {location_name}\n')
+    logfile.write(f'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nScraping geocode data for {stadium}, {location_name}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
 
     # Call Forward Geocode API
     city = get_city_name(location_name)
     state = get_state_name(location_name)
-    geocode_record = call_geocode_api(stadium, city, state)
+    geocode_record = call_geocode_api(stadium, city, state, logfile)
     lat = get_latitude(geocode_record)
     lon = get_longitude(geocode_record)
     
