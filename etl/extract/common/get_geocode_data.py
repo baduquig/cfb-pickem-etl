@@ -4,7 +4,8 @@ Author: Gabe Baduqui
 
 Retrieve location data from Geocode.maps forward geocode API
 """
-import requests
+import requests, time
+import geo_api_key as geo_api
 
 def get_city_name(location_name: str):
     """Function that extracts city name from a given location string
@@ -27,25 +28,29 @@ def get_state_name(location_name: dict):
         state = None
     return state
 
-def get_latitude(geocode_record: dict):
+def get_latitude(geocode_record: dict, logfile: object):
     """Function that extracts latitude property from the Geocode API response
-       Accepts `geocode_record`: Dictionary (JSON response)
+       Accepts `geocode_record`: Dictionary (JSON response), `logfile`: File Object
        Returns `latitude`: Number"""
     try:
         lat = geocode_record['lat']
-    except:
+        logfile.write(f'lat: {lat}\n')
+    except Exception as e:
         lat = None
+        logfile.write(f'{e}\n')
     return lat
 
-def get_longitude(geocode_record: dict):
+def get_longitude(geocode_record: dict, logfile: object):
     """Function that extracts longitude property from the Geocode API response
-       Accepts `geocode_record`: Dictionary (JSON response)
+       Accepts `geocode_record`: Dictionary (JSON response), `logfile`: File Object
        Returns `longitude`: Number"""
     try:
-        long = geocode_record['lat']
-    except:
-        long = None
-    return long
+        lon = geocode_record['lon']
+        logfile.write(f'lon: {lon}\n')
+    except Exception as e:
+        lon = None
+        logfile.write(f'{e}\n')
+    return lon
 
 def call_geocode_api(stadium: str, city: str, state: str, logfile: object):
     """Fucntion that makes a GET request to 'https://geocode.maps.co/search?q=' for a given location
@@ -60,20 +65,23 @@ def call_geocode_api(stadium: str, city: str, state: str, logfile: object):
 
     logfile.write('Geocode URL: ')
     if stadium is None:
-        geocode_api_url = f'https://geocode.maps.co/search?city={city}&state={state}'
+        geocode_api_url = f'https://geocode.maps.co/search?city={city}&state={state}&api_key={geo_api.key}'
+    elif state is None:
+        geocode_api_url = f'https://geocode.maps.co/search?q={general_query}&api_key={geo_api.key}'
     else:
-        if state is None:
-            geocode_api_url = f'https://geocode.maps.co/search?q={general_query}'
-        else:
-            geocode_api_url = f'https://geocode.maps.co/search?q={general_query}&city={city}&state={state}'
+        geocode_api_url = f'https://geocode.maps.co/search?q={general_query}&city={city}&state={state}&api_key={geo_api.key}'
     logfile.write(f'{geocode_api_url}\n')
 
     logfile.write('Geocode API Response: ')
     try:
         response = requests.get(geocode_api_url)
+        if response.status_code == '429':
+            time.sleep(5)
+            response = requests.get(geocode_api_url)
         geocode_record = response.json()[0]
         logfile.write(f'{geocode_record}\n')
     except Exception as e:
+        logfile.write(f'response: {requests.get(geocode_api_url).status_code}')
         geocode_record = None
         logfile.write(f'{e}\n')
 
@@ -84,14 +92,14 @@ def get_location_data(league: str, location_id: str, stadium: str, location_name
        Accepts `location_id`: String, `stadium`: String, `location_name`: String, `logfile`: File Object
        Returns `location_data`: Dictionary"""    
     print(f'~~ Scraping geocode data for {stadium}, {location_name}')
-    logfile.write(f'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nScraping geocode data for {stadium}, {location_name}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
+    logfile.write(f'\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nScraping geocode data for {stadium}, {location_name}\n')
 
     # Call Forward Geocode API
     city = get_city_name(location_name)
     state = get_state_name(location_name)
     geocode_record = call_geocode_api(stadium, city, state, logfile)
-    lat = get_latitude(geocode_record)
-    lon = get_longitude(geocode_record)
+    lat = get_latitude(geocode_record, logfile)
+    lon = get_longitude(geocode_record, logfile)
     
     # Instantiate `location_data` dictionary
     location_data = {
@@ -103,5 +111,6 @@ def get_location_data(league: str, location_id: str, stadium: str, location_name
         'latitude': lat,
         'longitude': lon
     }
+    logfile.write('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
 
     return location_data

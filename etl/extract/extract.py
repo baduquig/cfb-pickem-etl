@@ -69,7 +69,7 @@ def extract_locations(league: str, stadiums: list, location_names: list, extract
             new_location_row = pd.DataFrame([location_data])
             locations_df = pd.concat([locations_df, new_location_row], ignore_index=True)
             location_id += 1
-        time.sleep(.2)
+        time.sleep(1)
     return locations_df
 
 
