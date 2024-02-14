@@ -5,7 +5,7 @@ Author: Gabe Baduqui
 Retrieve location data from Geocode.maps forward geocode API
 """
 import requests, time
-import geo_api_key as geo_api
+import etl.utils.credentials as cred
 
 def get_city_name(location_name: str):
     """Function that extracts city name from a given location string
@@ -65,11 +65,11 @@ def call_geocode_api(stadium: str, city: str, state: str, logfile: object):
 
     logfile.write('Geocode URL: ')
     if stadium is None:
-        geocode_api_url = f'https://geocode.maps.co/search?city={city}&state={state}&api_key={geo_api.key}'
+        geocode_api_url = f'https://geocode.maps.co/search?city={city}&state={state}&api_key={cred.geo_api_key}'
     elif state is None:
-        geocode_api_url = f'https://geocode.maps.co/search?q={general_query}&api_key={geo_api.key}'
+        geocode_api_url = f'https://geocode.maps.co/search?q={general_query}&api_key={cred.geo_api_key}'
     else:
-        geocode_api_url = f'https://geocode.maps.co/search?q={general_query}&city={city}&state={state}&api_key={geo_api.key}'
+        geocode_api_url = f'https://geocode.maps.co/search?q={general_query}&city={city}&state={state}&api_key={cred.geo_api_key}'
     logfile.write(f'{geocode_api_url}\n')
 
     logfile.write('Geocode API Response: ')
@@ -87,7 +87,7 @@ def call_geocode_api(stadium: str, city: str, state: str, logfile: object):
 
     return geocode_record
 
-def get_location_data(league: str, location_id: str, stadium: str, location_name: str, logfile: object):
+def get_location_data(league: str, location_id: str, stadium: str, stadium_capacity: str, location_name: str, logfile: object):
     """Function that calls the Geocode.maps forward geocode API.
        Accepts `location_id`: String, `stadium`: String, `location_name`: String, `logfile`: File Object
        Returns `location_data`: Dictionary"""    
@@ -106,6 +106,7 @@ def get_location_data(league: str, location_id: str, stadium: str, location_name
         'league': league,
         'location_id': location_id,
         'stadium': stadium,
+        'stadium_capacity': stadium_capacity,
         'city': city,
         'state': state,
         'latitude': lat,

@@ -9,12 +9,12 @@ import etl.transform.transform as trf
 import etl.load.load as load
 from datetime import date
 
-def full_etl(app, prod: bool, league: str):
+def full_etl(prod: bool, league: str):
     league = league.upper()
     
     # Extract
     if league == 'CFB':
-        games_raw, teams_raw, locations_raw = ext.full_extract(league, year=2024, weeks=15)
+        games_raw, teams_raw, locations_raw = ext.full_extract(league, year=2024, weeks=1)
     elif league == 'NFL':
         games_raw, teams_raw, locations_raw = ext.full_extract(league, year=2024, weeks=18)
     elif league == 'MLB':
@@ -29,4 +29,4 @@ def full_etl(app, prod: bool, league: str):
     games, teams, locations = trf.full_transform(league, games_raw, teams_raw, locations_raw)
 
     # Load
-    load.full_load(app, prod, league, games, teams, locations)
+    load.full_load(prod, league, games, teams, locations)

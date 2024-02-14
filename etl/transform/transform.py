@@ -18,16 +18,16 @@ def instantiate_logfile(league: str):
     transform_logfile = open(transfrom_logfile_path, 'a')
     return transform_logfile
 
-def transform_games(league:str, games_df: dict, transform_logfile: object):
+def transform_games(league:str, games_df: dict, locations_df: dict, transform_logfile: object):
     """Function that applies all necessary transformations to Games related data elements
-       Accepts `games_df`: Pandas DataFrame, `transform_logfile`: File Object
+       Accepts `league`: String, `games_df`: Pandas DataFrame, `locations_df`: Pandas DataFrame, `transform_logfile`: File Object
        Returns `games_df`: Pandas DataFrame"""
     for idx in range(len(games_df)):
         print(f'~~ Cleansing and formatting Data for {league.upper()} Game ID {games_df.loc[idx, "game_id"]}')
         transform_logfile.write(f'\n~~ Cleansing and formatting Data for {league.upper()} Game ID {games_df.loc[idx, "game_id"]}\n')
 
         # Current row colum variables
-        location = games_df.loc[idx, 'location']
+        stadium = games_df.loc[idx, 'stadium']
         game_timestamp = games_df.loc[idx, 'game_timestamp']
         stadium_capacity = games_df.loc[idx, 'stadium_capacity']
         attendance = games_df.loc[idx, 'attendance']
@@ -55,7 +55,7 @@ def transform_games(league:str, games_df: dict, transform_logfile: object):
             games_df.loc[idx, 'home_total'] = home_total
 
         # Location
-        games_df.loc[idx, 'location'] = tf_games.transform_location(location, transform_logfile)
+        games_df.loc[idx, 'location'] = tf_games.transform_location(stadium, locations_df, transform_logfile)
 
         # Game Timestamp
         games_df.loc[idx, 'game_time'] = tf_games.transform_game_time(game_timestamp, transform_logfile)
@@ -67,15 +67,10 @@ def transform_games(league:str, games_df: dict, transform_logfile: object):
         if attendance is not None:
             games_df.loc[idx, 'attendance'] = tf_games.transform_stadium_attendance(attendance, transform_logfile)
     
-    try:
-        if league.upper() in ['CFB', 'NFL']:
-            print(f'Dropping columns [\'away_team_box_score\', \'home_team_box_score\', \'game_timestamp\'] from games_df\n')
-            transform_logfile.write(f'Dropping columns [\'away_team_box_score\', \'home_team_box_score\', \'game_timestamp\'] from games_df\n\n')
-            games_df.drop(['away_team_box_score', 'home_team_box_score', 'game_timestamp'], axis=1, inplace=True)
-        else:
-            print(f'Dropping column [\'game_timestamp\'] from games_df\n')
-            transform_logfile.write(f'Dropping column [\'game_timestamp\'] from games_df\n\n')
-            games_df = games_df.drop(['game_timestamp'], axis=1)
+    print(f'Dropping columns [\'stadium_capacity\', \'away_team_box_score\', \'home_team_box_score\', \'game_timestamp\'] from games_df\n')
+    transform_logfile.write(f'Dropping columns [\'stadium_capacity\', \'away_team_box_score\', \'home_team_box_score\', \'game_timestamp\'] from games_df\n\n')
+    try:        
+        games_df.drop(['stadium_capacity', 'away_team_box_score', 'home_team_box_score', 'game_timestamp'], axis=1, inplace=True)
     except Exception as e:
         print(f'Columns NOT dropped from games_df\n{e}\n')
         transform_logfile.write(f'Columns NOT dropped from games_df\n{e}\n\n')
@@ -129,30 +124,6 @@ def transform_teams(league: str, teams_df: dict, transform_logfile: object):
         transform_logfile.write(f'Columns [\'conference_record\', \'overall_record\'] NOT dropped from teams_df\n{e}\n\n')
 
     return teams_df
-
-def transform_locations(locations_dfs: dict):
-    """Function that consolidates all distinct locations
-       Accepts
-       Returns"""
-    all_locations = pd.DataFrame([], columns=['location_id', 'stadium', 'city', 'state', 'latitude', 'longitude'])
-    unique_locations = []
-    location_id = 1
-
-    for df in locations_dfs:
-        for location in df:
-            stadium = location['stadium']
-            city = location['city']
-            state = location['state']
-            city_state = f'{city}, {state}'
-            full_location = f'{stadium}, {city_state}'
-
-            if ((stadium is not None) and (city_state is not None) and (full_location not in unique_locations)):
-                unique_locations.append(full_location)
-                location_row = pd.DataFrame([{'location_id': location_id, 'stadium': stadium, 'city': city, 'state': state, 
-                                                'latitude': location['latitude'], 'longitude': location['longitude']}])
-                all_locations = pd.concat([all_locations, location_row], ignore_index=True)
-    
-    return all_locations
     
 
 def full_transform(league: str, games_raw: dict, teams_raw: dict, locations_raw: dict):
@@ -165,7 +136,7 @@ def full_transform(league: str, games_raw: dict, teams_raw: dict, locations_raw:
 
     print('~~ Transforming games data...')
     transform_logfile.write('\n~~ Transforming games data...')
-    games_df = transform_games(league, games_raw, transform_logfile)
+    games_df = transform_games(league, games_raw, locations_raw, transform_logfile)
 
     print('~~ Transforming teams data...')
     transform_logfile.write('\n~~ Transforming teams data...')
@@ -177,21 +148,3 @@ def full_transform(league: str, games_raw: dict, teams_raw: dict, locations_raw:
 
     return games_df, teams_df, locations_raw
 
-
-def consolidate_data(df_type: str, cfb_df: dict=None, nfl_df: dict=None, mlb_df: dict=None, nba_df: dict=None):
-    """Function that concatenates the dataframes from individual extract and transform jobs
-       Accepts `df_type`: String, `cfb_df`: Pandas DataFrame, `nfl_df`: Pandas DataFrame, `mlb_df`: Pandas DataFrame, `nba_df`: Pandas DataFrame
-       Returns `all_data`: Pandas DataFrame"""
-    consolidate_logfile = instantiate_logfile(f'all_{df_type}')
-    print(f'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nConsolidating {df_type.capitalize()} DataFrames\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
-    consolidate_logfile.write(f'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nConsolidating {df_type.capitalize()} DataFrames\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n')
-
-    dfs_with_data = []
-    for x in [cfb_df, nfl_df, mlb_df, nba_df]:
-        if len(x) > 1:
-            dfs_with_data.append(x)
-    all_data = pd.concat(dfs_with_data, ignore_index=True)
-
-    print(f'All {df_type.capitalize()}:\n{all_data}\n')
-    consolidate_logfile.write(f'All {df_type.capitalize()}:\n{all_data}\n\n')
-    return all_data

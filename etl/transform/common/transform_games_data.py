@@ -4,6 +4,7 @@ Author: Gabe Baduqui
 
 Cleanse, format and prepare Games data
 """
+import pandas as pd
 
 def transform_box_score(box_score_raw: dict, transform_logfile: object):
     """Function that transforms box score data element into individuals fields
@@ -27,13 +28,18 @@ def transform_box_score(box_score_raw: dict, transform_logfile: object):
     transform_logfile.write(f'{quarter1}, {quarter2}, {quarter3}, {quarter4}, {overtime}, {total}\n')
     return quarter1, quarter2, quarter3, quarter4, overtime, total
 
-def transform_location(location_raw: str, transform_logfile: object):
+def transform_location(location_raw: str, locations_df: dict, transform_logfile: object):
     """Function that trims trailing space characters from game location
-       Accepts `locations_raw`: String, `transform_logfile`: File Object
-       Returns `location_transformed`: String"""
+       Accepts `locations_raw`: String, `locations_df`: Pandas DataFrame, `transform_logfile`: File Object
+       Returns `location_transformed`: Number"""
     transform_logfile.write(f'Transforming location {location_raw} -> ')
-    location_transformed = location_raw.rstrip()
-    transform_logfile.write(f'{location_transformed}\n')
+    try:
+      location_transformed = locations_df.loc[locations_df['stadium'] == location_raw, 'location_id'].item()
+      transform_logfile.write(f'{location_transformed}\n')
+    except Exception as e:
+      location_transformed = None
+      transform_logfile.write(f'{e}\n')
+    
     return location_transformed
 
 def transform_game_time(game_timestamp: str, transform_logfile: object):

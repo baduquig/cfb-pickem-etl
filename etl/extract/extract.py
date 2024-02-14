@@ -50,22 +50,23 @@ def extract_teams(league: str, team_ids: list, extract_logfile: object):
         time.sleep(.2)
     return teams_df
 
-def extract_locations(league: str, stadiums: list, location_names: list, extract_logfile: object):
+def extract_locations(league: str, stadiums: list, location_names: list, stadium_capacities: list, extract_logfile: object):
     """Function that instantiates a Pandas DataFrame storing Geocode Data retrieved from Geocode.maps REST API
-       Accepts `stadiums`: List, `location_names`: List, `extract_logfile`: File Object
+       Accepts `stadiums`: List, `location_names`: List, `stadium_capacities`: List, `extract_logfile`: File Object
        Returns `games_raw`: Pandas DataFrame, `teams_raw`: Pandas DataFrame, `locations_raw`: Pandas DataFrame"""
-    locations_df = pd.DataFrame([], columns=['league', 'location_id', 'stadium', 'city', 'state', 'latitude', 'longitude'])
+    locations_df = pd.DataFrame([], columns=['league', 'location_id', 'stadium', 'stadium_capacity', 'city', 'state', 'latitude', 'longitude'])
     unique_locations = []
     location_id = 1
 
     for i in range(len(stadiums)):
         stadium = stadiums[i]
         location_name = location_names[i]
+        stadium_capacity = stadium_capacities[i]
         concatenated_location = f'{stadium}, {location_name}'
         
         if ((stadium is not None) and (location_name is not None)) and (concatenated_location not in unique_locations):
             unique_locations.append(concatenated_location)
-            location_data = geo.get_location_data(league, location_id, stadium, location_name, extract_logfile)
+            location_data = geo.get_location_data(league, location_id, stadium, stadium_capacity, location_name, extract_logfile)
             new_location_row = pd.DataFrame([location_data])
             locations_df = pd.concat([locations_df, new_location_row], ignore_index=True)
             location_id += 1
@@ -101,7 +102,7 @@ def full_extract(league: str, year=2024, weeks=15, schedule_window_begin=date(20
 
     print(f'\n\n~~ Retrieving {league.upper()} Locations Data ~~')
     extract_logfile.write(f'\n\n~~ Retrieving {league.upper()} Locations Data ~~\n')
-    locations_raw = extract_locations(league, games_raw['stadium'], games_raw['location'], extract_logfile)
+    locations_raw = extract_locations(league, games_raw['stadium'], games_raw['location'], games_raw['stadium_capacity'], extract_logfile)
 
     print('\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n')
     extract_logfile.write('\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished Full Extract Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n')

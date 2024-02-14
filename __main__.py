@@ -26,14 +26,16 @@ nba_teams = None
 nba_locations = None
 
 def main():
-    x.full_etl(app, prod, 'CFB')
-    x.full_etl(app, prod, 'NFL')
-    x.full_etl(app, prod, 'MLB')
-    x.full_etl(app, prod, 'NBA')
+    x.full_etl(prod, 'CFB')
+    #x.full_etl(prod, 'NFL')
+    #x.full_etl(prod, 'MLB')
+    #x.full_etl(prod, 'NBA')
 
 if __name__ == '__main__':
-    schedule.every().day.at("02:00").do(main)
-
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
+    if prod:
+        schedule.every().day.at("02:00").do(main)
+        while True:
+            schedule.run_pending()
+            time.sleep(1)
+    else:
+        main()
