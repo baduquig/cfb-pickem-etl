@@ -124,7 +124,7 @@ def get_stadium(information: str, logfile: object):
        Returns `stadium_name: String`"""
     # Example `information` string: '<section class="Card GameInfo">...</section>
     try:
-        stadium_name = information.find('div', class_='GameInfo__Location__Name').text
+        stadium_name = information.find('div', class_='GameInfo__Location').text
         logfile.write(f'stadium_name: {stadium_name}\n')
     except Exception as e:
         stadium_name = None

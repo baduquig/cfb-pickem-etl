@@ -1,1 +1,1 @@
-game_id,away_team_id,home_team_id,away_team_box_score,home_team_box_score,stadium,location,tv_coverage,betting_line,betting_over_under,stadium_capacity,attendance,away_win_pct,home_win_pct
+game_id,league,away_team_id,home_team_id,away_team_box_score,home_team_box_score,stadium,location,tv_coverage,betting_line,betting_over_under,stadium_capacity,attendance,away_win_pct,home_win_pct

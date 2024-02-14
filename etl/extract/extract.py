@@ -94,7 +94,6 @@ def full_extract(league: str, year=2024, weeks=15, schedule_window_begin=date(20
     print(f'\n~~ Retrieving {league.upper()} Game Data ~~')
     extract_logfile.write(f'\n~~ Retrieving {league.upper()} Game Data ~~\n')
     games_raw = extract_games(league, game_ids, extract_logfile)
-    print(games_raw)
 
     print(f'\n\n~~ Retrieving {league.upper()} Teams Data ~~')
     extract_logfile.write(f'\n\n~~ Retrieving {league.upper()} Teams Data ~~\n')
