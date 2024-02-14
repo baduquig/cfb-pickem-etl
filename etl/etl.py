@@ -30,3 +30,5 @@ def full_etl(prod: bool, league: str):
 
     # Load
     load.full_load(prod, league, games, teams, locations)
+
+    return games, teams, locations
