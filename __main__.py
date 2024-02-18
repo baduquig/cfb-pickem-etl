@@ -4,7 +4,7 @@ Author: Gabe Baduqui
 
 Scrape, transform and load fall sports schedule data from various web pages
 """
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify
 import pandas as pd
 import schedule, time
 import etl.etl as x
@@ -50,10 +50,11 @@ def main():
 
 if __name__ == '__main__':
     if prod:
-        app.run()
         schedule.every().day.at("02:00").do(main)
         while True:
             schedule.run_pending()
             time.sleep(1)
     else:
         main()
+    
+    app.run()
