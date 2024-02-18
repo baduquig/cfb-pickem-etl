@@ -75,7 +75,7 @@ def call_geocode_api(stadium: str, city: str, state: str, logfile: object):
     logfile.write('Geocode API Response: ')
     try:
         response = requests.get(geocode_api_url)
-        while response.status_code == '429':
+        while response.status_code == 429:
             time.sleep(2)
             response = requests.get(geocode_api_url)
         geocode_record = response.json()[0]

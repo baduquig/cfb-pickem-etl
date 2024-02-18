@@ -8,6 +8,7 @@ import pandas as pd
 import etl.utils.get_timestamp as ts
 import etl.transform.common.transform_games_data as tf_games
 import etl.transform.common.transform_teams_data as tf_teams
+import etl.transform.common.transform_locations_data as tf_locations
 
 def instantiate_logfile(league: str):
     """Function that instantiates logfile for current transform job
@@ -128,7 +129,24 @@ def transform_teams(league: str, teams_df: dict, transform_logfile: object):
         transform_logfile.write(f'Columns [\'conference_record\', \'overall_record\'] NOT dropped from teams_df\n{e}\n\n')
 
     return teams_df
+
+
+def transform_locations(league: str, locations_df: dict, transform_logfile: object):
+    """Function that applies all necessary transformations to Locations related data elements
+       Accepts `locations_df`: Pandas DataFrame
+       Returns `locations_df`: Pandas DataFrame"""
+    for idx in range(len(locations_df)):
+        print(f'~~ Cleansing and formatting Data for {league.upper()} Location ID {locations_df.loc[idx, "location_id"]}')
+        transform_logfile.write(f'\n~~ Cleansing and formatting Data for {league.upper()} Location ID {locations_df.loc[idx, "location_id"]}\n')
+
+        # Current row column variables
+        stadium_capacity = locations_df.loc[idx, 'stadium_capacity']
+
+        locations_df.loc[idx, 'stadium'] = locations_df.loc[idx, 'stadium'].rstrip()
+        locations_df.loc[idx, 'stadium_capacity'] = tf_locations.transform_stadium_capacity(stadium_capacity, transform_logfile)
     
+    return locations_df
+
 
 def full_transform(league: str, games_raw: dict, teams_raw: dict, locations_raw: dict):
     """Function that calls all necessary functions to apply necessary data transformations to pickem data frames
