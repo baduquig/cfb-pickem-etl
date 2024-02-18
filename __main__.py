@@ -5,53 +5,52 @@ Author: Gabe Baduqui
 Scrape, transform and load fall sports schedule data from various web pages
 """
 from flask import Flask, jsonify, request
-import etl.etl as x
+import pandas as pd
 import schedule, time
+import etl.etl as x
 
 app = Flask(__name__)
 
 prod = False
 
-cfb_games_endpoint = None
-cfb_teams_endpoint = None
-cfb_locations_endpoint = None
-nfl_games_endpoint = None
-nfl_teams_endpoint = None
-nfl_locations_endpoint = None
-mlb_games_endpoint = None
-mlb_teams_endpoint = None
-mlb_locations_endpoint = None
-nba_games_endpoint = None
-nba_teams_endpoint = None
-nba_locations_endpoint = None
 
-@app.route('/cfb_games')
-def return_cfb_games():
-    response = jsonify(cfb_games_endpoint.to_dict(orient='records'))
+@app.route('/geo-schedule')
+def get_schedule():
+    response = jsonify(all_schedule.to_dict(orient='records'))
     response.headers.add('Access-Control-Allow-Origin', '*')
     return response
 
 def main():
-    global cfb_games_endpoint
-    global cfb_teams_endpoint
-    global cfb_locations_endpoint
-    global nfl_games_endpoint
-    global nfl_teams_endpoint
-    global nfl_locations_endpoint
-    global mlb_games_endpoint
-    global mlb_teams_endpoint
-    global mlb_locations_endpoint
-    global nba_games_endpoint
-    global nba_teams_endpoint
-    global nba_locations_endpoint
-    
-    cfb_games_endpoint, cfb_teams_endpoint, cfb_locations_endpoint = x.full_etl(prod, 'CFB')
-    nfl_games_endpoint, nfl_teams_endpoint, nfl_locations_endpoint = x.full_etl(prod, 'NFL')
-    mlb_games_endpoint, mlb_teams_endpoint, mlb_locations_endpoint = x.full_etl(prod, 'MLB')
-    nba_games_endpoint, nba_teams_endpoint, nba_locations_endpoint = x.full_etl(prod, 'NBA')
+    global all_games
+    global all_teams
+    global all_locations
+    global all_schedule
+
+    cfb_games, cfb_teams, cfb_locations = x.full_etl(prod, 'CFB')
+    nfl_games, nfl_teams, nfl_locations = x.full_etl(prod, 'NFL')
+    mlb_games, mlb_teams, mlb_locations = x.full_etl(prod, 'MLB')
+    nba_games, nba_teams, nba_locations = x.full_etl(prod, 'NBA')
+
+    all_games = pd.concat([cfb_games, nfl_games, mlb_games, nba_games], axis=0, ignore_index=True)
+    all_teams = pd.concat([cfb_teams, nfl_teams, mlb_teams, nba_teams], axis=0, ignore_index=True)
+    all_locations = pd.concat([cfb_locations, nfl_locations, mlb_locations, nba_locations], axis=0, ignore_index=True)
+
+    all_schedule = pd.merge(all_games, all_teams, left_on=['league', 'away_team'], right_on=['league', 'team_id'], how='left')
+    all_schedule = all_schedule.rename(columns={'name': 'away_team_name', 'mascot': 'away_team_mascot', 'logo_url': 'away_team_logo', 'conference_name': 'away_team_conference', 
+                                                'conference_wins': 'away_team_conference_wins', 'conference_losses': 'away_team_conference_losses', 'conference_ties': 'away_team_conference_ties', 
+                                                'overall_wins': 'away_team_overall_wins', 'overall_losses': 'away_team_overall_losses', 'overall_ties': 'away_team_overall_ties'})
+    all_schedule = pd.merge(all_schedule, all_teams, left_on=['league', 'home_team'], right_on=['league', 'team_id'], how='left')
+    all_schedule = all_schedule.rename(columns={'name': 'home_team_name', 'mascot': 'home_team_mascot', 'logo_url': 'home_team_logo', 'conference_name': 'home_team_conference', 
+                                                'conference_wins': 'home_team_conference_wins', 'conference_losses': 'home_team_conference_losses', 'conference_ties': 'home_team_conference_ties', 
+                                                'overall_wins': 'home_team_overall_wins', 'overall_losses': 'home_team_overall_losses', 'overall_ties': 'home_team_overall_ties'})
+    all_schedule = pd.merge(all_schedule, all_locations, left_on=['league', 'location'], right_on=['league', 'location_id'], how='left')
+
+    print(all_schedule)
+
 
 if __name__ == '__main__':
     if prod:
+        app.run()
         schedule.every().day.at("02:00").do(main)
         while True:
             schedule.run_pending()

@@ -280,8 +280,8 @@ def get_game_data(league: str, game_id: str, logfile: object):
         gamestrip_div = game_soup.find('div', class_='Gamestrip')
         away_team_id = get_away_team_id(gamestrip_div, league, logfile)
         home_team_id = get_home_team_id(gamestrip_div, league, logfile)
-        game_data['away_team_id'] = away_team_id
-        game_data['home_team_id'] = home_team_id
+        game_data['away_team'] = away_team_id
+        game_data['home_team'] = home_team_id
 
         if away_team_id is None:
             print(f'~~~~ Could not extract Away Team ID for GameID: {game_id}')

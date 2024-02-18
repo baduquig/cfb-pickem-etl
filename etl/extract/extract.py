@@ -26,7 +26,7 @@ def extract_games(league: str, game_ids: list, extract_logfile: object):
     """Function that instantiates a Pandas DataFrame storing Game Data scraped from ESPN Game web pages
        Accepts `league`: String, game_ids`: List, `extract_logfile`: File Object
        Returns `games_df`: Pandas DataFrame"""
-    games_df = pd.DataFrame([], columns=['game_id', 'league', 'away_team_id', 'home_team_id', 'away_team_box_score', 
+    games_df = pd.DataFrame([], columns=['game_id', 'league', 'away_team', 'home_team', 'away_team_box_score', 
                                             'home_team_box_score', 'stadium', 'location', 'game_timestamp', 'tv_coverage', 'betting_line', 
                                             'betting_over_under', 'stadium_capacity', 'attendance', 'away_win_pct', 'home_win_pct'])
 
@@ -98,7 +98,7 @@ def full_extract(league: str, year=2024, weeks=15, schedule_window_begin=date(20
 
     print(f'\n\n~~ Retrieving {league.upper()} Teams Data ~~')
     extract_logfile.write(f'\n\n~~ Retrieving {league.upper()} Teams Data ~~\n')
-    teams_raw = extract_teams(league, games_raw['away_team_id'].unique(), extract_logfile)
+    teams_raw = extract_teams(league, games_raw['away_team'].unique(), extract_logfile)
 
     print(f'\n\n~~ Retrieving {league.upper()} Locations Data ~~')
     extract_logfile.write(f'\n\n~~ Retrieving {league.upper()} Locations Data ~~\n')

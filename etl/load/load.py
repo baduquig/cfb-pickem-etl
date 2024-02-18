@@ -4,13 +4,13 @@ Author: Gabe Baduqui
 
 Load pickem data from various web sources into desired destinations.
 """
-import mysql
+import mysql.connector
 import etl.load.db as db
 import etl.utils.get_timestamp as ts
 
 def instantiate_logfile(league):
     timestamp = ts.get_timestamp()
-    load_logfile_path = f'./pickem_logs/load_{league.upper()}_data_{timestamp}.log'
+    load_logfile_path = f'./pickem_logs/{league.upper()}_load_{timestamp}.log'
     load_logfile = open(load_logfile_path, 'a')
     return load_logfile
 
@@ -34,19 +34,24 @@ def load_json(prod: bool, df: dict, table_name: str, load_logfile: object):
    json_path = f'./pickem_data/{table_name}.json'
    df.to_json(json_path, orient='records')
    
-def load_db(df: dict, table_name: str, load_logfile: object):
+def load_db(league: str, df: dict, table_name: str, load_logfile: object):
    """Function that loads data from a given Pandas DataFrame into the MySQL Database
-      Accepts `df`: Pandas DataFrame, `table_name`: String, `load_logfile`: File Object
+      Accepts `league`: String, `df`: Pandas DataFrame, `table_name`: String, `load_logfile`: File Object
       Returns: n/a"""
    print(f'~~~~ Loading {table_name} data into MySQL Database ~~')
-   load_logfile(f'~~~~ Loading {table_name} data into MySQL Database ~~\n')
+   load_logfile.write(f'~~~~ Loading {table_name} data into MySQL Database ~~\n')
    conn = db.instantiate_connection()
+   cursor = conn.cursor()
    
-   try:
-      df.to_sql(con=conn, name=table_name, if_exists='append', flavor='mysql')
-   except Exception as e:
-      print(f'~~~~ Error occurred loading {table_name} data into database:\n{e}')
-      load_logfile(f'~~~~ Error occurred oading {table_name} data into database:\n{e}\n')
+   for record in df.rows:
+      try:
+         if db.record_exists_in_table(cursor, table_name, record):
+            db.update_record(conn, cursor, table_name, record, load_logfile)
+         else:
+            db.insert_record(conn, cursor, table_name, record, load_logfile)
+      except Exception as e:
+         print(f'~~~~ Error occurred loading record {record} into database:\n{e}')
+         load_logfile(f'~~~~ Error occurred loading record {record} into database:\n{e}\n')
 
 
 def full_load(prod: bool, league: str, games_df: dict, teams_df: dict, locations_df: dict):
@@ -65,7 +70,8 @@ def full_load(prod: bool, league: str, games_df: dict, teams_df: dict, locations
    load_json(prod, teams_df, f'{league.lower()}_teams', load_logfile)
    load_json(prod, locations_df, f'{league.lower()}_locations', load_logfile)
 
-   #load_db(prod, df, f'{league.lower()}_locations', load_logfile)
-
+   #load_db(league, games_df, 'games', load_logfile)
+   #load_db(league, teams_df, 'teams', load_logfile)
+   #load_db(league, locations_df, 'locations', load_logfile)
    print(f'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished {league.upper()} Load Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
    load_logfile.write(f'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nFinished {league.upper()} Load Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')

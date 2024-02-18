@@ -1,521 +1,521 @@
-game_id,league,away_team_id,home_team_id,away_team_box_score,home_team_box_score,stadium,location,tv_coverage,betting_line,betting_over_under,stadium_capacity,attendance,away_win_pct,home_win_pct,away_quarter1,away_quarter2,away_quarter3,away_quarter4,away_overtime,away_total,home_quarter1,home_quarter2,home_quarter3,home_quarter4,home_overtime,home_total,game_time,game_date
-401570381,MLB,cle,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,1:05 PM,"August 22, 2024"
-401570382,MLB,col,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,1:05 PM,"August 22, 2024"
-401570385,MLB,mil,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,2:15 PM,"August 22, 2024"
-401570383,MLB,det,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,2:20 PM,"August 22, 2024"
-401570388,MLB,tb,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,3:37 PM,"August 22, 2024"
-401570380,MLB,cin,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"August 22, 2024"
-401570379,MLB,laa,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,7:07 PM,"August 22, 2024"
-401570384,MLB,hou,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,7:15 PM,"August 22, 2024"
-401570387,MLB,phi,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:15 PM,"August 22, 2024"
-401570386,MLB,nym,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,9:40 PM,"August 22, 2024"
-401570392,MLB,cin,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"August 23, 2024"
-401570393,MLB,col,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,7:05 PM,"August 23, 2024"
-401570395,MLB,hou,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,7:05 PM,"August 23, 2024"
-401570389,MLB,laa,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,7:07 PM,"August 23, 2024"
-401570390,MLB,ari,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,7:10 PM,"August 23, 2024"
-401570391,MLB,chc,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,7:10 PM,"August 23, 2024"
-401570402,MLB,tex,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,7:10 PM,"August 23, 2024"
-401570403,MLB,wsh,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"August 23, 2024"
-401570394,MLB,det,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,8:10 PM,"August 23, 2024"
-401570398,MLB,phi,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,8:10 PM,"August 23, 2024"
-401570400,MLB,stl,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,8:10 PM,"August 23, 2024"
-401570396,MLB,mil,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,9:40 PM,"August 23, 2024"
-401570397,MLB,nym,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,9:40 PM,"August 23, 2024"
-401570399,MLB,sf,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,10:10 PM,"August 23, 2024"
-401570401,MLB,tb,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,10:10 PM,"August 23, 2024"
-401570408,MLB,col,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,2:05 PM,"August 24, 2024"
-401570404,MLB,laa,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,3:07 PM,"August 24, 2024"
-401570410,MLB,hou,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,4:05 PM,"August 24, 2024"
-401570411,MLB,mil,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,4:07 PM,"August 24, 2024"
-401570405,MLB,ari,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,4:10 PM,"August 24, 2024"
-401570406,MLB,chc,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,4:10 PM,"August 24, 2024"
-401570414,MLB,sf,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,4:10 PM,"August 24, 2024"
-401570407,MLB,cin,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"August 24, 2024"
-401570409,MLB,det,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,7:10 PM,"August 24, 2024"
-401570413,MLB,phi,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,7:10 PM,"August 24, 2024"
-401570415,MLB,stl,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,7:10 PM,"August 24, 2024"
-401570417,MLB,tex,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,7:10 PM,"August 24, 2024"
-401570418,MLB,wsh,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"August 24, 2024"
-401570412,MLB,nym,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,8:40 PM,"August 24, 2024"
-401570416,MLB,tb,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,9:10 PM,"August 24, 2024"
-401570420,MLB,ari,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,1:35 PM,"August 25, 2024"
-401570422,MLB,cin,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,1:35 PM,"August 25, 2024"
-401570423,MLB,col,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,1:35 PM,"August 25, 2024"
-401570425,MLB,hou,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,1:35 PM,"August 25, 2024"
-401570433,MLB,wsh,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,1:35 PM,"August 25, 2024"
-401570419,MLB,laa,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,1:37 PM,"August 25, 2024"
-401570421,MLB,chc,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,1:40 PM,"August 25, 2024"
-401570432,MLB,tex,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,1:40 PM,"August 25, 2024"
-401570424,MLB,det,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,2:10 PM,"August 25, 2024"
-401570428,MLB,phi,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,2:10 PM,"August 25, 2024"
-401570430,MLB,stl,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,2:10 PM,"August 25, 2024"
-401570426,MLB,mil,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,4:07 PM,"August 25, 2024"
-401570427,MLB,nym,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,4:10 PM,"August 25, 2024"
-401570429,MLB,sf,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,4:10 PM,"August 25, 2024"
-401570431,MLB,tb,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,4:10 PM,"August 25, 2024"
-401570435,MLB,chc,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"August 26, 2024"
-401570437,MLB,hou,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,6:40 PM,"August 26, 2024"
-401570438,MLB,kc,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,6:40 PM,"August 26, 2024"
-401570440,MLB,nyy,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,6:45 PM,"August 26, 2024"
-401570443,MLB,tor,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,7:10 PM,"August 26, 2024"
-401570434,MLB,atl,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,7:40 PM,"August 26, 2024"
-401570441,MLB,sd,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,7:45 PM,"August 26, 2024"
-401570436,MLB,det,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,8:10 PM,"August 26, 2024"
-401570439,MLB,mia,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,8:40 PM,"August 26, 2024"
-401570442,MLB,tb,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,9:40 PM,"August 26, 2024"
-401570444,MLB,laa,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,6:40 PM,"August 27, 2024"
-401570447,MLB,chc,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"August 27, 2024"
-401570448,MLB,hou,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,6:40 PM,"August 27, 2024"
-401570449,MLB,kc,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,6:40 PM,"August 27, 2024"
-401570453,MLB,oak,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,6:40 PM,"August 27, 2024"
-401570451,MLB,nyy,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,6:45 PM,"August 27, 2024"
-401570458,MLB,tor,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,7:10 PM,"August 27, 2024"
-401570445,MLB,atl,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,7:40 PM,"August 27, 2024"
-401570454,MLB,sd,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,7:45 PM,"August 27, 2024"
-401570455,MLB,sf,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,8:10 PM,"August 27, 2024"
-401570457,MLB,tex,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,8:10 PM,"August 27, 2024"
-401570450,MLB,mia,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,8:40 PM,"August 27, 2024"
-401570452,MLB,nym,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,9:40 PM,"August 27, 2024"
-401570456,MLB,tb,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,9:40 PM,"August 27, 2024"
-401570446,MLB,bal,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,10:10 PM,"August 27, 2024"
-401570462,MLB,chc,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,12:35 PM,"August 28, 2024"
-401570464,MLB,kc,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,1:10 PM,"August 28, 2024"
-401570463,MLB,hou,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,4:05 PM,"August 28, 2024"
-401570471,MLB,tb,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,4:10 PM,"August 28, 2024"
-401570459,MLB,laa,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,6:40 PM,"August 28, 2024"
-401570468,MLB,oak,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,6:40 PM,"August 28, 2024"
-401570466,MLB,nyy,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,6:45 PM,"August 28, 2024"
-401570473,MLB,tor,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,7:10 PM,"August 28, 2024"
-401570460,MLB,atl,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,7:40 PM,"August 28, 2024"
-401570469,MLB,sd,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,7:45 PM,"August 28, 2024"
-401570470,MLB,sf,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,8:10 PM,"August 28, 2024"
-401570472,MLB,tex,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,8:10 PM,"August 28, 2024"
-401570465,MLB,mia,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,8:40 PM,"August 28, 2024"
-401570467,MLB,nym,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,9:40 PM,"August 28, 2024"
-401570461,MLB,bal,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,10:10 PM,"August 28, 2024"
-401570474,MLB,laa,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,1:10 PM,"August 29, 2024"
-401570482,MLB,sf,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,2:10 PM,"August 29, 2024"
-401570483,MLB,tex,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,2:10 PM,"August 29, 2024"
-401570481,MLB,sd,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,2:15 PM,"August 29, 2024"
-401570478,MLB,mia,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,3:10 PM,"August 29, 2024"
-401570479,MLB,nym,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,3:40 PM,"August 29, 2024"
-401570480,MLB,oak,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,5:10 PM,"August 29, 2024"
-401570475,MLB,atl,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,6:40 PM,"August 29, 2024"
-401570484,MLB,tor,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,7:10 PM,"August 29, 2024"
-401570477,MLB,kc,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,8:10 PM,"August 29, 2024"
-401570476,MLB,bal,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,10:10 PM,"August 29, 2024"
-401570485,MLB,atl,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,6:40 PM,"August 30, 2024"
-401570487,MLB,bos,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,6:40 PM,"August 30, 2024"
-401570492,MLB,mil,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,6:40 PM,"August 30, 2024"
-401570488,MLB,chc,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,6:45 PM,"August 30, 2024"
-401570496,MLB,sd,tb,,,Tropicana Field,"St. Petersburg, Florida",,,,25025,,,,,,,,,,,,,,,,6:50 PM,"August 30, 2024"
-401570498,MLB,stl,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,7:05 PM,"August 30, 2024"
-401570495,MLB,pit,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,7:10 PM,"August 30, 2024"
-401570494,MLB,oak,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,8:05 PM,"August 30, 2024"
-401570489,MLB,kc,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,8:10 PM,"August 30, 2024"
-401570493,MLB,nym,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,8:10 PM,"August 30, 2024"
-401570499,MLB,tor,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,8:10 PM,"August 30, 2024"
-401570486,MLB,bal,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,8:40 PM,"August 30, 2024"
-401570497,MLB,sea,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,9:38 PM,"August 30, 2024"
-401570490,MLB,lad,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,9:40 PM,"August 30, 2024"
-401570491,MLB,mia,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,10:15 PM,"August 30, 2024"
-401570513,MLB,stl,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,1:05 PM,"August 31, 2024"
-401570503,MLB,chc,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,4:05 PM,"August 31, 2024"
-401570511,MLB,sd,tb,,,Tropicana Field,"St. Petersburg, Florida",,,,25025,,,,,,,,,,,,,,,,4:10 PM,"August 31, 2024"
-401570502,MLB,bos,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,6:10 PM,"August 31, 2024"
-401570510,MLB,pit,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,6:10 PM,"August 31, 2024"
-401570509,MLB,oak,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,7:05 PM,"August 31, 2024"
-401570504,MLB,kc,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,7:10 PM,"August 31, 2024"
-401570508,MLB,nym,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,7:10 PM,"August 31, 2024"
-401570514,MLB,tor,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,7:10 PM,"August 31, 2024"
-401570500,MLB,atl,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,7:15 PM,"August 31, 2024"
-401570507,MLB,mil,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,7:15 PM,"August 31, 2024"
-401570501,MLB,bal,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,8:10 PM,"August 31, 2024"
-401570505,MLB,lad,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,8:10 PM,"August 31, 2024"
-401570506,MLB,mia,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,9:05 PM,"August 31, 2024"
-401570512,MLB,sea,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,9:38 PM,"August 31, 2024"
-401570525,MLB,pit,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,TBD,"September 1, 2024"
-401570522,MLB,mil,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,12:10 PM,"September 1, 2024"
-401570515,MLB,atl,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,1:35 PM,"September 1, 2024"
-401570518,MLB,chc,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,1:35 PM,"September 1, 2024"
-401570528,MLB,stl,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,1:35 PM,"September 1, 2024"
-401570517,MLB,bos,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,1:40 PM,"September 1, 2024"
-401570526,MLB,sd,tb,,,Tropicana Field,"St. Petersburg, Florida",,,,25025,,,,,,,,,,,,,,,,1:40 PM,"September 1, 2024"
-401570519,MLB,kc,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,2:10 PM,"September 1, 2024"
-401570523,MLB,nym,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,2:10 PM,"September 1, 2024"
-401570529,MLB,tor,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,2:10 PM,"September 1, 2024"
-401570524,MLB,oak,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,2:35 PM,"September 1, 2024"
-401570516,MLB,bal,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,3:10 PM,"September 1, 2024"
-401570521,MLB,mia,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,4:05 PM,"September 1, 2024"
-401570527,MLB,sea,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,4:07 PM,"September 1, 2024"
-401570520,MLB,lad,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,4:10 PM,"September 1, 2024"
-401570531,MLB,chw,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,1:05 PM,"September 2, 2024"
-401570540,MLB,stl,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,2:10 PM,"September 2, 2024"
-401570532,MLB,cle,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,4:10 PM,"September 2, 2024"
-401570534,MLB,hou,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,4:10 PM,"September 2, 2024"
-401570535,MLB,lad,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,4:10 PM,"September 2, 2024"
-401570533,MLB,det,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,6:40 PM,"September 2, 2024"
-401570536,MLB,min,tb,,,Tropicana Field,"St. Petersburg, Florida",,,,25025,,,,,,,,,,,,,,,,6:50 PM,"September 2, 2024"
-401570539,MLB,sea,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,7:07 PM,"September 2, 2024"
-401570530,MLB,bos,nym,,,Citi Field,"Queens, New York",,,,42136,,,,,,,,,,,,,,,,7:10 PM,"September 2, 2024"
-401570538,MLB,pit,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,7:40 PM,"September 2, 2024"
-401570537,MLB,nyy,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,8:05 PM,"September 2, 2024"
-401570543,MLB,chw,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,6:35 PM,"September 3, 2024"
-401570553,MLB,wsh,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,6:40 PM,"September 3, 2024"
-401570547,MLB,min,tb,,,Tropicana Field,"St. Petersburg, Florida",,,,25025,,,,,,,,,,,,,,,,6:50 PM,"September 3, 2024"
-401570549,MLB,phi,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,7:07 PM,"September 3, 2024"
-401570542,MLB,bos,nym,,,Citi Field,"Queens, New York",,,,42136,,,,,,,,,,,,,,,,7:10 PM,"September 3, 2024"
-401570545,MLB,col,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"September 3, 2024"
-401570544,MLB,cle,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,7:40 PM,"September 3, 2024"
-401570550,MLB,pit,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,7:40 PM,"September 3, 2024"
-401570552,MLB,stl,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,7:40 PM,"September 3, 2024"
-401570548,MLB,nyy,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,8:05 PM,"September 3, 2024"
-401570546,MLB,lad,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,9:38 PM,"September 3, 2024"
-401570551,MLB,sea,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,9:40 PM,"September 3, 2024"
-401570541,MLB,ari,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,9:45 PM,"September 3, 2024"
-401570564,MLB,phi,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,3:07 PM,"September 4, 2024"
-401570556,MLB,chw,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,6:35 PM,"September 4, 2024"
-401570560,MLB,hou,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,6:40 PM,"September 4, 2024"
-401570568,MLB,wsh,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,6:40 PM,"September 4, 2024"
-401570562,MLB,min,tb,,,Tropicana Field,"St. Petersburg, Florida",,,,25025,,,,,,,,,,,,,,,,6:50 PM,"September 4, 2024"
-401570555,MLB,bos,nym,,,Citi Field,"Queens, New York",,,,42136,,,,,,,,,,,,,,,,7:10 PM,"September 4, 2024"
-401570558,MLB,col,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"September 4, 2024"
-401570557,MLB,cle,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,7:40 PM,"September 4, 2024"
-401570565,MLB,pit,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,7:40 PM,"September 4, 2024"
-401570567,MLB,stl,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,7:40 PM,"September 4, 2024"
-401570563,MLB,nyy,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,8:05 PM,"September 4, 2024"
-401570561,MLB,lad,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,9:38 PM,"September 4, 2024"
-401570559,MLB,det,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,9:40 PM,"September 4, 2024"
-401570566,MLB,sea,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,9:40 PM,"September 4, 2024"
-401570554,MLB,ari,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,9:45 PM,"September 4, 2024"
-401570573,MLB,hou,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,1:10 PM,"September 5, 2024"
-401570574,MLB,min,tb,,,Tropicana Field,"St. Petersburg, Florida",,,,25025,,,,,,,,,,,,,,,,1:10 PM,"September 5, 2024"
-401570576,MLB,sea,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,3:37 PM,"September 5, 2024"
-401570570,MLB,ari,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,3:45 PM,"September 5, 2024"
-401570575,MLB,phi,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,6:40 PM,"September 5, 2024"
-401570577,MLB,wsh,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"September 5, 2024"
-401570571,MLB,col,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"September 5, 2024"
-401570569,MLB,laa,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,8:05 PM,"September 5, 2024"
-401570572,MLB,det,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,8:40 PM,"September 5, 2024"
-401570586,MLB,nyy,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,2:20 PM,"September 6, 2024"
-401570592,MLB,wsh,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"September 6, 2024"
-401570590,MLB,tb,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,7:05 PM,"September 6, 2024"
-401570580,MLB,chw,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,7:10 PM,"September 6, 2024"
-401570581,MLB,cin,nym,,,Citi Field,"Queens, New York",,,,42136,,,,,,,,,,,,,,,,7:10 PM,"September 6, 2024"
-401570587,MLB,phi,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,7:10 PM,"September 6, 2024"
-401570591,MLB,tor,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"September 6, 2024"
-401570578,MLB,laa,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,8:05 PM,"September 6, 2024"
-401570579,MLB,ari,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,8:10 PM,"September 6, 2024"
-401570583,MLB,col,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,8:10 PM,"September 6, 2024"
-401570585,MLB,min,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,8:10 PM,"September 6, 2024"
-401570588,MLB,sea,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,8:15 PM,"September 6, 2024"
-401570584,MLB,det,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,9:40 PM,"September 6, 2024"
-401570589,MLB,sf,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,9:40 PM,"September 6, 2024"
-401570582,MLB,cle,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,10:10 PM,"September 6, 2024"
-401570601,MLB,nyy,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,2:20 PM,"September 7, 2024"
-401570605,MLB,tb,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,4:05 PM,"September 7, 2024"
-401570599,MLB,det,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,4:07 PM,"September 7, 2024"
-401570594,MLB,ari,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,4:10 PM,"September 7, 2024"
-401570596,MLB,cin,nym,,,Citi Field,"Queens, New York",,,,42136,,,,,,,,,,,,,,,,4:10 PM,"September 7, 2024"
-401570602,MLB,phi,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,4:10 PM,"September 7, 2024"
-401570607,MLB,wsh,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"September 7, 2024"
-401570598,MLB,col,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,7:10 PM,"September 7, 2024"
-401570600,MLB,min,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,7:10 PM,"September 7, 2024"
-401570593,MLB,laa,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,7:15 PM,"September 7, 2024"
-401570595,MLB,chw,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,7:15 PM,"September 7, 2024"
-401570603,MLB,sea,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,7:15 PM,"September 7, 2024"
-401570606,MLB,tor,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"September 7, 2024"
-401570604,MLB,sf,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,8:40 PM,"September 7, 2024"
-401570597,MLB,cle,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,9:10 PM,"September 7, 2024"
-401570610,MLB,chw,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,1:35 PM,"September 8, 2024"
-401570620,MLB,tb,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,1:35 PM,"September 8, 2024"
-401570621,MLB,tor,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,1:35 PM,"September 8, 2024"
-401570622,MLB,wsh,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,1:35 PM,"September 8, 2024"
-401570611,MLB,cin,nym,,,Citi Field,"Queens, New York",,,,42136,,,,,,,,,,,,,,,,1:40 PM,"September 8, 2024"
-401570617,MLB,phi,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,1:40 PM,"September 8, 2024"
-401570609,MLB,ari,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,2:10 PM,"September 8, 2024"
-401570613,MLB,col,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,2:10 PM,"September 8, 2024"
-401570615,MLB,min,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,2:10 PM,"September 8, 2024"
-401570618,MLB,sea,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,2:15 PM,"September 8, 2024"
-401570616,MLB,nyy,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,2:20 PM,"September 8, 2024"
-401570608,MLB,laa,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,2:35 PM,"September 8, 2024"
-401570614,MLB,det,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,4:07 PM,"September 8, 2024"
-401570612,MLB,cle,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,4:10 PM,"September 8, 2024"
-401570619,MLB,sf,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,4:10 PM,"September 8, 2024"
-401570628,MLB,mia,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"September 9, 2024"
-401570630,MLB,tb,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,6:40 PM,"September 9, 2024"
-401570627,MLB,kc,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,7:05 PM,"September 9, 2024"
-401570629,MLB,nym,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,7:07 PM,"September 9, 2024"
-401570624,MLB,bal,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,7:10 PM,"September 9, 2024"
-401570623,MLB,laa,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,7:40 PM,"September 9, 2024"
-401570626,MLB,cle,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,7:40 PM,"September 9, 2024"
-401570625,MLB,chc,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,10:10 PM,"September 9, 2024"
-401570637,MLB,col,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,6:40 PM,"September 10, 2024"
-401570639,MLB,mia,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"September 10, 2024"
-401570644,MLB,tb,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,6:40 PM,"September 10, 2024"
-401570632,MLB,atl,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,6:45 PM,"September 10, 2024"
-401570638,MLB,kc,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,7:05 PM,"September 10, 2024"
-401570641,MLB,nym,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,7:07 PM,"September 10, 2024"
-401570633,MLB,bal,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,7:10 PM,"September 10, 2024"
-401570631,MLB,laa,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,7:40 PM,"September 10, 2024"
-401570636,MLB,cle,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,7:40 PM,"September 10, 2024"
-401570635,MLB,cin,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,7:45 PM,"September 10, 2024"
-401570642,MLB,oak,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,8:10 PM,"September 10, 2024"
-401570643,MLB,sd,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,9:40 PM,"September 10, 2024"
-401570645,MLB,tex,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,9:40 PM,"September 10, 2024"
-401570640,MLB,mil,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,9:45 PM,"September 10, 2024"
-401570634,MLB,chc,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,10:10 PM,"September 10, 2024"
-401570654,MLB,mia,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,12:35 PM,"September 11, 2024"
-401570651,MLB,cle,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,2:10 PM,"September 11, 2024"
-401570656,MLB,nym,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,3:07 PM,"September 11, 2024"
-401570660,MLB,tex,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,3:40 PM,"September 11, 2024"
-401570652,MLB,col,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,6:40 PM,"September 11, 2024"
-401570659,MLB,tb,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,6:40 PM,"September 11, 2024"
-401570647,MLB,atl,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,6:45 PM,"September 11, 2024"
-401570653,MLB,kc,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,7:05 PM,"September 11, 2024"
-401570646,MLB,laa,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,7:10 PM,"September 11, 2024"
-401570648,MLB,bal,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,7:10 PM,"September 11, 2024"
-401570650,MLB,cin,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,7:45 PM,"September 11, 2024"
-401570657,MLB,oak,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,8:10 PM,"September 11, 2024"
-401570658,MLB,sd,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,9:40 PM,"September 11, 2024"
-401570655,MLB,mil,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,9:45 PM,"September 11, 2024"
-401570649,MLB,chc,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,10:10 PM,"September 11, 2024"
-401570663,MLB,col,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,1:10 PM,"September 12, 2024"
-401570662,MLB,cin,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,1:15 PM,"September 12, 2024"
-401570666,MLB,oak,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,2:10 PM,"September 12, 2024"
-401570667,MLB,tb,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,6:40 PM,"September 12, 2024"
-401570664,MLB,mia,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,6:45 PM,"September 12, 2024"
-401570661,MLB,bos,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,7:05 PM,"September 12, 2024"
-401570668,MLB,tex,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,9:40 PM,"September 12, 2024"
-401570665,MLB,mil,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,9:45 PM,"September 12, 2024"
-401570669,MLB,bal,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,6:40 PM,"September 13, 2024"
-401570674,MLB,kc,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"September 13, 2024"
-401570678,MLB,nym,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,6:40 PM,"September 13, 2024"
-401570676,MLB,mia,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,6:45 PM,"September 13, 2024"
-401570670,MLB,bos,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,7:05 PM,"September 13, 2024"
-401570681,MLB,stl,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,7:07 PM,"September 13, 2024"
-401570682,MLB,tb,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,7:10 PM,"September 13, 2024"
-401570675,MLB,lad,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"September 13, 2024"
-401570679,MLB,oak,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,7:40 PM,"September 13, 2024"
-401570672,MLB,cin,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,8:10 PM,"September 13, 2024"
-401570671,MLB,chc,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,8:40 PM,"September 13, 2024"
-401570673,MLB,hou,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,9:38 PM,"September 13, 2024"
-401570677,MLB,mil,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,9:40 PM,"September 13, 2024"
-401570683,MLB,tex,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,10:10 PM,"September 13, 2024"
-401570680,MLB,sd,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,10:15 PM,"September 13, 2024"
-401570685,MLB,bos,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,1:05 PM,"September 14, 2024"
-401570696,MLB,stl,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,3:07 PM,"September 14, 2024"
-401570691,MLB,mia,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,4:05 PM,"September 14, 2024"
-401570693,MLB,nym,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,4:05 PM,"September 14, 2024"
-401570684,MLB,bal,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,6:10 PM,"September 14, 2024"
-401570697,MLB,tb,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,6:10 PM,"September 14, 2024"
-401570689,MLB,kc,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"September 14, 2024"
-401570687,MLB,cin,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,7:10 PM,"September 14, 2024"
-401570694,MLB,oak,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,7:10 PM,"September 14, 2024"
-401570690,MLB,lad,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"September 14, 2024"
-401570686,MLB,chc,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,8:10 PM,"September 14, 2024"
-401570692,MLB,mil,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,8:10 PM,"September 14, 2024"
-401570695,MLB,sd,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,9:05 PM,"September 14, 2024"
-401570688,MLB,hou,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,9:38 PM,"September 14, 2024"
-401570698,MLB,tex,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,9:40 PM,"September 14, 2024"
-401570700,MLB,bos,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,1:35 PM,"September 15, 2024"
-401570704,MLB,kc,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,1:35 PM,"September 15, 2024"
-401570705,MLB,lad,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,1:35 PM,"September 15, 2024"
-401570706,MLB,mia,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,1:35 PM,"September 15, 2024"
-401570708,MLB,nym,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,1:35 PM,"September 15, 2024"
-401570711,MLB,stl,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,1:37 PM,"September 15, 2024"
-401570699,MLB,bal,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,1:40 PM,"September 15, 2024"
-401570712,MLB,tb,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,1:40 PM,"September 15, 2024"
-401570702,MLB,cin,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,2:10 PM,"September 15, 2024"
-401570709,MLB,oak,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,2:10 PM,"September 15, 2024"
-401570701,MLB,chc,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,3:10 PM,"September 15, 2024"
-401570710,MLB,sd,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,4:05 PM,"September 15, 2024"
-401570703,MLB,hou,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,4:07 PM,"September 15, 2024"
-401570707,MLB,mil,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,4:10 PM,"September 15, 2024"
-401570713,MLB,tex,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,4:10 PM,"September 15, 2024"
-401570719,MLB,min,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,6:40 PM,"September 16, 2024"
-401570723,MLB,wsh,nym,,,Citi Field,"Queens, New York",,,,42136,,,,,,,,,,,,,,,,7:10 PM,"September 16, 2024"
-401570718,MLB,lad,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"September 16, 2024"
-401570716,MLB,det,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,7:40 PM,"September 16, 2024"
-401570720,MLB,oak,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,7:40 PM,"September 16, 2024"
-401570721,MLB,phi,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,7:40 PM,"September 16, 2024"
-401570722,MLB,pit,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,7:45 PM,"September 16, 2024"
-401570714,MLB,ari,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,8:40 PM,"September 16, 2024"
-401570715,MLB,chw,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,9:38 PM,"September 16, 2024"
-401570717,MLB,hou,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,9:40 PM,"September 16, 2024"
-401570736,MLB,sf,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,6:35 PM,"September 17, 2024"
-401570725,MLB,atl,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,6:40 PM,"September 17, 2024"
-401570730,MLB,lad,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,6:40 PM,"September 17, 2024"
-401570731,MLB,min,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,6:40 PM,"September 17, 2024"
-401570726,MLB,bos,tb,,,Tropicana Field,"St. Petersburg, Florida",,,,25025,,,,,,,,,,,,,,,,6:50 PM,"September 17, 2024"
-401570738,MLB,wsh,nym,,,Citi Field,"Queens, New York",,,,42136,,,,,,,,,,,,,,,,7:10 PM,"September 17, 2024"
-401570728,MLB,det,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,7:40 PM,"September 17, 2024"
-401570733,MLB,oak,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,7:40 PM,"September 17, 2024"
-401570734,MLB,phi,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,7:40 PM,"September 17, 2024"
-401570735,MLB,pit,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,7:45 PM,"September 17, 2024"
-401570737,MLB,tor,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,8:05 PM,"September 17, 2024"
-401570724,MLB,ari,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,8:40 PM,"September 17, 2024"
-401570727,MLB,chw,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,9:38 PM,"September 17, 2024"
-401570729,MLB,hou,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,9:40 PM,"September 17, 2024"
-401570732,MLB,nyy,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,9:40 PM,"September 17, 2024"
-401570748,MLB,oak,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,2:20 PM,"September 18, 2024"
-401570739,MLB,ari,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,3:10 PM,"September 18, 2024"
-401570742,MLB,chw,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,4:07 PM,"September 18, 2024"
-401570751,MLB,sf,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,6:35 PM,"September 18, 2024"
-401570740,MLB,atl,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,6:40 PM,"September 18, 2024"
-401570744,MLB,hou,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,6:40 PM,"September 18, 2024"
-401570745,MLB,lad,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,6:40 PM,"September 18, 2024"
-401570746,MLB,min,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,6:40 PM,"September 18, 2024"
-401570741,MLB,bos,tb,,,Tropicana Field,"St. Petersburg, Florida",,,,25025,,,,,,,,,,,,,,,,6:50 PM,"September 18, 2024"
-401570753,MLB,wsh,nym,,,Citi Field,"Queens, New York",,,,42136,,,,,,,,,,,,,,,,7:10 PM,"September 18, 2024"
-401570743,MLB,det,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,7:40 PM,"September 18, 2024"
-401570749,MLB,phi,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,7:40 PM,"September 18, 2024"
-401570750,MLB,pit,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,7:45 PM,"September 18, 2024"
-401570752,MLB,tor,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,8:05 PM,"September 18, 2024"
-401570747,MLB,nyy,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,9:40 PM,"September 18, 2024"
-401570763,MLB,sf,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,1:05 PM,"September 19, 2024"
-401570756,MLB,atl,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,1:10 PM,"September 19, 2024"
-401570759,MLB,min,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,1:10 PM,"September 19, 2024"
-401570764,MLB,tor,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,2:35 PM,"September 19, 2024"
-401570760,MLB,nyy,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,4:10 PM,"September 19, 2024"
-401570758,MLB,lad,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,4:40 PM,"September 19, 2024"
-401570757,MLB,bos,tb,,,Tropicana Field,"St. Petersburg, Florida",,,,25025,,,,,,,,,,,,,,,,6:50 PM,"September 19, 2024"
-401570761,MLB,phi,nym,,,Citi Field,"Queens, New York",,,,42136,,,,,,,,,,,,,,,,7:10 PM,"September 19, 2024"
-401570762,MLB,pit,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,7:15 PM,"September 19, 2024"
-401570755,MLB,ari,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,7:40 PM,"September 19, 2024"
-401570765,MLB,wsh,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,7:40 PM,"September 19, 2024"
-401570754,MLB,laa,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,8:10 PM,"September 19, 2024"
-401570780,MLB,wsh,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,2:20 PM,"September 20, 2024"
-401570776,MLB,pit,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,6:40 PM,"September 20, 2024"
-401570779,MLB,tor,tb,,,Tropicana Field,"St. Petersburg, Florida",,,,25025,,,,,,,,,,,,,,,,6:50 PM,"September 20, 2024"
-401570772,MLB,det,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,7:05 PM,"September 20, 2024"
-401570768,MLB,atl,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,7:10 PM,"September 20, 2024"
-401570773,MLB,min,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,7:10 PM,"September 20, 2024"
-401570775,MLB,phi,nym,,,Citi Field,"Queens, New York",,,,42136,,,,,,,,,,,,,,,,7:10 PM,"September 20, 2024"
-401570777,MLB,sea,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,8:05 PM,"September 20, 2024"
-401570766,MLB,laa,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,8:10 PM,"September 20, 2024"
-401570767,MLB,ari,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,8:10 PM,"September 20, 2024"
-401570778,MLB,sf,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,8:10 PM,"September 20, 2024"
-401570770,MLB,cle,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,8:15 PM,"September 20, 2024"
-401570769,MLB,chw,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,9:40 PM,"September 20, 2024"
-401570774,MLB,nyy,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,9:40 PM,"September 20, 2024"
-401570771,MLB,col,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,10:10 PM,"September 20, 2024"
-401570795,MLB,wsh,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,2:20 PM,"September 21, 2024"
-401570787,MLB,det,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,4:05 PM,"September 21, 2024"
-401570783,MLB,atl,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,4:10 PM,"September 21, 2024"
-401570788,MLB,min,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,4:10 PM,"September 21, 2024"
-401570790,MLB,phi,nym,,,Citi Field,"Queens, New York",,,,42136,,,,,,,,,,,,,,,,4:10 PM,"September 21, 2024"
-401570794,MLB,tor,tb,,,Tropicana Field,"St. Petersburg, Florida",,,,25025,,,,,,,,,,,,,,,,4:10 PM,"September 21, 2024"
-401570791,MLB,pit,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,6:40 PM,"September 21, 2024"
-401570792,MLB,sea,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,7:05 PM,"September 21, 2024"
-401570781,MLB,laa,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,7:10 PM,"September 21, 2024"
-401570782,MLB,ari,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,7:10 PM,"September 21, 2024"
-401570793,MLB,sf,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,7:10 PM,"September 21, 2024"
-401570785,MLB,cle,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,7:15 PM,"September 21, 2024"
-401570784,MLB,chw,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,8:40 PM,"September 21, 2024"
-401570789,MLB,nyy,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,9:07 PM,"September 21, 2024"
-401570786,MLB,col,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,9:10 PM,"September 21, 2024"
-401570806,MLB,pit,cin,,,Great American Ball Park,"Cincinnati, Ohio",,,,43891,,,,,,,,,,,,,,,,1:10 PM,"September 22, 2024"
-401570802,MLB,det,bal,,,Oriole Park at Camden Yards,"Baltimore, Maryland",,,,45971,,,,,,,,,,,,,,,,1:35 PM,"September 22, 2024"
-401570803,MLB,min,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,1:35 PM,"September 22, 2024"
-401570798,MLB,atl,mia,,,loanDepot park,"Miami, Florida",,,,37446,,,,,,,,,,,,,,,,1:40 PM,"September 22, 2024"
-401570805,MLB,phi,nym,,,Citi Field,"Queens, New York",,,,42136,,,,,,,,,,,,,,,,1:40 PM,"September 22, 2024"
-401570809,MLB,tor,tb,,,Tropicana Field,"St. Petersburg, Florida",,,,25025,,,,,,,,,,,,,,,,1:40 PM,"September 22, 2024"
-401570796,MLB,laa,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,2:10 PM,"September 22, 2024"
-401570797,MLB,ari,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,2:10 PM,"September 22, 2024"
-401570808,MLB,sf,kc,,,Kauffman Stadium,"Kansas City, Missouri",,,,38427,,,,,,,,,,,,,,,,2:10 PM,"September 22, 2024"
-401570800,MLB,cle,stl,,,Busch Stadium,"St. Louis, Missouri",,,,44494,,,,,,,,,,,,,,,,2:15 PM,"September 22, 2024"
-401570810,MLB,wsh,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,2:20 PM,"September 22, 2024"
-401570807,MLB,sea,tex,,,Globe Life Field,"Arlington, Texas",,,,40000,,,,,,,,,,,,,,,,2:35 PM,"September 22, 2024"
-401570804,MLB,nyy,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,4:07 PM,"September 22, 2024"
-401570799,MLB,chw,sd,,,Petco Park,"San Diego, California",,,,40222,,,,,,,,,,,,,,,,4:10 PM,"September 22, 2024"
-401570801,MLB,col,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,4:10 PM,"September 22, 2024"
-401570812,MLB,chc,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,6:40 PM,"September 23, 2024"
-401570811,MLB,bos,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,7:07 PM,"September 23, 2024"
-401570813,MLB,sea,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,8:10 PM,"September 23, 2024"
-401570814,MLB,sf,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,9:40 PM,"September 23, 2024"
-401570818,MLB,chc,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,6:40 PM,"September 24, 2024"
-401570819,MLB,cin,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,6:40 PM,"September 24, 2024"
-401570822,MLB,mil,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"September 24, 2024"
-401570828,MLB,tb,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,6:40 PM,"September 24, 2024"
-401570820,MLB,kc,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,6:45 PM,"September 24, 2024"
-401570816,MLB,bal,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,7:05 PM,"September 24, 2024"
-401570817,MLB,bos,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,7:07 PM,"September 24, 2024"
-401570823,MLB,nym,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"September 24, 2024"
-401570815,MLB,laa,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,7:40 PM,"September 24, 2024"
-401570821,MLB,mia,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,7:40 PM,"September 24, 2024"
-401570825,MLB,sea,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,8:10 PM,"September 24, 2024"
-401570827,MLB,stl,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,8:40 PM,"September 24, 2024"
-401570826,MLB,sf,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,9:40 PM,"September 24, 2024"
-401570829,MLB,tex,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,9:40 PM,"September 24, 2024"
-401570824,MLB,sd,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,10:10 PM,"September 24, 2024"
-401570840,MLB,sea,hou,,,Minute Maid Park,"Houston, Texas",,,,41000,,,,,,,,,,,,,,,,2:10 PM,"September 25, 2024"
-401570833,MLB,chc,phi,,,Citizens Bank Park,"Philadelphia, Pennsylvania",,,,42901,,,,,,,,,,,,,,,,6:05 PM,"September 25, 2024"
-401570834,MLB,cin,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,6:40 PM,"September 25, 2024"
-401570837,MLB,mil,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,6:40 PM,"September 25, 2024"
-401570843,MLB,tb,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,6:40 PM,"September 25, 2024"
-401570835,MLB,kc,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,6:45 PM,"September 25, 2024"
-401570831,MLB,bal,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,7:05 PM,"September 25, 2024"
-401570832,MLB,bos,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,7:07 PM,"September 25, 2024"
-401570838,MLB,nym,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"September 25, 2024"
-401570830,MLB,laa,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,7:40 PM,"September 25, 2024"
-401570836,MLB,mia,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,7:40 PM,"September 25, 2024"
-401570842,MLB,stl,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,8:40 PM,"September 25, 2024"
-401570841,MLB,sf,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,9:40 PM,"September 25, 2024"
-401570844,MLB,tex,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,9:40 PM,"September 25, 2024"
-401570839,MLB,sd,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,10:10 PM,"September 25, 2024"
-401570849,MLB,mil,pit,,,PNC Park,"Pittsburgh, Pennsylvania",,,,38753,,,,,,,,,,,,,,,,12:35 PM,"September 26, 2024"
-401570847,MLB,kc,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,1:05 PM,"September 26, 2024"
-401570852,MLB,tb,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,1:10 PM,"September 26, 2024"
-401570845,MLB,laa,chw,,,Guaranteed Rate Field,"Chicago, Illinois",,,,40241,,,,,,,,,,,,,,,,2:10 PM,"September 26, 2024"
-401570851,MLB,stl,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,3:10 PM,"September 26, 2024"
-401570853,MLB,tex,oak,,,Oakland Coliseum,"Oakland, California",,,,46847,,,,,,,,,,,,,,,,3:37 PM,"September 26, 2024"
-401570846,MLB,bal,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,7:05 PM,"September 26, 2024"
-401570848,MLB,mia,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,7:40 PM,"September 26, 2024"
-401570850,MLB,sd,lad,,,Dodger Stadium,"Los Angeles, California",,,,56000,,,,,,,,,,,,,,,,10:10 PM,"September 26, 2024"
-401570856,MLB,cin,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,2:20 PM,"September 27, 2024"
-401570855,MLB,chw,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,6:40 PM,"September 27, 2024"
-401570863,MLB,phi,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,6:45 PM,"September 27, 2024"
-401570864,MLB,pit,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,7:05 PM,"September 27, 2024"
-401570860,MLB,mia,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,7:07 PM,"September 27, 2024"
-401570857,MLB,hou,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,7:10 PM,"September 27, 2024"
-401570867,MLB,tb,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,7:10 PM,"September 27, 2024"
-401570858,MLB,kc,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"September 27, 2024"
-401570854,MLB,bal,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,8:10 PM,"September 27, 2024"
-401570859,MLB,lad,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,8:10 PM,"September 27, 2024"
-401570861,MLB,nym,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,8:10 PM,"September 27, 2024"
-401570868,MLB,tex,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,9:38 PM,"September 27, 2024"
-401570865,MLB,sd,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,9:40 PM,"September 27, 2024"
-401570862,MLB,oak,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,10:10 PM,"September 27, 2024"
-401570866,MLB,stl,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,10:15 PM,"September 27, 2024"
-401570879,MLB,pit,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,1:05 PM,"September 28, 2024"
-401570870,MLB,chw,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,1:10 PM,"September 28, 2024"
-401570869,MLB,bal,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,2:10 PM,"September 28, 2024"
-401570871,MLB,cin,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,2:20 PM,"September 28, 2024"
-401570875,MLB,mia,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,3:07 PM,"September 28, 2024"
-401570878,MLB,phi,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,4:05 PM,"September 28, 2024"
-401570881,MLB,stl,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,4:05 PM,"September 28, 2024"
-401570882,MLB,tb,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,4:10 PM,"September 28, 2024"
-401570872,MLB,hou,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,6:10 PM,"September 28, 2024"
-401570876,MLB,nym,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,7:10 PM,"September 28, 2024"
-401570873,MLB,kc,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,7:20 PM,"September 28, 2024"
-401570874,MLB,lad,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,8:10 PM,"September 28, 2024"
-401570880,MLB,sd,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,8:10 PM,"September 28, 2024"
-401570883,MLB,tex,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,9:38 PM,"September 28, 2024"
-401570877,MLB,oak,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,9:40 PM,"September 28, 2024"
-401570893,MLB,phi,wsh,,,Nationals Park,"Washington, District of Columbia",,,,41376,,,,,,,,,,,,,,,,3:05 PM,"September 29, 2024"
-401570894,MLB,pit,nyy,,,Yankee Stadium,"Bronx, New York",,,,47309,,,,,,,,,,,,,,,,3:05 PM,"September 29, 2024"
-401570896,MLB,stl,sf,,,Oracle Park,"San Francisco, California",,,,41915,,,,,,,,,,,,,,,,3:05 PM,"September 29, 2024"
-401570897,MLB,tb,bos,,,Fenway Park,"Boston, Massachusetts",,,,37755,,,,,,,,,,,,,,,,3:05 PM,"September 29, 2024"
-401570890,MLB,mia,tor,,,Rogers Centre,"Toronto, Ontario",,,,49282,,,,,,,,,,,,,,,,3:07 PM,"September 29, 2024"
-401570898,MLB,tex,laa,,,Angel Stadium,"Anaheim, California",,,,45517,,,,,,,,,,,,,,,,3:07 PM,"September 29, 2024"
-401570884,MLB,bal,min,,,Target Field,"Minneapolis, Minnesota",,,,38544,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024"
-401570885,MLB,chw,det,,,Comerica Park,"Detroit, Michigan",,,,41083,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024"
-401570887,MLB,hou,cle,,,Progressive Field,"Cleveland, Ohio",,,,34788,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024"
-401570889,MLB,lad,col,,,Coors Field,"Denver, Colorado",,,,50144,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024"
-401570891,MLB,nym,mil,,,American Family Field,"Milwaukee, Wisconsin",,,,41700,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024"
-401570892,MLB,oak,sea,,,T-Mobile Park,"Seattle, Washington",,,,47929,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024"
-401570895,MLB,sd,ari,,,Chase Field,"Phoenix, Arizona",,,,48359,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024"
-401570886,MLB,cin,chc,,,Wrigley Field,"Chicago, Illinois",,,,41363,,,,,,,,,,,,,,,,3:20 PM,"September 29, 2024"
-401570888,MLB,kc,atl,,,Truist Park,"Atlanta, Georgia",,,,41149,,,,,,,,,,,,,,,,3:20 PM,"September 29, 2024"
+game_id,league,away_team,home_team,location,tv_coverage,betting_line,betting_over_under,attendance,away_win_pct,home_win_pct,away_quarter1,away_quarter2,away_quarter3,away_quarter4,away_overtime,away_total,home_quarter1,home_quarter2,home_quarter3,home_quarter4,home_overtime,home_total,game_time,game_date,game_month,game_day,game_year
+401570381,MLB,cle,nyy,1,,,,,,,,,,,,,,,,,,,1:05 PM,"August 22, 2024",8.0,22.0,2024.0
+401570382,MLB,col,wsh,2,,,,,,,,,,,,,,,,,,,1:05 PM,"August 22, 2024",8.0,22.0,2024.0
+401570385,MLB,mil,stl,3,,,,,,,,,,,,,,,,,,,2:15 PM,"August 22, 2024",8.0,22.0,2024.0
+401570383,MLB,det,chc,4,,,,,,,,,,,,,,,,,,,2:20 PM,"August 22, 2024",8.0,22.0,2024.0
+401570388,MLB,tb,oak,5,,,,,,,,,,,,,,,,,,,3:37 PM,"August 22, 2024",8.0,22.0,2024.0
+401570380,MLB,cin,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"August 22, 2024",8.0,22.0,2024.0
+401570379,MLB,laa,tor,7,,,,,,,,,,,,,,,,,,,7:07 PM,"August 22, 2024",8.0,22.0,2024.0
+401570384,MLB,hou,bal,8,,,,,,,,,,,,,,,,,,,7:15 PM,"August 22, 2024",8.0,22.0,2024.0
+401570387,MLB,phi,atl,9,,,,,,,,,,,,,,,,,,,7:15 PM,"August 22, 2024",8.0,22.0,2024.0
+401570386,MLB,nym,sd,10,,,,,,,,,,,,,,,,,,,9:40 PM,"August 22, 2024",8.0,22.0,2024.0
+401570392,MLB,cin,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"August 23, 2024",8.0,23.0,2024.0
+401570393,MLB,col,nyy,1,,,,,,,,,,,,,,,,,,,7:05 PM,"August 23, 2024",8.0,23.0,2024.0
+401570395,MLB,hou,bal,8,,,,,,,,,,,,,,,,,,,7:05 PM,"August 23, 2024",8.0,23.0,2024.0
+401570389,MLB,laa,tor,7,,,,,,,,,,,,,,,,,,,7:07 PM,"August 23, 2024",8.0,23.0,2024.0
+401570390,MLB,ari,bos,11,,,,,,,,,,,,,,,,,,,7:10 PM,"August 23, 2024",8.0,23.0,2024.0
+401570391,MLB,chc,mia,12,,,,,,,,,,,,,,,,,,,7:10 PM,"August 23, 2024",8.0,23.0,2024.0
+401570402,MLB,tex,cle,13,,,,,,,,,,,,,,,,,,,7:10 PM,"August 23, 2024",8.0,23.0,2024.0
+401570403,MLB,wsh,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"August 23, 2024",8.0,23.0,2024.0
+401570394,MLB,det,chw,14,,,,,,,,,,,,,,,,,,,8:10 PM,"August 23, 2024",8.0,23.0,2024.0
+401570398,MLB,phi,kc,15,,,,,,,,,,,,,,,,,,,8:10 PM,"August 23, 2024",8.0,23.0,2024.0
+401570400,MLB,stl,min,16,,,,,,,,,,,,,,,,,,,8:10 PM,"August 23, 2024",8.0,23.0,2024.0
+401570396,MLB,mil,oak,5,,,,,,,,,,,,,,,,,,,9:40 PM,"August 23, 2024",8.0,23.0,2024.0
+401570397,MLB,nym,sd,10,,,,,,,,,,,,,,,,,,,9:40 PM,"August 23, 2024",8.0,23.0,2024.0
+401570399,MLB,sf,sea,17,,,,,,,,,,,,,,,,,,,10:10 PM,"August 23, 2024",8.0,23.0,2024.0
+401570401,MLB,tb,lad,18,,,,,,,,,,,,,,,,,,,10:10 PM,"August 23, 2024",8.0,23.0,2024.0
+401570408,MLB,col,nyy,1,,,,,,,,,,,,,,,,,,,2:05 PM,"August 24, 2024",8.0,24.0,2024.0
+401570404,MLB,laa,tor,7,,,,,,,,,,,,,,,,,,,3:07 PM,"August 24, 2024",8.0,24.0,2024.0
+401570410,MLB,hou,bal,8,,,,,,,,,,,,,,,,,,,4:05 PM,"August 24, 2024",8.0,24.0,2024.0
+401570411,MLB,mil,oak,5,,,,,,,,,,,,,,,,,,,4:07 PM,"August 24, 2024",8.0,24.0,2024.0
+401570405,MLB,ari,bos,11,,,,,,,,,,,,,,,,,,,4:10 PM,"August 24, 2024",8.0,24.0,2024.0
+401570406,MLB,chc,mia,12,,,,,,,,,,,,,,,,,,,4:10 PM,"August 24, 2024",8.0,24.0,2024.0
+401570414,MLB,sf,sea,17,,,,,,,,,,,,,,,,,,,4:10 PM,"August 24, 2024",8.0,24.0,2024.0
+401570407,MLB,cin,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"August 24, 2024",8.0,24.0,2024.0
+401570409,MLB,det,chw,14,,,,,,,,,,,,,,,,,,,7:10 PM,"August 24, 2024",8.0,24.0,2024.0
+401570413,MLB,phi,kc,15,,,,,,,,,,,,,,,,,,,7:10 PM,"August 24, 2024",8.0,24.0,2024.0
+401570415,MLB,stl,min,16,,,,,,,,,,,,,,,,,,,7:10 PM,"August 24, 2024",8.0,24.0,2024.0
+401570417,MLB,tex,cle,13,,,,,,,,,,,,,,,,,,,7:10 PM,"August 24, 2024",8.0,24.0,2024.0
+401570418,MLB,wsh,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"August 24, 2024",8.0,24.0,2024.0
+401570412,MLB,nym,sd,10,,,,,,,,,,,,,,,,,,,8:40 PM,"August 24, 2024",8.0,24.0,2024.0
+401570416,MLB,tb,lad,18,,,,,,,,,,,,,,,,,,,9:10 PM,"August 24, 2024",8.0,24.0,2024.0
+401570420,MLB,ari,bos,11,,,,,,,,,,,,,,,,,,,1:35 PM,"August 25, 2024",8.0,25.0,2024.0
+401570422,MLB,cin,pit,6,,,,,,,,,,,,,,,,,,,1:35 PM,"August 25, 2024",8.0,25.0,2024.0
+401570423,MLB,col,nyy,1,,,,,,,,,,,,,,,,,,,1:35 PM,"August 25, 2024",8.0,25.0,2024.0
+401570425,MLB,hou,bal,8,,,,,,,,,,,,,,,,,,,1:35 PM,"August 25, 2024",8.0,25.0,2024.0
+401570433,MLB,wsh,atl,9,,,,,,,,,,,,,,,,,,,1:35 PM,"August 25, 2024",8.0,25.0,2024.0
+401570419,MLB,laa,tor,7,,,,,,,,,,,,,,,,,,,1:37 PM,"August 25, 2024",8.0,25.0,2024.0
+401570421,MLB,chc,mia,12,,,,,,,,,,,,,,,,,,,1:40 PM,"August 25, 2024",8.0,25.0,2024.0
+401570432,MLB,tex,cle,13,,,,,,,,,,,,,,,,,,,1:40 PM,"August 25, 2024",8.0,25.0,2024.0
+401570424,MLB,det,chw,14,,,,,,,,,,,,,,,,,,,2:10 PM,"August 25, 2024",8.0,25.0,2024.0
+401570428,MLB,phi,kc,15,,,,,,,,,,,,,,,,,,,2:10 PM,"August 25, 2024",8.0,25.0,2024.0
+401570430,MLB,stl,min,16,,,,,,,,,,,,,,,,,,,2:10 PM,"August 25, 2024",8.0,25.0,2024.0
+401570426,MLB,mil,oak,5,,,,,,,,,,,,,,,,,,,4:07 PM,"August 25, 2024",8.0,25.0,2024.0
+401570427,MLB,nym,sd,10,,,,,,,,,,,,,,,,,,,4:10 PM,"August 25, 2024",8.0,25.0,2024.0
+401570429,MLB,sf,sea,17,,,,,,,,,,,,,,,,,,,4:10 PM,"August 25, 2024",8.0,25.0,2024.0
+401570431,MLB,tb,lad,18,,,,,,,,,,,,,,,,,,,4:10 PM,"August 25, 2024",8.0,25.0,2024.0
+401570435,MLB,chc,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"August 26, 2024",8.0,26.0,2024.0
+401570437,MLB,hou,phi,19,,,,,,,,,,,,,,,,,,,6:40 PM,"August 26, 2024",8.0,26.0,2024.0
+401570438,MLB,kc,cle,13,,,,,,,,,,,,,,,,,,,6:40 PM,"August 26, 2024",8.0,26.0,2024.0
+401570440,MLB,nyy,wsh,2,,,,,,,,,,,,,,,,,,,6:45 PM,"August 26, 2024",8.0,26.0,2024.0
+401570443,MLB,tor,bos,11,,,,,,,,,,,,,,,,,,,7:10 PM,"August 26, 2024",8.0,26.0,2024.0
+401570434,MLB,atl,min,16,,,,,,,,,,,,,,,,,,,7:40 PM,"August 26, 2024",8.0,26.0,2024.0
+401570441,MLB,sd,stl,3,,,,,,,,,,,,,,,,,,,7:45 PM,"August 26, 2024",8.0,26.0,2024.0
+401570436,MLB,det,chw,14,,,,,,,,,,,,,,,,,,,8:10 PM,"August 26, 2024",8.0,26.0,2024.0
+401570439,MLB,mia,col,20,,,,,,,,,,,,,,,,,,,8:40 PM,"August 26, 2024",8.0,26.0,2024.0
+401570442,MLB,tb,sea,17,,,,,,,,,,,,,,,,,,,9:40 PM,"August 26, 2024",8.0,26.0,2024.0
+401570444,MLB,laa,det,21,,,,,,,,,,,,,,,,,,,6:40 PM,"August 27, 2024",8.0,27.0,2024.0
+401570447,MLB,chc,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"August 27, 2024",8.0,27.0,2024.0
+401570448,MLB,hou,phi,19,,,,,,,,,,,,,,,,,,,6:40 PM,"August 27, 2024",8.0,27.0,2024.0
+401570449,MLB,kc,cle,13,,,,,,,,,,,,,,,,,,,6:40 PM,"August 27, 2024",8.0,27.0,2024.0
+401570453,MLB,oak,cin,22,,,,,,,,,,,,,,,,,,,6:40 PM,"August 27, 2024",8.0,27.0,2024.0
+401570451,MLB,nyy,wsh,2,,,,,,,,,,,,,,,,,,,6:45 PM,"August 27, 2024",8.0,27.0,2024.0
+401570458,MLB,tor,bos,11,,,,,,,,,,,,,,,,,,,7:10 PM,"August 27, 2024",8.0,27.0,2024.0
+401570445,MLB,atl,min,16,,,,,,,,,,,,,,,,,,,7:40 PM,"August 27, 2024",8.0,27.0,2024.0
+401570454,MLB,sd,stl,3,,,,,,,,,,,,,,,,,,,7:45 PM,"August 27, 2024",8.0,27.0,2024.0
+401570455,MLB,sf,mil,23,,,,,,,,,,,,,,,,,,,8:10 PM,"August 27, 2024",8.0,27.0,2024.0
+401570457,MLB,tex,chw,14,,,,,,,,,,,,,,,,,,,8:10 PM,"August 27, 2024",8.0,27.0,2024.0
+401570450,MLB,mia,col,20,,,,,,,,,,,,,,,,,,,8:40 PM,"August 27, 2024",8.0,27.0,2024.0
+401570452,MLB,nym,ari,24,,,,,,,,,,,,,,,,,,,9:40 PM,"August 27, 2024",8.0,27.0,2024.0
+401570456,MLB,tb,sea,17,,,,,,,,,,,,,,,,,,,9:40 PM,"August 27, 2024",8.0,27.0,2024.0
+401570446,MLB,bal,lad,18,,,,,,,,,,,,,,,,,,,10:10 PM,"August 27, 2024",8.0,27.0,2024.0
+401570462,MLB,chc,pit,6,,,,,,,,,,,,,,,,,,,12:35 PM,"August 28, 2024",8.0,28.0,2024.0
+401570464,MLB,kc,cle,13,,,,,,,,,,,,,,,,,,,1:10 PM,"August 28, 2024",8.0,28.0,2024.0
+401570463,MLB,hou,phi,19,,,,,,,,,,,,,,,,,,,4:05 PM,"August 28, 2024",8.0,28.0,2024.0
+401570471,MLB,tb,sea,17,,,,,,,,,,,,,,,,,,,4:10 PM,"August 28, 2024",8.0,28.0,2024.0
+401570459,MLB,laa,det,21,,,,,,,,,,,,,,,,,,,6:40 PM,"August 28, 2024",8.0,28.0,2024.0
+401570468,MLB,oak,cin,22,,,,,,,,,,,,,,,,,,,6:40 PM,"August 28, 2024",8.0,28.0,2024.0
+401570466,MLB,nyy,wsh,2,,,,,,,,,,,,,,,,,,,6:45 PM,"August 28, 2024",8.0,28.0,2024.0
+401570473,MLB,tor,bos,11,,,,,,,,,,,,,,,,,,,7:10 PM,"August 28, 2024",8.0,28.0,2024.0
+401570460,MLB,atl,min,16,,,,,,,,,,,,,,,,,,,7:40 PM,"August 28, 2024",8.0,28.0,2024.0
+401570469,MLB,sd,stl,3,,,,,,,,,,,,,,,,,,,7:45 PM,"August 28, 2024",8.0,28.0,2024.0
+401570470,MLB,sf,mil,23,,,,,,,,,,,,,,,,,,,8:10 PM,"August 28, 2024",8.0,28.0,2024.0
+401570472,MLB,tex,chw,14,,,,,,,,,,,,,,,,,,,8:10 PM,"August 28, 2024",8.0,28.0,2024.0
+401570465,MLB,mia,col,20,,,,,,,,,,,,,,,,,,,8:40 PM,"August 28, 2024",8.0,28.0,2024.0
+401570467,MLB,nym,ari,24,,,,,,,,,,,,,,,,,,,9:40 PM,"August 28, 2024",8.0,28.0,2024.0
+401570461,MLB,bal,lad,18,,,,,,,,,,,,,,,,,,,10:10 PM,"August 28, 2024",8.0,28.0,2024.0
+401570474,MLB,laa,det,21,,,,,,,,,,,,,,,,,,,1:10 PM,"August 29, 2024",8.0,29.0,2024.0
+401570482,MLB,sf,mil,23,,,,,,,,,,,,,,,,,,,2:10 PM,"August 29, 2024",8.0,29.0,2024.0
+401570483,MLB,tex,chw,14,,,,,,,,,,,,,,,,,,,2:10 PM,"August 29, 2024",8.0,29.0,2024.0
+401570481,MLB,sd,stl,3,,,,,,,,,,,,,,,,,,,2:15 PM,"August 29, 2024",8.0,29.0,2024.0
+401570478,MLB,mia,col,20,,,,,,,,,,,,,,,,,,,3:10 PM,"August 29, 2024",8.0,29.0,2024.0
+401570479,MLB,nym,ari,24,,,,,,,,,,,,,,,,,,,3:40 PM,"August 29, 2024",8.0,29.0,2024.0
+401570480,MLB,oak,cin,22,,,,,,,,,,,,,,,,,,,5:10 PM,"August 29, 2024",8.0,29.0,2024.0
+401570475,MLB,atl,phi,19,,,,,,,,,,,,,,,,,,,6:40 PM,"August 29, 2024",8.0,29.0,2024.0
+401570484,MLB,tor,bos,11,,,,,,,,,,,,,,,,,,,7:10 PM,"August 29, 2024",8.0,29.0,2024.0
+401570477,MLB,kc,hou,25,,,,,,,,,,,,,,,,,,,8:10 PM,"August 29, 2024",8.0,29.0,2024.0
+401570476,MLB,bal,lad,18,,,,,,,,,,,,,,,,,,,10:10 PM,"August 29, 2024",8.0,29.0,2024.0
+401570485,MLB,atl,phi,19,,,,,,,,,,,,,,,,,,,6:40 PM,"August 30, 2024",8.0,30.0,2024.0
+401570487,MLB,bos,det,21,,,,,,,,,,,,,,,,,,,6:40 PM,"August 30, 2024",8.0,30.0,2024.0
+401570492,MLB,mil,cin,22,,,,,,,,,,,,,,,,,,,6:40 PM,"August 30, 2024",8.0,30.0,2024.0
+401570488,MLB,chc,wsh,2,,,,,,,,,,,,,,,,,,,6:45 PM,"August 30, 2024",8.0,30.0,2024.0
+401570496,MLB,sd,tb,26,,,,,,,,,,,,,,,,,,,6:50 PM,"August 30, 2024",8.0,30.0,2024.0
+401570498,MLB,stl,nyy,1,,,,,,,,,,,,,,,,,,,7:05 PM,"August 30, 2024",8.0,30.0,2024.0
+401570495,MLB,pit,cle,13,,,,,,,,,,,,,,,,,,,7:10 PM,"August 30, 2024",8.0,30.0,2024.0
+401570494,MLB,oak,tex,27,,,,,,,,,,,,,,,,,,,8:05 PM,"August 30, 2024",8.0,30.0,2024.0
+401570489,MLB,kc,hou,25,,,,,,,,,,,,,,,,,,,8:10 PM,"August 30, 2024",8.0,30.0,2024.0
+401570493,MLB,nym,chw,14,,,,,,,,,,,,,,,,,,,8:10 PM,"August 30, 2024",8.0,30.0,2024.0
+401570499,MLB,tor,min,16,,,,,,,,,,,,,,,,,,,8:10 PM,"August 30, 2024",8.0,30.0,2024.0
+401570486,MLB,bal,col,20,,,,,,,,,,,,,,,,,,,8:40 PM,"August 30, 2024",8.0,30.0,2024.0
+401570497,MLB,sea,laa,28,,,,,,,,,,,,,,,,,,,9:38 PM,"August 30, 2024",8.0,30.0,2024.0
+401570490,MLB,lad,ari,24,,,,,,,,,,,,,,,,,,,9:40 PM,"August 30, 2024",8.0,30.0,2024.0
+401570491,MLB,mia,sf,29,,,,,,,,,,,,,,,,,,,10:15 PM,"August 30, 2024",8.0,30.0,2024.0
+401570513,MLB,stl,nyy,1,,,,,,,,,,,,,,,,,,,1:05 PM,"August 31, 2024",8.0,31.0,2024.0
+401570503,MLB,chc,wsh,2,,,,,,,,,,,,,,,,,,,4:05 PM,"August 31, 2024",8.0,31.0,2024.0
+401570511,MLB,sd,tb,26,,,,,,,,,,,,,,,,,,,4:10 PM,"August 31, 2024",8.0,31.0,2024.0
+401570502,MLB,bos,det,21,,,,,,,,,,,,,,,,,,,6:10 PM,"August 31, 2024",8.0,31.0,2024.0
+401570510,MLB,pit,cle,13,,,,,,,,,,,,,,,,,,,6:10 PM,"August 31, 2024",8.0,31.0,2024.0
+401570509,MLB,oak,tex,27,,,,,,,,,,,,,,,,,,,7:05 PM,"August 31, 2024",8.0,31.0,2024.0
+401570504,MLB,kc,hou,25,,,,,,,,,,,,,,,,,,,7:10 PM,"August 31, 2024",8.0,31.0,2024.0
+401570508,MLB,nym,chw,14,,,,,,,,,,,,,,,,,,,7:10 PM,"August 31, 2024",8.0,31.0,2024.0
+401570514,MLB,tor,min,16,,,,,,,,,,,,,,,,,,,7:10 PM,"August 31, 2024",8.0,31.0,2024.0
+401570500,MLB,atl,phi,19,,,,,,,,,,,,,,,,,,,7:15 PM,"August 31, 2024",8.0,31.0,2024.0
+401570507,MLB,mil,cin,22,,,,,,,,,,,,,,,,,,,7:15 PM,"August 31, 2024",8.0,31.0,2024.0
+401570501,MLB,bal,col,20,,,,,,,,,,,,,,,,,,,8:10 PM,"August 31, 2024",8.0,31.0,2024.0
+401570505,MLB,lad,ari,24,,,,,,,,,,,,,,,,,,,8:10 PM,"August 31, 2024",8.0,31.0,2024.0
+401570506,MLB,mia,sf,29,,,,,,,,,,,,,,,,,,,9:05 PM,"August 31, 2024",8.0,31.0,2024.0
+401570512,MLB,sea,laa,28,,,,,,,,,,,,,,,,,,,9:38 PM,"August 31, 2024",8.0,31.0,2024.0
+401570525,MLB,pit,cle,13,,,,,,,,,,,,,,,,,,,TBD,"September 1, 2024",9.0,1.0,2024.0
+401570522,MLB,mil,cin,22,,,,,,,,,,,,,,,,,,,12:10 PM,"September 1, 2024",9.0,1.0,2024.0
+401570515,MLB,atl,phi,19,,,,,,,,,,,,,,,,,,,1:35 PM,"September 1, 2024",9.0,1.0,2024.0
+401570518,MLB,chc,wsh,2,,,,,,,,,,,,,,,,,,,1:35 PM,"September 1, 2024",9.0,1.0,2024.0
+401570528,MLB,stl,nyy,1,,,,,,,,,,,,,,,,,,,1:35 PM,"September 1, 2024",9.0,1.0,2024.0
+401570517,MLB,bos,det,21,,,,,,,,,,,,,,,,,,,1:40 PM,"September 1, 2024",9.0,1.0,2024.0
+401570526,MLB,sd,tb,26,,,,,,,,,,,,,,,,,,,1:40 PM,"September 1, 2024",9.0,1.0,2024.0
+401570519,MLB,kc,hou,25,,,,,,,,,,,,,,,,,,,2:10 PM,"September 1, 2024",9.0,1.0,2024.0
+401570523,MLB,nym,chw,14,,,,,,,,,,,,,,,,,,,2:10 PM,"September 1, 2024",9.0,1.0,2024.0
+401570529,MLB,tor,min,16,,,,,,,,,,,,,,,,,,,2:10 PM,"September 1, 2024",9.0,1.0,2024.0
+401570524,MLB,oak,tex,27,,,,,,,,,,,,,,,,,,,2:35 PM,"September 1, 2024",9.0,1.0,2024.0
+401570516,MLB,bal,col,20,,,,,,,,,,,,,,,,,,,3:10 PM,"September 1, 2024",9.0,1.0,2024.0
+401570521,MLB,mia,sf,29,,,,,,,,,,,,,,,,,,,4:05 PM,"September 1, 2024",9.0,1.0,2024.0
+401570527,MLB,sea,laa,28,,,,,,,,,,,,,,,,,,,4:07 PM,"September 1, 2024",9.0,1.0,2024.0
+401570520,MLB,lad,ari,24,,,,,,,,,,,,,,,,,,,4:10 PM,"September 1, 2024",9.0,1.0,2024.0
+401570531,MLB,chw,bal,8,,,,,,,,,,,,,,,,,,,1:05 PM,"September 2, 2024",9.0,2.0,2024.0
+401570540,MLB,stl,mil,23,,,,,,,,,,,,,,,,,,,2:10 PM,"September 2, 2024",9.0,2.0,2024.0
+401570532,MLB,cle,kc,15,,,,,,,,,,,,,,,,,,,4:10 PM,"September 2, 2024",9.0,2.0,2024.0
+401570534,MLB,hou,cin,22,,,,,,,,,,,,,,,,,,,4:10 PM,"September 2, 2024",9.0,2.0,2024.0
+401570535,MLB,lad,ari,24,,,,,,,,,,,,,,,,,,,4:10 PM,"September 2, 2024",9.0,2.0,2024.0
+401570533,MLB,det,sd,10,,,,,,,,,,,,,,,,,,,6:40 PM,"September 2, 2024",9.0,2.0,2024.0
+401570536,MLB,min,tb,26,,,,,,,,,,,,,,,,,,,6:50 PM,"September 2, 2024",9.0,2.0,2024.0
+401570539,MLB,sea,oak,5,,,,,,,,,,,,,,,,,,,7:07 PM,"September 2, 2024",9.0,2.0,2024.0
+401570530,MLB,bos,nym,30,,,,,,,,,,,,,,,,,,,7:10 PM,"September 2, 2024",9.0,2.0,2024.0
+401570538,MLB,pit,chc,4,,,,,,,,,,,,,,,,,,,7:40 PM,"September 2, 2024",9.0,2.0,2024.0
+401570537,MLB,nyy,tex,27,,,,,,,,,,,,,,,,,,,8:05 PM,"September 2, 2024",9.0,2.0,2024.0
+401570543,MLB,chw,bal,8,,,,,,,,,,,,,,,,,,,6:35 PM,"September 3, 2024",9.0,3.0,2024.0
+401570553,MLB,wsh,mia,12,,,,,,,,,,,,,,,,,,,6:40 PM,"September 3, 2024",9.0,3.0,2024.0
+401570547,MLB,min,tb,26,,,,,,,,,,,,,,,,,,,6:50 PM,"September 3, 2024",9.0,3.0,2024.0
+401570549,MLB,phi,tor,7,,,,,,,,,,,,,,,,,,,7:07 PM,"September 3, 2024",9.0,3.0,2024.0
+401570542,MLB,bos,nym,30,,,,,,,,,,,,,,,,,,,7:10 PM,"September 3, 2024",9.0,3.0,2024.0
+401570545,MLB,col,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"September 3, 2024",9.0,3.0,2024.0
+401570544,MLB,cle,kc,15,,,,,,,,,,,,,,,,,,,7:40 PM,"September 3, 2024",9.0,3.0,2024.0
+401570550,MLB,pit,chc,4,,,,,,,,,,,,,,,,,,,7:40 PM,"September 3, 2024",9.0,3.0,2024.0
+401570552,MLB,stl,mil,23,,,,,,,,,,,,,,,,,,,7:40 PM,"September 3, 2024",9.0,3.0,2024.0
+401570548,MLB,nyy,tex,27,,,,,,,,,,,,,,,,,,,8:05 PM,"September 3, 2024",9.0,3.0,2024.0
+401570546,MLB,lad,laa,28,,,,,,,,,,,,,,,,,,,9:38 PM,"September 3, 2024",9.0,3.0,2024.0
+401570551,MLB,sea,oak,5,,,,,,,,,,,,,,,,,,,9:40 PM,"September 3, 2024",9.0,3.0,2024.0
+401570541,MLB,ari,sf,29,,,,,,,,,,,,,,,,,,,9:45 PM,"September 3, 2024",9.0,3.0,2024.0
+401570564,MLB,phi,tor,7,,,,,,,,,,,,,,,,,,,3:07 PM,"September 4, 2024",9.0,4.0,2024.0
+401570556,MLB,chw,bal,8,,,,,,,,,,,,,,,,,,,6:35 PM,"September 4, 2024",9.0,4.0,2024.0
+401570560,MLB,hou,cin,22,,,,,,,,,,,,,,,,,,,6:40 PM,"September 4, 2024",9.0,4.0,2024.0
+401570568,MLB,wsh,mia,12,,,,,,,,,,,,,,,,,,,6:40 PM,"September 4, 2024",9.0,4.0,2024.0
+401570562,MLB,min,tb,26,,,,,,,,,,,,,,,,,,,6:50 PM,"September 4, 2024",9.0,4.0,2024.0
+401570555,MLB,bos,nym,30,,,,,,,,,,,,,,,,,,,7:10 PM,"September 4, 2024",9.0,4.0,2024.0
+401570558,MLB,col,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"September 4, 2024",9.0,4.0,2024.0
+401570557,MLB,cle,kc,15,,,,,,,,,,,,,,,,,,,7:40 PM,"September 4, 2024",9.0,4.0,2024.0
+401570565,MLB,pit,chc,4,,,,,,,,,,,,,,,,,,,7:40 PM,"September 4, 2024",9.0,4.0,2024.0
+401570567,MLB,stl,mil,23,,,,,,,,,,,,,,,,,,,7:40 PM,"September 4, 2024",9.0,4.0,2024.0
+401570563,MLB,nyy,tex,27,,,,,,,,,,,,,,,,,,,8:05 PM,"September 4, 2024",9.0,4.0,2024.0
+401570561,MLB,lad,laa,28,,,,,,,,,,,,,,,,,,,9:38 PM,"September 4, 2024",9.0,4.0,2024.0
+401570559,MLB,det,sd,10,,,,,,,,,,,,,,,,,,,9:40 PM,"September 4, 2024",9.0,4.0,2024.0
+401570566,MLB,sea,oak,5,,,,,,,,,,,,,,,,,,,9:40 PM,"September 4, 2024",9.0,4.0,2024.0
+401570554,MLB,ari,sf,29,,,,,,,,,,,,,,,,,,,9:45 PM,"September 4, 2024",9.0,4.0,2024.0
+401570573,MLB,hou,cin,22,,,,,,,,,,,,,,,,,,,1:10 PM,"September 5, 2024",9.0,5.0,2024.0
+401570574,MLB,min,tb,26,,,,,,,,,,,,,,,,,,,1:10 PM,"September 5, 2024",9.0,5.0,2024.0
+401570576,MLB,sea,oak,5,,,,,,,,,,,,,,,,,,,3:37 PM,"September 5, 2024",9.0,5.0,2024.0
+401570570,MLB,ari,sf,29,,,,,,,,,,,,,,,,,,,3:45 PM,"September 5, 2024",9.0,5.0,2024.0
+401570575,MLB,phi,mia,12,,,,,,,,,,,,,,,,,,,6:40 PM,"September 5, 2024",9.0,5.0,2024.0
+401570577,MLB,wsh,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"September 5, 2024",9.0,5.0,2024.0
+401570571,MLB,col,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"September 5, 2024",9.0,5.0,2024.0
+401570569,MLB,laa,tex,27,,,,,,,,,,,,,,,,,,,8:05 PM,"September 5, 2024",9.0,5.0,2024.0
+401570572,MLB,det,sd,10,,,,,,,,,,,,,,,,,,,8:40 PM,"September 5, 2024",9.0,5.0,2024.0
+401570586,MLB,nyy,chc,4,,,,,,,,,,,,,,,,,,,2:20 PM,"September 6, 2024",9.0,6.0,2024.0
+401570592,MLB,wsh,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"September 6, 2024",9.0,6.0,2024.0
+401570590,MLB,tb,bal,8,,,,,,,,,,,,,,,,,,,7:05 PM,"September 6, 2024",9.0,6.0,2024.0
+401570580,MLB,chw,bos,11,,,,,,,,,,,,,,,,,,,7:10 PM,"September 6, 2024",9.0,6.0,2024.0
+401570581,MLB,cin,nym,30,,,,,,,,,,,,,,,,,,,7:10 PM,"September 6, 2024",9.0,6.0,2024.0
+401570587,MLB,phi,mia,12,,,,,,,,,,,,,,,,,,,7:10 PM,"September 6, 2024",9.0,6.0,2024.0
+401570591,MLB,tor,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"September 6, 2024",9.0,6.0,2024.0
+401570578,MLB,laa,tex,27,,,,,,,,,,,,,,,,,,,8:05 PM,"September 6, 2024",9.0,6.0,2024.0
+401570579,MLB,ari,hou,25,,,,,,,,,,,,,,,,,,,8:10 PM,"September 6, 2024",9.0,6.0,2024.0
+401570583,MLB,col,mil,23,,,,,,,,,,,,,,,,,,,8:10 PM,"September 6, 2024",9.0,6.0,2024.0
+401570585,MLB,min,kc,15,,,,,,,,,,,,,,,,,,,8:10 PM,"September 6, 2024",9.0,6.0,2024.0
+401570588,MLB,sea,stl,3,,,,,,,,,,,,,,,,,,,8:15 PM,"September 6, 2024",9.0,6.0,2024.0
+401570584,MLB,det,oak,5,,,,,,,,,,,,,,,,,,,9:40 PM,"September 6, 2024",9.0,6.0,2024.0
+401570589,MLB,sf,sd,10,,,,,,,,,,,,,,,,,,,9:40 PM,"September 6, 2024",9.0,6.0,2024.0
+401570582,MLB,cle,lad,18,,,,,,,,,,,,,,,,,,,10:10 PM,"September 6, 2024",9.0,6.0,2024.0
+401570601,MLB,nyy,chc,4,,,,,,,,,,,,,,,,,,,2:20 PM,"September 7, 2024",9.0,7.0,2024.0
+401570605,MLB,tb,bal,8,,,,,,,,,,,,,,,,,,,4:05 PM,"September 7, 2024",9.0,7.0,2024.0
+401570599,MLB,det,oak,5,,,,,,,,,,,,,,,,,,,4:07 PM,"September 7, 2024",9.0,7.0,2024.0
+401570594,MLB,ari,hou,25,,,,,,,,,,,,,,,,,,,4:10 PM,"September 7, 2024",9.0,7.0,2024.0
+401570596,MLB,cin,nym,30,,,,,,,,,,,,,,,,,,,4:10 PM,"September 7, 2024",9.0,7.0,2024.0
+401570602,MLB,phi,mia,12,,,,,,,,,,,,,,,,,,,4:10 PM,"September 7, 2024",9.0,7.0,2024.0
+401570607,MLB,wsh,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"September 7, 2024",9.0,7.0,2024.0
+401570598,MLB,col,mil,23,,,,,,,,,,,,,,,,,,,7:10 PM,"September 7, 2024",9.0,7.0,2024.0
+401570600,MLB,min,kc,15,,,,,,,,,,,,,,,,,,,7:10 PM,"September 7, 2024",9.0,7.0,2024.0
+401570593,MLB,laa,tex,27,,,,,,,,,,,,,,,,,,,7:15 PM,"September 7, 2024",9.0,7.0,2024.0
+401570595,MLB,chw,bos,11,,,,,,,,,,,,,,,,,,,7:15 PM,"September 7, 2024",9.0,7.0,2024.0
+401570603,MLB,sea,stl,3,,,,,,,,,,,,,,,,,,,7:15 PM,"September 7, 2024",9.0,7.0,2024.0
+401570606,MLB,tor,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"September 7, 2024",9.0,7.0,2024.0
+401570604,MLB,sf,sd,10,,,,,,,,,,,,,,,,,,,8:40 PM,"September 7, 2024",9.0,7.0,2024.0
+401570597,MLB,cle,lad,18,,,,,,,,,,,,,,,,,,,9:10 PM,"September 7, 2024",9.0,7.0,2024.0
+401570610,MLB,chw,bos,11,,,,,,,,,,,,,,,,,,,1:35 PM,"September 8, 2024",9.0,8.0,2024.0
+401570620,MLB,tb,bal,8,,,,,,,,,,,,,,,,,,,1:35 PM,"September 8, 2024",9.0,8.0,2024.0
+401570621,MLB,tor,atl,9,,,,,,,,,,,,,,,,,,,1:35 PM,"September 8, 2024",9.0,8.0,2024.0
+401570622,MLB,wsh,pit,6,,,,,,,,,,,,,,,,,,,1:35 PM,"September 8, 2024",9.0,8.0,2024.0
+401570611,MLB,cin,nym,30,,,,,,,,,,,,,,,,,,,1:40 PM,"September 8, 2024",9.0,8.0,2024.0
+401570617,MLB,phi,mia,12,,,,,,,,,,,,,,,,,,,1:40 PM,"September 8, 2024",9.0,8.0,2024.0
+401570609,MLB,ari,hou,25,,,,,,,,,,,,,,,,,,,2:10 PM,"September 8, 2024",9.0,8.0,2024.0
+401570613,MLB,col,mil,23,,,,,,,,,,,,,,,,,,,2:10 PM,"September 8, 2024",9.0,8.0,2024.0
+401570615,MLB,min,kc,15,,,,,,,,,,,,,,,,,,,2:10 PM,"September 8, 2024",9.0,8.0,2024.0
+401570618,MLB,sea,stl,3,,,,,,,,,,,,,,,,,,,2:15 PM,"September 8, 2024",9.0,8.0,2024.0
+401570616,MLB,nyy,chc,4,,,,,,,,,,,,,,,,,,,2:20 PM,"September 8, 2024",9.0,8.0,2024.0
+401570608,MLB,laa,tex,27,,,,,,,,,,,,,,,,,,,2:35 PM,"September 8, 2024",9.0,8.0,2024.0
+401570614,MLB,det,oak,5,,,,,,,,,,,,,,,,,,,4:07 PM,"September 8, 2024",9.0,8.0,2024.0
+401570612,MLB,cle,lad,18,,,,,,,,,,,,,,,,,,,4:10 PM,"September 8, 2024",9.0,8.0,2024.0
+401570619,MLB,sf,sd,10,,,,,,,,,,,,,,,,,,,4:10 PM,"September 8, 2024",9.0,8.0,2024.0
+401570628,MLB,mia,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"September 9, 2024",9.0,9.0,2024.0
+401570630,MLB,tb,phi,19,,,,,,,,,,,,,,,,,,,6:40 PM,"September 9, 2024",9.0,9.0,2024.0
+401570627,MLB,kc,nyy,1,,,,,,,,,,,,,,,,,,,7:05 PM,"September 9, 2024",9.0,9.0,2024.0
+401570629,MLB,nym,tor,7,,,,,,,,,,,,,,,,,,,7:07 PM,"September 9, 2024",9.0,9.0,2024.0
+401570624,MLB,bal,bos,11,,,,,,,,,,,,,,,,,,,7:10 PM,"September 9, 2024",9.0,9.0,2024.0
+401570623,MLB,laa,min,16,,,,,,,,,,,,,,,,,,,7:40 PM,"September 9, 2024",9.0,9.0,2024.0
+401570626,MLB,cle,chw,14,,,,,,,,,,,,,,,,,,,7:40 PM,"September 9, 2024",9.0,9.0,2024.0
+401570625,MLB,chc,lad,18,,,,,,,,,,,,,,,,,,,10:10 PM,"September 9, 2024",9.0,9.0,2024.0
+401570637,MLB,col,det,21,,,,,,,,,,,,,,,,,,,6:40 PM,"September 10, 2024",9.0,10.0,2024.0
+401570639,MLB,mia,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"September 10, 2024",9.0,10.0,2024.0
+401570644,MLB,tb,phi,19,,,,,,,,,,,,,,,,,,,6:40 PM,"September 10, 2024",9.0,10.0,2024.0
+401570632,MLB,atl,wsh,2,,,,,,,,,,,,,,,,,,,6:45 PM,"September 10, 2024",9.0,10.0,2024.0
+401570638,MLB,kc,nyy,1,,,,,,,,,,,,,,,,,,,7:05 PM,"September 10, 2024",9.0,10.0,2024.0
+401570641,MLB,nym,tor,7,,,,,,,,,,,,,,,,,,,7:07 PM,"September 10, 2024",9.0,10.0,2024.0
+401570633,MLB,bal,bos,11,,,,,,,,,,,,,,,,,,,7:10 PM,"September 10, 2024",9.0,10.0,2024.0
+401570631,MLB,laa,min,16,,,,,,,,,,,,,,,,,,,7:40 PM,"September 10, 2024",9.0,10.0,2024.0
+401570636,MLB,cle,chw,14,,,,,,,,,,,,,,,,,,,7:40 PM,"September 10, 2024",9.0,10.0,2024.0
+401570635,MLB,cin,stl,3,,,,,,,,,,,,,,,,,,,7:45 PM,"September 10, 2024",9.0,10.0,2024.0
+401570642,MLB,oak,hou,25,,,,,,,,,,,,,,,,,,,8:10 PM,"September 10, 2024",9.0,10.0,2024.0
+401570643,MLB,sd,sea,17,,,,,,,,,,,,,,,,,,,9:40 PM,"September 10, 2024",9.0,10.0,2024.0
+401570645,MLB,tex,ari,24,,,,,,,,,,,,,,,,,,,9:40 PM,"September 10, 2024",9.0,10.0,2024.0
+401570640,MLB,mil,sf,29,,,,,,,,,,,,,,,,,,,9:45 PM,"September 10, 2024",9.0,10.0,2024.0
+401570634,MLB,chc,lad,18,,,,,,,,,,,,,,,,,,,10:10 PM,"September 10, 2024",9.0,10.0,2024.0
+401570654,MLB,mia,pit,6,,,,,,,,,,,,,,,,,,,12:35 PM,"September 11, 2024",9.0,11.0,2024.0
+401570651,MLB,cle,chw,14,,,,,,,,,,,,,,,,,,,2:10 PM,"September 11, 2024",9.0,11.0,2024.0
+401570656,MLB,nym,tor,7,,,,,,,,,,,,,,,,,,,3:07 PM,"September 11, 2024",9.0,11.0,2024.0
+401570660,MLB,tex,ari,24,,,,,,,,,,,,,,,,,,,3:40 PM,"September 11, 2024",9.0,11.0,2024.0
+401570652,MLB,col,det,21,,,,,,,,,,,,,,,,,,,6:40 PM,"September 11, 2024",9.0,11.0,2024.0
+401570659,MLB,tb,phi,19,,,,,,,,,,,,,,,,,,,6:40 PM,"September 11, 2024",9.0,11.0,2024.0
+401570647,MLB,atl,wsh,2,,,,,,,,,,,,,,,,,,,6:45 PM,"September 11, 2024",9.0,11.0,2024.0
+401570653,MLB,kc,nyy,1,,,,,,,,,,,,,,,,,,,7:05 PM,"September 11, 2024",9.0,11.0,2024.0
+401570646,MLB,laa,min,16,,,,,,,,,,,,,,,,,,,7:10 PM,"September 11, 2024",9.0,11.0,2024.0
+401570648,MLB,bal,bos,11,,,,,,,,,,,,,,,,,,,7:10 PM,"September 11, 2024",9.0,11.0,2024.0
+401570650,MLB,cin,stl,3,,,,,,,,,,,,,,,,,,,7:45 PM,"September 11, 2024",9.0,11.0,2024.0
+401570657,MLB,oak,hou,25,,,,,,,,,,,,,,,,,,,8:10 PM,"September 11, 2024",9.0,11.0,2024.0
+401570658,MLB,sd,sea,17,,,,,,,,,,,,,,,,,,,9:40 PM,"September 11, 2024",9.0,11.0,2024.0
+401570655,MLB,mil,sf,29,,,,,,,,,,,,,,,,,,,9:45 PM,"September 11, 2024",9.0,11.0,2024.0
+401570649,MLB,chc,lad,18,,,,,,,,,,,,,,,,,,,10:10 PM,"September 11, 2024",9.0,11.0,2024.0
+401570663,MLB,col,det,21,,,,,,,,,,,,,,,,,,,1:10 PM,"September 12, 2024",9.0,12.0,2024.0
+401570662,MLB,cin,stl,3,,,,,,,,,,,,,,,,,,,1:15 PM,"September 12, 2024",9.0,12.0,2024.0
+401570666,MLB,oak,hou,25,,,,,,,,,,,,,,,,,,,2:10 PM,"September 12, 2024",9.0,12.0,2024.0
+401570667,MLB,tb,cle,13,,,,,,,,,,,,,,,,,,,6:40 PM,"September 12, 2024",9.0,12.0,2024.0
+401570664,MLB,mia,wsh,2,,,,,,,,,,,,,,,,,,,6:45 PM,"September 12, 2024",9.0,12.0,2024.0
+401570661,MLB,bos,nyy,1,,,,,,,,,,,,,,,,,,,7:05 PM,"September 12, 2024",9.0,12.0,2024.0
+401570668,MLB,tex,sea,17,,,,,,,,,,,,,,,,,,,9:40 PM,"September 12, 2024",9.0,12.0,2024.0
+401570665,MLB,mil,sf,29,,,,,,,,,,,,,,,,,,,9:45 PM,"September 12, 2024",9.0,12.0,2024.0
+401570669,MLB,bal,det,21,,,,,,,,,,,,,,,,,,,6:40 PM,"September 13, 2024",9.0,13.0,2024.0
+401570674,MLB,kc,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"September 13, 2024",9.0,13.0,2024.0
+401570678,MLB,nym,phi,19,,,,,,,,,,,,,,,,,,,6:40 PM,"September 13, 2024",9.0,13.0,2024.0
+401570676,MLB,mia,wsh,2,,,,,,,,,,,,,,,,,,,6:45 PM,"September 13, 2024",9.0,13.0,2024.0
+401570670,MLB,bos,nyy,1,,,,,,,,,,,,,,,,,,,7:05 PM,"September 13, 2024",9.0,13.0,2024.0
+401570681,MLB,stl,tor,7,,,,,,,,,,,,,,,,,,,7:07 PM,"September 13, 2024",9.0,13.0,2024.0
+401570682,MLB,tb,cle,13,,,,,,,,,,,,,,,,,,,7:10 PM,"September 13, 2024",9.0,13.0,2024.0
+401570675,MLB,lad,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"September 13, 2024",9.0,13.0,2024.0
+401570679,MLB,oak,chw,14,,,,,,,,,,,,,,,,,,,7:40 PM,"September 13, 2024",9.0,13.0,2024.0
+401570672,MLB,cin,min,16,,,,,,,,,,,,,,,,,,,8:10 PM,"September 13, 2024",9.0,13.0,2024.0
+401570671,MLB,chc,col,20,,,,,,,,,,,,,,,,,,,8:40 PM,"September 13, 2024",9.0,13.0,2024.0
+401570673,MLB,hou,laa,28,,,,,,,,,,,,,,,,,,,9:38 PM,"September 13, 2024",9.0,13.0,2024.0
+401570677,MLB,mil,ari,24,,,,,,,,,,,,,,,,,,,9:40 PM,"September 13, 2024",9.0,13.0,2024.0
+401570683,MLB,tex,sea,17,,,,,,,,,,,,,,,,,,,10:10 PM,"September 13, 2024",9.0,13.0,2024.0
+401570680,MLB,sd,sf,29,,,,,,,,,,,,,,,,,,,10:15 PM,"September 13, 2024",9.0,13.0,2024.0
+401570685,MLB,bos,nyy,1,,,,,,,,,,,,,,,,,,,1:05 PM,"September 14, 2024",9.0,14.0,2024.0
+401570696,MLB,stl,tor,7,,,,,,,,,,,,,,,,,,,3:07 PM,"September 14, 2024",9.0,14.0,2024.0
+401570691,MLB,mia,wsh,2,,,,,,,,,,,,,,,,,,,4:05 PM,"September 14, 2024",9.0,14.0,2024.0
+401570693,MLB,nym,phi,19,,,,,,,,,,,,,,,,,,,4:05 PM,"September 14, 2024",9.0,14.0,2024.0
+401570684,MLB,bal,det,21,,,,,,,,,,,,,,,,,,,6:10 PM,"September 14, 2024",9.0,14.0,2024.0
+401570697,MLB,tb,cle,13,,,,,,,,,,,,,,,,,,,6:10 PM,"September 14, 2024",9.0,14.0,2024.0
+401570689,MLB,kc,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"September 14, 2024",9.0,14.0,2024.0
+401570687,MLB,cin,min,16,,,,,,,,,,,,,,,,,,,7:10 PM,"September 14, 2024",9.0,14.0,2024.0
+401570694,MLB,oak,chw,14,,,,,,,,,,,,,,,,,,,7:10 PM,"September 14, 2024",9.0,14.0,2024.0
+401570690,MLB,lad,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"September 14, 2024",9.0,14.0,2024.0
+401570686,MLB,chc,col,20,,,,,,,,,,,,,,,,,,,8:10 PM,"September 14, 2024",9.0,14.0,2024.0
+401570692,MLB,mil,ari,24,,,,,,,,,,,,,,,,,,,8:10 PM,"September 14, 2024",9.0,14.0,2024.0
+401570695,MLB,sd,sf,29,,,,,,,,,,,,,,,,,,,9:05 PM,"September 14, 2024",9.0,14.0,2024.0
+401570688,MLB,hou,laa,28,,,,,,,,,,,,,,,,,,,9:38 PM,"September 14, 2024",9.0,14.0,2024.0
+401570698,MLB,tex,sea,17,,,,,,,,,,,,,,,,,,,9:40 PM,"September 14, 2024",9.0,14.0,2024.0
+401570700,MLB,bos,nyy,1,,,,,,,,,,,,,,,,,,,1:35 PM,"September 15, 2024",9.0,15.0,2024.0
+401570704,MLB,kc,pit,6,,,,,,,,,,,,,,,,,,,1:35 PM,"September 15, 2024",9.0,15.0,2024.0
+401570705,MLB,lad,atl,9,,,,,,,,,,,,,,,,,,,1:35 PM,"September 15, 2024",9.0,15.0,2024.0
+401570706,MLB,mia,wsh,2,,,,,,,,,,,,,,,,,,,1:35 PM,"September 15, 2024",9.0,15.0,2024.0
+401570708,MLB,nym,phi,19,,,,,,,,,,,,,,,,,,,1:35 PM,"September 15, 2024",9.0,15.0,2024.0
+401570711,MLB,stl,tor,7,,,,,,,,,,,,,,,,,,,1:37 PM,"September 15, 2024",9.0,15.0,2024.0
+401570699,MLB,bal,det,21,,,,,,,,,,,,,,,,,,,1:40 PM,"September 15, 2024",9.0,15.0,2024.0
+401570712,MLB,tb,cle,13,,,,,,,,,,,,,,,,,,,1:40 PM,"September 15, 2024",9.0,15.0,2024.0
+401570702,MLB,cin,min,16,,,,,,,,,,,,,,,,,,,2:10 PM,"September 15, 2024",9.0,15.0,2024.0
+401570709,MLB,oak,chw,14,,,,,,,,,,,,,,,,,,,2:10 PM,"September 15, 2024",9.0,15.0,2024.0
+401570701,MLB,chc,col,20,,,,,,,,,,,,,,,,,,,3:10 PM,"September 15, 2024",9.0,15.0,2024.0
+401570710,MLB,sd,sf,29,,,,,,,,,,,,,,,,,,,4:05 PM,"September 15, 2024",9.0,15.0,2024.0
+401570703,MLB,hou,laa,28,,,,,,,,,,,,,,,,,,,4:07 PM,"September 15, 2024",9.0,15.0,2024.0
+401570707,MLB,mil,ari,24,,,,,,,,,,,,,,,,,,,4:10 PM,"September 15, 2024",9.0,15.0,2024.0
+401570713,MLB,tex,sea,17,,,,,,,,,,,,,,,,,,,4:10 PM,"September 15, 2024",9.0,15.0,2024.0
+401570719,MLB,min,cle,13,,,,,,,,,,,,,,,,,,,6:40 PM,"September 16, 2024",9.0,16.0,2024.0
+401570723,MLB,wsh,nym,30,,,,,,,,,,,,,,,,,,,7:10 PM,"September 16, 2024",9.0,16.0,2024.0
+401570718,MLB,lad,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"September 16, 2024",9.0,16.0,2024.0
+401570716,MLB,det,kc,15,,,,,,,,,,,,,,,,,,,7:40 PM,"September 16, 2024",9.0,16.0,2024.0
+401570720,MLB,oak,chc,4,,,,,,,,,,,,,,,,,,,7:40 PM,"September 16, 2024",9.0,16.0,2024.0
+401570721,MLB,phi,mil,23,,,,,,,,,,,,,,,,,,,7:40 PM,"September 16, 2024",9.0,16.0,2024.0
+401570722,MLB,pit,stl,3,,,,,,,,,,,,,,,,,,,7:45 PM,"September 16, 2024",9.0,16.0,2024.0
+401570714,MLB,ari,col,20,,,,,,,,,,,,,,,,,,,8:40 PM,"September 16, 2024",9.0,16.0,2024.0
+401570715,MLB,chw,laa,28,,,,,,,,,,,,,,,,,,,9:38 PM,"September 16, 2024",9.0,16.0,2024.0
+401570717,MLB,hou,sd,10,,,,,,,,,,,,,,,,,,,9:40 PM,"September 16, 2024",9.0,16.0,2024.0
+401570736,MLB,sf,bal,8,,,,,,,,,,,,,,,,,,,6:35 PM,"September 17, 2024",9.0,17.0,2024.0
+401570725,MLB,atl,cin,22,,,,,,,,,,,,,,,,,,,6:40 PM,"September 17, 2024",9.0,17.0,2024.0
+401570730,MLB,lad,mia,12,,,,,,,,,,,,,,,,,,,6:40 PM,"September 17, 2024",9.0,17.0,2024.0
+401570731,MLB,min,cle,13,,,,,,,,,,,,,,,,,,,6:40 PM,"September 17, 2024",9.0,17.0,2024.0
+401570726,MLB,bos,tb,26,,,,,,,,,,,,,,,,,,,6:50 PM,"September 17, 2024",9.0,17.0,2024.0
+401570738,MLB,wsh,nym,30,,,,,,,,,,,,,,,,,,,7:10 PM,"September 17, 2024",9.0,17.0,2024.0
+401570728,MLB,det,kc,15,,,,,,,,,,,,,,,,,,,7:40 PM,"September 17, 2024",9.0,17.0,2024.0
+401570733,MLB,oak,chc,4,,,,,,,,,,,,,,,,,,,7:40 PM,"September 17, 2024",9.0,17.0,2024.0
+401570734,MLB,phi,mil,23,,,,,,,,,,,,,,,,,,,7:40 PM,"September 17, 2024",9.0,17.0,2024.0
+401570735,MLB,pit,stl,3,,,,,,,,,,,,,,,,,,,7:45 PM,"September 17, 2024",9.0,17.0,2024.0
+401570737,MLB,tor,tex,27,,,,,,,,,,,,,,,,,,,8:05 PM,"September 17, 2024",9.0,17.0,2024.0
+401570724,MLB,ari,col,20,,,,,,,,,,,,,,,,,,,8:40 PM,"September 17, 2024",9.0,17.0,2024.0
+401570727,MLB,chw,laa,28,,,,,,,,,,,,,,,,,,,9:38 PM,"September 17, 2024",9.0,17.0,2024.0
+401570729,MLB,hou,sd,10,,,,,,,,,,,,,,,,,,,9:40 PM,"September 17, 2024",9.0,17.0,2024.0
+401570732,MLB,nyy,sea,17,,,,,,,,,,,,,,,,,,,9:40 PM,"September 17, 2024",9.0,17.0,2024.0
+401570748,MLB,oak,chc,4,,,,,,,,,,,,,,,,,,,2:20 PM,"September 18, 2024",9.0,18.0,2024.0
+401570739,MLB,ari,col,20,,,,,,,,,,,,,,,,,,,3:10 PM,"September 18, 2024",9.0,18.0,2024.0
+401570742,MLB,chw,laa,28,,,,,,,,,,,,,,,,,,,4:07 PM,"September 18, 2024",9.0,18.0,2024.0
+401570751,MLB,sf,bal,8,,,,,,,,,,,,,,,,,,,6:35 PM,"September 18, 2024",9.0,18.0,2024.0
+401570740,MLB,atl,cin,22,,,,,,,,,,,,,,,,,,,6:40 PM,"September 18, 2024",9.0,18.0,2024.0
+401570744,MLB,hou,sd,10,,,,,,,,,,,,,,,,,,,6:40 PM,"September 18, 2024",9.0,18.0,2024.0
+401570745,MLB,lad,mia,12,,,,,,,,,,,,,,,,,,,6:40 PM,"September 18, 2024",9.0,18.0,2024.0
+401570746,MLB,min,cle,13,,,,,,,,,,,,,,,,,,,6:40 PM,"September 18, 2024",9.0,18.0,2024.0
+401570741,MLB,bos,tb,26,,,,,,,,,,,,,,,,,,,6:50 PM,"September 18, 2024",9.0,18.0,2024.0
+401570753,MLB,wsh,nym,30,,,,,,,,,,,,,,,,,,,7:10 PM,"September 18, 2024",9.0,18.0,2024.0
+401570743,MLB,det,kc,15,,,,,,,,,,,,,,,,,,,7:40 PM,"September 18, 2024",9.0,18.0,2024.0
+401570749,MLB,phi,mil,23,,,,,,,,,,,,,,,,,,,7:40 PM,"September 18, 2024",9.0,18.0,2024.0
+401570750,MLB,pit,stl,3,,,,,,,,,,,,,,,,,,,7:45 PM,"September 18, 2024",9.0,18.0,2024.0
+401570752,MLB,tor,tex,27,,,,,,,,,,,,,,,,,,,8:05 PM,"September 18, 2024",9.0,18.0,2024.0
+401570747,MLB,nyy,sea,17,,,,,,,,,,,,,,,,,,,9:40 PM,"September 18, 2024",9.0,18.0,2024.0
+401570763,MLB,sf,bal,8,,,,,,,,,,,,,,,,,,,1:05 PM,"September 19, 2024",9.0,19.0,2024.0
+401570756,MLB,atl,cin,22,,,,,,,,,,,,,,,,,,,1:10 PM,"September 19, 2024",9.0,19.0,2024.0
+401570759,MLB,min,cle,13,,,,,,,,,,,,,,,,,,,1:10 PM,"September 19, 2024",9.0,19.0,2024.0
+401570764,MLB,tor,tex,27,,,,,,,,,,,,,,,,,,,2:35 PM,"September 19, 2024",9.0,19.0,2024.0
+401570760,MLB,nyy,sea,17,,,,,,,,,,,,,,,,,,,4:10 PM,"September 19, 2024",9.0,19.0,2024.0
+401570758,MLB,lad,mia,12,,,,,,,,,,,,,,,,,,,4:40 PM,"September 19, 2024",9.0,19.0,2024.0
+401570757,MLB,bos,tb,26,,,,,,,,,,,,,,,,,,,6:50 PM,"September 19, 2024",9.0,19.0,2024.0
+401570761,MLB,phi,nym,30,,,,,,,,,,,,,,,,,,,7:10 PM,"September 19, 2024",9.0,19.0,2024.0
+401570762,MLB,pit,stl,3,,,,,,,,,,,,,,,,,,,7:15 PM,"September 19, 2024",9.0,19.0,2024.0
+401570755,MLB,ari,mil,23,,,,,,,,,,,,,,,,,,,7:40 PM,"September 19, 2024",9.0,19.0,2024.0
+401570765,MLB,wsh,chc,4,,,,,,,,,,,,,,,,,,,7:40 PM,"September 19, 2024",9.0,19.0,2024.0
+401570754,MLB,laa,hou,25,,,,,,,,,,,,,,,,,,,8:10 PM,"September 19, 2024",9.0,19.0,2024.0
+401570780,MLB,wsh,chc,4,,,,,,,,,,,,,,,,,,,2:20 PM,"September 20, 2024",9.0,20.0,2024.0
+401570776,MLB,pit,cin,22,,,,,,,,,,,,,,,,,,,6:40 PM,"September 20, 2024",9.0,20.0,2024.0
+401570779,MLB,tor,tb,26,,,,,,,,,,,,,,,,,,,6:50 PM,"September 20, 2024",9.0,20.0,2024.0
+401570772,MLB,det,bal,8,,,,,,,,,,,,,,,,,,,7:05 PM,"September 20, 2024",9.0,20.0,2024.0
+401570768,MLB,atl,mia,12,,,,,,,,,,,,,,,,,,,7:10 PM,"September 20, 2024",9.0,20.0,2024.0
+401570773,MLB,min,bos,11,,,,,,,,,,,,,,,,,,,7:10 PM,"September 20, 2024",9.0,20.0,2024.0
+401570775,MLB,phi,nym,30,,,,,,,,,,,,,,,,,,,7:10 PM,"September 20, 2024",9.0,20.0,2024.0
+401570777,MLB,sea,tex,27,,,,,,,,,,,,,,,,,,,8:05 PM,"September 20, 2024",9.0,20.0,2024.0
+401570766,MLB,laa,hou,25,,,,,,,,,,,,,,,,,,,8:10 PM,"September 20, 2024",9.0,20.0,2024.0
+401570767,MLB,ari,mil,23,,,,,,,,,,,,,,,,,,,8:10 PM,"September 20, 2024",9.0,20.0,2024.0
+401570778,MLB,sf,kc,15,,,,,,,,,,,,,,,,,,,8:10 PM,"September 20, 2024",9.0,20.0,2024.0
+401570770,MLB,cle,stl,3,,,,,,,,,,,,,,,,,,,8:15 PM,"September 20, 2024",9.0,20.0,2024.0
+401570769,MLB,chw,sd,10,,,,,,,,,,,,,,,,,,,9:40 PM,"September 20, 2024",9.0,20.0,2024.0
+401570774,MLB,nyy,oak,5,,,,,,,,,,,,,,,,,,,9:40 PM,"September 20, 2024",9.0,20.0,2024.0
+401570771,MLB,col,lad,18,,,,,,,,,,,,,,,,,,,10:10 PM,"September 20, 2024",9.0,20.0,2024.0
+401570795,MLB,wsh,chc,4,,,,,,,,,,,,,,,,,,,2:20 PM,"September 21, 2024",9.0,21.0,2024.0
+401570787,MLB,det,bal,8,,,,,,,,,,,,,,,,,,,4:05 PM,"September 21, 2024",9.0,21.0,2024.0
+401570783,MLB,atl,mia,12,,,,,,,,,,,,,,,,,,,4:10 PM,"September 21, 2024",9.0,21.0,2024.0
+401570788,MLB,min,bos,11,,,,,,,,,,,,,,,,,,,4:10 PM,"September 21, 2024",9.0,21.0,2024.0
+401570790,MLB,phi,nym,30,,,,,,,,,,,,,,,,,,,4:10 PM,"September 21, 2024",9.0,21.0,2024.0
+401570794,MLB,tor,tb,26,,,,,,,,,,,,,,,,,,,4:10 PM,"September 21, 2024",9.0,21.0,2024.0
+401570791,MLB,pit,cin,22,,,,,,,,,,,,,,,,,,,6:40 PM,"September 21, 2024",9.0,21.0,2024.0
+401570792,MLB,sea,tex,27,,,,,,,,,,,,,,,,,,,7:05 PM,"September 21, 2024",9.0,21.0,2024.0
+401570781,MLB,laa,hou,25,,,,,,,,,,,,,,,,,,,7:10 PM,"September 21, 2024",9.0,21.0,2024.0
+401570782,MLB,ari,mil,23,,,,,,,,,,,,,,,,,,,7:10 PM,"September 21, 2024",9.0,21.0,2024.0
+401570793,MLB,sf,kc,15,,,,,,,,,,,,,,,,,,,7:10 PM,"September 21, 2024",9.0,21.0,2024.0
+401570785,MLB,cle,stl,3,,,,,,,,,,,,,,,,,,,7:15 PM,"September 21, 2024",9.0,21.0,2024.0
+401570784,MLB,chw,sd,10,,,,,,,,,,,,,,,,,,,8:40 PM,"September 21, 2024",9.0,21.0,2024.0
+401570789,MLB,nyy,oak,5,,,,,,,,,,,,,,,,,,,9:07 PM,"September 21, 2024",9.0,21.0,2024.0
+401570786,MLB,col,lad,18,,,,,,,,,,,,,,,,,,,9:10 PM,"September 21, 2024",9.0,21.0,2024.0
+401570806,MLB,pit,cin,22,,,,,,,,,,,,,,,,,,,1:10 PM,"September 22, 2024",9.0,22.0,2024.0
+401570802,MLB,det,bal,8,,,,,,,,,,,,,,,,,,,1:35 PM,"September 22, 2024",9.0,22.0,2024.0
+401570803,MLB,min,bos,11,,,,,,,,,,,,,,,,,,,1:35 PM,"September 22, 2024",9.0,22.0,2024.0
+401570798,MLB,atl,mia,12,,,,,,,,,,,,,,,,,,,1:40 PM,"September 22, 2024",9.0,22.0,2024.0
+401570805,MLB,phi,nym,30,,,,,,,,,,,,,,,,,,,1:40 PM,"September 22, 2024",9.0,22.0,2024.0
+401570809,MLB,tor,tb,26,,,,,,,,,,,,,,,,,,,1:40 PM,"September 22, 2024",9.0,22.0,2024.0
+401570796,MLB,laa,hou,25,,,,,,,,,,,,,,,,,,,2:10 PM,"September 22, 2024",9.0,22.0,2024.0
+401570797,MLB,ari,mil,23,,,,,,,,,,,,,,,,,,,2:10 PM,"September 22, 2024",9.0,22.0,2024.0
+401570808,MLB,sf,kc,15,,,,,,,,,,,,,,,,,,,2:10 PM,"September 22, 2024",9.0,22.0,2024.0
+401570800,MLB,cle,stl,3,,,,,,,,,,,,,,,,,,,2:15 PM,"September 22, 2024",9.0,22.0,2024.0
+401570810,MLB,wsh,chc,4,,,,,,,,,,,,,,,,,,,2:20 PM,"September 22, 2024",9.0,22.0,2024.0
+401570807,MLB,sea,tex,27,,,,,,,,,,,,,,,,,,,2:35 PM,"September 22, 2024",9.0,22.0,2024.0
+401570804,MLB,nyy,oak,5,,,,,,,,,,,,,,,,,,,4:07 PM,"September 22, 2024",9.0,22.0,2024.0
+401570799,MLB,chw,sd,10,,,,,,,,,,,,,,,,,,,4:10 PM,"September 22, 2024",9.0,22.0,2024.0
+401570801,MLB,col,lad,18,,,,,,,,,,,,,,,,,,,4:10 PM,"September 22, 2024",9.0,22.0,2024.0
+401570812,MLB,chc,phi,19,,,,,,,,,,,,,,,,,,,6:40 PM,"September 23, 2024",9.0,23.0,2024.0
+401570811,MLB,bos,tor,7,,,,,,,,,,,,,,,,,,,7:07 PM,"September 23, 2024",9.0,23.0,2024.0
+401570813,MLB,sea,hou,25,,,,,,,,,,,,,,,,,,,8:10 PM,"September 23, 2024",9.0,23.0,2024.0
+401570814,MLB,sf,ari,24,,,,,,,,,,,,,,,,,,,9:40 PM,"September 23, 2024",9.0,23.0,2024.0
+401570818,MLB,chc,phi,19,,,,,,,,,,,,,,,,,,,6:40 PM,"September 24, 2024",9.0,24.0,2024.0
+401570819,MLB,cin,cle,13,,,,,,,,,,,,,,,,,,,6:40 PM,"September 24, 2024",9.0,24.0,2024.0
+401570822,MLB,mil,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"September 24, 2024",9.0,24.0,2024.0
+401570828,MLB,tb,det,21,,,,,,,,,,,,,,,,,,,6:40 PM,"September 24, 2024",9.0,24.0,2024.0
+401570820,MLB,kc,wsh,2,,,,,,,,,,,,,,,,,,,6:45 PM,"September 24, 2024",9.0,24.0,2024.0
+401570816,MLB,bal,nyy,1,,,,,,,,,,,,,,,,,,,7:05 PM,"September 24, 2024",9.0,24.0,2024.0
+401570817,MLB,bos,tor,7,,,,,,,,,,,,,,,,,,,7:07 PM,"September 24, 2024",9.0,24.0,2024.0
+401570823,MLB,nym,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"September 24, 2024",9.0,24.0,2024.0
+401570815,MLB,laa,chw,14,,,,,,,,,,,,,,,,,,,7:40 PM,"September 24, 2024",9.0,24.0,2024.0
+401570821,MLB,mia,min,16,,,,,,,,,,,,,,,,,,,7:40 PM,"September 24, 2024",9.0,24.0,2024.0
+401570825,MLB,sea,hou,25,,,,,,,,,,,,,,,,,,,8:10 PM,"September 24, 2024",9.0,24.0,2024.0
+401570827,MLB,stl,col,20,,,,,,,,,,,,,,,,,,,8:40 PM,"September 24, 2024",9.0,24.0,2024.0
+401570826,MLB,sf,ari,24,,,,,,,,,,,,,,,,,,,9:40 PM,"September 24, 2024",9.0,24.0,2024.0
+401570829,MLB,tex,oak,5,,,,,,,,,,,,,,,,,,,9:40 PM,"September 24, 2024",9.0,24.0,2024.0
+401570824,MLB,sd,lad,18,,,,,,,,,,,,,,,,,,,10:10 PM,"September 24, 2024",9.0,24.0,2024.0
+401570840,MLB,sea,hou,25,,,,,,,,,,,,,,,,,,,2:10 PM,"September 25, 2024",9.0,25.0,2024.0
+401570833,MLB,chc,phi,19,,,,,,,,,,,,,,,,,,,6:05 PM,"September 25, 2024",9.0,25.0,2024.0
+401570834,MLB,cin,cle,13,,,,,,,,,,,,,,,,,,,6:40 PM,"September 25, 2024",9.0,25.0,2024.0
+401570837,MLB,mil,pit,6,,,,,,,,,,,,,,,,,,,6:40 PM,"September 25, 2024",9.0,25.0,2024.0
+401570843,MLB,tb,det,21,,,,,,,,,,,,,,,,,,,6:40 PM,"September 25, 2024",9.0,25.0,2024.0
+401570835,MLB,kc,wsh,2,,,,,,,,,,,,,,,,,,,6:45 PM,"September 25, 2024",9.0,25.0,2024.0
+401570831,MLB,bal,nyy,1,,,,,,,,,,,,,,,,,,,7:05 PM,"September 25, 2024",9.0,25.0,2024.0
+401570832,MLB,bos,tor,7,,,,,,,,,,,,,,,,,,,7:07 PM,"September 25, 2024",9.0,25.0,2024.0
+401570838,MLB,nym,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"September 25, 2024",9.0,25.0,2024.0
+401570830,MLB,laa,chw,14,,,,,,,,,,,,,,,,,,,7:40 PM,"September 25, 2024",9.0,25.0,2024.0
+401570836,MLB,mia,min,16,,,,,,,,,,,,,,,,,,,7:40 PM,"September 25, 2024",9.0,25.0,2024.0
+401570842,MLB,stl,col,20,,,,,,,,,,,,,,,,,,,8:40 PM,"September 25, 2024",9.0,25.0,2024.0
+401570841,MLB,sf,ari,24,,,,,,,,,,,,,,,,,,,9:40 PM,"September 25, 2024",9.0,25.0,2024.0
+401570844,MLB,tex,oak,5,,,,,,,,,,,,,,,,,,,9:40 PM,"September 25, 2024",9.0,25.0,2024.0
+401570839,MLB,sd,lad,18,,,,,,,,,,,,,,,,,,,10:10 PM,"September 25, 2024",9.0,25.0,2024.0
+401570849,MLB,mil,pit,6,,,,,,,,,,,,,,,,,,,12:35 PM,"September 26, 2024",9.0,26.0,2024.0
+401570847,MLB,kc,wsh,2,,,,,,,,,,,,,,,,,,,1:05 PM,"September 26, 2024",9.0,26.0,2024.0
+401570852,MLB,tb,det,21,,,,,,,,,,,,,,,,,,,1:10 PM,"September 26, 2024",9.0,26.0,2024.0
+401570845,MLB,laa,chw,14,,,,,,,,,,,,,,,,,,,2:10 PM,"September 26, 2024",9.0,26.0,2024.0
+401570851,MLB,stl,col,20,,,,,,,,,,,,,,,,,,,3:10 PM,"September 26, 2024",9.0,26.0,2024.0
+401570853,MLB,tex,oak,5,,,,,,,,,,,,,,,,,,,3:37 PM,"September 26, 2024",9.0,26.0,2024.0
+401570846,MLB,bal,nyy,1,,,,,,,,,,,,,,,,,,,7:05 PM,"September 26, 2024",9.0,26.0,2024.0
+401570848,MLB,mia,min,16,,,,,,,,,,,,,,,,,,,7:40 PM,"September 26, 2024",9.0,26.0,2024.0
+401570850,MLB,sd,lad,18,,,,,,,,,,,,,,,,,,,10:10 PM,"September 26, 2024",9.0,26.0,2024.0
+401570856,MLB,cin,chc,4,,,,,,,,,,,,,,,,,,,2:20 PM,"September 27, 2024",9.0,27.0,2024.0
+401570855,MLB,chw,det,21,,,,,,,,,,,,,,,,,,,6:40 PM,"September 27, 2024",9.0,27.0,2024.0
+401570863,MLB,phi,wsh,2,,,,,,,,,,,,,,,,,,,6:45 PM,"September 27, 2024",9.0,27.0,2024.0
+401570864,MLB,pit,nyy,1,,,,,,,,,,,,,,,,,,,7:05 PM,"September 27, 2024",9.0,27.0,2024.0
+401570860,MLB,mia,tor,7,,,,,,,,,,,,,,,,,,,7:07 PM,"September 27, 2024",9.0,27.0,2024.0
+401570857,MLB,hou,cle,13,,,,,,,,,,,,,,,,,,,7:10 PM,"September 27, 2024",9.0,27.0,2024.0
+401570867,MLB,tb,bos,11,,,,,,,,,,,,,,,,,,,7:10 PM,"September 27, 2024",9.0,27.0,2024.0
+401570858,MLB,kc,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"September 27, 2024",9.0,27.0,2024.0
+401570854,MLB,bal,min,16,,,,,,,,,,,,,,,,,,,8:10 PM,"September 27, 2024",9.0,27.0,2024.0
+401570859,MLB,lad,col,20,,,,,,,,,,,,,,,,,,,8:10 PM,"September 27, 2024",9.0,27.0,2024.0
+401570861,MLB,nym,mil,23,,,,,,,,,,,,,,,,,,,8:10 PM,"September 27, 2024",9.0,27.0,2024.0
+401570868,MLB,tex,laa,28,,,,,,,,,,,,,,,,,,,9:38 PM,"September 27, 2024",9.0,27.0,2024.0
+401570865,MLB,sd,ari,24,,,,,,,,,,,,,,,,,,,9:40 PM,"September 27, 2024",9.0,27.0,2024.0
+401570862,MLB,oak,sea,17,,,,,,,,,,,,,,,,,,,10:10 PM,"September 27, 2024",9.0,27.0,2024.0
+401570866,MLB,stl,sf,29,,,,,,,,,,,,,,,,,,,10:15 PM,"September 27, 2024",9.0,27.0,2024.0
+401570879,MLB,pit,nyy,1,,,,,,,,,,,,,,,,,,,1:05 PM,"September 28, 2024",9.0,28.0,2024.0
+401570870,MLB,chw,det,21,,,,,,,,,,,,,,,,,,,1:10 PM,"September 28, 2024",9.0,28.0,2024.0
+401570869,MLB,bal,min,16,,,,,,,,,,,,,,,,,,,2:10 PM,"September 28, 2024",9.0,28.0,2024.0
+401570871,MLB,cin,chc,4,,,,,,,,,,,,,,,,,,,2:20 PM,"September 28, 2024",9.0,28.0,2024.0
+401570875,MLB,mia,tor,7,,,,,,,,,,,,,,,,,,,3:07 PM,"September 28, 2024",9.0,28.0,2024.0
+401570878,MLB,phi,wsh,2,,,,,,,,,,,,,,,,,,,4:05 PM,"September 28, 2024",9.0,28.0,2024.0
+401570881,MLB,stl,sf,29,,,,,,,,,,,,,,,,,,,4:05 PM,"September 28, 2024",9.0,28.0,2024.0
+401570882,MLB,tb,bos,11,,,,,,,,,,,,,,,,,,,4:10 PM,"September 28, 2024",9.0,28.0,2024.0
+401570872,MLB,hou,cle,13,,,,,,,,,,,,,,,,,,,6:10 PM,"September 28, 2024",9.0,28.0,2024.0
+401570876,MLB,nym,mil,23,,,,,,,,,,,,,,,,,,,7:10 PM,"September 28, 2024",9.0,28.0,2024.0
+401570873,MLB,kc,atl,9,,,,,,,,,,,,,,,,,,,7:20 PM,"September 28, 2024",9.0,28.0,2024.0
+401570874,MLB,lad,col,20,,,,,,,,,,,,,,,,,,,8:10 PM,"September 28, 2024",9.0,28.0,2024.0
+401570880,MLB,sd,ari,24,,,,,,,,,,,,,,,,,,,8:10 PM,"September 28, 2024",9.0,28.0,2024.0
+401570883,MLB,tex,laa,28,,,,,,,,,,,,,,,,,,,9:38 PM,"September 28, 2024",9.0,28.0,2024.0
+401570877,MLB,oak,sea,17,,,,,,,,,,,,,,,,,,,9:40 PM,"September 28, 2024",9.0,28.0,2024.0
+401570893,MLB,phi,wsh,2,,,,,,,,,,,,,,,,,,,3:05 PM,"September 29, 2024",9.0,29.0,2024.0
+401570894,MLB,pit,nyy,1,,,,,,,,,,,,,,,,,,,3:05 PM,"September 29, 2024",9.0,29.0,2024.0
+401570896,MLB,stl,sf,29,,,,,,,,,,,,,,,,,,,3:05 PM,"September 29, 2024",9.0,29.0,2024.0
+401570897,MLB,tb,bos,11,,,,,,,,,,,,,,,,,,,3:05 PM,"September 29, 2024",9.0,29.0,2024.0
+401570890,MLB,mia,tor,7,,,,,,,,,,,,,,,,,,,3:07 PM,"September 29, 2024",9.0,29.0,2024.0
+401570898,MLB,tex,laa,28,,,,,,,,,,,,,,,,,,,3:07 PM,"September 29, 2024",9.0,29.0,2024.0
+401570884,MLB,bal,min,16,,,,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024",9.0,29.0,2024.0
+401570885,MLB,chw,det,21,,,,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024",9.0,29.0,2024.0
+401570887,MLB,hou,cle,13,,,,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024",9.0,29.0,2024.0
+401570889,MLB,lad,col,20,,,,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024",9.0,29.0,2024.0
+401570891,MLB,nym,mil,23,,,,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024",9.0,29.0,2024.0
+401570892,MLB,oak,sea,17,,,,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024",9.0,29.0,2024.0
+401570895,MLB,sd,ari,24,,,,,,,,,,,,,,,,,,,3:10 PM,"September 29, 2024",9.0,29.0,2024.0
+401570886,MLB,cin,chc,4,,,,,,,,,,,,,,,,,,,3:20 PM,"September 29, 2024",9.0,29.0,2024.0
+401570888,MLB,kc,atl,9,,,,,,,,,,,,,,,,,,,3:20 PM,"September 29, 2024",9.0,29.0,2024.0

@@ -59,7 +59,11 @@ def transform_games(league:str, games_df: dict, locations_df: dict, transform_lo
 
         # Game Timestamp
         games_df.loc[idx, 'game_time'] = tf_games.transform_game_time(game_timestamp, transform_logfile)
-        games_df.loc[idx, 'game_date'] = tf_games.transform_game_date(game_timestamp, transform_logfile)
+        game_date, game_month, game_day, game_year = tf_games.transform_game_date(game_timestamp, transform_logfile)
+        games_df.loc[idx, 'game_date'] = game_date
+        games_df.loc[idx, 'game_month'] = game_month
+        games_df.loc[idx, 'game_day'] = game_day
+        games_df.loc[idx, 'game_year'] = game_year
 
         # Stadium and Attendance
         if stadium_capacity is not None:
@@ -67,10 +71,10 @@ def transform_games(league:str, games_df: dict, locations_df: dict, transform_lo
         if attendance is not None:
             games_df.loc[idx, 'attendance'] = tf_games.transform_stadium_attendance(attendance, transform_logfile)
     
-    print(f'Dropping columns [\'stadium_capacity\', \'away_team_box_score\', \'home_team_box_score\', \'game_timestamp\'] from games_df\n')
-    transform_logfile.write(f'Dropping columns [\'stadium_capacity\', \'away_team_box_score\', \'home_team_box_score\', \'game_timestamp\'] from games_df\n\n')
+    print(f'Dropping columns [\'stadium\', \'stadium_capacity\', \'away_team_box_score\', \'home_team_box_score\', \'game_timestamp\'] from games_df\n')
+    transform_logfile.write(f'Dropping columns [\'stadium\', \'stadium_capacity\', \'away_team_box_score\', \'home_team_box_score\', \'game_timestamp\'] from games_df\n\n')
     try:        
-        games_df.drop(['stadium_capacity', 'away_team_box_score', 'home_team_box_score', 'game_timestamp'], axis=1, inplace=True)
+        games_df.drop(['stadium', 'stadium_capacity', 'away_team_box_score', 'home_team_box_score', 'game_timestamp'], axis=1, inplace=True)
     except Exception as e:
         print(f'Columns NOT dropped from games_df\n{e}\n')
         transform_logfile.write(f'Columns NOT dropped from games_df\n{e}\n\n')

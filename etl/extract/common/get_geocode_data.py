@@ -75,13 +75,13 @@ def call_geocode_api(stadium: str, city: str, state: str, logfile: object):
     logfile.write('Geocode API Response: ')
     try:
         response = requests.get(geocode_api_url)
-        if response.status_code == '429':
-            time.sleep(5)
+        while response.status_code == '429':
+            time.sleep(2)
             response = requests.get(geocode_api_url)
         geocode_record = response.json()[0]
         logfile.write(f'{geocode_record}\n')
     except Exception as e:
-        logfile.write(f'response: {requests.get(geocode_api_url).status_code}')
+        logfile.write(f'response: {requests.get(geocode_api_url).status_code} | ')
         geocode_record = None
         logfile.write(f'{e}\n')
 

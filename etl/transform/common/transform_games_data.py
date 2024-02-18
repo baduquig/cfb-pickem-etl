@@ -54,11 +54,30 @@ def transform_game_time(game_timestamp: str, transform_logfile: object):
 def transform_game_date(game_timestamp: str, transform_logfile: object):
     """Function that extracts date from datetime string and converts to datetime object
        Accepts `game_timestamp`: String, `transform_logfile`: File Object
-       Returns `game_date`: Datetime"""
+       Returns `game_date`: Datetime, `game_month`: Number, `game_day`: Number, `game_year`: Number"""
     transform_logfile.write(f'Transforming game date {game_timestamp} -> ')
+    months = {
+       'january': 1,
+       'february': 2,
+       'march': 3,
+       'april': 4,
+       'may': 5,
+       'june': 6,
+       'july': 7,
+       'august': 8,
+       'september': 9,
+       'october': 10,
+       'november': 11,
+       'december': 12,
+    }
+    
     game_date = game_timestamp.lstrip(f'{game_timestamp.split(",")[0]}, ')
+    game_month = months[game_date.split()[0].lower()]
+    game_day = int(game_date.split()[1].replace(',', ''))
+    game_year = int(game_date.split()[2])
+
     transform_logfile.write(f'{game_date}\n')
-    return game_date
+    return game_date, game_month, game_day, game_year
 
 def transform_stadium_capacity(stadium_capacity_raw: str, transform_logfile: object):
     """Function that converts stadium_capacity into a Number type field
