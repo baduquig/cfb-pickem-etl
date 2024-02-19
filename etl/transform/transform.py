@@ -4,7 +4,6 @@ Author: Gabe Baduqui
 
 Cleanse, format and prepare extracted pickem data for loading.
 """
-import pandas as pd
 import etl.utils.get_timestamp as ts
 import etl.transform.common.transform_games_data as tf_games
 import etl.transform.common.transform_teams_data as tf_teams

@@ -4,7 +4,6 @@ Author: Gabe Baduqui
 
 Load pickem data from various web sources into desired destinations.
 """
-import mysql.connector
 import etl.load.db as db
 import etl.utils.get_timestamp as ts
 
