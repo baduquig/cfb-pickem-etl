@@ -4,7 +4,7 @@ Author: Gabe Baduqui
 
 Load pickem data from various web sources into desired destinations.
 """
-import etl.load.db as db
+#import etl.load.db as db
 import etl.utils.get_timestamp as ts
 
 def instantiate_logfile(league):

@@ -65,9 +65,7 @@ def transform_games(league:str, games_df: dict, locations_df: dict, transform_lo
         games_df.loc[idx, 'game_day'] = game_day
         games_df.loc[idx, 'game_year'] = game_year
 
-        # Stadium and Attendance
-        if stadium_capacity is not None:
-            games_df.loc[idx, 'stadium_capacity'] = tf_games.transform_stadium_capacity(stadium_capacity, transform_logfile)
+        # Attendance
         if attendance is not None:
             games_df.loc[idx, 'attendance'] = tf_games.transform_stadium_attendance(attendance, transform_logfile)
     
@@ -139,10 +137,13 @@ def transform_locations(league: str, locations_df: dict, transform_logfile: obje
         transform_logfile.write(f'\n~~ Cleansing and formatting Data for {league.upper()} Location ID {locations_df.loc[idx, "location_id"]}\n')
 
         # Current row column variables
+        stadium = locations_df.loc[idx, 'stadium']
         stadium_capacity = locations_df.loc[idx, 'stadium_capacity']
-
-        locations_df.loc[idx, 'stadium'] = locations_df.loc[idx, 'stadium'].rstrip()
-        locations_df.loc[idx, 'stadium_capacity'] = tf_locations.transform_stadium_capacity(stadium_capacity, transform_logfile)
+        
+        if stadium is not None:
+            locations_df.loc[idx, 'stadium'] = locations_df.loc[idx, 'stadium'].rstrip()
+        if stadium_capacity is not None:
+            locations_df.loc[idx, 'stadium_capacity'] = tf_locations.transform_stadium_capacity(stadium_capacity, transform_logfile)
     
     return locations_df
 

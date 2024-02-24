@@ -2,7 +2,7 @@ league,location_id,stadium,stadium_capacity,city,state,latitude,longitude
 MLB,1,Yankee Stadium,"Capacity: 47,309",Bronx,New York,40.82958275,-73.92652118491901
 MLB,2,Nationals Park,"Capacity: 41,376",Washington,District of Columbia,38.87274095,-77.00838588569519
 MLB,3,Busch Stadium,"Capacity: 44,494",St. Louis,Missouri,38.6225538,-90.19392193458768
-MLB,4,Wrigley Field,"Capacity: 41,363",Chicago,Illinois,41.94813535,-87.65635154722081
+MLB,4,Wrigley Field,"Capacity: 41,363",Chicago,Illinois,41.948208550000004,-87.65556489343666
 MLB,5,Oakland Coliseum,"Capacity: 46,847",Oakland,California,37.7539702,-122.1972051
 MLB,6,PNC Park,"Capacity: 38,753",Pittsburgh,Pennsylvania,40.4469258,-80.00560626612204
 MLB,7,Rogers Centre,"Capacity: 49,282",Toronto,Ontario,43.641659849999996,-79.38919761915824

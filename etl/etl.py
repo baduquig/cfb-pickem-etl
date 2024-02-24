@@ -14,7 +14,7 @@ def full_etl(prod: bool, league: str):
     
     # Extract
     if league == 'CFB':
-        games_raw, teams_raw, locations_raw = ext.full_extract(league, year=2024, weeks=1)
+        games_raw, teams_raw, locations_raw = ext.full_extract(league, year=2024, weeks=15)
     elif league == 'NFL':
         games_raw, teams_raw, locations_raw = ext.full_extract(league, year=2024, weeks=18)
     elif league == 'MLB':
