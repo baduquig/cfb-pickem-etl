@@ -13,9 +13,9 @@ def instantiate_logfile(league):
     load_logfile = open(load_logfile_path, 'a')
     return load_logfile
 
-def load_csv(prod: bool, df: dict, table_name: str, load_logfile: object):
+def load_csv(df: dict, table_name: str, load_logfile: object):
    """Function that loads data from a given Pandas DataFrame into a CSV file
-      Accepts `prod`: Boolean, `df`: Pandas DataFrame, `table_name`: String, `load_logfile`: File Object
+      Accepts `df`: Pandas DataFrame, `table_name`: String, `load_logfile`: File Object
       Returns: n/a"""
    print(f'~~~~ Writing {table_name} DataFrame to CSV File ~~')
    load_logfile.write(f'~~~~ Writing {table_name} DataFrame to CSV File ~~\n')
@@ -23,9 +23,9 @@ def load_csv(prod: bool, df: dict, table_name: str, load_logfile: object):
    csv_path = f'./pickem_data/{table_name}.csv'
    df.to_csv(csv_path, index=False)
 
-def load_json(prod: bool, df: dict, table_name: str, load_logfile: object):
+def load_json(df: dict, table_name: str, load_logfile: object):
    """Function that loads data from a given Pandas DataFrame into a JSON object
-      Accepts `prod`: Boolean, `df`: Pandas DataFrame, `table_name`: String, `load_logfile`: File Object
+      Accepts `df`: Pandas DataFrame, `table_name`: String, `load_logfile`: File Object
       Returns: n/a"""
    print(f'~~~~ Writing {table_name} DataFrame to JSON Object ~~')
    load_logfile.write(f'~~~~ Writing {table_name} DataFrame to JSON Object ~~\n')
@@ -61,13 +61,13 @@ def full_load(prod: bool, league: str, games_df: dict, teams_df: dict, locations
    print(f'\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nBeginning {league.upper()} Load Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
    load_logfile.write(f'\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nBeginning {league.upper()} Load Jobs\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 
-   load_csv(prod, games_df, f'{league.lower()}_games', load_logfile)
-   load_csv(prod, teams_df, f'{league.lower()}_teams', load_logfile)
-   load_csv(prod, locations_df, f'{league.lower()}_locations', load_logfile)
+   load_csv(games_df, f'{league.lower()}_games', load_logfile)
+   load_csv(teams_df, f'{league.lower()}_teams', load_logfile)
+   load_csv(locations_df, f'{league.lower()}_locations', load_logfile)
    
-   load_json(prod, games_df, f'{league.lower()}_games', load_logfile)
-   load_json(prod, teams_df, f'{league.lower()}_teams', load_logfile)
-   load_json(prod, locations_df, f'{league.lower()}_locations', load_logfile)
+   load_json(games_df, f'{league.lower()}_games', load_logfile)
+   load_json(teams_df, f'{league.lower()}_teams', load_logfile)
+   load_json(locations_df, f'{league.lower()}_locations', load_logfile)
 
    #load_db(league, games_df, 'games', load_logfile)
    #load_db(league, teams_df, 'teams', load_logfile)

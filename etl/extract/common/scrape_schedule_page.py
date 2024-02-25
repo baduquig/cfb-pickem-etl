@@ -41,7 +41,7 @@ def get_non_football_game_ids(league: str, schedule_window_begin: datetime, sche
         schedule_page_url = f'{espn_url}/{date_yyyymmdd}'
 
         # Scrape HTML from HTTP request to the URL above and store in variable `soup`
-        page = requests.get(schedule_page_url, headers=custom_header)
+        page = requests.get(schedule_page_url, headers=ex.custom_header)
         page_soup = BeautifulSoup(page.content, 'html.parser')
 
         # Instantiate variable for current day DIV

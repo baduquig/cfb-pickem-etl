@@ -129,6 +129,6 @@ dmypy.json
 .pyre/
 
 ########################################
-.pickem_logs
+.pickem_logs/*
 .utils/credentials.py
 ########################################

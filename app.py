@@ -44,7 +44,8 @@ def main():
                                                 'overall_wins': 'home_team_overall_wins', 'overall_losses': 'home_team_overall_losses', 'overall_ties': 'home_team_overall_ties'})
     all_schedule = pd.merge(all_schedule, all_locations, left_on=['league', 'location'], right_on=['league', 'location_id'], how='left')
 
-    print(all_schedule)
+    all_schedule.to_csv('./pickem_data/all_schedule.csv', index=False)
+    all_schedule.to_json('./pickem_data/all_schedule.json', orient='records')
 
 
 if __name__ == '__main__':
