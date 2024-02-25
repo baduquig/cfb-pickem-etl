@@ -5,6 +5,7 @@ Author: Gabe Baduqui
 Scrape all Team-specific data elements for a given Team ID
 """
 import requests
+import etl.extract.extract as ex
 import etl.extract.cfb.scrape_team_page as cfb_team
 import etl.extract.nfl.scrape_team_page as nfl_team
 from bs4 import BeautifulSoup
@@ -12,21 +13,6 @@ from datetime import datetime
 
 today = datetime.now().date()
 season_start = datetime(2024, 8, 24).date()
-
-custom_header = {
-    #'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.5",
-    "Accept-Encoding": "gzip, deflate",
-    "Connection": "keep-alive",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "none",
-    "Sec-Fetch-User": "?1",
-    "Cache-Control": "max-age=0"
-}
 
 def get_logo_url(league: str, team_id: str, logfile: object):
     """Function that extracts the ESPN url to a given team's PNG image logo
@@ -153,10 +139,7 @@ def get_team_data(league: str, team_id: str, logfile: object):
     else:
         espn_team_url = f'https://www.espn.com/{league.lower()}/team/_/name/{team_id}'
 
-    #custom_header = {
-        #'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
-    #}
-    team_resp = requests.get(espn_team_url, headers=custom_header)
+    team_resp = requests.get(espn_team_url, headers=ex.custom_header)
     team_soup = BeautifulSoup(team_resp.content, 'html.parser')
 
     # Instantiate `team_data` dictionary

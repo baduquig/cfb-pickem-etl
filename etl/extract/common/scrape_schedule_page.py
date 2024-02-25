@@ -5,24 +5,10 @@ Author: Gabe Baduqui
 Scrape all Game IDs for a given season/week(s).
 """
 import requests
+import etl.extract.extract as ex
 import etl.utils.get_all_dates_in_range as all_dates
 from bs4 import BeautifulSoup
 from datetime import datetime
-
-custom_header = {
-    #'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.5",
-    "Accept-Encoding": "gzip, deflate",
-    "Connection": "keep-alive",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "none",
-    "Sec-Fetch-User": "?1",
-    "Cache-Control": "max-age=0"
-}
 
 def get_game_id(game_row_html: str, logfile: object):
     """Function that extracts the Game ID from the <TR> HTML Element for a given game.
@@ -97,7 +83,7 @@ def get_football_game_ids(league: str, year: any, weeks: any, logfile: object):
         espn_current_week_url = f'{schedule_url}week/{week}/year/{year}/'
 
         # Scrape HTML from HTTP request to the URL above and store in variable `soup`
-        page = requests.get(espn_current_week_url, headers=custom_header)
+        page = requests.get(espn_current_week_url, headers=ex.custom_header)
         page_soup = BeautifulSoup(page.content, 'html.parser')
 
         # Instantiate variable for 'parent' schedule DIV and for each distinct day with games in this particular week

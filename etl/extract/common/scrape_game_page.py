@@ -5,26 +5,12 @@ Author: Gabe Baduqui
 Scrape all Game-specific data elements for a given Game ID.
 """
 import requests
+import etl.extract.extract as ex
 import etl.extract.cfb.scrape_game_page as cfb_game
 import etl.extract.nfl.scrape_game_page as nfl_game
 import etl.extract.mlb.scrape_game_page as mlb_game
 import etl.extract.nba.scrape_game_page as nba_game
 from bs4 import BeautifulSoup
-
-custom_header = {
-    #'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:98.0) Gecko/20100101 Firefox/98.0",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-    "Accept-Language": "en-US,en;q=0.5",
-    "Accept-Encoding": "gzip, deflate",
-    "Connection": "keep-alive",
-    "Upgrade-Insecure-Requests": "1",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "none",
-    "Sec-Fetch-User": "?1",
-    "Cache-Control": "max-age=0"
-}
 
 def get_team_id(team_container_div: str, league: str, logfile: object):
     """Function that extracts the Team ID from the HREF attribute from a given Anchor Tag.
@@ -277,11 +263,7 @@ def get_game_data(league: str, game_id: str, logfile: object):
     else:
         espn_game_url = f'https://www.espn.com/{league.lower()}/game/_/gameId/{game_id}'
 
-    # Scrape HTML from HTTP request to the URL above and store in variable `page_soup`
-    #custom_header = {
-        #'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36'
-    #}
-    game_resp = requests.get(espn_game_url, headers=custom_header)
+    game_resp = requests.get(espn_game_url, headers=ex.custom_header)
     game_soup = BeautifulSoup(game_resp.content, 'html.parser')
 
     # Instantiate `game_data` dictionary
