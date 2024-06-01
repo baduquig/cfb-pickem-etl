@@ -42,7 +42,7 @@ def get_away_team_id(gamestrip: str, league: str, logfile: object):
        Returns `team_id`: String"""
     # Example `gamestrip` string: '<div class="Gamestrip relative overflow-hidden college-football Gamestrip--xl Gamestrip--post bb">...</div>'
     logfile.write(f'away_team_id: ')
-    away_team_container = gamestrip.find('div', class_='Gamestrip__Team--away')
+    away_team_container = gamestrip.find('div', class_='Gamestrip__Team--left')
     team_id = get_team_id(away_team_container, league, logfile)
     return team_id
 
@@ -52,7 +52,7 @@ def get_home_team_id(gamestrip: str, league: str, logfile: object):
        Returns `team_id`: String"""
     # Example `gamestrip` string: '<div class="Gamestrip relative overflow-hidden college-football Gamestrip--xl Gamestrip--post bb">...</div>'
     logfile.write(f'home_team_id: ')
-    home_team_container = gamestrip.find('div', class_='Gamestrip__Team--home')
+    home_team_container = gamestrip.find('div', class_='Gamestrip__Team--right')
     team_id = get_team_id(home_team_container, league, logfile)
     return team_id
 
