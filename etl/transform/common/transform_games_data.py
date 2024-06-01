@@ -46,8 +46,12 @@ def transform_game_time(game_timestamp: str, transform_logfile: object):
        Accepts `game_timestamp`: String, `transform_logfile`: File Object
        Returns `game_time`: Datetime"""
     transform_logfile.write(f'Transforming game time {game_timestamp} -> ')
-    game_time = game_timestamp.split(',')[0]
-    transform_logfile.write(f'{game_time}\n')
+    try:
+       game_time = game_timestamp.split(',')[0]
+       transform_logfile.write(f'{game_time}\n')
+    except Exception as e:
+       game_time = 'TBD'
+       transform_logfile.write(f'{e}\n')
     return game_time
 
 def transform_game_date(game_timestamp: str, transform_logfile: object):
@@ -67,15 +71,22 @@ def transform_game_date(game_timestamp: str, transform_logfile: object):
        'september': 9,
        'october': 10,
        'november': 11,
-       'december': 12,
+       'december': 12
     }
     
-    game_date = game_timestamp.lstrip(f'{game_timestamp.split(",")[0]}, ')
-    game_month = months[game_date.split()[0].lower()]
-    game_day = int(game_date.split()[1].replace(',', ''))
-    game_year = int(game_date.split()[2])
+    try:
+       game_date = game_timestamp.lstrip(f'{game_timestamp.split(",")[0]}, ')
+       game_month = months[game_date.split()[0].lower()]
+       game_day = int(game_date.split()[1].replace(',', ''))
+       game_year = int(game_date.split()[2])
+       transform_logfile.write(f'{game_date}\n')
+    except Exception as e:
+       game_date = 'TBD'
+       game_month = 'TBD'
+       game_day = 'TBD'
+       game_year = 'TBD'
+       transform_logfile.write(f'{e}\n')
 
-    transform_logfile.write(f'{game_date}\n')
     return game_date, game_month, game_day, game_year
 
 def transform_stadium_attendance(attendance_raw: str, transform_logfile: object):
@@ -83,6 +94,10 @@ def transform_stadium_attendance(attendance_raw: str, transform_logfile: object)
        Accepts `attendance_raw`: String, `transform_logfile`: File Object
        Returns `attendance`: Number"""
     transform_logfile.write(f'Transforming attendance {attendance_raw} -> ')
-    attendance = int(attendance_raw.lstrip('Attendance: ').replace(',', ''))
-    transform_logfile.write(f'{attendance}\n')
+    try:
+       attendance = int(attendance_raw.lstrip('Attendance: ').replace(',', ''))
+       transform_logfile.write(f'{attendance}\n')
+    except Exception as e:
+       attendance = 0
+       transform_logfile.write(f'{e}\n')
     return attendance
