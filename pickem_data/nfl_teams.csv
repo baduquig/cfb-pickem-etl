@@ -1,1 +1,33 @@
-team_id,league,name,mascot,logo_url,conference_name
+team_id,league,name,mascot,logo_url,conference_name,conference_wins,conference_losses,conference_ties,overall_wins,overall_losses,overall_ties
+bal,NFL,Baltimore,Ravens,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/bal.png,AFC North,0.0,0.0,0.0,0.0,0.0,0.0
+gb,NFL,Green Bay,Packers,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/gb.png,NFC North,0.0,0.0,0.0,0.0,0.0,0.0
+pit,NFL,Pittsburgh,Steelers,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/pit.png,AFC North,0.0,0.0,0.0,0.0,0.0,0.0
+ari,NFL,Arizona,Cardinals,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/ari.png,NFC West,0.0,0.0,0.0,0.0,0.0,0.0
+ten,NFL,Tennessee,Titans,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/ten.png,AFC South,0.0,0.0,0.0,0.0,0.0,0.0
+ne,NFL,New England,Patriots,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/ne.png,AFC East,0.0,0.0,0.0,0.0,0.0,0.0
+hou,NFL,Houston,Texans,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/hou.png,AFC South,0.0,0.0,0.0,0.0,0.0,0.0
+jax,NFL,Jacksonville,Jaguars,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/jax.png,AFC South,0.0,0.0,0.0,0.0,0.0,0.0
+car,NFL,Carolina,Panthers,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/car.png,NFC South,0.0,0.0,0.0,0.0,0.0,0.0
+min,NFL,Minnesota,Vikings,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/min.png,NFC North,0.0,0.0,0.0,0.0,0.0,0.0
+lv,NFL,Las Vegas,Raiders,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/lv.png,AFC West,0.0,0.0,0.0,0.0,0.0,0.0
+den,NFL,Denver,Broncos,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/den.png,AFC West,0.0,0.0,0.0,0.0,0.0,0.0
+dal,NFL,Dallas,Cowboys,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/dal.png,NFC East,0.0,0.0,0.0,0.0,0.0,0.0
+wsh,NFL,Washington,Commanders,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/wsh.png,NFC East,0.0,0.0,0.0,0.0,0.0,0.0
+lar,NFL,Los Angeles,Rams,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/lar.png,NFC West,0.0,0.0,0.0,0.0,0.0,0.0
+nyj,NFL,New York,Jets,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/nyj.png,AFC East,0.0,0.0,0.0,0.0,0.0,0.0
+buf,NFL,Buffalo,Bills,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/buf.png,AFC East,0.0,0.0,0.0,0.0,0.0,0.0
+no,NFL,New Orleans,Saints,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/no.png,NFC South,0.0,0.0,0.0,0.0,0.0,0.0
+tb,NFL,Tampa Bay,Buccaneers,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/tb.png,NFC South,0.0,0.0,0.0,0.0,0.0,0.0
+ind,NFL,Indianapolis,Colts,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/ind.png,AFC South,0.0,0.0,0.0,0.0,0.0,0.0
+sf,NFL,San Francisco,49ers,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/sf.png,NFC West,0.0,0.0,0.0,0.0,0.0,0.0
+sea,NFL,Seattle,Seahawks,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/sea.png,NFC West,0.0,0.0,0.0,0.0,0.0,0.0
+nyg,NFL,New York,Giants,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/nyg.png,NFC East,0.0,0.0,0.0,0.0,0.0,0.0
+lac,NFL,Los Angeles,Chargers,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/lac.png,AFC West,0.0,0.0,0.0,0.0,0.0,0.0
+cle,NFL,Cleveland,Browns,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/cle.png,AFC North,0.0,0.0,0.0,0.0,0.0,0.0
+cin,NFL,Cincinnati,Bengals,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/cin.png,AFC North,0.0,0.0,0.0,0.0,0.0,0.0
+chi,NFL,Chicago,Bears,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/chi.png,NFC North,0.0,0.0,0.0,0.0,0.0,0.0
+atl,NFL,Atlanta,Falcons,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/atl.png,NFC South,0.0,0.0,0.0,0.0,0.0,0.0
+phi,NFL,Philadelphia,Eagles,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/phi.png,NFC East,0.0,0.0,0.0,0.0,0.0,0.0
+mia,NFL,Miami,Dolphins,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/mia.png,AFC East,0.0,0.0,0.0,0.0,0.0,0.0
+det,NFL,Detroit,Lions,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/det.png,NFC North,0.0,0.0,0.0,0.0,0.0,0.0
+kc,NFL,Kansas City,Chiefs,https://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/kc.png,AFC West,0.0,0.0,0.0,0.0,0.0,0.0

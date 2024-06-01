@@ -1,31 +1,31 @@
 league,location_id,stadium,stadium_capacity,city,state,latitude,longitude
-MLB,1,Yankee Stadium,"Capacity: 47,422",Bronx,New York,40.82958275,-73.92652118491901
-MLB,2,Nationals Park,"Capacity: 41,506",Washington,District of Columbia,38.87274095,-77.00838588569519
-MLB,3,Busch Stadium,"Capacity: 43,975",St. Louis,Missouri,38.6225538,-90.19392193458768
-MLB,4,Wrigley Field,"Capacity: 41,159",Chicago,Illinois,41.948208550000004,-87.65556489343666
-MLB,5,Oakland Coliseum,"Capacity: 35,067",Oakland,California,37.7539702,-122.1972051
-MLB,6,PNC Park,"Capacity: 38,362",Pittsburgh,Pennsylvania,40.4469258,-80.00560626612204
-MLB,7,Rogers Centre,"Capacity: 49,539",Toronto,Ontario,43.641659849999996,-79.38919761915824
-MLB,8,Oriole Park at Camden Yards,"Capacity: 45,971",Baltimore,Maryland,39.283738299999996,-76.62160555637811
-MLB,9,Truist Park,"Capacity: 41,149",Atlanta,Georgia,33.89070855,-84.46853422885837
-MLB,10,Petco Park,"Capacity: 42,500",San Diego,California,32.70718815,-117.15687730689476
-MLB,11,Fenway Park,"Capacity: 37,493",Boston,Massachusetts,42.3464621,-71.0971002033302
-MLB,12,loanDepot park,"Capacity: 37,000",Miami,Florida,25.778247399999998,-80.21980500744203
-MLB,13,Progressive Field,"Capacity: 35,041",Cleveland,Ohio,41.496090550000005,-81.68513191630367
-MLB,14,Guaranteed Rate Field,"Capacity: 40,615",Chicago,Illinois,41.8300162,-87.63256264837347
-MLB,15,Kauffman Stadium,"Capacity: 37,903",Kansas City,Missouri,39.0514715,-94.48139730530374
-MLB,16,Target Field,"Capacity: 39,500",Minneapolis,Minnesota,44.98168445,-93.27786434576453
-MLB,17,T-Mobile Park,"Capacity: 47,447",Seattle,Washington,47.59148535,-122.33209936747002
-MLB,18,Dodger Stadium,"Capacity: 56,000",Los Angeles,California,34.0736263,-118.23897581574036
-MLB,19,Citizens Bank Park,"Capacity: 43,647",Philadelphia,Pennsylvania,39.905885749999996,-75.16541101747245
-MLB,20,Coors Field,"Capacity: 50,490",Denver,Colorado,39.7560314,-104.99292855531493
-MLB,21,Comerica Park,"Capacity: 41,255",Detroit,Michigan,42.33915895,-83.0496248178274
-MLB,22,Great American Ball Park,"Capacity: 42,319",Cincinnati,Ohio,39.097248449999995,-84.50662325533993
-MLB,23,American Family Field,"Capacity: 41,900",Milwaukee,Wisconsin,43.0280619,-87.97209586840818
-MLB,24,Chase Field,"Capacity: 48,633",Phoenix,Arizona,33.44548555,-112.06669283293144
-MLB,25,Minute Maid Park,"Capacity: 40,963",Houston,Texas,29.75723205,-95.35523443643919
-MLB,26,Tropicana Field,"Capacity: 34,078",St. Petersburg,Florida,27.7680559,-82.65327550461797
-MLB,27,Globe Life Field,"Capacity: 49,170",Arlington,Texas,32.74760655,-97.08410630166019
-MLB,28,Angel Stadium,"Capacity: 45,389",Anaheim,California,39.500658599999994,-104.81109784532703
-MLB,29,Oracle Park,"Capacity: 41,915",San Francisco,California,37.7786119,-122.39026745425639
-MLB,30,Citi Field,"Capacity: 42,000",Queens,New York,40.757277849999994,-73.84587884942417
+MLB,1,Yankee Stadium,,Bronx,New York,40.82958275,-73.92652118491901
+MLB,2,Nationals Park,,Washington,District of Columbia,38.87274095,-77.00838588569519
+MLB,3,Busch Stadium,,St. Louis,Missouri,38.6225538,-90.19392193458768
+MLB,4,Wrigley Field,,Chicago,Illinois,41.94818455,-87.65555899980043
+MLB,5,Oakland Coliseum,,Oakland,California,37.7539702,-122.1972051
+MLB,6,PNC Park,,Pittsburgh,Pennsylvania,40.4469258,-80.00560626612204
+MLB,7,Rogers Centre,,Toronto,Ontario,43.641659849999996,-79.38919761915824
+MLB,8,Oriole Park at Camden Yards,,Baltimore,Maryland,39.283738299999996,-76.62160555637811
+MLB,9,Truist Park,,Atlanta,Georgia,33.89070855,-84.46853422885837
+MLB,10,Petco Park,,San Diego,California,32.70718815,-117.15687730689476
+MLB,11,Fenway Park,,Boston,Massachusetts,35.9098381,-79.0914170838016
+MLB,12,loanDepot park,,Miami,Florida,25.778247399999998,-80.21980500744203
+MLB,13,Progressive Field,,Cleveland,Ohio,41.496090550000005,-81.68513191630367
+MLB,14,Guaranteed Rate Field,,Chicago,Illinois,41.82969195,-87.6337919325
+MLB,15,Kauffman Stadium,,Kansas City,Missouri,39.0514715,-94.48139730530374
+MLB,16,Target Field,,Minneapolis,Minnesota,44.98168445,-93.27786434576453
+MLB,17,T-Mobile Park,,Seattle,Washington,47.59148535,-122.33209936747002
+MLB,18,Dodger Stadium,,Los Angeles,California,34.0736263,-118.23897581574036
+MLB,19,Citizens Bank Park,,Philadelphia,Pennsylvania,39.905885749999996,-75.16541101747245
+MLB,20,Coors Field,,Denver,Colorado,39.7560314,-104.99292855531493
+MLB,21,Comerica Park,,Detroit,Michigan,42.33915895,-83.0496248178274
+MLB,22,Great American Ball Park,,Cincinnati,Ohio,39.097248449999995,-84.50662325533993
+MLB,23,American Family Field,,Milwaukee,Wisconsin,43.0280619,-87.97209586840818
+MLB,24,Chase Field,,Phoenix,Arizona,33.44548555,-112.06669283293144
+MLB,25,Minute Maid Park,,Houston,Texas,29.75723205,-95.35523443643919
+MLB,26,Tropicana Field,,St. Petersburg,Florida,27.7680559,-82.65327550461797
+MLB,27,Globe Life Field,,Arlington,Texas,32.74760655,-97.08410630166019
+MLB,28,Angel Stadium,,Anaheim,California,39.500658599999994,-104.81109784532703
+MLB,29,Oracle Park,,San Francisco,California,37.7786119,-122.39026745425639
+MLB,30,Citi Field,,Queens,New York,40.757277849999994,-73.84587884942417
