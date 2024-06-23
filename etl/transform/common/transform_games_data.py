@@ -4,6 +4,7 @@ Author: Gabe Baduqui
 
 Cleanse, format and prepare Games data
 """
+from math import nan
 
 def transform_box_score(box_score_raw: dict, transform_logfile: object):
     """Function that transforms box score data element into individuals fields
@@ -11,19 +12,43 @@ def transform_box_score(box_score_raw: dict, transform_logfile: object):
        Returns `quarter1`: Number, `quarter2`: Number, `quarter3`: Number, `quarter4`: Number, `total`: Number"""
     transform_logfile.write(f'Transforming box score {box_score_raw} -> ')
     try:
-       quarter1 = box_score_raw['1']
-       quarter2 = box_score_raw['2']
-       quarter3 = box_score_raw['3']
-       quarter4 = box_score_raw['4']
-       overtime = box_score_raw['overtime']
-       total = box_score_raw['total']
+       if box_score_raw['1'] is None or box_score_raw['1'] is nan:
+          quarter1 = 0
+       else:
+          quarter1 = box_score_raw['1']
+       
+       if box_score_raw['2'] is None or box_score_raw['2'] is nan:
+          quarter2 = 0
+       else:
+          quarter2 = box_score_raw['2']
+       
+       if box_score_raw['3'] is None or box_score_raw['3'] is nan:
+          quarter3 = 0
+       else:
+          quarter3 = box_score_raw['3']
+       
+       if box_score_raw['4'] is None or box_score_raw['4'] is nan:
+          quarter4 = 0
+       else:
+          quarter4 = box_score_raw['4']
+
+       if box_score_raw['overtime'] is None or box_score_raw['overtime'] is nan:
+          overtime = 0
+       else:
+          overtime = box_score_raw['overtime']
+       
+       if box_score_raw['total'] is None or box_score_raw['total'] is nan:
+          total = 0
+       else:
+          total = total = box_score_raw['total']
+       
     except Exception as e:
-       quarter1 = None
-       quarter2 = None
-       quarter3 = None
-       quarter4 = None
-       overtime = None
-       total = None
+       quarter1 = 0
+       quarter2 = 0
+       quarter3 = 0
+       quarter4 = 0
+       overtime = 0
+       total = 0
     transform_logfile.write(f'{quarter1}, {quarter2}, {quarter3}, {quarter4}, {overtime}, {total}\n')
     return quarter1, quarter2, quarter3, quarter4, overtime, total
 
@@ -36,7 +61,7 @@ def transform_location(location_raw: str, locations_df: dict, transform_logfile:
       location_transformed = locations_df.loc[locations_df['stadium'] == location_raw, 'location_id'].item()
       transform_logfile.write(f'{location_transformed}\n')
     except Exception as e:
-      location_transformed = None
+      location_transformed = 0
       transform_logfile.write(f'{e}\n')
     
     return location_transformed
@@ -75,16 +100,16 @@ def transform_game_date(game_timestamp: str, transform_logfile: object):
     }
     
     try:
-       game_date = game_timestamp.lstrip(f'{game_timestamp.split(",")[0]}, ')
+       game_date = game_timestamp.replace(f'{game_timestamp.split(",")[0]}, ', '')
        game_month = months[game_date.split()[0].lower()]
        game_day = int(game_date.split()[1].replace(',', ''))
        game_year = int(game_date.split()[2])
        transform_logfile.write(f'{game_date}\n')
     except Exception as e:
        game_date = 'TBD'
-       game_month = 'TBD'
-       game_day = 'TBD'
-       game_year = 'TBD'
+       game_month = int(1)
+       game_day = int(1)
+       game_year = int(2025)
        transform_logfile.write(f'{e}\n')
 
     return game_date, game_month, game_day, game_year

@@ -32,7 +32,7 @@ def get_team_id(team_container_div: str, league: str, logfile: object):
         
         logfile.write(f'{team_id}\n')
     except Exception as e:
-        team_id = None
+        team_id = '0'
         logfile.write(f'{e}\n')
     return team_id
 
@@ -82,7 +82,7 @@ def get_box_score(box_score_quarters: list):
     if len(box_score_quarters) == 7:
         box_score['overtime'] = box_score_quarters[5].text
     else:
-        box_score['overtime'] = None
+        box_score['overtime'] = 0
 
     box_score['total'] = box_score_quarters[-1].text
     return box_score
@@ -99,7 +99,7 @@ def get_away_box_score(gamestrip: str, logfile: object):
         away_box_score_quarters = box_score_tbody.find_all('tr')[0].find_all('td')
         away_box_score = get_box_score(away_box_score_quarters)
     except:
-        away_box_score = {'1': None, '2': None, '3': None, '4': None, 'overtime': None, 'total': None}     
+        away_box_score = {'1': 0, '2': 0, '3': 0, '4': 0, 'overtime': 0, 'total': 0}     
     logfile.write(f'away_box_score: {away_box_score}\n')
     return away_box_score
 
@@ -114,7 +114,7 @@ def get_home_box_score(gamestrip: str, logfile: object):
         home_box_score_quarters = box_score_tbody.find_all('tr')[1].find_all('td')
         home_box_score = get_box_score(home_box_score_quarters)          
     except:
-        home_box_score = {'1': None, '2': None, '3': None, '4': None, 'overtime': None, 'total': None}
+        home_box_score = {'1': 0, '2': 0, '3': 0, '4': 0, 'overtime': 0, 'total': 0}
     logfile.write(f'home_box_score: {home_box_score}\n')
     return home_box_score
 
@@ -128,7 +128,7 @@ def get_stadium(information: str, logfile: object):
         stadium_name = information.find('div', class_='GameInfo__Location').text
         logfile.write(f'stadium_name: {stadium_name}\n')
     except Exception as e:
-        stadium_name = None
+        stadium_name = ''
         logfile.write(f'stadium_name: {e}\n')
     return stadium_name
 
@@ -141,7 +141,7 @@ def get_location(information: str, logfile: object):
         location = information.find('span', class_='Location__Text').text
         logfile.write(f'location: {location}\n')
     except Exception as e:
-        location = None
+        location = ''
         logfile.write(f'location: {e}\n')
     return location
 
@@ -154,7 +154,7 @@ def get_timestamp(information: str, logfile: object):
         game_timestamp = information.find('div', class_='GameInfo__Meta').find_all('span')[0].text
         logfile.write(f'game_timestamp: {game_timestamp}\n')
     except Exception as e:
-        game_timestamp = None
+        game_timestamp = ''
         logfile.write(f'game_timestamp: {e}\n')
     return game_timestamp
 
@@ -167,7 +167,7 @@ def get_tv_coverage(information: str, logfile: object):
         tv_coverage = information.find('div', class_='GameInfo__Meta').find_all('span')[1].text
         logfile.write(f'tv_coverage: {tv_coverage}\n')
     except Exception as e:
-        tv_coverage = None
+        tv_coverage = ''
         logfile.write(f'tv_coverage: {e}\n')
     return tv_coverage
 
@@ -180,7 +180,7 @@ def get_betting_line(information: str, logfile: object):
         betting_line = information.find('div', class_='GameInfo__BettingItem line').text
         logfile.write(f'betting_line: {betting_line}\n')
     except Exception as e:
-        betting_line = None
+        betting_line = ''
         logfile.write(f'betting_line: {e}\n')
     return betting_line
 
@@ -193,7 +193,7 @@ def get_betting_over_under(information: str, logfile: object):
         betting_over_under = information.find('div', class_='GameInfo__BettingItem ou').text
         logfile.write(f'betting_over_under: {betting_over_under}\n')
     except Exception as e:
-        betting_over_under = None
+        betting_over_under = ''
         logfile.write(f'betting_over_under: {betting_over_under}\n')
     return betting_over_under
 
@@ -206,7 +206,7 @@ def get_stadium_capacity(information: str, logfile: object):
         stadium_capacity = information.find('div', class_='Attendance__Capacity').text
         logfile.write(f'stadium_capacity: {stadium_capacity}\n')
     except Exception as e:
-        stadium_capacity = None
+        stadium_capacity = ''
         logfile.write(f'stadium_capacity: {e}\n')
     return stadium_capacity
 
@@ -219,7 +219,7 @@ def get_attendance(information: str, logfile: object):
         attendance = information.find('div', class_='Attendance__Numbers').text
         logfile.write(f'attendance: {attendance}\n')
     except Exception as e:
-        attendance = None
+        attendance = ''
         logfile.write(f'attendance: {e}\n')
     return attendance
 
@@ -233,7 +233,7 @@ def get_away_winning_probability(matchup: str, logfile: object):
         away_win_pct = matchup.find('div', class_='matchupPredictor__teamValue--b').text
         logfile.write(f'away_win_pct: {away_win_pct}\n')
     except Exception as e:
-        away_win_pct = None
+        away_win_pct = ''
         logfile.write(f'away_win_pct: {e}\n')
     return away_win_pct
 
@@ -246,7 +246,7 @@ def get_home_winning_probability(matchup: str, logfile: object):
         home_win_pct = matchup.find('div', class_='matchupPredictor__teamValue--a').text
         logfile.write(f'home_win_pct: {home_win_pct}\n')
     except Exception as e:
-        home_win_pct = None
+        home_win_pct = ''
         logfile.write(f'home_win_pct: {e}\n')
     return home_win_pct
 
@@ -280,9 +280,9 @@ def get_game_data(league: str, game_id: str, logfile: object):
         game_data['away_team'] = away_team_id
         game_data['home_team'] = home_team_id
 
-        if away_team_id is None:
+        if away_team_id == '0':
             print(f'~~~~ Could not extract Away Team ID for GameID: {game_id}')
-        if home_team_id is None:
+        if home_team_id == '0':
             print(f'~~~~ Could not extract Home Team ID for GameID: {game_id}')
 
         if league in ['CFB', 'NFL']:

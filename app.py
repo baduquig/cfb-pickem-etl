@@ -4,20 +4,10 @@ Author: Gabe Baduqui
 
 Scrape, transform and load fall sports schedule data from various web pages
 """
-from flask import Flask, jsonify
 import pandas as pd
 import etl.etl as x
 
-app = Flask(__name__)
-
 prod = False
-
-
-@app.route('/geo-schedule')
-def get_schedule():
-    response = jsonify(all_schedule.to_dict(orient='records'))
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    return response
 
 def main():
     global all_games
@@ -50,7 +40,14 @@ def main():
     all_schedule.to_json('./pickem_data/all_schedule.json', orient='records')
 
 
-if __name__ == '__main__':
-    main()
-    
-    app.run()
+main()
+
+#import etl.load.load as l
+#games = pd.read_csv('./pickem_data/cfb_games.csv')
+#teams = pd.read_csv('./pickem_data/cfb_teams.csv')
+#locations = pd.read_csv('./pickem_data/cfb_locations.csv')
+#load_logfile_path = f'./pickem_logs/test_load_cfb.log'
+#load_logfile = open(load_logfile_path, 'a')
+#l.load_db('CFB', games, 'games', load_logfile)
+#l.load_db('CFB', teams, 'teams', load_logfile)
+#l.load_db('CFB', locations, 'locations', load_logfile)

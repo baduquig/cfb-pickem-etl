@@ -29,7 +29,6 @@ def transform_games(league:str, games_df: dict, locations_df: dict, transform_lo
         # Current row colum variables
         stadium = games_df.loc[idx, 'stadium']
         game_timestamp = games_df.loc[idx, 'game_timestamp']
-        stadium_capacity = games_df.loc[idx, 'stadium_capacity']
         attendance = games_df.loc[idx, 'attendance']
 
         # Away Box Score
@@ -57,16 +56,22 @@ def transform_games(league:str, games_df: dict, locations_df: dict, transform_lo
         # Location
         games_df.loc[idx, 'location'] = tf_games.transform_location(stadium, locations_df, transform_logfile)
 
+        # Winning Percentages
+        if games_df.loc[idx, 'away_win_pct'] is None:
+            games_df.loc[idx, 'away_win_pct'] = ''
+        if games_df.loc[idx, 'home_win_pct'] is None:
+            games_df.loc[idx, 'home_win_pct'] = ''
+
         # Game Timestamp
         games_df.loc[idx, 'game_time'] = tf_games.transform_game_time(game_timestamp, transform_logfile)
         game_date, game_month, game_day, game_year = tf_games.transform_game_date(game_timestamp, transform_logfile)
         games_df.loc[idx, 'game_date'] = game_date
-        games_df.loc[idx, 'game_month'] = game_month
-        games_df.loc[idx, 'game_day'] = game_day
-        games_df.loc[idx, 'game_year'] = game_year
+        games_df.loc[idx, 'game_month'] = int(game_month)
+        games_df.loc[idx, 'game_day'] = int(game_day)
+        games_df.loc[idx, 'game_year'] = int(game_year)
 
         # Attendance
-        if attendance is not None:
+        if attendance != 0:
             games_df.loc[idx, 'attendance'] = tf_games.transform_stadium_attendance(attendance, transform_logfile)
     
     print(f'Dropping columns [\'stadium\', \'stadium_capacity\', \'away_team_box_score\', \'home_team_box_score\', \'game_timestamp\'] from games_df\n')
@@ -98,9 +103,9 @@ def transform_teams(league: str, teams_df: dict, transform_logfile: object):
         # Conference Record
         if conference_record is not None:
             conference_wins, conference_losses, conference_ties = tf_teams.transform_record(conference_record, transform_logfile)
-            teams_df.loc[idx, 'conference_wins'] = conference_wins
-            teams_df.loc[idx, 'conference_losses'] = conference_losses
-            teams_df.loc[idx, 'conference_ties'] = conference_ties
+            teams_df.loc[idx, 'conference_wins'] = int(conference_wins)
+            teams_df.loc[idx, 'conference_losses'] = int(conference_losses)
+            teams_df.loc[idx, 'conference_ties'] = int(conference_ties)
         else:
             teams_df.loc[idx, 'conference_wins'] = 0
             teams_df.loc[idx, 'conference_losses'] = 0
@@ -109,9 +114,9 @@ def transform_teams(league: str, teams_df: dict, transform_logfile: object):
         # Overall Record
         if overall_record is not None:
             overall_wins, overall_losses, overall_ties = tf_teams.transform_record(overall_record, transform_logfile)
-            teams_df.loc[idx, 'overall_wins'] = overall_wins
-            teams_df.loc[idx, 'overall_losses'] = overall_losses
-            teams_df.loc[idx, 'overall_ties'] = overall_ties
+            teams_df.loc[idx, 'overall_wins'] = int(overall_wins)
+            teams_df.loc[idx, 'overall_losses'] = int(overall_losses)
+            teams_df.loc[idx, 'overall_ties'] = int(overall_ties)
         else:
             teams_df.loc[idx, 'overall_wins'] = 0
             teams_df.loc[idx, 'overall_losses'] = 0
@@ -142,8 +147,8 @@ def transform_locations(league: str, locations_df: dict, transform_logfile: obje
         
         if stadium is not None:
             locations_df.loc[idx, 'stadium'] = locations_df.loc[idx, 'stadium'].rstrip()
-        if stadium_capacity is not None:
-            locations_df.loc[idx, 'stadium_capacity'] = tf_locations.transform_stadium_capacity(stadium_capacity, transform_logfile)
+        
+        locations_df.loc[idx, 'stadium_capacity'] = tf_locations.transform_stadium_capacity(stadium_capacity, transform_logfile)
     
     return locations_df
 
