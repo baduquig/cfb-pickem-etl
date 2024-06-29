@@ -23,7 +23,7 @@ def record_exists_in_table(table_name: str, record: list, logfile: object):
     if table_name.lower() == 'games':
         record_exists_query = f"SELECT COUNT(*) FROM GAMES WHERE LEAGUE = '{record.league}' AND GAME_ID = {int(record.game_id)};"
     if table_name.lower() == 'teams':
-        record_exists_query = f"SELECT COUNT(*) FROM TEAMS WHERE LEAGUE = '{record.league}' AND TEAM_ID = {record.team_id};"
+        record_exists_query = f"SELECT COUNT(*) FROM TEAMS WHERE LEAGUE = '{record.league}' AND TEAM_ID = '{record.team_id}';"
     if table_name.lower() == 'locations':
         record_exists_query = f"SELECT COUNT(*) FROM LOCATIONS WHERE LEAGUE = '{record.league}' AND LOCATION_ID = {int(record.location_id)};"
     
@@ -40,9 +40,8 @@ def record_exists_in_table(table_name: str, record: list, logfile: object):
         else:
             record_exists = False
     except Exception as e:
-        record_exists = 0
-        print(f'Error occurred updating record {record}:\n{e}')
-        logfile.write(f'Error occurred updating record {record}:\n{e}\n')
+        record_exists = False
+        logfile.write(f'Error occurred verifying if record for {record[0]} exists in table:\n{e}\n')
 
     return record_exists
 
@@ -93,13 +92,13 @@ def update_record(table_name: str, record: list, logfile: object):
                                 CONFERENCE_TIES = {round(record.conference_ties)},
                                 OVERALL_WINS = {round(record.overall_wins)},
                                 OVERALL_LOSSES = {round(record.overall_losses)},
-                                OVERALL_TIES - {round(record.overall_ties)}
+                                OVERALL_TIES = {round(record.overall_ties)}
                             WHERE LEAGUE = '{record.league}'
                                 AND TEAM_ID = '{record.team_id}';"""
        
     if table_name.lower() == 'locations':
         update_stmt = f"""UPDATE LOCATIONS
-                            SET STADIUM = '{record.stadium}',
+                            SET STADIUM = '{record.stadium.replace("'", "")}',
                                 STADIUM_CAPACITY = {int(record.stadium_capacity)},
                                 CITY = '{record.city}',
                                 STATE = '{record.state}',
@@ -118,7 +117,7 @@ def update_record(table_name: str, record: list, logfile: object):
         conn.close()
     except Exception as e:
         print(f'Error occurred with following update statement\n{update_stmt}')
-        logfile.write(f'Error occurred with following update statement\n{update_stmt}\n')
+        logfile.write(f'Error occurred with following update statement\n{update_stmt}\n{e}\n\n')
 
 
 def insert_record(table_name: str, record: list, logfile: object):
@@ -150,7 +149,7 @@ def insert_record(table_name: str, record: list, logfile: object):
                                     {round(record.overall_losses)}, {round(record.overall_ties)});"""
     if table_name.lower() == 'locations':
         insert_stmt = f"""INSERT INTO LOCATIONS (LEAGUE, LOCATION_ID, STADIUM, STADIUM_CAPACITY, CITY, STATE, LATITUDE, LONGITUDE)
-                            VALUES ('{record.league}', {int(record.location_id)}, '{record.stadium}', 
+                            VALUES ('{record.league}', {int(record.location_id)}, '{record.stadium.replace("'", "")}', 
                                     {record.stadium_capacity}, '{record.city}', '{record.state}',
                                     '{record.latitude}', '{record.longitude}');"""
 
@@ -164,5 +163,5 @@ def insert_record(table_name: str, record: list, logfile: object):
         conn.close()
     except Exception as e:
         print(f'Error occurred with following insert statement:\n{insert_stmt}')
-        logfile.write(f'Error occurred with following insert statement:\n{insert_stmt}\n')
+        logfile.write(f'Error occurred with following insert statement:\n{insert_stmt}\n{e}\n\n')
         

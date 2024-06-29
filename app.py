@@ -43,11 +43,10 @@ def main():
 main()
 
 #import etl.load.load as l
-#games = pd.read_csv('./pickem_data/cfb_games.csv')
-#teams = pd.read_csv('./pickem_data/cfb_teams.csv')
-#locations = pd.read_csv('./pickem_data/cfb_locations.csv')
-#load_logfile_path = f'./pickem_logs/test_load_cfb.log'
-#load_logfile = open(load_logfile_path, 'a')
-#l.load_db('CFB', games, 'games', load_logfile)
-#l.load_db('CFB', teams, 'teams', load_logfile)
-#l.load_db('CFB', locations, 'locations', load_logfile)
+#logfile = open('./pickem_logs/manual_load.log', 'a')
+#cfb_games = pd.read_csv('./pickem_data/cfb_games.csv')
+#cfb_teams = pd.read_csv('./pickem_data/cfb_teams.csv')
+#cfb_locations = pd.read_csv('./pickem_data/cfb_locations.csv')
+#l.load_db('CFB', cfb_games, 'games', logfile)
+#l.load_db('CFB', cfb_teams, 'teams', logfile)
+#l.load_db('CFB', cfb_locations, 'locations', logfile)

@@ -4,6 +4,7 @@ Author: Gabe Baduqui
 
 Cleanse, format and prepare extracted pickem data for loading.
 """
+from math import nan
 import etl.utils.get_timestamp as ts
 import etl.transform.common.transform_games_data as tf_games
 import etl.transform.common.transform_teams_data as tf_teams
@@ -97,6 +98,15 @@ def transform_teams(league: str, teams_df: dict, transform_logfile: object):
         conference_record = teams_df.loc[idx, 'conference_record']
         overall_record = teams_df.loc[idx, 'overall_record']
 
+        # Team Name, Mascot, and URL
+        if teams_df.loc[idx, 'team_id'] == '0':
+            teams_df.loc[idx, 'name'] = ''
+            teams_df.loc[idx, 'mascot'] = ''
+            teams_df.loc[idx, 'logo_url'] = ''
+        else:
+            teams_df.loc[idx, 'name'] = teams_df.loc[idx, 'name'].replace('\'', '')
+            teams_df.loc[idx, 'mascot'] = teams_df.loc[idx, 'mascot'].replace('\'', '')
+
         # Conference Name
         teams_df.loc[idx, 'conference_name'] = tf_teams.transform_conference_name(conference_name, transform_logfile)
 
@@ -145,9 +155,7 @@ def transform_locations(league: str, locations_df: dict, transform_logfile: obje
         stadium = locations_df.loc[idx, 'stadium']
         stadium_capacity = locations_df.loc[idx, 'stadium_capacity']
         
-        if stadium is not None:
-            locations_df.loc[idx, 'stadium'] = locations_df.loc[idx, 'stadium'].rstrip()
-        
+        locations_df.loc[idx, 'stadium'] = stadium.replace('\'', '').rstrip()
         locations_df.loc[idx, 'stadium_capacity'] = tf_locations.transform_stadium_capacity(stadium_capacity, transform_logfile)
     
     return locations_df

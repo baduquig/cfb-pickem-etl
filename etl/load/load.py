@@ -4,6 +4,7 @@ Author: Gabe Baduqui
 
 Load pickem data from various web sources into desired destinations.
 """
+from math import nan
 import etl.load.db as db
 import etl.utils.get_timestamp as ts
 
@@ -44,10 +45,17 @@ def load_db(league: str, df: dict, table_name: str, load_logfile: object):
       record = df.iloc[i]
       if record.league == 'CFB':
          try:
-            if db.record_exists_in_table(table_name, record, load_logfile):
-               db.update_record(table_name, record, load_logfile)
+            if table_name.lower() == 'teams':
+               if record.team_id is not nan:
+                  if db.record_exists_in_table(table_name, record, load_logfile):
+                     db.update_record(table_name, record, load_logfile)
+                  else:
+                     db.insert_record(table_name, record, load_logfile)
             else:
-               db.insert_record(table_name, record, load_logfile)
+               if db.record_exists_in_table(table_name, record, load_logfile):
+                  db.update_record(table_name, record, load_logfile)
+               else:
+                  db.insert_record(table_name, record, load_logfile)
          except Exception as e:
             print(f'~~~~ Error occurred loading record {record} into database:\n{e}')
             load_logfile(f'~~~~ Error occurred loading record {record} into database:\n{e}\n')

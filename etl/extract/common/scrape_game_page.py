@@ -206,7 +206,7 @@ def get_stadium_capacity(information: str, logfile: object):
         stadium_capacity = information.find('div', class_='Attendance__Capacity').text
         logfile.write(f'stadium_capacity: {stadium_capacity}\n')
     except Exception as e:
-        stadium_capacity = ''
+        stadium_capacity = 0
         logfile.write(f'stadium_capacity: {e}\n')
     return stadium_capacity
 

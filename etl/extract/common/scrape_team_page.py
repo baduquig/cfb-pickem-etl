@@ -34,7 +34,7 @@ def get_clubhouse_header_span(clubhouse_div: str):
         header_h1 = clubhouse_div.find('h1', class_='ClubhouseHeader__Name')
         header_span = header_h1.find('span', class_='flex')
     except:
-        header_span = None
+        header_span = ''
     return header_span
 
 def get_team_name(clubhouse_div: str, logfile: object):
@@ -48,7 +48,7 @@ def get_team_name(clubhouse_div: str, logfile: object):
         team_name = team_name_span.text
         logfile.write(f'team_name: {team_name}\n')
     except Exception as e:
-        team_name = None
+        team_name = ''
         logfile.write(f'team_name: {e}\n')
     return team_name
 
@@ -63,7 +63,7 @@ def get_team_mascot(clubhouse_div: str, logfile: object):
         team_mascot = team_mascot_span.text
         logfile.write(f'team_mascot: {team_mascot}\n')
     except Exception as e:
-        team_mascot = None
+        team_mascot = ''
         logfile.write(f'team_mascot: {e}\n')
     return team_mascot
 
@@ -78,7 +78,7 @@ def get_conference_name(standings_section: str, logfile: object):
         conference_name = section_header.find('h3').text
         logfile.write(f'conference_name: {conference_name}\n')
     except Exception as e:
-        conference_name = None
+        conference_name = ''
         logfile.write(f'conference_name: {e}\n')
     return conference_name
 
@@ -98,7 +98,7 @@ def get_team_standing_row(conference_standing_rows: str, team_name: str):
             if ((anchor_text == team_name) or (class_name == bolded_class)):
                 team_standing_row = row
     except:
-        team_standing_row = None
+        team_standing_row = ''
     return team_standing_row
 
 def get_conference_record(league: str, team_standing_row: str, logfile: object):
@@ -109,7 +109,7 @@ def get_conference_record(league: str, team_standing_row: str, logfile: object):
     if league.upper() == 'CFB':
         conf_record = cfb_team.get_conference_record(team_standing_row, league)
     else:
-        conf_record = None
+        conf_record = ''
     logfile.write(f'conf_record: {conf_record}\n')
     return conf_record
 

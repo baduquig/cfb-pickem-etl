@@ -133,7 +133,7 @@ team_id,league,name,mascot,logo_url,conference_name,conference_wins,conference_l
 399,CFB,UAlbany,Great Danes,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/399.png,CAA,0.0,0.0,0.0,0.0,0.0,0.0
 50,CFB,Florida A&M,Rattlers,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/50.png,SWAC,0.0,0.0,0.0,0.0,0.0,0.0
 2117,CFB,Central Michigan,Chippewas,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2117.png,MAC,0.0,0.0,0.0,0.0,0.0,0.0
-2241,CFB,Gardner-Webb,Runnin' Bulldogs,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2241.png,Big South-OVC,0.0,0.0,0.0,0.0,0.0,0.0
+2241,CFB,Gardner-Webb,Runnin Bulldogs,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2241.png,Big South-OVC,0.0,0.0,0.0,0.0,0.0,0.0
 151,CFB,East Carolina,Pirates,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/151.png,American,0.0,0.0,0.0,0.0,0.0,0.0
 6,CFB,South Alabama,Jaguars,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/6.png,Sun Belt,0.0,0.0,0.0,0.0,0.0,0.0
 58,CFB,South Florida,Bulls,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/58.png,American,0.0,0.0,0.0,0.0,0.0,0.0
@@ -142,7 +142,7 @@ team_id,league,name,mascot,logo_url,conference_name,conference_wins,conference_l
 2729,CFB,William & Mary,Tribe,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2729.png,CAA,0.0,0.0,0.0,0.0,0.0,0.0
 13,CFB,Cal Poly,Mustangs,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/13.png,Big Sky,0.0,0.0,0.0,0.0,0.0,0.0
 258,CFB,Virginia,Cavaliers,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/258.png,ACC,0.0,0.0,0.0,0.0,0.0,0.0
-309,CFB,Louisiana,Ragin' Cajuns,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/309.png,Sun Belt,0.0,0.0,0.0,0.0,0.0,0.0
+309,CFB,Louisiana,Ragin Cajuns,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/309.png,Sun Belt,0.0,0.0,0.0,0.0,0.0,0.0
 23,CFB,San José State,Spartans,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/23.png,Mountain West,0.0,0.0,0.0,0.0,0.0,0.0
 202,CFB,Tulsa,Golden Hurricane,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/202.png,American,0.0,0.0,0.0,0.0,0.0,0.0
 5,CFB,UAB,Blazers,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/5.png,American,0.0,0.0,0.0,0.0,0.0,0.0
@@ -185,7 +185,7 @@ team_id,league,name,mascot,logo_url,conference_name,conference_wins,conference_l
 2142,CFB,Colgate,Raiders,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2142.png,Patriot,0.0,0.0,0.0,0.0,0.0,0.0
 145,CFB,Ole Miss,Rebels,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/145.png,SEC,0.0,0.0,0.0,0.0,0.0,0.0
 238,CFB,Vanderbilt,Commodores,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/238.png,SEC,0.0,0.0,0.0,0.0,0.0,0.0
-62,CFB,Hawai'i,Rainbow Warriors,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/62.png,Mountain West,0.0,0.0,0.0,0.0,0.0,0.0
+62,CFB,Hawaii,Rainbow Warriors,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/62.png,Mountain West,0.0,0.0,0.0,0.0,0.0,0.0
 61,CFB,Georgia,Bulldogs,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/61.png,SEC,0.0,0.0,0.0,0.0,0.0,0.0
 2649,CFB,Toledo,Rockets,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2649.png,MAC,0.0,0.0,0.0,0.0,0.0,0.0
 2460,CFB,Northern Iowa,Panthers,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2460.png,MVFC,0.0,0.0,0.0,0.0,0.0,0.0
@@ -229,4 +229,4 @@ team_id,league,name,mascot,logo_url,conference_name,conference_wins,conference_l
 2643,CFB,The Citadel,Bulldogs,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2643.png,Southern,0.0,0.0,0.0,0.0,0.0,0.0
 2127,CFB,Charleston Southern,Buccaneers,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2127.png,Big South-OVC,0.0,0.0,0.0,0.0,0.0,0.0
 2747,CFB,Wofford,Terriers,https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/2747.png,Southern,0.0,0.0,0.0,0.0,0.0,0.0
-0,CFB,,,,TBD,0.0,0.0,0.0,0.0,0.0,0.0
+0,CFB,,,,,0.0,0.0,0.0,0.0,0.0,0.0
