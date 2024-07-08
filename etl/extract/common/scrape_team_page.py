@@ -8,6 +8,7 @@ import requests
 import etl.extract.extract as ex
 import etl.extract.cfb.scrape_team_page as cfb_team
 import etl.extract.nfl.scrape_team_page as nfl_team
+import etl.extract.common.scrape_team_color_codes as colors
 from bs4 import BeautifulSoup
 from datetime import datetime
 
@@ -153,6 +154,8 @@ def get_team_data(league: str, team_id: str, logfile: object):
         clubhouse_div = team_soup.find('div', class_='ClubhouseHeader').find('div', class_='ClubhouseHeader__Main')
         team_data['name'] = get_team_name(clubhouse_div, logfile)
         team_data['mascot'] = get_team_mascot(clubhouse_div, logfile)
+        #team_data['primary_color'], team_data['secondary_color'], team_data['accent_color'] = colors.get_team_colors(team_data['name'], team_data['mascot'], logfile)
+        team_data['primary_color'], team_data['secondary_color'], team_data['accent_color'] = '', '', ''
         team_data['logo_url'] = get_logo_url(league, team_id, logfile)
     except Exception as e:
         logfile.write(f'Could not find `ClubhouseHeader__Main` DIV: {e} for Team {team_id}\n')

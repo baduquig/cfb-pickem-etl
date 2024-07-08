@@ -86,6 +86,9 @@ def update_record(table_name: str, record: list, logfile: object):
                             SET NAME = '{record['name']}',
                                 MASCOT = '{record.mascot}',
                                 LOGO_URL = '{record.logo_url}',
+                                PRIMARY_COLOR = '{record.primary_color}',
+                                SECONDARY_COLOR = '{record.secondary_color}',
+                                ACCENT_COLOR = '{record.accent_color}',
                                 CONFERENCE_NAME = '{record.conference_name}',
                                 CONFERENCE_WINS = {round(record.conference_wins)},
                                 CONFERENCE_LOSSES = {round(record.conference_losses)},
@@ -141,10 +144,10 @@ def insert_record(table_name: str, record: list, logfile: object):
                                     '{record.game_time}', '{record.game_date}', {int(record.game_month)}, 
                                     {int(record.game_day)}, {int(record.game_year)});"""
     if table_name.lower() == 'teams':
-        insert_stmt = f"""INSERT INTO TEAMS (TEAM_ID, LEAGUE, NAME, MASCOT, LOGO_URL, CONFERENCE_NAME, CONFERENCE_WINS, 
-                                                    CONFERENCE_LOSSES, CONFERENCE_TIES, OVERALL_WINS, OVERALL_LOSSES, OVERALL_TIES)
-                            VALUES ('{record.team_id}', '{record.league}', '{record['name']}', '{record.mascot}',
-                                    '{record.logo_url}', '{record.conference_name}', {round(record.conference_wins)},
+        insert_stmt = f"""INSERT INTO TEAMS (TEAM_ID, LEAGUE, NAME, MASCOT, PRIMARY_COLOR, SECONDARY_COLOR, ACCENT_COLOR,LOGO_URL, CONFERENCE_NAME, 
+                                                CONFERENCE_WINS, CONFERENCE_LOSSES, CONFERENCE_TIES, OVERALL_WINS, OVERALL_LOSSES, OVERALL_TIES)
+                            VALUES ('{record.team_id}', '{record.league}', '{record['name']}', '{record.mascot}', '{record.primary_color}', '{record.secondary_color}'
+                                    '{record.accent_color}', '{record.logo_url}', '{record.conference_name}', {round(record.conference_wins)},
                                     {round(record.conference_losses)}, {round(record.conference_ties)}, {round(record.overall_wins)},
                                     {round(record.overall_losses)}, {round(record.overall_ties)});"""
     if table_name.lower() == 'locations':

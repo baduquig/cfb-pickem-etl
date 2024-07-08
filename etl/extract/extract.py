@@ -55,7 +55,7 @@ def extract_teams(league: str, team_ids: list, extract_logfile: object):
     """Function that instantiates a Pandas DataFrame storing School Data scraped from ESPN Team web pages
        Accepts `league`: String, team_ids`: List, `extract_logfile`: File Object
        Returns `teams_df`: Pandas DataFrame"""
-    teams_df = pd.DataFrame([], columns=['team_id', 'league', 'name', 'mascot', 'logo_url', 'conference_name', 'conference_record', 'overall_record'])
+    teams_df = pd.DataFrame([], columns=['team_id', 'league', 'name', 'mascot', 'primary_color', 'secondary_color', 'accent_color', 'logo_url', 'conference_name', 'conference_record', 'overall_record'])
 
     for team_id in team_ids:
         team_data = team.get_team_data(league, team_id, extract_logfile)
