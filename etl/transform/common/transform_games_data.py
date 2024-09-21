@@ -12,32 +12,32 @@ def transform_box_score(box_score_raw: dict, transform_logfile: object):
        Returns `quarter1`: Number, `quarter2`: Number, `quarter3`: Number, `quarter4`: Number, `total`: Number"""
     transform_logfile.write(f'Transforming box score {box_score_raw} -> ')
     try:
-       if box_score_raw['1'] is None or box_score_raw['1'] is nan:
+       if box_score_raw['1'] is None or box_score_raw['1'] is nan or box_score_raw['1'] == ' ':
           quarter1 = 0
        else:
           quarter1 = box_score_raw['1']
        
-       if box_score_raw['2'] is None or box_score_raw['2'] is nan:
+       if box_score_raw['2'] is None or box_score_raw['2'] is nan or box_score_raw['2'] == ' ':
           quarter2 = 0
        else:
           quarter2 = box_score_raw['2']
        
-       if box_score_raw['3'] is None or box_score_raw['3'] is nan:
+       if box_score_raw['3'] is None or box_score_raw['3'] is nan or box_score_raw['3'] == ' ':
           quarter3 = 0
        else:
           quarter3 = box_score_raw['3']
        
-       if box_score_raw['4'] is None or box_score_raw['4'] is nan:
+       if box_score_raw['4'] is None or box_score_raw['4'] is nan or box_score_raw['4'] == ' ':
           quarter4 = 0
        else:
           quarter4 = box_score_raw['4']
 
-       if box_score_raw['overtime'] is None or box_score_raw['overtime'] is nan:
+       if box_score_raw['overtime'] is None or box_score_raw['overtime'] is nan or box_score_raw['overtime'] == ' ':
           overtime = 0
        else:
           overtime = box_score_raw['overtime']
        
-       if box_score_raw['total'] is None or box_score_raw['total'] is nan:
+       if box_score_raw['total'] is None or box_score_raw['total'] is nan or box_score_raw['total'] == ' ':
           total = 0
        else:
           total = total = box_score_raw['total']

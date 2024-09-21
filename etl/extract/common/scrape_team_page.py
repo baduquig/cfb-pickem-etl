@@ -108,7 +108,7 @@ def get_conference_record(league: str, team_standing_row: str, logfile: object):
        Returns `conference_record`: String"""
     # Example `team_standing_row` string: '<div class="Table__TR Table__TR--sm Table__even">...</div>'
     if league.upper() == 'CFB':
-        conf_record = cfb_team.get_conference_record(team_standing_row, league)
+        conf_record = cfb_team.get_conference_record(team_standing_row)
     else:
         conf_record = ''
     logfile.write(f'conf_record: {conf_record}\n')
@@ -120,7 +120,7 @@ def get_overall_record(league: str, team_standing_row: str, logfile: object):
        Returns `overall_record`: String"""
     # Example `team_standing_row` string: '<div class="Table__TR Table__TR--sm Table__even">...</div>'
     if league.upper() == 'CFB':
-        overall_record = cfb_team.get_overall_record(team_standing_row, league)
+        overall_record = cfb_team.get_overall_record(team_standing_row)
     else:
         overall_record = nfl_team.get_overall_record(team_standing_row, league)
     logfile.write(f'overall_record: {overall_record}\n')

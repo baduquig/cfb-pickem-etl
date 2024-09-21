@@ -45,7 +45,13 @@ def load_db(league: str, df: dict, table_name: str, load_logfile: object):
       record = df.iloc[i]
       if record.league == 'CFB':
          try:
-            if table_name.lower() == 'teams':
+            if table_name.lower() == 'games':
+               if record.game_id is not nan:
+                  if db.record_exists_in_table(table_name, record, load_logfile):
+                     db.update_record(table_name, record, load_logfile)
+                  else:
+                     db.insert_record(table_name, record, load_logfile)
+            elif table_name.lower() == 'teams':
                if record.team_id is not nan:
                   if db.record_exists_in_table(table_name, record, load_logfile):
                      db.update_record(table_name, record, load_logfile)

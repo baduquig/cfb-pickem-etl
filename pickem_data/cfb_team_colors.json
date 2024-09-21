@@ -1,0 +1,1435 @@
+{
+    "ncaa-color-codes/aac/": [],
+    "ncaa-color-codes/america-east/": [
+        "#141B4D",
+        "#00B5E2"
+    ],
+    "ncaa-color-codes/acc-color-codes/": [],
+    "ncaa-color-codes/atlantic-sun/": [],
+    "ncaa-color-codes/atlantic-10/": [],
+    "ncaa-color-codes/big-east/": [],
+    "ncaa-color-codes/big-sky-conference/": [],
+    "ncaa-color-codes/big-south-conference-colors/": [],
+    "ncaa-color-codes/big-west/": [],
+    "ncaa-color-codes/big-ten-team-colors/": [],
+    "ncaa-color-codes/big-12-colors/": [],
+    "ncaa-color-codes/colonial-athletic-association-colors/": [],
+    "ncaa-color-codes/conference-usa/": [],
+    "ncaa-color-codes/horizon-league/": [],
+    "ncaa-color-codes/ivy-league/": [],
+    "ncaa-color-codes/maac/": [],
+    "ncaa-color-codes/mac/": [],
+    "ncaa-color-codes/mid-eastern-athletic-conference-colors/": [],
+    "ncaa-color-codes/missouri-valley/": [],
+    "ncaa-color-codes/mountain-west/": [],
+    "ncaa-color-codes/northeast-conference-nec-colors/": [],
+    "ncaa-color-codes/ohio-valley-conference-colors/": [],
+    "ncaa-color-codes/pac-12-colors/": [],
+    "ncaa-color-codes/patriot-league-colors/": [],
+    "ncaa-color-codes/sec-team-color-codes/": [],
+    "ncaa-color-codes/southern-conference-colors/": [],
+    "ncaa-color-codes/southland-conference-colors/": [],
+    "ncaa-color-codes/summit-league/": [],
+    "ncaa-color-codes/sun-belt/": [],
+    "ncaa-color-codes/southwestern-athletic-conference-colors/": [],
+    "ncaa-color-codes/western-athletic-conference/": [
+        "#d9d4cc",
+        "#d9d4cc"
+    ],
+    "ncaa-color-codes/west-coast-conference/": [],
+    "abilene-christian-wildcats-colors/": [
+        "#4f2170",
+        "#ffffff"
+    ],
+    "air-force-falcons-color-codes/": [
+        "#003087",
+        "#8A8D8F"
+    ],
+    "akron-zips-color-codes/": [
+        "#041E42",
+        "#A89968"
+    ],
+    "alabama-am-bulldogs-colors/": [
+        "#660000",
+        "#ffffff"
+    ],
+    "alabama-crimson-tide-color-codes/": [
+        "#9e1b32",
+        ""
+    ],
+    "alabama-state-hornets-colors/": [
+        "#C99700",
+        "#000000"
+    ],
+    "american-eagles-colors/": [
+        "#143d8d",
+        "#c41230"
+    ],
+    "albany-great-danes-colors/": [
+        "#461660",
+        "#eeb211"
+    ],
+    "alcorn-state-braves-colors/": [
+        "#ce8e00",
+        "#4b306a"
+    ],
+    "appalachian-state-mountaineers-color-codes/": [
+        "#222222",
+        "#ffcc00"
+    ],
+    "arizona-wildcats-color-codes/": [
+        "#CC0033",
+        "#003366"
+    ],
+    "arizona-state-color-codes/": [
+        "#8C1D40",
+        "#FFC627"
+    ],
+    "arkansas-pine-bluff-golden-lions-colors/": [
+        "#EEB310",
+        "#E31837"
+    ],
+    "arkansas-little-rock-trojans-color-codes/": [
+        "#6e2639",
+        "#A7A9AC"
+    ],
+    "arkansas-razorbacks-color-codes/": [
+        "#9D2235",
+        "#FFFFFF"
+    ],
+    "arkansas-state-red-wolves/": [
+        "#cc092f",
+        "#000000"
+    ],
+    "army-black-knights-color-codes/": [
+        "#D4BF91",
+        "#B2B4B3"
+    ],
+    "austin-peay-governors-colors/": [
+        "#C41E3A",
+        "#ffffff"
+    ],
+    "auburn-tigers-color-codes/": [
+        "#0C2340",
+        "#E87722"
+    ],
+    "ball-state-cardinals-color-codes/": [
+        "#BA0C2F",
+        ""
+    ],
+    "baylor-bears-color-codes/": [
+        "#154734",
+        "#FFB81C"
+    ],
+    "bethune-cookman-wildcats-colors/": [
+        "#F2A900",
+        "#6F263D"
+    ],
+    "belmont-bruins-colors/": [
+        "#C8102E",
+        "#00205B"
+    ],
+    "binghamton-bearcats-colors/": [
+        "#005A43",
+        "#169B62"
+    ],
+    "boise-state-colors/": [
+        "#D64309",
+        "#0033A0"
+    ],
+    "boston-college-eagles-color-codes/": [
+        "#98002E",
+        "#BC9B6A"
+    ],
+    "boston-university-terriers-colors/": [
+        "#CC0000",
+        "#A3011B"
+    ],
+    "bowling-green-falcons-color-codes/": [
+        "#FE5000",
+        "#4F2C1D"
+    ],
+    "bradley-braves-color-codes/": [
+        "#A50000",
+        "#999999"
+    ],
+    "brown-bears-color-codes/": [
+        "#4E3629",
+        "#7C2529"
+    ],
+    "bryant-bulldogs-colors/": [
+        "#b4975b",
+        "#c9bb8c"
+    ],
+    "bucknell-bison-colors/": [
+        "#E87722",
+        "#003865"
+    ],
+    "buffalo-bulls-color-codes/": [
+        "#005BBB",
+        ""
+    ],
+    "butler-bulldogs-color-codes/": [
+        "#13294b",
+        "#747678"
+    ],
+    "byu-colors/": [
+        "#002E5D",
+        "#0062B8"
+    ],
+    "cal-poly-mustangs-color-codes/": [
+        "#003831",
+        "#FFE395"
+    ],
+    "cal-state-fullerton-titans-color-codes/": [
+        "#00274C",
+        "#DC8218"
+    ],
+    "california-baptist-lancers-colors/": [
+        "#002554",
+        "#A37400"
+    ],
+    "california-golden-bears-color-codes/": [
+        "#003262",
+        "#3B7EA1"
+    ],
+    "campbell-fighting-camels-colors/": [
+        "#f58025",
+        "#231f20"
+    ],
+    "canisius-golden-griffins-color-codes/": [
+        "#0C2340",
+        "#ffba00"
+    ],
+    "central-connecticut-blue-devils-colors/": [
+        "#00539b",
+        "#ffffff"
+    ],
+    "central-arkansas-bears-colors/": [
+        "#4f2d7f",
+        "#818a8f"
+    ],
+    "central-michigan-chippewas-color-codes/": [
+        "#6A0032",
+        "#FFC82E"
+    ],
+    "unc-charlotte-49ers-color-codes/": [
+        "#046A38",
+        "#B9975B"
+    ],
+    "charleston-southern-buccaneers-colors/": [
+        "#A8996E",
+        "#002855"
+    ],
+    "charleston-cougars-colors/": [
+        "#800000",
+        "#9d8958"
+    ],
+    "chattanooga--mocs-colors/": [
+        "#00386b",
+        "#e0aa0f"
+    ],
+    "chicago-state-cougars-color-codes/": [
+        "#006666",
+        "#000000"
+    ],
+    "cincinnati-bearcats-color-codes/": [
+        "#E00122",
+        "#000000"
+    ],
+    "citadel-bulldogs-colors/": [
+        "#3975B7",
+        "#1F3A60"
+    ],
+    "clemson-tigers-colors/": [
+        "#F56600",
+        "#522D80"
+    ],
+    "cleveland-state-vikings-color-codes/": [
+        "#006747",
+        ""
+    ],
+    "coastal-carolina-chanticleers/": [
+        "#006f71",
+        "#A27752"
+    ],
+    "colgate-raiders-colors/": [
+        "#821019",
+        "#E10028"
+    ],
+    "colorado-buffaloes-color-codes/": [
+        "#CFB87C",
+        "#000000"
+    ],
+    "colorado-state-rams-color-codes/": [
+        "#1E4D2B",
+        "#C8C372"
+    ],
+    "columbia-lions-color-codes/": [
+        "#003865",
+        "#9BCBEB"
+    ],
+    "connecticut-huskies-colors/": [
+        "#000e2f",
+        "#ffffff"
+    ],
+    "coppin-state-eagles-colors/": [
+        "#003056",
+        "#ffc915"
+    ],
+    "cornell-big-red-color-codes/": [
+        "#B31B1B",
+        "#5e3920"
+    ],
+    "creighton-bluejays-color-codes/": [
+        "#005ca9",
+        "#00235D"
+    ],
+    "csub-roadrunners-color-codes/": [
+        "#003594",
+        "#FFC72C"
+    ],
+    "csun-matadors-color-codes/": [
+        "#CE1126",
+        "#D1CEC6"
+    ],
+    "dartmouth-big-green-color-codes/": [
+        "#046A38",
+        ""
+    ],
+    "davidson-wildcats-color-codes/": [
+        "#ac1a2f",
+        ""
+    ],
+    "dayton-flyers-color-codes/": [
+        "#CE1141",
+        "#004B8D"
+    ],
+    "denver-pioneers-colors/": [
+        "#8b2332",
+        "#8b6f4b"
+    ],
+    "delaware-blue-hens-colors/": [
+        "#00539f",
+        "#FFDD31"
+    ],
+    "delaware-state-hornets-colors/": [
+        "#EE3124",
+        "#72CDF4"
+    ],
+    "depaul-blue-demons-color-codes/": [
+        "#005EB8",
+        "#E4002B"
+    ],
+    "detroit-mercy-titans-color-codes/": [
+        "#A6093D",
+        "#002D72"
+    ],
+    "drake-bulldogs-color-codes/": [
+        "#004477",
+        "#999999"
+    ],
+    "drexel-dragons-colors/": [
+        "#00437b",
+        "#ffda02"
+    ],
+    "duke-blue-devils-color-codes/": [
+        "#003087",
+        "#ffffff"
+    ],
+    "duquesne-dukes-color-codes/": [
+        "#041E42",
+        "#BA0C2F"
+    ],
+    "east-carolina-pirates-color-codes/": [
+        "#592A8A",
+        "#FDC82F"
+    ],
+    "eastern-michigan-eagles-color-codes/": [
+        "#006633",
+        ""
+    ],
+    "eastern-illinois-panthers-colors/": [
+        "#919295",
+        "#004b83"
+    ],
+    "eastern-kentucky-colonels-colors/": [
+        "#8a0039",
+        "#ffffff"
+    ],
+    "etsu-buccaneers-colors/": [
+        "#041e42",
+        "#FFC72C"
+    ],
+    "eastern-washington-eagles-colors/": [
+        "#a10022",
+        "#FFFFFF"
+    ],
+    "elon-phoenix-colors/": [
+        "#73000a",
+        "#b59a57"
+    ],
+    "evansville-purple-aces-color-codes/": [
+        "#52237f",
+        "#f36f21"
+    ],
+    "fairfield-stags-color-codes/": [
+        "#C8102E",
+        "#A2AAAD"
+    ],
+    "fairleigh-dickinson-knights-colors/": [
+        "#28334A",
+        "#72293C"
+    ],
+    "florida-atlantic-owls-color-codes/": [
+        "#003366",
+        "#CC0000"
+    ],
+    "florida-international-panthers-color-codes/": [
+        "#081E3F",
+        "#B6862C"
+    ],
+    "florida-am-rattlers-colors/": [
+        "#ee7624",
+        "#1b5633"
+    ],
+    "florida-gators-color-codes/": [
+        "#0021A5",
+        "#FA4616"
+    ],
+    "florida-gulf-coast-eagles-color-codes/": [
+        "#002D72",
+        "#007749"
+    ],
+    "florida-state-seminoles-color-codes/": [
+        "#782F40",
+        "#CEB888"
+    ],
+    "fordham-rams-color-codes/": [
+        "#860038",
+        ""
+    ],
+    "fort-wayne-mastadons-colors/": [
+        "#002F6C",
+        "#000000"
+    ],
+    "fresno-state-bulldogs-colors/": [
+        "#db0032",
+        "#002e6d"
+    ],
+    "furman-paladins-colors/": [
+        "#201547",
+        "#582c83"
+    ],
+    "gardner-webb-bulldogs-colors/": [
+        "#BF2F37",
+        "#ffffff"
+    ],
+    "george-mason-patriots-color-codes/": [
+        "#006633",
+        "#FFCC33"
+    ],
+    "george-washington-colonials-color-codes/": [
+        "#e2cb92",
+        "#002654"
+    ],
+    "georgia-bulldogs-color-codes/": [
+        "#BA0C2F",
+        "#000000"
+    ],
+    "georgia-southern-eagles-color-codes/": [
+        "#011e41",
+        "#A3AAAE"
+    ],
+    "georgia-state-panthers/": [
+        "#0039A6",
+        "#C60C30"
+    ],
+    "georgia-tech-yellow-jackets-color-codes/": [
+        "#B3A369",
+        "#A28D5B"
+    ],
+    "georgetown-hoyas-colors/": [
+        "#041E42",
+        "#8D817B"
+    ],
+    "gonzaga-colors/": [
+        "#041E42",
+        "#C8102E"
+    ],
+    "grambling-tigers-colors/": [
+        "#eaa921",
+        "#000000"
+    ],
+    "gcu-antelopes-color-codes/": [
+        "#522398",
+        "#000000"
+    ],
+    "green-bay-phoenix-color-codes/": [
+        "#006747",
+        "#9D2235"
+    ],
+    "hampton-pirates-colors/": [
+        "#0060A9",
+        "#ffffff"
+    ],
+    "hartford-hawks-colors/": [
+        "#c02427",
+        "#0f0708"
+    ],
+    "harvard-university-colors/": [
+        "#A41034",
+        "#000000"
+    ],
+    "hawaii-warriors-color-codes/": [
+        "#024731",
+        "#c8c8c8"
+    ],
+    "high-point-panthers-colors/": [
+        "#330072",
+        "#ffffff"
+    ],
+    "hofstra-pride-colors/": [
+        "#0B1E73",
+        "#FEB612"
+    ],
+    "holy-cross-crusaders-colors/": [
+        "#602d89",
+        "#FFFFFF"
+    ],
+    "houston-baptist-huskies-colors/ ": [
+        "#1c4e9d",
+        "#f3652c"
+    ],
+    "houston-cougars-color-codes/": [
+        "#C8102E",
+        "#76232F"
+    ],
+    "howard-bison-colors/": [
+        "#003a63",
+        "#e51937"
+    ],
+    "idaho-vandals-color-codes/": [
+        "#B3A369",
+        "#EAAB00"
+    ],
+    "idaho-state-bengals-color-codes/": [
+        "#FF671F",
+        "#000000"
+    ],
+    "illinois-fighting-illini-colors/": [
+        "#13294b",
+        "#E84A27"
+    ],
+    "illinois-state-redbirds-color-codes/": [
+        "#ce1126",
+        "#F9DD16"
+    ],
+    "incarnate-word-cardinals-colors/": [
+        "#cb333b",
+        "#000000"
+    ],
+    "indiana-hoosiers-color-codes/": [
+        "#990000",
+        "#EEEDEB"
+    ],
+    "indiana-state-sycamores-color-codes/": [
+        "#0142BC",
+        ""
+    ],
+    "iona-gaels-color-codes/": [
+        "#6F2C3F",
+        "#F2A900"
+    ],
+    "iowa-hawkeyes-color-codes/": [
+        "#FFCD00",
+        "#000000"
+    ],
+    "iowa-state-cyclones-color-codes/": [
+        "#C8102E",
+        "#F1BE48"
+    ],
+    "iupui-jaguars-color-codes/": [
+        "#9D2235",
+        "#DFD1A7"
+    ],
+    "jackson-state-tigers-colors/": [
+        "#002147",
+        "#008ED6"
+    ],
+    "jacksonville-dolphins-color-codes/": [
+        "#004E44",
+        "#898a8d"
+    ],
+    "jacksonville-state-gamecocks-colors/": [
+        "#CC0000",
+        "#ffffff"
+    ],
+    "james-madison-dukes-colors/": [
+        "#450084",
+        "#CBB677"
+    ],
+    "kansas-jayhawks-color-codes/": [
+        "#0051BA",
+        "#E8000D"
+    ],
+    "kansas-state-wildcats-color-codes/": [
+        "#512888",
+        "#d1d1d1"
+    ],
+    "kennesaw-state-owls-color-codes/": [
+        "#FDBB30",
+        "#0B1315"
+    ],
+    "kent-state-golden-flashes-color-codes/": [
+        "#002664",
+        "#EAAB00"
+    ],
+    "kentucky-wildcats-color-codes/": [
+        "#0033a0",
+        "#FFFFFF"
+    ],
+    "lafayette-leopards-colors/": [
+        "#a8996e",
+        "#98002e"
+    ],
+    "lamar-cardinals-colors/": [
+        "#dc0032",
+        "#ffffff"
+    ],
+    "la-salle-explorers-color-codes/": [
+        "#ffcc00",
+        "#003366"
+    ],
+    "lehigh-mountain-hawks-colors/": [
+        "#653600",
+        "#ffd24f"
+    ],
+    "liberty-flames-colors/": [
+        "#002d62",
+        "#c41230"
+    ],
+    "lipscomb-university-bisons-color-codes/": [
+        "#331E54",
+        "#F4AA00"
+    ],
+    "longwood-lancers-colors/": [
+        "#15213B",
+        "#999D9E"
+    ],
+    "long-beach-state-49ers-color-codes/": [
+        "#ffc72a",
+        "#000000"
+    ],
+    "long-island-university-sharks-colors/": [
+        "#69B3E7",
+        "#FFC72C"
+    ],
+    "louisiana-monroe-warhawks-color-codes/": [
+        "#840029",
+        "#FDB913"
+    ],
+    "louisiana-ragin-cajuns-color-codes/": [
+        "#ce181e",
+        "#0a0203"
+    ],
+    "louisiana-state-lsu-tigers-colors/": [
+        "#461D7C",
+        "#FDD023"
+    ],
+    "louisiana-tech-bulldogs-color-codes/": [
+        "#002F8B",
+        "#E31B23"
+    ],
+    "louisville-cardinals-color-codes/": [
+        "#AD0000",
+        "#000000"
+    ],
+    "loyola-marymount-lions-colors/": [
+        "#b62b3a",
+        "#00447c"
+    ],
+    "loyola-md-greyhounds-colors/ ": [
+        "#00694e",
+        "#cacac8"
+    ],
+    "maine-black-bears-color-codes/": [
+        "#003263",
+        "#B0D7FF"
+    ],
+    "manhattan-jaspers-color-codes/": [
+        "#00703C",
+        ""
+    ],
+    "marist-red-foxes-color-codes/": [
+        "#C8102E",
+        "#b2b2b2"
+    ],
+    "marshall-thundering-herd-color-codes/": [
+        "#00B140",
+        "#A2AAAD"
+    ],
+    "marquette-colors/": [
+        "#003366",
+        "#ffcc00"
+    ],
+    "maryland-eastern-shore-hawks-colors/": [
+        "#862633",
+        "#888B8D"
+    ],
+    "maryland-terrapins-color-codes/": [
+        "#E03a3e",
+        "#ffd520"
+    ],
+    "mcneese-cowboys-colors/": [
+        "#00529b",
+        "#ffd204"
+    ],
+    "memphis-tigers-color-codes/": [
+        "#003087",
+        "#898D8D"
+    ],
+    "mercer-bears-colors/": [
+        "#f76800",
+        "#000000"
+    ],
+    "merrimack-warriors-colors/": [
+        "#003768",
+        "#fdb813"
+    ],
+    "miami-hurricanes-color-codes/": [
+        "#F47321",
+        "#005030"
+    ],
+    "miami-redhawks-color-codes/": [
+        "#b61e2e",
+        "K"
+    ],
+    "michigan-wolverines-color-codes/": [
+        "#00274c",
+        "#ffcb05"
+    ],
+    "michigan-state-spartans-colors/": [
+        "#18453B",
+        "#FFFFFF"
+    ],
+    "middle-tennessee-color-codes/": [
+        "#000000",
+        "#0066CC"
+    ],
+    "milwaukee-panthers-color-codes/": [
+        "#FFBD00",
+        "#CCCCCC"
+    ],
+    "minnesota-golden-gophers-colors/": [
+        "#7A0019",
+        "#FFCC33"
+    ],
+    "mississippi-valley-state-delta-devils-colors/": [
+        "#00703c",
+        "#e51937"
+    ],
+    "missouri-state-bears-color-codes/": [
+        "#5E0009",
+        ""
+    ],
+    "mississippi-state-university-bulldogs-colors/": [
+        "#660000",
+        "#ffffff"
+    ],
+    "missouri-tigers-colors/": [
+        "#000000",
+        "#F1B82D"
+    ],
+    "monmouth-hawks-color-codes/": [
+        "#041E42",
+        "#53565A"
+    ],
+    "montana-grizzlies-color-codes/": [
+        "#660033",
+        "#999999"
+    ],
+    "montana-state-bobcats-colors/": [
+        "#00205B",
+        "#B9975B"
+    ],
+    "morgan-state-bears/": [
+        "#1b4383",
+        "#f47937"
+    ],
+    "morehead-state-eagles-colors/": [
+        "#FFCF00",
+        "#005EB8"
+    ],
+    "murray-state-racers-colors/": [
+        "#ECAC00",
+        "#002144"
+    ],
+    "navy-midshipmen-color-codes/": [
+        "#00205B",
+        "#C5B783"
+    ],
+    "nebraska-cornhuskers-colors/": [
+        "#e41c38",
+        "#000000"
+    ],
+    "nevada-wolfpack-color-codes/": [
+        "#003366",
+        "#807f84"
+    ],
+    "new-hampshire-wildcats-color-codes/": [
+        "#041e42",
+        "#BBBCBC"
+    ],
+    "new-mexico-lobos-color-codes/": [
+        "#BA0C2F",
+        "#a7a8aa"
+    ],
+    "new-mexico-state-aggies-colors/": [
+        "#861F41",
+        "#97999B"
+    ],
+    "new-orleans-privateers-colors/": [
+        "#005ca6",
+        "#a3a9ac"
+    ],
+    "niagara-purple-eagles-color-codes/": [
+        "#582C83",
+        ""
+    ],
+    "nicholls-colonels-colors/": [
+        "#ae132a",
+        "#72808a"
+    ],
+    "njit-highlanders-color-codes/": [
+        "#D22630",
+        "#071D49"
+    ],
+    "norfolk-state-spartans-colors/": [
+        "#007A53",
+        "#F3D03E"
+    ],
+    "north-alabama-lions-color-codes/": [
+        "#46166B",
+        "#DB9F11"
+    ],
+    "north-carolina-at-aggies/": [
+        "#f3b237",
+        "#003d6d"
+    ],
+    "north-carolina-central-eagles-colors/": [
+        "#880023",
+        "#8e9093"
+    ],
+    "north-carolina-tar-heels-colors/": [
+        "#7BAFD4",
+        "#FFFFFF"
+    ],
+    "north-dakota-fighting-hawks/": [
+        "#009A44",
+        "#AAAEAD"
+    ],
+    "north-dakota-state-colors/": [
+        "#0a5640",
+        "#ffc72a"
+    ],
+    "northeastern-huskies-colors/": [
+        "#D41B2C",
+        "#000000"
+    ],
+    "north-texas-mean-green-color-codes/": [
+        "#00853E",
+        "#000000"
+    ],
+    "northern-illinois-huskies-color-codes/": [
+        "#BA0C2F",
+        "#8A8D8F"
+    ],
+    "northern-iowa-panthers-color-codes/": [
+        "#4B116F",
+        "#FFCC00"
+    ],
+    "northern-kentucky-norse-color-codes/": [
+        "#FFC72C",
+        ""
+    ],
+    "northern-arizona-lumberjacks-color-codes/": [
+        "#003466",
+        "#FFD200"
+    ],
+    "northern-colorado-bears-color-codes/": [
+        "#013C65",
+        "#f6b000"
+    ],
+    "north-florida-ospreys-color-codes/": [
+        "#00246B",
+        "#D9D9D9"
+    ],
+    "nc-state-wolfpack-color-codes/": [
+        "#CC0000",
+        "#000000"
+    ],
+    "northwestern-state-demons-colors/": [
+        "#663399",
+        "#ffffff"
+    ],
+    "northwestern-wildcats-color-codes/": [
+        "#4E2A84",
+        "#FFFFFF"
+    ],
+    "notre-dame-colors/": [
+        "#0C2340",
+        "#c99700"
+    ],
+    "oakland-golden-grizzlies-color-codes/": [
+        "#B59A57",
+        "K"
+    ],
+    "ohio-bobcats-color-codes/": [
+        "#00694E",
+        "#CDA077"
+    ],
+    "ohio-state-buckeyes-color-codes/": [
+        "#BB0000",
+        ""
+    ],
+    "oklahoma-sooners-color-codes/": [
+        "#841617",
+        "#FDF9D8"
+    ],
+    "oklahoma-state-cowboys-color-codes/": [
+        "#FF7300",
+        "#000000"
+    ],
+    "old-dominion-monarchs-color-codes/": [
+        "#003057",
+        "#7C878E"
+    ],
+    "ole-miss-rebels-color-codes/": [
+        "#CE1126",
+        "#14213D"
+    ],
+    "nebraska-omaha-mavericks-colors/": [
+        "#000000",
+        "#D71920"
+    ],
+    "oral-roberts-golden-eagles-colors/": [
+        "#002f60",
+        "#C5b783"
+    ],
+    "oregon-ducks-color-codes/": [
+        "#154733",
+        "#FEE123"
+    ],
+    "oregon-state-beavers-color-codes/": [
+        "#dc4405",
+        "#000000"
+    ],
+    "pacific-tigers-colors/": [
+        "#E35205",
+        "#231f20"
+    ],
+    "penn-quakers-color-codes/": [
+        "#990000",
+        "#011F5B"
+    ],
+    "penn-state-nittany-lions-color-codes/": [
+        "#041E42",
+        "#FFFFFF"
+    ],
+    "pepperdine-waves-colors/": [
+        "#00205c",
+        "#ee7624"
+    ],
+    "pittsburgh-panthers-color-codes/": [
+        "#003594",
+        "#FFB81C"
+    ],
+    "portland-pilots-colors/": [
+        "#1e1656",
+        "#5e6A71"
+    ],
+    "portland-state-vikings-color-codes/": [
+        "#154734",
+        "#FFFFFF"
+    ],
+    "prairie-view-am-panthers-colors/": [
+        "#330066",
+        "#ffcc33"
+    ],
+    "presbyterian-blue-hose-colors/": [
+        "#0060A9",
+        "#9D2235"
+    ],
+    "princeton-tigers-color-codes/": [
+        "#FF671F",
+        "#000000"
+    ],
+    "providence-friars-color-codes/": [
+        "#8a8d8f",
+        ""
+    ],
+    "purdue-boilermakers-colors/": [
+        "#ceb888",
+        "#000000"
+    ],
+    "radford-highlanders-colors/": [
+        "#c2011b",
+        "#d1d3d4"
+    ],
+    "rhode-island-rams-color-codes/": [
+        "#68abe8",
+        "#002147"
+    ],
+    "richmond-spiders-color-codes/": [
+        "#000066",
+        "#990000"
+    ],
+    "rice-owls-color-codes/": [
+        "#00205B",
+        "#C1C6C8"
+    ],
+    "rider-broncs-color-codes/": [
+        "#981E32",
+        "#6C6F70"
+    ],
+    "rutgers-scarlet-knights-colors/": [
+        "#cc0033",
+        "#5F6A72"
+    ],
+    "robert-morris-colonials-colors/": [
+        "#14234b",
+        "#a6192e"
+    ],
+    "california-state-university-sacramento-hornets-colors/": [
+        "#043927",
+        "#c4b581"
+    ],
+    "sacred-heart-pioneers-colors/": [
+        "#ce1141",
+        "#b1b3b6"
+    ],
+    "samford-bulldogs-colors/": [
+        "#002649",
+        "#C4161D"
+    ],
+    "sam-houston-state-bearkats-colors/": [
+        "#fe5100",
+        "#ffffff"
+    ],
+    "saint-marys-gaels-colors/": [
+        "#D80024",
+        "#06315B"
+    ],
+    "san-diego-toreros-colors/": [
+        "#002868",
+        "#84bce8"
+    ],
+    "san-diego-state-aztecs-color-codes/": [
+        "#a6192e",
+        "#000000"
+    ],
+    "san-francisco-dons-colors/": [
+        "#FDBB30",
+        "#00543C"
+    ],
+    "san-jose-state-spartans-color-codes/": [
+        "#0055A2",
+        "#E5A823"
+    ],
+    "santa-clara-broncos-colors/": [
+        "#862633"
+    ],
+    "seattle-university-redhawks-color-codes/": [
+        "#AA0000",
+        "#000000"
+    ],
+    "seton-hall-pirates-colors/": [
+        "#004488",
+        "#A2AAAD"
+    ],
+    "se-louisiana-lions-colors/": [
+        "#006341",
+        "#eaaa00"
+    ],
+    "se-missouri-st-redhawks-colors/": [
+        "#000000",
+        "#C8102E"
+    ],
+    "siena-saints-color-codes/": [
+        "#FFC72C",
+        "#C8102E"
+    ],
+    "siu-edwardsville-cougars-colors/": [
+        "#ef3829",
+        "#ffffff"
+    ],
+    "smu-mustangs-color-codes/ ": [
+        "#0033A0",
+        "#C8102E"
+    ],
+    "south-carolina-gamecocks-color-codes/": [
+        "#73000A",
+        "#000000"
+    ],
+    "usc-upstate-spartans-color-codes/": [
+        "#00703c",
+        "K"
+    ],
+    "south-carolina-state-bulldogs-colors/": [
+        "#862633",
+        "#001A72"
+    ],
+    "south-alabama-jaguars-color-codes/": [
+        "#00205B",
+        "#BF0D3E"
+    ],
+    "south-dakota-coyotes-colors/": [
+        "#ad0000",
+        "#b4b4b4"
+    ],
+    "south-dakota-state-jackrabbits-colors/": [
+        "#0033A0",
+        "#FFD100"
+    ],
+    "south-florida-bulls-color-codes/": [
+        "#006747",
+        "#CFC493"
+    ],
+    "southern-illinois-salukis-color-codes/": [
+        "#720000",
+        "#FFFFFF"
+    ],
+    "southern-miss-golden-eagles-colors/": [
+        "#000000",
+        "#FFAB00"
+    ],
+    "southern-jaguars-colors/": [
+        "#58b6e7",
+        "#ffce34"
+    ],
+    "southern-utah-thunderbirds-colors/": [
+        "#C41425",
+        "#000000"
+    ],
+    "stanford-cardinal-color-codes/": [
+        "#8C1515",
+        "#4D4F53"
+    ],
+    "stephen-f-austin-lumberjacks-colors/": [
+        "#613393",
+        "#ffffff"
+    ],
+    "st-bonaventure-bonnies-color-codes/": [
+        "#54261a",
+        "#fdb726"
+    ],
+    "st-francis-bkn-terriers-colors/": [
+        "#005496",
+        "#e03a3e"
+    ],
+    "st-francis-pa-red-flash-colors/": [
+        "#bd1f25",
+        "#790000"
+    ],
+    "stetson-hatters-color-codes/": [
+        "#00523E",
+        "#3B8729"
+    ],
+    "st-johns-red-storm-color-codes/": [
+        "#BA0C2F",
+        "#041C2C"
+    ],
+    "saint-josephs-hawks-color-codes/": [
+        "#9e1b32",
+        "#6c6f70"
+    ],
+    "saint-louis-billikens-color-codes/": [
+        "#003DA5",
+        "#C8C9C7"
+    ],
+    "mt-st-marys-mountaineers-colors/": [
+        "#002855",
+        "#84754E"
+    ],
+    "saint-peters-peacocks-color-codes/": [
+        "#003C71",
+        "#0072CE"
+    ],
+    "stony-brook-university-seawolves/": [
+        "#990000",
+        "#16243e"
+    ],
+    "syracuse-orange-color-codes/": [
+        "#F76900",
+        "#FFFFFF"
+    ],
+    "temple-owls-color-codes/": [
+        "#9D2235",
+        "#FFCD00"
+    ],
+    "tennessee-state-tigers-colors/": [
+        "#00539F",
+        "#ffffff"
+    ],
+    "tennessee-tech-golden-eagles-colors/": [
+        "#4f2984",
+        "#FFDD00"
+    ],
+    "texas-am-aggies-color-codes/": [
+        "#500000",
+        "#FFFFFF"
+    ],
+    "texas-am-cc-islanders-colors/": [
+        "#0067C5",
+        "#007F3E"
+    ],
+    "texas-arlington-mavericks-color-codes/": [
+        "#f58025",
+        "#0064b1"
+    ],
+    "texas-christian-horned-frogs-color-codes/": [
+        "#4d1979",
+        "#a3a9ac"
+    ],
+    "texas-longhorns-color-codes/": [
+        "#bf5700",
+        "#333f48"
+    ],
+    "texas-southern-tigers-colors/": [
+        "#7c183e",
+        "#9da6ab"
+    ],
+    "texas-state-bobcats-color-codes/": [
+        "#501214",
+        "#8d734a"
+    ],
+    "texas-tech-red-raiders-color-codes/": [
+        "#CC0000",
+        "#000000"
+    ],
+    "toledo-rockets-color-codes/": [
+        "#15397F",
+        "#005CB9"
+    ],
+    "towson-tigers-colors/": [
+        "#FFBB00",
+        "#3C3C3C"
+    ],
+    "troy-trojans-colors/": [
+        "#8a2432",
+        "#b3b5b8"
+    ],
+    "tulane-green-wave-color-codes/": [
+        "#006747",
+        "#43B02A"
+    ],
+    "tulsa-golden-hurricane-color-codes/": [
+        "#002D72",
+        "#C8102E"
+    ],
+    "uab-blazers-color-codes/": [
+        "#006341",
+        "#CC8A00"
+    ],
+    "uc-davis-aggies-color-codes/": [
+        "#002855",
+        "#B3A369"
+    ],
+    "ucf-knights-color-codes/": [
+        "#ffc904",
+        "#ba9b37"
+    ],
+    "uc-irvine-anteaters-color-codes/": [
+        "#0C2340",
+        "#FFC72C"
+    ],
+    "ucla-bruins-color-codes/": [
+        "#2d68c4",
+        "#f2a900"
+    ],
+    "uc-riverside-highlanders-color-codes/": [
+        "#2D6CC0",
+        "#003066"
+    ],
+    "uc-santa-barbara-gauchos-color-codes/": [
+        "#003660",
+        "#FEBC11"
+    ],
+    "uic-flames-color-codes/": [
+        "#ac1e2d",
+        "#041E42"
+    ],
+    "university-of-massachusetts-minutemen-color-codes/": [
+        "#971B2F",
+        "#572932"
+    ],
+    "umass-lowell-river-hawks/": [
+        "#003DA5",
+        "#C8102E"
+    ],
+    "umbc-retrievers-colors/": [
+        "#b18906",
+        "#ffc20e"
+    ],
+    "umkc-kangaroos-colors/": [
+        "#005293",
+        "#fecb00"
+    ],
+    "unc-asheville-bulldogs-colors/": [
+        "#003DA5",
+        "#ffffff"
+    ],
+    "unc-wilmington-seahawks-colors/": [
+        "#003366",
+        "#006666"
+    ],
+    "unc-greensboro-spartans-colors/": [
+        "#0f2044",
+        "#ffb71b"
+    ],
+    "unlv-rebels-color-codes/": [
+        "#CF0A2C",
+        "#CAC8C8"
+    ],
+    "usc-trojans-color-codes/": [
+        "#990000",
+        "#FFC72C"
+    ],
+    "utah-utes-color-codes/": [
+        "#CC0000",
+        "#808080"
+    ],
+    "utah-valley-wolverines-colors/": [
+        "#275d38",
+        "#000000"
+    ],
+    "utah-state-aggies-color-codes/": [
+        "#00263A",
+        "#8a8d8f"
+    ],
+    "utep-miners-color-codes/": [
+        "#FF8200",
+        "#041E42"
+    ],
+    "ut-martin-skyhawks-colors/": [
+        "#f79728",
+        "#002a5b"
+    ],
+    "utrgv-vaqueros-colors/": [
+        "#FFA300",
+        "#f05023"
+    ],
+    "utsa-roadrunners-color-codes/": [
+        "#f15a22",
+        "#0C2340"
+    ],
+    "valparaiso-crusaders-color-codes/": [
+        "#381e0e",
+        "#613318"
+    ],
+    "vanderbilt-commodores-color-codes/": [
+        "#000000",
+        "#866d4b"
+    ],
+    "villanova-wildcats-colors/": [
+        "#00205b",
+        "#13b5ea"
+    ],
+    "virginia-cavaliers-color-codes/": [
+        "#232D4B",
+        "#F84C1E"
+    ],
+    "virginia-commonwealth-rams-color-codes/": [
+        "#ffb300",
+        "K"
+    ],
+    "virginia-tech-hokies-color-codes/": [
+        "#630031",
+        "#cf4420"
+    ],
+    "vmi-keydets-colors/": [
+        "#a71f23",
+        "#ffd520"
+    ],
+    "wagner-seahawks-colors/": [
+        "#00483a",
+        "#b9bbbd"
+    ],
+    "wake-forest-demon-deacons-color-codes/": [
+        "#9E7E38",
+        "#000000"
+    ],
+    "washington-huskies-color-codes/": [
+        "#4B2E83",
+        "#b7a57a"
+    ],
+    "washington-state-cougars-color-codes/": [
+        "#981E32",
+        "#5E6A71"
+    ],
+    "weber-state-wildcats-color-codes/": [
+        "#4b2682",
+        "#a1a1a4"
+    ],
+    "western-carolina-catamounts-colors/": [
+        "#592c88",
+        "#C1A875"
+    ],
+    "western-illinois-leathernecks-colors/": [
+        "#663399",
+        "#ffcc00"
+    ],
+    "western-kentucky-hilltoppers-color-codes/": [
+        "#c60c30",
+        "#1E1E1E"
+    ],
+    "western-michigan-broncos-color-codes/": [
+        "#6C4023",
+        "#B5A167"
+    ],
+    "west-virginia-mountaineers-color-codes/": [
+        "#002855",
+        "#EAAA00"
+    ],
+    "winthrop-eagles-colors/": [
+        "#660000",
+        "#F0B323"
+    ],
+    "wisconsin-badgers-colors/": [
+        "#c5050c",
+        "#ffffff"
+    ],
+    "wichita-state-shockers-color-codes/": [
+        "#FFCD00",
+        ""
+    ],
+    "william-mary-tribe-colors/": [
+        "#115740",
+        "#F0B323"
+    ],
+    "wofford-terriers-colors/": [
+        "#886E4C",
+        "#FFFFFF"
+    ],
+    "wright-state-raiders-color-codes/": [
+        "#026937",
+        "#CEA052"
+    ],
+    "university-wyoming-cowboys-colors/": [
+        "#ffc425",
+        "#492f24"
+    ],
+    "xavier-university-musketeers-colors/": [
+        "#0C2340",
+        "#9EA2A2"
+    ],
+    "yale-bulldogs-color-codes/": [
+        "#00356b",
+        ""
+    ],
+    "youngstown-state-penguins-color-codes/": [
+        "#C8102E",
+        "#F3D54E"
+    ]
+}

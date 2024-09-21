@@ -44,7 +44,7 @@ for team_link in entry_content_div.find_all('a'):
     team_colors[team_url[27:]] = colors
 
 
-with open('../../../pickem_data/cfb_team_colors.json', 'w') as team_colors_file:
+with open('./pickem_data/cfb_team_colors.json', 'w') as team_colors_file:
     json.dump(team_colors, team_colors_file, indent=4)
 
 

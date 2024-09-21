@@ -40,6 +40,6 @@ def transform_record(record_raw: str, transform_logfile: object):
         wins = 0
         losses = 0
         ties = 0
-        transform_logfile.write(f'{e}\n')
+        transform_logfile.write(f'{e}\n{record_raw}\n')
 
     return wins, losses, ties
