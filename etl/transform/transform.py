@@ -4,7 +4,7 @@ Author: Gabe Baduqui
 
 Cleanse, format and prepare extracted pickem data for loading.
 """
-import math
+import pandas as pd
 import etl.utils.get_timestamp as ts
 import etl.transform.common.transform_games_data as tf_games
 import etl.transform.common.transform_teams_data as tf_teams
@@ -99,7 +99,7 @@ def transform_teams(league: str, teams_df: dict, transform_logfile: object):
         overall_record = teams_df.loc[idx, 'overall_record']
 
         # Team Name, Mascot, and URL
-        if teams_df.loc[idx, 'team_id'] == '0' or math.isnan(teams_df.loc[idx, 'team_id']):
+        if teams_df.loc[idx, 'team_id'] == '0' or pd.isna(teams_df.loc[idx, 'team_id']):
             teams_df.loc[idx, 'name'] = ''
             teams_df.loc[idx, 'mascot'] = ''
             teams_df.loc[idx, 'logo_url'] = ''
