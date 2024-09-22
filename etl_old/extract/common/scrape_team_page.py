@@ -5,10 +5,10 @@ Author: Gabe Baduqui
 Scrape all Team-specific data elements for a given Team ID
 """
 import requests
-import etl.extract.extract as ex
-import etl.extract.cfb.scrape_team_page as cfb_team
-import etl.extract.nfl.scrape_team_page as nfl_team
-import etl.extract.common.scrape_team_color_codes as colors
+import etl_old.extract.extract as ex
+import etl_old.extract.cfb.scrape_team_page as cfb_team
+import etl_old.extract.nfl.scrape_team_page as nfl_team
+import etl_old.extract.common.scrape_team_color_codes as colors
 from bs4 import BeautifulSoup
 from datetime import datetime
 

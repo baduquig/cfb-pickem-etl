@@ -5,11 +5,11 @@ Author: Gabe Baduqui
 Scrape, transform and load fall sports schedule data from various web pages
 """
 import pandas as pd
-import etl.etl as x
+import etl_old.etl as x
 
 prod = False
 
-def main():
+def full():
     global all_games
     global all_teams
     global all_locations
@@ -39,14 +39,13 @@ def main():
     all_schedule.to_csv('./pickem_data/all_schedule.csv', index=False)
     all_schedule.to_json('./pickem_data/all_schedule.json', orient='records')
 
+def full_cfb():
+    cfb_games, cfb_teams, cfb_locations = x.full_etl(prod, 'CFB')
 
-main()
+def incremental():
+    x.incremental_etl('CFB')
 
-#import etl.load.load as l
-#logfile = open('./pickem_logs/manual_load.log', 'a')
-#cfb_games = pd.read_csv('./pickem_data/cfb_games.csv')
-#cfb_teams = pd.read_csv('./pickem_data/cfb_teams.csv')
-#cfb_locations = pd.read_csv('./pickem_data/cfb_locations.csv')
-#l.load_db('CFB', cfb_games, 'games', logfile)
-#l.load_db('CFB', cfb_teams, 'teams', logfile)
-#l.load_db('CFB', cfb_locations, 'locations', logfile)
+
+#full()
+#full_cfb()
+incremental()

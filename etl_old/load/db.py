@@ -5,7 +5,7 @@ Author: Gabe Baduqui
 Load pickem data from various web sources into MySQL Database.
 """
 import mysql.connector
-import etl.utils.credentials as cred
+import etl_old.utils.credentials as cred
 
 def instantiate_connection():
     """Function to instantiate connection to MySQL `PICKEM_GB` database

@@ -6,11 +6,11 @@ Scrape pickem data from various web sources.
 """
 import pandas as pd
 import time
-import etl.utils.get_timestamp as ts
-import etl.extract.common.scrape_schedule_page as schedule
-import etl.extract.common.scrape_game_page as game
-import etl.extract.common.scrape_team_page as team
-import etl.extract.common.get_geocode_data as geo
+import etl_old.utils.get_timestamp as ts
+import etl_old.extract.common.scrape_schedule_page as schedule
+import etl_old.extract.common.scrape_game_page as game
+import etl_old.extract.common.scrape_team_page as team
+import etl_old.extract.common.get_geocode_data as geo
 from datetime import date
 
 custom_header = {

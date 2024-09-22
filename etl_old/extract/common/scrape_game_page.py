@@ -5,11 +5,11 @@ Author: Gabe Baduqui
 Scrape all Game-specific data elements for a given Game ID.
 """
 import requests
-import etl.extract.extract as ex
-import etl.extract.cfb.scrape_game_page as cfb_game
-import etl.extract.nfl.scrape_game_page as nfl_game
-import etl.extract.mlb.scrape_game_page as mlb_game
-import etl.extract.nba.scrape_game_page as nba_game
+import etl_old.extract.extract as ex
+import etl_old.extract.cfb.scrape_game_page as cfb_game
+import etl_old.extract.nfl.scrape_game_page as nfl_game
+import etl_old.extract.mlb.scrape_game_page as mlb_game
+import etl_old.extract.nba.scrape_game_page as nba_game
 from bs4 import BeautifulSoup
 
 def get_team_id(team_container_div: str, league: str, logfile: object):

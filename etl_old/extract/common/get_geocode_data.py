@@ -5,7 +5,7 @@ Author: Gabe Baduqui
 Retrieve location data from Geocode.maps forward geocode API
 """
 import requests, time
-import etl.utils.credentials as cred
+import etl_old.utils.credentials as cred
 
 def get_city_name(location_name: str):
     """Function that extracts city name from a given location string

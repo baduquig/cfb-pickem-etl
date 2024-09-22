@@ -5,8 +5,8 @@ Author: Gabe Baduqui
 Scrape all Game IDs for a given season/week(s).
 """
 import requests
-import etl.extract.extract as ex
-import etl.utils.get_all_dates_in_range as all_dates
+import etl_old.extract.extract as ex
+import etl_old.utils.get_all_dates_in_range as all_dates
 from bs4 import BeautifulSoup
 from datetime import datetime
 

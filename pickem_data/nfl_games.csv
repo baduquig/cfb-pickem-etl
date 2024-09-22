@@ -31,7 +31,7 @@ game_id,league,away_team,home_team,location,tv_coverage,betting_line,betting_ove
 401671670,NFL,cin,kc,1,Coverage: CBS,,,73558,,,3,13,6,3,0,25,3,7,7,9,0,26,4:25 PM,"September 15, 2024",9.0,15.0,2024.0
 401671786,NFL,chi,hou,28,Coverage: NBC/Peacock,,,71412,,,3,7,0,3,0,13,3,13,0,3,0,19,8:20 PM,"September 15, 2024",9.0,15.0,2024.0
 401671691,NFL,atl,phi,29,Coverage: ESPN,,,69879,,,0,6,9,7,0,22,0,7,3,11,0,21,8:15 PM,"September 16, 2024",9.0,16.0,2024.0
-401671808,NFL,ne,nyj,10,Coverage: Prime Video,,,0,,,0,0,0,0,0,0,0,0,0,0,0,0,8:15 PM,"September 19, 2024",9.0,19.0,2024.0
+401671808,NFL,ne,nyj,10,Coverage: Prime Video,,,80812,,,0,3,0,0,0,3,7,7,7,3,0,24,8:15 PM,"September 19, 2024",9.0,19.0,2024.0
 401671855,NFL,nyg,cle,13,Coverage: FOX,,,0,,,0,0,0,0,0,0,0,0,0,0,0,0,1:00 PM,"September 22, 2024",9.0,22.0,2024.0
 401671823,NFL,gb,ten,19,Coverage: FOX,,,0,,,0,0,0,0,0,0,0,0,0,0,0,0,1:00 PM,"September 22, 2024",9.0,22.0,2024.0
 401671865,NFL,chi,ind,7,Coverage: CBS,,,0,,,0,0,0,0,0,0,0,0,0,0,0,0,1:00 PM,"September 22, 2024",9.0,22.0,2024.0

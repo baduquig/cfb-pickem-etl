@@ -5,8 +5,8 @@ Author: Gabe Baduqui
 Load pickem data from various web sources into desired destinations.
 """
 from math import nan
-import etl.load.db as db
-import etl.utils.get_timestamp as ts
+import etl_old.load.db as db
+import etl_old.utils.get_timestamp as ts
 
 def instantiate_logfile(league):
     timestamp = ts.get_timestamp()
