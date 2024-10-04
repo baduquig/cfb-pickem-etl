@@ -56,6 +56,6 @@ def incremental_etl(league: str):
 
     # Load
     load_logfile = load.instantiate_logfile(league)
-    load.load_csv(games, 'games', load_logfile)
-    load.load_csv(teams, 'teams', load_logfile)
+    load.load_csv(games, 'cfb_games', load_logfile)
+    load.load_csv(teams, 'cfb_teams', load_logfile)
     
