@@ -230,7 +230,7 @@ def get_away_winning_probability(matchup: str, logfile: object):
        Returns `win_pct`: String"""
     # Example `matchup` string: '<div class="matchupPredictor">...</div>'
     try:
-        away_win_pct = matchup.find('div', class_='matchupPredictor__teamValue--b').text
+        away_win_pct = matchup.find('div', class_='matchupPredictor__teamValue--b').get_text()
         logfile.write(f'away_win_pct: {away_win_pct}\n')
     except Exception as e:
         away_win_pct = ''
@@ -243,7 +243,7 @@ def get_home_winning_probability(matchup: str, logfile: object):
        Returns `win_pct`: String"""
     # Example `matchup` string: '<div class="matchupPredictor">...</div>'
     try:
-        home_win_pct = matchup.find('div', class_='matchupPredictor__teamValue--a').text
+        home_win_pct = matchup.find('div', class_='matchupPredictor__teamValue--a').get_text()
         logfile.write(f'home_win_pct: {home_win_pct}\n')
     except Exception as e:
         home_win_pct = ''
@@ -310,8 +310,9 @@ def get_game_data(league: str, game_id: str, logfile: object):
     # Instantiate Matchup Container and scrape data fields
     try: 
         matchup_div = game_soup.find('div', class_='matchupPredictor')
-        game_data['away_win_pct'] = get_away_winning_probability(matchup_div)
-        game_data['home_win_pct'] = get_home_winning_probability(matchup_div)
+        logfile.write(f'matchup_div: {matchup_div}\n')
+        game_data['away_win_pct'] = get_away_winning_probability(matchup_div, logfile)
+        game_data['home_win_pct'] = get_home_winning_probability(matchup_div, logfile)
     except:
         game_data['away_win_pct'] = None
         game_data['home_win_pct'] = None
